@@ -40,6 +40,7 @@
             "am",
             "is"
           ],
+          "promptJa": "私は夜に穏やかな気持ちになる。",
           "prompt_ja": "空欄に入る語は？",
           "sentence_en": "I ___ calm in the night.",
           "type": "fill_blank"
@@ -65,6 +66,7 @@
             "feel",
             "my"
           ],
+          "promptJa": "月は一つの天体だ。",
           "prompt_ja": "空欄に入る語は？",
           "sentence_en": "The Moon is ___ planet.",
           "type": "fill_blank"
@@ -276,6 +278,7 @@
             "Is",
             "Feel"
           ],
+          "promptJa": "あなたは音楽が好きですか？",
           "prompt_ja": "空欄に入る語は？",
           "sentence_en": "___ you like music?",
           "type": "fill_blank"
@@ -288,6 +291,7 @@
             "night",
             "calm"
           ],
+          "promptJa": "私は言って、考える。",
           "prompt_ja": "空欄に入る語は？",
           "sentence_en": "I ___ and I think.",
           "type": "fill_blank"
@@ -300,6 +304,7 @@
             "night",
             "day"
           ],
+          "promptJa": "金星は愛の天体だ。",
           "prompt_ja": "空欄に入る語は？",
           "sentence_en": "Venus is the planet of ___.",
           "type": "fill_blank"
@@ -527,6 +532,7 @@
             "night",
             "beautiful"
           ],
+          "promptJa": "私は速く走れる。",
           "prompt_ja": "空欄に入る語は？",
           "sentence_en": "I ___ run fast.",
           "type": "fill_blank"
@@ -539,6 +545,7 @@
             "of",
             "in"
           ],
+          "promptJa": "私は遊びたい。",
           "prompt_ja": "空欄に入る語は？",
           "sentence_en": "I want ___ play.",
           "type": "fill_blank"
@@ -551,6 +558,7 @@
             "strong",
             "win"
           ],
+          "promptJa": "私は夜にゆっくり行く。",
           "prompt_ja": "空欄に入る語は？",
           "sentence_en": "I go ___ in the night.",
           "type": "fill_blank"
