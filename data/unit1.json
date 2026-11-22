@@ -1,0 +1,750 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "太陽と月の短い文が読め、自分のチャートについての一文が理解できる。",
+      "chartLine": {
+        "ja": "これが私のチャート。私の太陽は私の昼で、私の月は私の夜だ。",
+        "note_ja": "アプリでは学習者の実チャート（chart.js の計算結果）を表示しながらこの文を読む。太陽＝表の自分、月＝素の自分という読みの入口。",
+        "template_en": "This is my chart. My Sun is my day, and my Moon is my night."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "Sun＝太陽、light＝光、warm＝暖かい。",
+          "options": [
+            "太陽は光で、暖かい",
+            "月は静かだ",
+            "私は夜に穏やかだ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "The Sun is light and warm.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "quiet は「静かな」。月のイメージの語。",
+          "options": [
+            "静かな",
+            "暖かい",
+            "幸せな"
+          ],
+          "prompt_ja": "「quiet」の意味は？",
+          "question_en": "quiet",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "気持ちを言うときは feel。「I feel calm」で「穏やかな気持ちだ」。",
+          "options": [
+            "feel",
+            "am",
+            "is"
+          ],
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ calm in the night.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "I am happy in the day.",
+          "explanation_ja": "I am 〜 で「私は〜だ」。",
+          "prompt_ja": "語を並べ替えて「私は昼に幸せだ」という文を作ろう。",
+          "tiles": [
+            "happy",
+            "I",
+            "the day",
+            "am",
+            "in"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "planet は専門用語レイヤーの語。「a planet」で「一つの天体」。",
+          "options": [
+            "a",
+            "feel",
+            "my"
+          ],
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "The Moon is ___ planet.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "You are calm.",
+          "explanation_ja": "You の be動詞は are。",
+          "prompt_ja": "語を並べ替えて「あなたは穏やかだ」という文を作ろう。",
+          "tiles": [
+            "calm",
+            "are",
+            "You"
+          ],
+          "type": "reorder"
+        }
+      ],
+      "id": "lesson1_1",
+      "newTerms": [
+        {
+          "en": "Sun",
+          "ja": "太陽",
+          "note_ja": "占星術では天体（planet）の枠で扱う"
+        },
+        {
+          "en": "Moon",
+          "ja": "月",
+          "note_ja": "同上"
+        },
+        {
+          "en": "planet",
+          "ja": "天体",
+          "note_ja": "占星術で扱う太陽・月・惑星の総称として使う"
+        },
+        {
+          "en": "chart",
+          "ja": "チャート（出生図）",
+          "note_ja": "生まれた瞬間の星の配置図"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "the",
+          "ja": "（定冠詞）"
+        },
+        {
+          "en": "a",
+          "ja": "（不定冠詞）"
+        },
+        {
+          "en": "I",
+          "ja": "私"
+        },
+        {
+          "en": "you",
+          "ja": "あなた"
+        },
+        {
+          "en": "my",
+          "ja": "私の"
+        },
+        {
+          "en": "this",
+          "ja": "これ"
+        },
+        {
+          "en": "am",
+          "ja": "〜である（I の be動詞）"
+        },
+        {
+          "en": "is",
+          "ja": "〜である（単数の be動詞）"
+        },
+        {
+          "en": "are",
+          "ja": "〜である（複数・you の be動詞）"
+        },
+        {
+          "en": "and",
+          "ja": "そして"
+        },
+        {
+          "en": "in",
+          "ja": "〜の中に／〜で"
+        },
+        {
+          "en": "feel",
+          "ja": "感じる"
+        },
+        {
+          "en": "day",
+          "ja": "昼／日"
+        },
+        {
+          "en": "night",
+          "ja": "夜"
+        },
+        {
+          "en": "light",
+          "ja": "光"
+        },
+        {
+          "en": "warm",
+          "ja": "暖かい"
+        },
+        {
+          "en": "quiet",
+          "ja": "静かな"
+        },
+        {
+          "en": "happy",
+          "ja": "幸せな"
+        },
+        {
+          "en": "calm",
+          "ja": "穏やかな"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "X is 〜. / I am 〜. / I feel 〜.",
+      "sentences": [
+        {
+          "en": "The Sun is light and warm.",
+          "ja": "太陽は光で、暖かい。"
+        },
+        {
+          "en": "The Moon is quiet.",
+          "ja": "月は静かだ。"
+        },
+        {
+          "en": "I am happy in the day.",
+          "ja": "私は昼に幸せだ。"
+        },
+        {
+          "en": "I feel calm in the night.",
+          "ja": "私は夜に穏やかな気持ちになる。"
+        },
+        {
+          "en": "This is my chart.",
+          "ja": "これが私のチャートだ。"
+        },
+        {
+          "en": "My Sun and my Moon are in my chart.",
+          "ja": "私の太陽と月は、私のチャートの中にある。"
+        }
+      ],
+      "theme_ja": "太陽＝昼と光、月＝夜と静けさ。be動詞で「〜は〜だ」「私は〜だ」を言う。",
+      "title_en": "The Sun and the Moon",
+      "title_ja": "太陽と月 ― I am / I feel",
+      "wordsUsed": [
+        "the",
+        "a",
+        "I",
+        "you",
+        "my",
+        "this",
+        "am",
+        "is",
+        "are",
+        "and",
+        "in",
+        "feel",
+        "day",
+        "night",
+        "light",
+        "warm",
+        "quiet",
+        "happy",
+        "calm"
+      ]
+    },
+    {
+      "canDo_ja": "考えること・好きなものについて、短い文で言ったり聞いたりできる。",
+      "chartLine": {
+        "ja": "私は考え、話し、読む。これが私の水星。私は音楽が好きで、友達が大好きだ。これが私の金星。",
+        "note_ja": "アプリでは学習者の水星・金星の配置（星座は Unit 2 で接続）と並べて表示する想定。ここでは天体そのものの性格を自分の文として読む。",
+        "template_en": "I think, I speak, and I read. This is my Mercury. I like music, and I love my friends. This is my Venus."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "think＝考える、speak＝話す。水星のキーワード。",
+          "options": [
+            "私は考えて、話す",
+            "私は本を読んで、書く",
+            "私は音楽が好きだ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "I think and I speak.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "金星（Venus）のイメージの語。",
+          "options": [
+            "美しい",
+            "静かな",
+            "暖かい"
+          ],
+          "prompt_ja": "「beautiful」の意味は？",
+          "question_en": "beautiful",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "「〜が好きですか？」と聞くときは Do you like 〜?",
+          "options": [
+            "Do",
+            "Is",
+            "Feel"
+          ],
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___ you like music?",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "say＝言う。「言って、考える」は水星らしい動き。",
+          "options": [
+            "say",
+            "night",
+            "calm"
+          ],
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ and I think.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "金星は love（愛）の天体。",
+          "options": [
+            "love",
+            "night",
+            "day"
+          ],
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Venus is the planet of ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "I love my friends.",
+          "explanation_ja": "I love 〜 で「〜が大好き」。",
+          "prompt_ja": "語を並べ替えて「私は友達が大好きだ」という文を作ろう。",
+          "tiles": [
+            "my friends",
+            "love",
+            "I"
+          ],
+          "type": "reorder"
+        }
+      ],
+      "id": "lesson1_2",
+      "newTerms": [
+        {
+          "en": "Mercury",
+          "ja": "水星",
+          "note_ja": "言葉・思考・学びを象徴する天体"
+        },
+        {
+          "en": "Venus",
+          "ja": "金星",
+          "note_ja": "愛・美・好きを象徴する天体"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "do",
+          "ja": "〜しますか（疑問文の do）"
+        },
+        {
+          "en": "of",
+          "ja": "〜の"
+        },
+        {
+          "en": "with",
+          "ja": "〜と一緒に"
+        },
+        {
+          "en": "think",
+          "ja": "考える"
+        },
+        {
+          "en": "speak",
+          "ja": "話す"
+        },
+        {
+          "en": "say",
+          "ja": "言う"
+        },
+        {
+          "en": "talk",
+          "ja": "おしゃべりする"
+        },
+        {
+          "en": "word",
+          "ja": "言葉"
+        },
+        {
+          "en": "question",
+          "ja": "質問"
+        },
+        {
+          "en": "like",
+          "ja": "好き"
+        },
+        {
+          "en": "love",
+          "ja": "愛する／大好き"
+        },
+        {
+          "en": "beautiful",
+          "ja": "美しい"
+        },
+        {
+          "en": "friend",
+          "ja": "友達"
+        },
+        {
+          "en": "music",
+          "ja": "音楽"
+        },
+        {
+          "en": "book",
+          "ja": "本"
+        },
+        {
+          "en": "read",
+          "ja": "読む"
+        },
+        {
+          "en": "write",
+          "ja": "書く"
+        },
+        {
+          "en": "learn",
+          "ja": "学ぶ"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "I think 〜. / I like 〜. / Do you like 〜?",
+      "sentences": [
+        {
+          "en": "Mercury is the planet of words and questions.",
+          "ja": "水星は、言葉と質問の天体だ。"
+        },
+        {
+          "en": "I think and I speak.",
+          "ja": "私は考えて、話す。"
+        },
+        {
+          "en": "I read books and write words.",
+          "ja": "私は本を読み、言葉を書く。"
+        },
+        {
+          "en": "I learn words with books.",
+          "ja": "私は本で言葉を学ぶ。"
+        },
+        {
+          "en": "Venus is beautiful.",
+          "ja": "金星は美しい。"
+        },
+        {
+          "en": "I like music, and I love my friends.",
+          "ja": "私は音楽が好きで、友達が大好きだ。"
+        },
+        {
+          "en": "I talk with my friends.",
+          "ja": "私は友達とおしゃべりする。"
+        },
+        {
+          "en": "Do you like books?",
+          "ja": "あなたは本が好きですか？"
+        }
+      ],
+      "theme_ja": "水星＝言葉と考えること、金星＝好きと美しさ。think / like で自分の頭の中と好みを言う。",
+      "title_en": "Mercury and Venus",
+      "title_ja": "水星と金星 ― I think / I like",
+      "wordsUsed": [
+        "I",
+        "and",
+        "beautiful",
+        "book",
+        "calm",
+        "day",
+        "do",
+        "feel",
+        "friend",
+        "is",
+        "learn",
+        "like",
+        "love",
+        "music",
+        "my",
+        "night",
+        "of",
+        "question",
+        "read",
+        "say",
+        "speak",
+        "talk",
+        "the",
+        "think",
+        "this",
+        "with",
+        "word",
+        "write",
+        "you"
+      ]
+    },
+    {
+      "canDo_ja": "したいこと・できることを言え、Unit 1 の5天体の文が全部読める。",
+      "chartLine": {
+        "ja": "私は望み、できて、進む。私の火星は、私の中で強い。",
+        "note_ja": "断定を避けるため、chartLine の日本語訳では「〜かもしれない」の読みを併記できる設計にする（例文の英語自体は文型練習として簡潔に保つ）。アプリでは学習者の火星の配置と並べて表示する。",
+        "template_en": "I want, I can, and I go. My Mars is strong in me."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "want to 〜 で「〜したい」。火星の欲望の文型。",
+          "options": [
+            "私は走りたい",
+            "私は速く走れる",
+            "私は今始める"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "I want to run.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "strong は火星のキーワード。",
+          "options": [
+            "強い",
+            "速い",
+            "美しい"
+          ],
+          "prompt_ja": "「strong」の意味は？",
+          "question_en": "strong",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "begin（始める）の反対が stop。",
+          "options": [
+            "止まる",
+            "始める",
+            "勝つ"
+          ],
+          "prompt_ja": "「stop」の意味は？",
+          "question_en": "stop",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "「〜できる」は can。I can run fast. で「速く走れる」。",
+          "options": [
+            "can",
+            "night",
+            "beautiful"
+          ],
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ run fast.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "want の後ろは to ＋動詞。want to play。",
+          "options": [
+            "to",
+            "of",
+            "in"
+          ],
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I want ___ play.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "slow は「ゆっくり」。fast の反対。",
+          "options": [
+            "slow",
+            "strong",
+            "win"
+          ],
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I go ___ in the night.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "My Mars is strong.",
+          "explanation_ja": "Unit 1 の総復習。My 〜 is 〜 の形。",
+          "prompt_ja": "語を並べ替えて「私の火星は強い」という文を作ろう。",
+          "tiles": [
+            "strong",
+            "My Mars",
+            "is"
+          ],
+          "type": "reorder"
+        }
+      ],
+      "id": "lesson1_3",
+      "newTerms": [
+        {
+          "en": "Mars",
+          "ja": "火星",
+          "note_ja": "行動・欲望・闘い方を象徴する天体"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "want",
+          "ja": "〜したい"
+        },
+        {
+          "en": "to",
+          "ja": "〜すること（to 不定詞）"
+        },
+        {
+          "en": "can",
+          "ja": "〜できる"
+        },
+        {
+          "en": "go",
+          "ja": "行く"
+        },
+        {
+          "en": "run",
+          "ja": "走る"
+        },
+        {
+          "en": "make",
+          "ja": "作る／〜にする"
+        },
+        {
+          "en": "get",
+          "ja": "得る／〜になる"
+        },
+        {
+          "en": "me",
+          "ja": "私を／私に"
+        },
+        {
+          "en": "fast",
+          "ja": "速い／速く"
+        },
+        {
+          "en": "slow",
+          "ja": "遅い／ゆっくり"
+        },
+        {
+          "en": "strong",
+          "ja": "強い"
+        },
+        {
+          "en": "work",
+          "ja": "働く／作業する"
+        },
+        {
+          "en": "play",
+          "ja": "遊ぶ"
+        },
+        {
+          "en": "begin",
+          "ja": "始める"
+        },
+        {
+          "en": "stop",
+          "ja": "止まる／止める"
+        },
+        {
+          "en": "win",
+          "ja": "勝つ"
+        },
+        {
+          "en": "now",
+          "ja": "今"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "I want to 〜. / I can 〜.",
+      "sentences": [
+        {
+          "en": "Mars is strong.",
+          "ja": "火星は強い。"
+        },
+        {
+          "en": "I want to run.",
+          "ja": "私は走りたい。"
+        },
+        {
+          "en": "I can run fast.",
+          "ja": "私は速く走れる。"
+        },
+        {
+          "en": "I run and get strong.",
+          "ja": "私は走って、強くなる。"
+        },
+        {
+          "en": "I work and I play.",
+          "ja": "私は働いて、遊ぶ。"
+        },
+        {
+          "en": "I play and I win.",
+          "ja": "私は遊んで、勝つ。"
+        },
+        {
+          "en": "I begin now, and I go.",
+          "ja": "私は今始めて、進む。"
+        },
+        {
+          "en": "My Mars can make me strong.",
+          "ja": "私の火星は、私を強くしてくれるかもしれない。"
+        },
+        {
+          "en": "Do you want to play?",
+          "ja": "あなたは遊びたいですか？"
+        }
+      ],
+      "theme_ja": "火星＝欲しい・動く・闘う力。want to と can で「したいこと」「できること」を言う。Unit 1 の総復習。",
+      "title_en": "Mars",
+      "title_ja": "火星 ― I want / I can",
+      "wordsUsed": [
+        "I",
+        "and",
+        "beautiful",
+        "begin",
+        "can",
+        "do",
+        "fast",
+        "get",
+        "go",
+        "in",
+        "is",
+        "make",
+        "me",
+        "my",
+        "night",
+        "now",
+        "of",
+        "play",
+        "run",
+        "slow",
+        "stop",
+        "strong",
+        "the",
+        "to",
+        "want",
+        "win",
+        "work",
+        "you"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-22",
+    "id": "unit1",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "専門用語（terms）は1,500語とは別レイヤーとして分離して数える。",
+      "複数形（books, friends, words など）は原形と同一語として数える。",
+      "wordsUsed に含まれない導入済み語は、そのレッスンでは使っていない（使用可の蓄積＝累計バンクは別途 words.json で管理予定）。",
+      "範囲外の一般語があれば outOfScope に明示する。本ユニットでは全レッスン outOfScope は空（0語）。"
+    ],
+    "order": 1,
+    "status": "draft",
+    "theme_ja": "太陽・月・水星・金星・火星を題材に、be動詞と基本動詞で「自分のこと」を言う文を作る。",
+    "title_en": "Planets",
+    "title_ja": "惑星 ― 自分のことを話す",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson1_1": 19,
+        "lesson1_2": 18,
+        "lesson1_3": 17
+      },
+      "newGeneralWordsTotal": 54,
+      "newTermsTotal": 7
+    }
+  }
+}
