@@ -432,7 +432,8 @@
     var pct = Math.round(session.doneCount / lesson.exercises.length * 100);
     var html = '<div class="quiz-progress"><div style="width:' + pct + '%"></div></div>' +
       '<p class="prompt-ja">' + esc(lesson.title_en) + ' — ' + session.doneCount + ' / ' + lesson.exercises.length + ' 問</p>' +
-      '<p class="prompt-ja">' + esc(ex.prompt_ja) + '</p>';
+      '<p class="prompt-ja">' + esc(ex.prompt_ja) + '</p>' +
+      (ex.promptJa ? '<p class="prompt-ja prompt-target">日本語の文：' + esc(ex.promptJa) + '</p>' : '');
 
     if (ex.type === 'multiple_choice' || ex.type === 'fill_blank') {
       var q = ex.question_en || ex.sentence_en;
