@@ -1,0 +1,1821 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "第1〜4ハウスの担当を be about 〜 の文で読み、「私の月は第4ハウスにある」のような配置の文が読める。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にある。あなたの月は、家の静かな部屋で心地よく感じるかもしれない。",
+        "note_ja": "アプリでは学習者の実際の月星座を当てはめる。ハウスとアセンダントは出生時刻が必要で、既存の置換仕様にもプレースホルダがないため、月星座の一文に第4ハウスのテーマ（家・心地よさ）を重ねて読む。",
+        "template_en": "Your Moon is in {moonSign}. Your Moon may feel comfortable at home, in a quiet room."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "be in ＋ the 4th house で「第4ハウスにある」。星座の be in と同じ文型でハウスも読める。",
+          "options": [
+            "私の月は、私の第4ハウスにある",
+            "私の月は、4つの家の中にある",
+            "私の月は、私の第4ハウスから遠い"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "My Moon is in my 4th house.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "ascendant（ASC）は第一印象や外向きの顔を象徴すると読まれる点。出生時刻がないと計算できない。",
+          "options": [
+            "アセンダント（生まれた瞬間に東の地平線にあった星座）",
+            "ハウスとハウスの境界線",
+            "天体の度数"
+          ],
+          "prompt_ja": "「ascendant」の意味は？",
+          "question_en": "ascendant",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "be about 〜 で「〜についてのものだ」。ハウスの担当を言うときの基本の形。",
+          "options": [
+            "about",
+            "by",
+            "as"
+          ],
+          "promptJa": "第2ハウスはお金と価値についてのハウスだ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "The 2nd house is ___ money and value.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "which は「どの」。Which house 〜? で「どのハウスに〜？」と尋ねる。",
+          "options": [
+            "Which",
+            "These",
+            "Both"
+          ],
+          "promptJa": "あなたの太陽はどのハウスにある？",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___ house is your Sun in?",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "I feel comfortable in my own room.",
+          "explanation_ja": "I feel 〜 のあとに comfortable（心地よい）、最後に場所 in my own room。",
+          "prompt_ja": "語を並べ替えて「私は自分の部屋で心地よく感じる」という文を作ろう。",
+          "tiles": [
+            "in my own room",
+            "I",
+            "comfortable",
+            "feel"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。might で言い切らず、Be honest（正直に）と pay for what you really need（本当に必要なものに払う）で結ぶ。",
+          "options": [
+            "今月はお金のことで不安になるかもしれない。正直になり、本当に必要なものにお金を払おう",
+            "今月はお金がたくさん入るので、好きなだけ使おう",
+            "今月はお金のことを考えないほうがいい"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You might feel anxious about money this month. Be honest, and pay for what you really need.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "by は「〜によって」。by your own work で「自分自身の仕事によって」。",
+          "options": [
+            "by",
+            "then",
+            "its"
+          ],
+          "promptJa": "あなたは自分自身の仕事によってお金を稼ぐ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You earn money ___ your own work.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson5_1",
+      "newTerms": [
+        {
+          "en": "house",
+          "ja": "ハウス",
+          "note_ja": "出生図を12に分けた「生活の場面」の区分で、家庭、仕事、人間関係などテーマごとに担当が決まっている。出生時刻と場所から計算する。"
+        },
+        {
+          "en": "ascendant",
+          "ja": "アセンダント（ASC）",
+          "note_ja": "生まれた瞬間に東の地平線にあった星座。第一印象や外向きの顔を象徴すると読まれる。出生時刻が正確でないと計算できない。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "which",
+          "ja": "どの／どちらの"
+        },
+        {
+          "en": "these",
+          "ja": "これらの"
+        },
+        {
+          "en": "those",
+          "ja": "あれらの／それらの"
+        },
+        {
+          "en": "by",
+          "ja": "〜によって"
+        },
+        {
+          "en": "as",
+          "ja": "〜として"
+        },
+        {
+          "en": "then",
+          "ja": "それから／次に"
+        },
+        {
+          "en": "both",
+          "ja": "両方の（both A and B で「A も B も」）"
+        },
+        {
+          "en": "another",
+          "ja": "別の／もう一つの"
+        },
+        {
+          "en": "us",
+          "ja": "私たちを／私たちに"
+        },
+        {
+          "en": "our",
+          "ja": "私たちの"
+        },
+        {
+          "en": "its",
+          "ja": "その（it の所有格）"
+        },
+        {
+          "en": "little",
+          "ja": "小さな／少しの（a little で「少し」）"
+        },
+        {
+          "en": "lot",
+          "ja": "たくさん（a lot で「たくさん」）"
+        },
+        {
+          "en": "really",
+          "ja": "本当に"
+        },
+        {
+          "en": "face",
+          "ja": "顔"
+        },
+        {
+          "en": "clothes",
+          "ja": "服"
+        },
+        {
+          "en": "wear",
+          "ja": "着る（過去形 wore）"
+        },
+        {
+          "en": "style",
+          "ja": "スタイル／流儀"
+        },
+        {
+          "en": "pay",
+          "ja": "支払う（過去形 paid）"
+        },
+        {
+          "en": "buy",
+          "ja": "買う（過去形 bought）"
+        },
+        {
+          "en": "spend",
+          "ja": "使う／費やす（過去形 spent）"
+        },
+        {
+          "en": "save",
+          "ja": "ためる／節約する"
+        },
+        {
+          "en": "earn",
+          "ja": "稼ぐ"
+        },
+        {
+          "en": "value",
+          "ja": "価値"
+        },
+        {
+          "en": "price",
+          "ja": "値段"
+        },
+        {
+          "en": "phone",
+          "ja": "電話"
+        },
+        {
+          "en": "news",
+          "ja": "知らせ／ニュース"
+        },
+        {
+          "en": "brother",
+          "ja": "兄弟"
+        },
+        {
+          "en": "sister",
+          "ja": "姉妹"
+        },
+        {
+          "en": "neighbor",
+          "ja": "隣人"
+        },
+        {
+          "en": "short",
+          "ja": "短い"
+        },
+        {
+          "en": "language",
+          "ja": "言語"
+        },
+        {
+          "en": "room",
+          "ja": "部屋"
+        },
+        {
+          "en": "door",
+          "ja": "扉／ドア"
+        },
+        {
+          "en": "window",
+          "ja": "窓"
+        },
+        {
+          "en": "kitchen",
+          "ja": "台所"
+        },
+        {
+          "en": "table",
+          "ja": "テーブル"
+        },
+        {
+          "en": "bed",
+          "ja": "ベッド"
+        },
+        {
+          "en": "parent",
+          "ja": "親"
+        },
+        {
+          "en": "garden",
+          "ja": "庭"
+        },
+        {
+          "en": "private",
+          "ja": "私的な／プライベートな"
+        },
+        {
+          "en": "base",
+          "ja": "土台／拠点"
+        },
+        {
+          "en": "area",
+          "ja": "領域／分野"
+        },
+        {
+          "en": "embarrassed",
+          "ja": "恥ずかしい（人目が気になる）"
+        },
+        {
+          "en": "curious",
+          "ja": "好奇心のある"
+        },
+        {
+          "en": "comfortable",
+          "ja": "心地よい"
+        },
+        {
+          "en": "homesick",
+          "ja": "家が恋しい"
+        },
+        {
+          "en": "satisfied",
+          "ja": "満足した"
+        },
+        {
+          "en": "honest",
+          "ja": "正直な"
+        },
+        {
+          "en": "anxious",
+          "ja": "不安な"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "The 4th house is about 〜. / My Moon is in my 4th house.",
+      "sentences": [
+        {
+          "en": "Your chart has 12 houses.",
+          "ja": "あなたのチャートには12のハウスがある。"
+        },
+        {
+          "en": "Each house is an area of your life.",
+          "ja": "それぞれのハウスは、あなたの人生の一つの領域だ。"
+        },
+        {
+          "en": "The 1st house is about you: your face, your body, and your style.",
+          "ja": "第1ハウスはあなたについてのハウスだ。あなたの顔、体、そしてスタイル。"
+        },
+        {
+          "en": "Your ascendant is the door to your chart.",
+          "ja": "あなたのアセンダントは、あなたのチャートへの扉だ。"
+        },
+        {
+          "en": "Think of your ascendant as the clothes you wear.",
+          "ja": "アセンダントを、あなたが着る服だと考えてみよう。"
+        },
+        {
+          "en": "People often see your ascendant first.",
+          "ja": "人はよく、あなたのアセンダントを最初に見る。"
+        },
+        {
+          "en": "Your ascendant needs a birth time.",
+          "ja": "あなたのアセンダントには出生時刻が必要だ。"
+        },
+        {
+          "en": "First, find your ascendant. Then, find your houses.",
+          "ja": "まず、アセンダントを見つけよう。それから、ハウスを見つけよう。"
+        },
+        {
+          "en": "The 2nd house is about money and value.",
+          "ja": "第2ハウスはお金と価値についてのハウスだ。"
+        },
+        {
+          "en": "What do you buy, and what do you save?",
+          "ja": "あなたは何を買い、何をためる？"
+        },
+        {
+          "en": "You may spend a lot on little things.",
+          "ja": "あなたは小さなものにたくさんお金を使うかもしれない。"
+        },
+        {
+          "en": "You earn money by your own work.",
+          "ja": "あなたは自分自身の仕事によってお金を稼ぐ。"
+        },
+        {
+          "en": "The price of a thing is not its value.",
+          "ja": "ものの値段は、その価値ではない。"
+        },
+        {
+          "en": "Pay for what you really need.",
+          "ja": "本当に必要なものにお金を払おう。"
+        },
+        {
+          "en": "The 3rd house is about words, phone calls, and news.",
+          "ja": "第3ハウスは言葉、電話、知らせについてのハウスだ。"
+        },
+        {
+          "en": "Your brother, your sister, and your neighbor are in this house.",
+          "ja": "あなたの兄弟、姉妹、隣人はこのハウスにいる。"
+        },
+        {
+          "en": "Short trips and a new language are also in the 3rd house.",
+          "ja": "短い旅と新しい言語も第3ハウスにある。"
+        },
+        {
+          "en": "Both my brother and my sister are kind.",
+          "ja": "私の兄弟も姉妹も優しい。"
+        },
+        {
+          "en": "The 4th house is about home, family, and roots.",
+          "ja": "第4ハウスは家、家族、そして根っこについてのハウスだ。"
+        },
+        {
+          "en": "My Moon is in my 4th house.",
+          "ja": "私の月は、私の第4ハウスにある。"
+        },
+        {
+          "en": "Your parents may be the base of your 4th house.",
+          "ja": "あなたの親は、あなたの第4ハウスの土台かもしれない。"
+        },
+        {
+          "en": "Our kitchen table is the heart of our home.",
+          "ja": "私たちの台所のテーブルは、私たちの家の中心だ。"
+        },
+        {
+          "en": "My family helps us when we are tired.",
+          "ja": "私たちが疲れているとき、家族は私たちを助けてくれる。"
+        },
+        {
+          "en": "I feel comfortable in my own room.",
+          "ja": "私は自分の部屋で心地よく感じる。"
+        },
+        {
+          "en": "Open the window, and look at the garden.",
+          "ja": "窓を開けて、庭を見よう。"
+        },
+        {
+          "en": "The 4th house is private, like your bed at night.",
+          "ja": "第4ハウスは、夜のベッドのようにプライベートなものだ。"
+        },
+        {
+          "en": "Far from home, I sometimes feel homesick.",
+          "ja": "家から遠く離れると、私はときどき家が恋しくなる。"
+        },
+        {
+          "en": "These houses are about you and your home.",
+          "ja": "これらのハウスは、あなたとあなたの家についてのハウスだ。"
+        },
+        {
+          "en": "Which house is your Sun in?",
+          "ja": "あなたの太陽はどのハウスにある？"
+        },
+        {
+          "en": "Another planet may be in the same house.",
+          "ja": "別の天体が同じハウスにあるかもしれない。"
+        },
+        {
+          "en": "Those words are really kind.",
+          "ja": "それらの言葉は本当に優しい。"
+        },
+        {
+          "en": "I feel embarrassed when people look at my face.",
+          "ja": "人に顔を見られると、私は恥ずかしく感じる。"
+        },
+        {
+          "en": "I am curious about my 3rd house.",
+          "ja": "私は自分の第3ハウスに興味がある。"
+        },
+        {
+          "en": "I feel satisfied with a simple life.",
+          "ja": "私はシンプルな暮らしに満足している。"
+        },
+        {
+          "en": "Be honest about money.",
+          "ja": "お金については正直でいよう。"
+        },
+        {
+          "en": "You might feel anxious about money this month.",
+          "ja": "今月はお金のことで不安になるかもしれない。"
+        }
+      ],
+      "theme_ja": "ハウスとアセンダントを学び、第1〜4ハウス（自分・お金・言葉・家）を読む。be about 〜（〜についてのものだ）でハウスの担当を言い、be in で天体がどのハウスにあるかを言う。",
+      "title_en": "Houses of Self and Home",
+      "title_ja": "自分と家のハウス ― 〜 is about 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "also",
+        "am",
+        "and",
+        "another",
+        "anxious",
+        "are",
+        "area",
+        "as",
+        "at",
+        "base",
+        "be",
+        "bed",
+        "birth",
+        "body",
+        "both",
+        "brother",
+        "buy",
+        "by",
+        "call",
+        "clothes",
+        "comfortable",
+        "curious",
+        "do",
+        "door",
+        "each",
+        "earn",
+        "embarrassed",
+        "face",
+        "family",
+        "far",
+        "feel",
+        "find",
+        "first",
+        "for",
+        "from",
+        "garden",
+        "have",
+        "heart",
+        "help",
+        "home",
+        "homesick",
+        "honest",
+        "I",
+        "in",
+        "is",
+        "its",
+        "kind",
+        "kitchen",
+        "language",
+        "life",
+        "like",
+        "little",
+        "look",
+        "lot",
+        "may",
+        "might",
+        "money",
+        "month",
+        "my",
+        "need",
+        "neighbor",
+        "new",
+        "news",
+        "night",
+        "not",
+        "of",
+        "often",
+        "on",
+        "open",
+        "our",
+        "own",
+        "parent",
+        "pay",
+        "people",
+        "phone",
+        "price",
+        "private",
+        "quiet",
+        "really",
+        "room",
+        "root",
+        "same",
+        "satisfied",
+        "save",
+        "see",
+        "short",
+        "simple",
+        "sister",
+        "sometimes",
+        "spend",
+        "style",
+        "table",
+        "the",
+        "then",
+        "these",
+        "thing",
+        "think",
+        "this",
+        "those",
+        "time",
+        "tired",
+        "to",
+        "trip",
+        "us",
+        "value",
+        "we",
+        "wear",
+        "what",
+        "when",
+        "which",
+        "window",
+        "with",
+        "word",
+        "work",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "第5〜8ハウスの担当を 〜 is where you 〜 の文で読み、he／she／his／her を使った人間関係の文が読める。",
+      "chartLine": {
+        "ja": "あなたの金星は{venusSignJa}にある。あなたの金星は、あなたがパートナーをどう愛するかを映すかもしれない。",
+        "note_ja": "アプリでは学習者の実際の金星星座を当てはめる。第7ハウス（パートナー）のテーマを、愛の天体である金星の配置から読む入口にする。may で断定を避ける。",
+        "template_en": "Your Venus is in {venusSign}. Your Venus may show how you love a partner."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "〜 is where you 〜 で「〜は、あなたが〜する場所だ」。ハウスの担当を場面として言う形。",
+          "options": [
+            "第7ハウスは、あなたがパートナーと出会う場所だ",
+            "第7ハウスは、あなたが毎日働く場所だ",
+            "第7ハウスは、あなたが一人で休む場所だ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "The 7th house is where you meet a partner.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "routine は「日課」。daily routine（毎日の日課）は第6ハウスのテーマ。",
+          "options": [
+            "日課（毎日決まってすること）",
+            "特別な日",
+            "新しい趣味"
+          ],
+          "prompt_ja": "「routine」の意味は？",
+          "question_en": "routine",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "「彼女は」は she。he（彼は）、his（彼の）、her（彼女の）と区別する。",
+          "options": [
+            "she",
+            "he",
+            "his"
+          ],
+          "promptJa": "彼は彼女の夫で、彼女は彼の妻だ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "He is her husband, and ___ is his wife.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "until は「〜するまで」。while（〜しているあいだに）と区別する。",
+          "options": [
+            "until",
+            "while",
+            "between"
+          ],
+          "promptJa": "準備ができたと感じるまで待とう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Wait ___ you feel ready.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Small habits can make you healthy.",
+          "explanation_ja": "make ＋ 人 ＋ 形容詞 で「人を〜にする」。can で「〜することがある」。",
+          "prompt_ja": "語を並べ替えて「小さな習慣が、あなたを健康にすることがある」という文を作ろう。",
+          "tiles": [
+            "can make",
+            "Small habits",
+            "healthy",
+            "you"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。may で言い切らず、do not need to 〜（〜しなくていい）で休むことを肯定する。",
+          "options": [
+            "今日は仕事でいらだつかもしれない。休むことに罪悪感を持たなくていい",
+            "今日は仕事がうまくいくので、休まずに働こう",
+            "今日は仕事でいらだつので、誰にも会わないほうがいい"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You may feel frustrated at work today. You do not need to feel guilty about rest.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "between A and B で「A と B のあいだに」。",
+          "options": [
+            "between",
+            "until",
+            "such"
+          ],
+          "promptJa": "仕事と愛のあいだでバランスを見つけよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Find a balance ___ work and love.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson5_2",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "he",
+          "ja": "彼は"
+        },
+        {
+          "en": "she",
+          "ja": "彼女は"
+        },
+        {
+          "en": "him",
+          "ja": "彼を／彼に"
+        },
+        {
+          "en": "her",
+          "ja": "彼女の／彼女を"
+        },
+        {
+          "en": "his",
+          "ja": "彼の"
+        },
+        {
+          "en": "between",
+          "ja": "〜のあいだに"
+        },
+        {
+          "en": "while",
+          "ja": "〜しているあいだに"
+        },
+        {
+          "en": "until",
+          "ja": "〜するまで"
+        },
+        {
+          "en": "such",
+          "ja": "そのような"
+        },
+        {
+          "en": "almost",
+          "ja": "ほとんど／もう少しで"
+        },
+        {
+          "en": "already",
+          "ja": "すでに"
+        },
+        {
+          "en": "anyone",
+          "ja": "誰でも"
+        },
+        {
+          "en": "anything",
+          "ja": "何でも／（否定文で）何も"
+        },
+        {
+          "en": "partner",
+          "ja": "パートナー"
+        },
+        {
+          "en": "marry",
+          "ja": "結婚する"
+        },
+        {
+          "en": "husband",
+          "ja": "夫"
+        },
+        {
+          "en": "wife",
+          "ja": "妻"
+        },
+        {
+          "en": "date",
+          "ja": "デート"
+        },
+        {
+          "en": "create",
+          "ja": "創り出す"
+        },
+        {
+          "en": "hobby",
+          "ja": "趣味"
+        },
+        {
+          "en": "fun",
+          "ja": "楽しみ"
+        },
+        {
+          "en": "game",
+          "ja": "ゲーム／遊び"
+        },
+        {
+          "en": "party",
+          "ja": "パーティー"
+        },
+        {
+          "en": "baby",
+          "ja": "赤ちゃん"
+        },
+        {
+          "en": "habit",
+          "ja": "習慣"
+        },
+        {
+          "en": "daily",
+          "ja": "毎日の"
+        },
+        {
+          "en": "routine",
+          "ja": "日課"
+        },
+        {
+          "en": "task",
+          "ja": "作業／務め"
+        },
+        {
+          "en": "office",
+          "ja": "職場／オフィス"
+        },
+        {
+          "en": "doctor",
+          "ja": "医者"
+        },
+        {
+          "en": "sick",
+          "ja": "病気の／具合が悪い"
+        },
+        {
+          "en": "exercise",
+          "ja": "運動する"
+        },
+        {
+          "en": "healthy",
+          "ja": "健康な"
+        },
+        {
+          "en": "pet",
+          "ja": "ペット"
+        },
+        {
+          "en": "borrow",
+          "ja": "借りる"
+        },
+        {
+          "en": "lend",
+          "ja": "貸す（過去形 lent）"
+        },
+        {
+          "en": "risk",
+          "ja": "リスク／危険"
+        },
+        {
+          "en": "close",
+          "ja": "親しい（閉じる、の意味もある）"
+        },
+        {
+          "en": "promise",
+          "ja": "約束"
+        },
+        {
+          "en": "relationship",
+          "ja": "関係"
+        },
+        {
+          "en": "equal",
+          "ja": "対等な"
+        },
+        {
+          "en": "support",
+          "ja": "支える"
+        },
+        {
+          "en": "busy",
+          "ja": "忙しい"
+        },
+        {
+          "en": "cheerful",
+          "ja": "朗らかな"
+        },
+        {
+          "en": "frustrated",
+          "ja": "いらだった"
+        },
+        {
+          "en": "tender",
+          "ja": "優しい／いたわるような"
+        },
+        {
+          "en": "respect",
+          "ja": "尊重する"
+        },
+        {
+          "en": "guilty",
+          "ja": "罪悪感のある"
+        },
+        {
+          "en": "warmth",
+          "ja": "ぬくもり"
+        },
+        {
+          "en": "sensitive",
+          "ja": "繊細な／敏感な"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "The 7th house is where you meet 〜. / 〜 is where you 〜.",
+      "sentences": [
+        {
+          "en": "The 5th house is where you play and create.",
+          "ja": "第5ハウスは、あなたが遊び、創り出す場所だ。"
+        },
+        {
+          "en": "Art, games, and hobbies are in the 5th house.",
+          "ja": "芸術、ゲーム、趣味は第5ハウスにある。"
+        },
+        {
+          "en": "Love and fun are in this house, too.",
+          "ja": "愛と楽しみも、このハウスにある。"
+        },
+        {
+          "en": "A date can feel like a party.",
+          "ja": "デートはパーティーのように感じられることがある。"
+        },
+        {
+          "en": "A baby, or a child's smile, may bring you joy.",
+          "ja": "赤ちゃんや子どもの笑顔が、あなたに喜びを運ぶかもしれない。"
+        },
+        {
+          "en": "The 6th house is where you work every day.",
+          "ja": "第6ハウスは、あなたが毎日働く場所だ。"
+        },
+        {
+          "en": "Your daily routine is in the 6th house.",
+          "ja": "あなたの毎日の日課は第6ハウスにある。"
+        },
+        {
+          "en": "Small habits can make you healthy.",
+          "ja": "小さな習慣が、あなたを健康にすることがある。"
+        },
+        {
+          "en": "Exercise in the morning, and rest at night.",
+          "ja": "朝に運動して、夜は休もう。"
+        },
+        {
+          "en": "If you feel sick, go to a doctor.",
+          "ja": "具合が悪いと感じたら、医者に行こう。"
+        },
+        {
+          "en": "My pet waits for me at home.",
+          "ja": "私のペットは家で私を待っている。"
+        },
+        {
+          "en": "I am busy at the office, with many tasks.",
+          "ja": "私は職場で、たくさんの作業で忙しい。"
+        },
+        {
+          "en": "The 7th house is where you meet a partner.",
+          "ja": "第7ハウスは、あなたがパートナーと出会う場所だ。"
+        },
+        {
+          "en": "Some people marry, and some people do not.",
+          "ja": "結婚する人もいれば、しない人もいる。"
+        },
+        {
+          "en": "He is her husband, and she is his wife.",
+          "ja": "彼は彼女の夫で、彼女は彼の妻だ。"
+        },
+        {
+          "en": "In a good relationship, both people are equal.",
+          "ja": "良い関係では、二人とも対等だ。"
+        },
+        {
+          "en": "Support him, and let him support you.",
+          "ja": "彼を支え、彼にもあなたを支えさせよう。"
+        },
+        {
+          "en": "Keep your promise to your partner.",
+          "ja": "パートナーとの約束を守ろう。"
+        },
+        {
+          "en": "The 8th house is where you share deep things.",
+          "ja": "第8ハウスは、あなたが深いものを分かち合う場所だ。"
+        },
+        {
+          "en": "The 8th house is also about money you borrow or lend.",
+          "ja": "第8ハウスは、あなたが借りたり貸したりするお金についてのハウスでもある。"
+        },
+        {
+          "en": "Only close friends can see your shadow.",
+          "ja": "親しい友達だけが、あなたの影を見ることができる。"
+        },
+        {
+          "en": "Trust is a risk, but it is also a gift.",
+          "ja": "信頼はリスクだが、贈り物でもある。"
+        },
+        {
+          "en": "Find a balance between work and love.",
+          "ja": "仕事と愛のあいだでバランスを見つけよう。"
+        },
+        {
+          "en": "Rest while you can.",
+          "ja": "休めるあいだに休もう。"
+        },
+        {
+          "en": "Wait until you feel ready.",
+          "ja": "準備ができたと感じるまで待とう。"
+        },
+        {
+          "en": "You do not need such hard rules.",
+          "ja": "あなたにはそんなに厳しいルールは必要ない。"
+        },
+        {
+          "en": "You are almost ready.",
+          "ja": "あなたはもう少しで準備ができる。"
+        },
+        {
+          "en": "You already have enough.",
+          "ja": "あなたはすでに十分なものを持っている。"
+        },
+        {
+          "en": "Anyone can make a mistake.",
+          "ja": "誰でも間違えることはある。"
+        },
+        {
+          "en": "You do not need to say anything.",
+          "ja": "あなたは何も言わなくていい。"
+        },
+        {
+          "en": "A cheerful friend makes the day bright.",
+          "ja": "朗らかな友達は、一日を明るくする。"
+        },
+        {
+          "en": "You may feel frustrated at work today.",
+          "ja": "今日は仕事でいらだつかもしれない。"
+        },
+        {
+          "en": "Be tender with your own heart.",
+          "ja": "自分自身の心に優しくしよう。"
+        },
+        {
+          "en": "Respect your partner's time.",
+          "ja": "パートナーの時間を尊重しよう。"
+        },
+        {
+          "en": "You do not need to feel guilty about rest.",
+          "ja": "休むことに罪悪感を持たなくていい。"
+        },
+        {
+          "en": "Feel the warmth of your home.",
+          "ja": "あなたの家のぬくもりを感じよう。"
+        },
+        {
+          "en": "You are sensitive, and that is a good thing.",
+          "ja": "あなたは繊細で、それは良いことだ。"
+        }
+      ],
+      "theme_ja": "第5〜8ハウス（遊びと創造・毎日の仕事と健康・パートナー・深い絆）を読む。〜 is where you 〜（〜はあなたが〜する場所だ）でハウスを生活の場面として言い、he／she などの人称で人と人の関係を読む。",
+      "title_en": "Houses of Work and Partners",
+      "title_ja": "仕事と人のハウス ― 〜 is where you 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "almost",
+        "already",
+        "also",
+        "am",
+        "and",
+        "anyone",
+        "anything",
+        "are",
+        "art",
+        "at",
+        "baby",
+        "balance",
+        "be",
+        "between",
+        "borrow",
+        "both",
+        "bright",
+        "bring",
+        "busy",
+        "but",
+        "can",
+        "cheerful",
+        "child",
+        "close",
+        "create",
+        "daily",
+        "date",
+        "day",
+        "deep",
+        "do",
+        "doctor",
+        "enough",
+        "equal",
+        "every",
+        "exercise",
+        "feel",
+        "find",
+        "for",
+        "friend",
+        "frustrated",
+        "fun",
+        "game",
+        "gift",
+        "go",
+        "good",
+        "guilty",
+        "habit",
+        "hard",
+        "have",
+        "he",
+        "healthy",
+        "heart",
+        "her",
+        "him",
+        "his",
+        "hobby",
+        "home",
+        "how",
+        "husband",
+        "I",
+        "if",
+        "in",
+        "is",
+        "it",
+        "joy",
+        "keep",
+        "lend",
+        "let",
+        "like",
+        "love",
+        "make",
+        "many",
+        "marry",
+        "may",
+        "me",
+        "meet",
+        "mistake",
+        "money",
+        "morning",
+        "my",
+        "need",
+        "night",
+        "not",
+        "of",
+        "office",
+        "only",
+        "or",
+        "own",
+        "partner",
+        "party",
+        "people",
+        "pet",
+        "play",
+        "promise",
+        "ready",
+        "relationship",
+        "respect",
+        "rest",
+        "risk",
+        "routine",
+        "rule",
+        "say",
+        "see",
+        "sensitive",
+        "shadow",
+        "share",
+        "she",
+        "show",
+        "sick",
+        "small",
+        "smile",
+        "some",
+        "such",
+        "support",
+        "task",
+        "tender",
+        "that",
+        "the",
+        "thing",
+        "this",
+        "time",
+        "to",
+        "today",
+        "too",
+        "trust",
+        "until",
+        "wait",
+        "warmth",
+        "where",
+        "while",
+        "wife",
+        "with",
+        "work",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "第9〜12ハウスとミッドヘブンの意味がわかり、It is okay to 〜 を使った Co-Star 風のリーディング文が辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にある。今日は仕事のことで不安になるかもしれない。休んで、あとでまた試してもいい。",
+        "note_ja": "Unit 5 の到達点。アプリでは学習者の実際の太陽星座を当てはめ、Co-Star 風の短いリーディングとして提示する。第10ハウス（キャリア）の場面を、might で言い切らずに読み、It is okay to 〜 で無理をさせない形で結ぶ。",
+        "template_en": "Your Sun is in {sunSign}. You might feel anxious about work today. It is okay to rest and try again later."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "It is okay to 〜 で「〜してもいい」。Co-Star のリーディングで頻出の、相手を追い詰めない言い方。",
+          "options": [
+            "今日は休んでもいい",
+            "今日は休んではいけない",
+            "今日は休む時間がない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "It is okay to rest today.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "midheaven（MC）は出生時に南中していた点。チャートのいちばん上にあり、第10ハウスの入口になる。",
+          "options": [
+            "ミッドヘブン（社会的な顔や目指す立場を象徴すると読まれる点）",
+            "アセンダント（第一印象を象徴すると読まれる点）",
+            "第12ハウス（休息と静けさの場面）"
+          ],
+          "prompt_ja": "「midheaven」の意味は？",
+          "question_en": "midheaven",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "yet は否定文で「まだ」。not 〜 yet で「まだ〜ない」。",
+          "options": [
+            "yet",
+            "once",
+            "next"
+          ],
+          "promptJa": "あなたはまだ決める必要はない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You do not need to decide ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "perhaps は「もしかすると」。maybe と同じく、言い切らないための語。",
+          "options": [
+            "Perhaps",
+            "Nobody",
+            "Instead"
+          ],
+          "promptJa": "もしかすると、今日は誰かほかの人があなたの助けを必要としているかもしれない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___ someone else needs your help today.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "It is okay to rest and try again later.",
+          "explanation_ja": "It is okay to 〜 のあとに rest、and try again（もう一度試す）、最後に later（あとで）。",
+          "prompt_ja": "語を並べ替えて「休んで、あとでまた試してもいい」という文を作ろう。",
+          "tiles": [
+            "and try again",
+            "It is okay",
+            "later",
+            "to rest"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。fail once（一度失敗する）を okay と受け止め、may take time（時間がかかるかもしれない）で急がせない。",
+          "options": [
+            "一度失敗するかもしれないが、それでいい。目的は、見つけるのに時間がかかるかもしれない",
+            "一度失敗したら、目的は見つからない",
+            "目的はすぐに見つかるので、急いで探そう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You may fail once, and that is okay. Your purpose may take time to find.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "grateful は「感謝している」。be grateful for 〜 で「〜に感謝している」。",
+          "options": [
+            "grateful",
+            "disappointed",
+            "relieved"
+          ],
+          "promptJa": "私は友達に感謝している。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I am ___ for my friends.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson5_3",
+      "newTerms": [
+        {
+          "en": "midheaven",
+          "ja": "ミッドヘブン（MC）",
+          "note_ja": "出生時に南中していた点。社会的な顔や目指す立場を象徴すると読まれる。アセンダント同様、出生時刻が必要。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "okay",
+          "ja": "大丈夫な／それでいい"
+        },
+        {
+          "en": "ever",
+          "ja": "これまでに／いつか"
+        },
+        {
+          "en": "once",
+          "ja": "一度"
+        },
+        {
+          "en": "next",
+          "ja": "次の"
+        },
+        {
+          "en": "last",
+          "ja": "最後の／この前の"
+        },
+        {
+          "en": "yet",
+          "ja": "（否定文で）まだ"
+        },
+        {
+          "en": "few",
+          "ja": "（a few で）少しの"
+        },
+        {
+          "en": "nobody",
+          "ja": "誰も〜ない"
+        },
+        {
+          "en": "somewhere",
+          "ja": "どこかで／どこかに"
+        },
+        {
+          "en": "everywhere",
+          "ja": "どこでも"
+        },
+        {
+          "en": "instead",
+          "ja": "かわりに（instead of 〜 で「〜のかわりに」）"
+        },
+        {
+          "en": "perhaps",
+          "ja": "もしかすると"
+        },
+        {
+          "en": "else",
+          "ja": "ほかの（someone else で「誰かほかの人」）"
+        },
+        {
+          "en": "later",
+          "ja": "あとで"
+        },
+        {
+          "en": "abroad",
+          "ja": "海外へ／海外で"
+        },
+        {
+          "en": "foreign",
+          "ja": "外国の"
+        },
+        {
+          "en": "culture",
+          "ja": "文化"
+        },
+        {
+          "en": "study",
+          "ja": "勉強する／研究"
+        },
+        {
+          "en": "knowledge",
+          "ja": "知識"
+        },
+        {
+          "en": "belief",
+          "ja": "信念／信じていること"
+        },
+        {
+          "en": "meaning",
+          "ja": "意味"
+        },
+        {
+          "en": "career",
+          "ja": "キャリア／職業人生"
+        },
+        {
+          "en": "public",
+          "ja": "公の／人前の"
+        },
+        {
+          "en": "famous",
+          "ja": "有名な"
+        },
+        {
+          "en": "success",
+          "ja": "成功"
+        },
+        {
+          "en": "fail",
+          "ja": "失敗する"
+        },
+        {
+          "en": "role",
+          "ja": "役割"
+        },
+        {
+          "en": "boss",
+          "ja": "上司"
+        },
+        {
+          "en": "company",
+          "ja": "会社"
+        },
+        {
+          "en": "business",
+          "ja": "仕事／商売"
+        },
+        {
+          "en": "community",
+          "ja": "地域／コミュニティ"
+        },
+        {
+          "en": "member",
+          "ja": "メンバー／一員"
+        },
+        {
+          "en": "club",
+          "ja": "クラブ／集まり"
+        },
+        {
+          "en": "team",
+          "ja": "チーム"
+        },
+        {
+          "en": "social",
+          "ja": "社会の／人づきあいの"
+        },
+        {
+          "en": "common",
+          "ja": "共通の"
+        },
+        {
+          "en": "silence",
+          "ja": "沈黙／静けさ"
+        },
+        {
+          "en": "pray",
+          "ja": "祈る"
+        },
+        {
+          "en": "heal",
+          "ja": "癒やす"
+        },
+        {
+          "en": "peace",
+          "ja": "平和／安らぎ"
+        },
+        {
+          "en": "purpose",
+          "ja": "目的"
+        },
+        {
+          "en": "direction",
+          "ja": "方向"
+        },
+        {
+          "en": "image",
+          "ja": "イメージ／印象"
+        },
+        {
+          "en": "position",
+          "ja": "立場／地位"
+        },
+        {
+          "en": "hopeful",
+          "ja": "希望を持った"
+        },
+        {
+          "en": "disappointed",
+          "ja": "がっかりした"
+        },
+        {
+          "en": "grateful",
+          "ja": "感謝している"
+        },
+        {
+          "en": "relieved",
+          "ja": "ほっとした"
+        },
+        {
+          "en": "regret",
+          "ja": "後悔"
+        },
+        {
+          "en": "miss",
+          "ja": "恋しく思う／（いなくて）さびしく思う"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "It is okay to 〜. / Your midheaven shows 〜.",
+      "sentences": [
+        {
+          "en": "The 9th house is about travel and study.",
+          "ja": "第9ハウスは旅と勉強についてのハウスだ。"
+        },
+        {
+          "en": "You may want to go abroad and learn a foreign language.",
+          "ja": "あなたは海外へ行き、外国の言語を学びたくなるかもしれない。"
+        },
+        {
+          "en": "A new culture can open your mind.",
+          "ja": "新しい文化は、あなたの心を開くことがある。"
+        },
+        {
+          "en": "Knowledge and belief are in the 9th house.",
+          "ja": "知識と信念は第9ハウスにある。"
+        },
+        {
+          "en": "You look for the meaning of your life.",
+          "ja": "あなたは自分の人生の意味を探す。"
+        },
+        {
+          "en": "The 10th house is about your career and your public image.",
+          "ja": "第10ハウスは、あなたのキャリアと人前での印象についてのハウスだ。"
+        },
+        {
+          "en": "Your midheaven is at the top of your chart.",
+          "ja": "あなたのミッドヘブンは、あなたのチャートのいちばん上にある。"
+        },
+        {
+          "en": "Your midheaven shows your direction in the world.",
+          "ja": "あなたのミッドヘブンは、世の中でのあなたの方向を示す。"
+        },
+        {
+          "en": "Success is not only about being famous.",
+          "ja": "成功とは、有名になることだけではない。"
+        },
+        {
+          "en": "You may fail once, and that is okay.",
+          "ja": "一度失敗するかもしれないが、それでいい。"
+        },
+        {
+          "en": "Your boss sees your role at the company.",
+          "ja": "あなたの上司は、会社でのあなたの役割を見ている。"
+        },
+        {
+          "en": "A business needs a good team.",
+          "ja": "仕事には良いチームが必要だ。"
+        },
+        {
+          "en": "Your position at work can change.",
+          "ja": "職場でのあなたの立場は変わることがある。"
+        },
+        {
+          "en": "The 11th house is about friends, groups, and hopes.",
+          "ja": "第11ハウスは友達、グループ、希望についてのハウスだ。"
+        },
+        {
+          "en": "You are a member of a club or a community.",
+          "ja": "あなたはクラブやコミュニティの一員だ。"
+        },
+        {
+          "en": "Social life can be fun, but it can also make you tired.",
+          "ja": "人づきあいは楽しいこともあるが、あなたを疲れさせることもある。"
+        },
+        {
+          "en": "We have a common dream.",
+          "ja": "私たちには共通の夢がある。"
+        },
+        {
+          "en": "A few good friends are enough.",
+          "ja": "少しの良い友達がいれば十分だ。"
+        },
+        {
+          "en": "The 12th house is about rest, silence, and hidden things.",
+          "ja": "第12ハウスは休息、静けさ、隠れたものについてのハウスだ。"
+        },
+        {
+          "en": "Some people pray, and some people walk in silence.",
+          "ja": "祈る人もいれば、静けさの中を歩く人もいる。"
+        },
+        {
+          "en": "Sleep can heal your body and your mind.",
+          "ja": "睡眠は、あなたの体と心を癒やすことがある。"
+        },
+        {
+          "en": "Find a little peace somewhere quiet.",
+          "ja": "どこか静かな場所で、少しの安らぎを見つけよう。"
+        },
+        {
+          "en": "Nobody can be everywhere.",
+          "ja": "誰もどこにでもいることはできない。"
+        },
+        {
+          "en": "Do you ever feel lost?",
+          "ja": "あなたは迷っていると感じることがある？"
+        },
+        {
+          "en": "The last week of the month can be busy.",
+          "ja": "月の最後の週は忙しくなることがある。"
+        },
+        {
+          "en": "Plan your next step.",
+          "ja": "次の一歩を計画しよう。"
+        },
+        {
+          "en": "You do not need to decide yet.",
+          "ja": "あなたはまだ決める必要はない。"
+        },
+        {
+          "en": "Instead of worry, try a slow walk.",
+          "ja": "心配するかわりに、ゆっくり歩いてみよう。"
+        },
+        {
+          "en": "Perhaps someone else needs your help today.",
+          "ja": "もしかすると、今日は誰かほかの人があなたの助けを必要としているかもしれない。"
+        },
+        {
+          "en": "Do it later. Rest now.",
+          "ja": "それはあとでやろう。今は休もう。"
+        },
+        {
+          "en": "Your purpose may take time to find.",
+          "ja": "あなたの目的は、見つけるのに時間がかかるかもしれない。"
+        },
+        {
+          "en": "I feel hopeful about the future.",
+          "ja": "私は未来に希望を感じている。"
+        },
+        {
+          "en": "You may feel disappointed, but it is not the end.",
+          "ja": "がっかりするかもしれないが、それで終わりではない。"
+        },
+        {
+          "en": "I am grateful for my friends.",
+          "ja": "私は友達に感謝している。"
+        },
+        {
+          "en": "I feel relieved when the work ends.",
+          "ja": "仕事が終わると、私はほっとする。"
+        },
+        {
+          "en": "Do not live in regret.",
+          "ja": "後悔の中で生きないで。"
+        },
+        {
+          "en": "I miss my old friends.",
+          "ja": "私は昔の友達を恋しく思う。"
+        }
+      ],
+      "theme_ja": "Unit 5 の総仕上げ。ミッドヘブンを学び、第9〜12ハウス（旅と学び・キャリア・仲間・休息）を読む。It is okay to 〜（〜してもいい）を使った Co-Star 風の短いリーディングを読む。",
+      "title_en": "Houses of the World and Rest",
+      "title_ja": "世界と休息のハウス ― It is okay to 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "abroad",
+        "again",
+        "also",
+        "am",
+        "and",
+        "anxious",
+        "are",
+        "at",
+        "be",
+        "belief",
+        "body",
+        "boss",
+        "business",
+        "busy",
+        "but",
+        "can",
+        "career",
+        "change",
+        "club",
+        "common",
+        "community",
+        "company",
+        "culture",
+        "decide",
+        "direction",
+        "disappointed",
+        "do",
+        "dream",
+        "else",
+        "end",
+        "enough",
+        "ever",
+        "everywhere",
+        "fail",
+        "famous",
+        "feel",
+        "few",
+        "find",
+        "for",
+        "foreign",
+        "friend",
+        "fun",
+        "future",
+        "go",
+        "good",
+        "grateful",
+        "group",
+        "have",
+        "heal",
+        "help",
+        "hide",
+        "hope",
+        "hopeful",
+        "I",
+        "image",
+        "in",
+        "instead",
+        "is",
+        "it",
+        "knowledge",
+        "language",
+        "last",
+        "later",
+        "learn",
+        "life",
+        "little",
+        "live",
+        "look",
+        "lose",
+        "make",
+        "may",
+        "meaning",
+        "member",
+        "might",
+        "mind",
+        "miss",
+        "month",
+        "my",
+        "need",
+        "new",
+        "next",
+        "nobody",
+        "not",
+        "now",
+        "of",
+        "okay",
+        "old",
+        "once",
+        "only",
+        "open",
+        "or",
+        "peace",
+        "people",
+        "perhaps",
+        "plan",
+        "position",
+        "pray",
+        "public",
+        "purpose",
+        "quiet",
+        "regret",
+        "relieved",
+        "rest",
+        "role",
+        "see",
+        "show",
+        "silence",
+        "sleep",
+        "slow",
+        "social",
+        "some",
+        "someone",
+        "somewhere",
+        "step",
+        "study",
+        "success",
+        "take",
+        "team",
+        "that",
+        "the",
+        "thing",
+        "time",
+        "tired",
+        "to",
+        "today",
+        "top",
+        "travel",
+        "try",
+        "walk",
+        "want",
+        "we",
+        "week",
+        "when",
+        "work",
+        "world",
+        "worry",
+        "yet",
+        "you",
+        "your"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-23",
+    "id": "unit5",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 5 の新規一般語は150語（50語×3レッスン）で、累計590語に到達する（CURRICULUM §4 の配分どおり）。",
+      "うち感情・心の語は20語（7・7・6語）。CURRICULUM §2.2／§4 の「早く薄く撒く」方針に従い、テーマ語彙とは別枠で織り込んだ。5.1：embarrassed, curious, comfortable, homesick, satisfied, honest, anxious／5.2：cheerful, frustrated, tender, respect, guilty, warmth, sensitive／5.3：hopeful, disappointed, grateful, relieved, regret, miss。",
+      "専門用語レイヤーの追加は house, ascendant, midheaven の3語（CURRICULUM §3）。表記は glossary.json に合わせた。",
+      "ハウス番号は「the 4th house」のように数字で表記した。数字は語数に数えない（CURRICULUM 2.1）ため、second〜twelfth の序数語は一般語として導入していない。日本語は「第4ハウス」と訳す。",
+      "ハウスとアセンダント・ミッドヘブンは出生時刻が必要（CURRICULUM §3「出生時刻ありの場合のみ本格導入」）。このため、ハウスは例文・演習の中で一般的な文として扱い、chartLine は既存の星座プレースホルダの範囲で構成した。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形・所有格の 's は原形と同一語として数える（CURRICULUM 2.1）。不規則形は初出の語の ja に併記した（wear→wore、pay→paid、buy→bought、spend→spent、lend→lent）。",
+      "例文・演習で使う一般語は「Unit 1〜4 導入済み440語＋当該レッスンまでの Unit 5 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "Lesson 5.3 の chartLine と例文の一部は Co-Star 風の短いリーディングとして構成し、may／might／perhaps で断定を避け、It is okay to 〜 で無理をさせない形にしている。"
+    ],
+    "order": 5,
+    "status": "draft",
+    "theme_ja": "チャートを12に分けた「生活の場面」であるハウスと、アセンダント・ミッドヘブンを学ぶ。家・お金・仕事・パートナー・仲間・休息の言葉で、それぞれのハウスが担当する場面を読む。",
+    "title_en": "Houses",
+    "title_ja": "ハウス ― 生活の場面を読む",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson5_1": 50,
+        "lesson5_2": 50,
+        "lesson5_3": 50
+      },
+      "newGeneralWordsTotal": 150,
+      "newTermsTotal": 3
+    }
+  }
+}
