@@ -1,0 +1,2145 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "トランジットの意味がわかり、「The Moon moves into Virgo tonight.」のような空の動きの文が読める。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にある。今日の月は空を動いていき、あなたの月に触れるかもしれない。",
+        "note_ja": "アプリでは学習者の実際の月星座を当てはめる。出生の月（変わらない）と今日の月（動いていく）を並べ、トランジットの考え方の入口にする。トランジットの星座のプレースホルダは chartLine の置換仕様にないため、一般的な文で述べる。",
+        "template_en": "Your Moon is in {moonSign}. Today's Moon moves through the sky, and it may touch your Moon."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "move into 〜 で「〜に入る」。トランジットの月は約2日ごとに次の星座へ移る。",
+          "options": [
+            "月は今夜、乙女座に入る",
+            "月は今夜、乙女座を出ていく",
+            "月は昨夜、乙女座にあった"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "The Moon moves into Virgo tonight.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "transit は、今の空を動いている天体のこと。出生図と重ねて「今」のテーマを読む。Today's Line もトランジットの月を使って作られている。",
+          "options": [
+            "トランジット（現在の空を運行中の天体）",
+            "逆行（天体が逆向きに動いて見える期間）",
+            "リターン（天体が出生時の位置に戻ること）"
+          ],
+          "prompt_ja": "「transit」の意味は？",
+          "question_en": "transit",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "forecast は「予報」。トランジットは未来を決めるものではなく、天気予報のように参考にするもの。",
+          "options": [
+            "forecast",
+            "storm",
+            "sunshine"
+          ],
+          "promptJa": "トランジットは天気予報のようなもので、ルールではない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "A transit is like a weather ___, not a rule.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "better は good の比較級で「より良い」。worse（より悪い）、best（いちばん良い）と区別する。",
+          "options": [
+            "better",
+            "worse",
+            "best"
+          ],
+          "promptJa": "明日はもっと良くなるかもしれない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Tomorrow may be ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Look away from your screen for a minute.",
+          "explanation_ja": "look away from 〜 で「〜から目を離す」。for a minute（少しのあいだ）は最後に置く。",
+          "prompt_ja": "語を並べ替えて「少しのあいだ、画面から目を離そう」という文を作ろう。",
+          "tiles": [
+            "your screen",
+            "Look",
+            "for a minute",
+            "away from"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。bad day と bad life を区別し、can pass（過ぎることがある）と may come back（戻るかもしれない）で結ぶ。",
+          "options": [
+            "つらい日があっても、つらい人生というわけではない。嵐は過ぎ、日差しが戻るかもしれない",
+            "嵐の日があると、人生全体が悪くなる",
+            "日差しはもう戻ってこない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "A bad day is not a bad life. A storm can pass, and sunshine may come back.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "arrive は「到着する」。主語が The Sun なので三単現の -s がつく。",
+          "options": [
+            "arrives",
+            "crosses",
+            "glows"
+          ],
+          "promptJa": "太陽は春に牡羊座に到着する。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "The Sun ___ in Aries in spring.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson8_1",
+      "newTerms": [
+        {
+          "en": "transit",
+          "ja": "トランジット",
+          "note_ja": "現在の空を運行中の天体のこと。出生図と重ねて、「今」のテーマを読む方法。Today's Lineはトランジットの月などを使って作られる。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "into",
+          "ja": "〜の中へ"
+        },
+        {
+          "en": "tonight",
+          "ja": "今夜"
+        },
+        {
+          "en": "weekend",
+          "ja": "週末"
+        },
+        {
+          "en": "minute",
+          "ja": "分／ちょっとの間"
+        },
+        {
+          "en": "calendar",
+          "ja": "カレンダー"
+        },
+        {
+          "en": "clock",
+          "ja": "時計"
+        },
+        {
+          "en": "present",
+          "ja": "現在"
+        },
+        {
+          "en": "current",
+          "ja": "現在の"
+        },
+        {
+          "en": "period",
+          "ja": "期間"
+        },
+        {
+          "en": "phase",
+          "ja": "（月の）満ち欠けの段階／局面"
+        },
+        {
+          "en": "midnight",
+          "ja": "真夜中"
+        },
+        {
+          "en": "noon",
+          "ja": "正午"
+        },
+        {
+          "en": "sunrise",
+          "ja": "日の出"
+        },
+        {
+          "en": "sunset",
+          "ja": "日の入り"
+        },
+        {
+          "en": "pass",
+          "ja": "通り過ぎる"
+        },
+        {
+          "en": "cross",
+          "ja": "横切る／重なる"
+        },
+        {
+          "en": "visit",
+          "ja": "訪れる"
+        },
+        {
+          "en": "enter",
+          "ja": "入る"
+        },
+        {
+          "en": "arrive",
+          "ja": "到着する"
+        },
+        {
+          "en": "path",
+          "ja": "道筋"
+        },
+        {
+          "en": "movement",
+          "ja": "動き"
+        },
+        {
+          "en": "weather",
+          "ja": "天気"
+        },
+        {
+          "en": "forecast",
+          "ja": "予報"
+        },
+        {
+          "en": "storm",
+          "ja": "嵐"
+        },
+        {
+          "en": "sunshine",
+          "ja": "日差し"
+        },
+        {
+          "en": "dry",
+          "ja": "乾いた"
+        },
+        {
+          "en": "wet",
+          "ja": "ぬれた"
+        },
+        {
+          "en": "bad",
+          "ja": "悪い／つらい（比較級 worse）"
+        },
+        {
+          "en": "well",
+          "ja": "うまく／元気で（比較級 better）"
+        },
+        {
+          "en": "better",
+          "ja": "より良い（good・well の比較級）"
+        },
+        {
+          "en": "best",
+          "ja": "いちばん良い（good・well の最上級）"
+        },
+        {
+          "en": "worse",
+          "ja": "より悪い（bad の比較級）"
+        },
+        {
+          "en": "person",
+          "ja": "人"
+        },
+        {
+          "en": "schedule",
+          "ja": "予定"
+        },
+        {
+          "en": "timing",
+          "ja": "タイミング"
+        },
+        {
+          "en": "tide",
+          "ja": "潮"
+        },
+        {
+          "en": "glow",
+          "ja": "輝く"
+        },
+        {
+          "en": "check",
+          "ja": "確かめる"
+        },
+        {
+          "en": "app",
+          "ja": "アプリ"
+        },
+        {
+          "en": "screen",
+          "ja": "画面"
+        },
+        {
+          "en": "breakfast",
+          "ja": "朝食"
+        },
+        {
+          "en": "lunch",
+          "ja": "昼食"
+        },
+        {
+          "en": "dinner",
+          "ja": "夕食"
+        },
+        {
+          "en": "meal",
+          "ja": "食事"
+        },
+        {
+          "en": "coffee",
+          "ja": "コーヒー"
+        },
+        {
+          "en": "quarter",
+          "ja": "4分の1（quarter Moon＝半月）"
+        },
+        {
+          "en": "sleepy",
+          "ja": "眠い"
+        },
+        {
+          "en": "grumpy",
+          "ja": "不機嫌な"
+        },
+        {
+          "en": "thrilled",
+          "ja": "わくわくした／大喜びの"
+        },
+        {
+          "en": "inspire",
+          "ja": "ひらめきを与える（inspired＝ひらめいた）"
+        },
+        {
+          "en": "motivate",
+          "ja": "やる気にさせる（motivated＝やる気のある）"
+        },
+        {
+          "en": "irritable",
+          "ja": "怒りっぽい"
+        },
+        {
+          "en": "silly",
+          "ja": "ふざけた／ばかげた"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "Today, the Moon is in 〜. / The Moon moves into 〜 tonight.",
+      "sentences": [
+        {
+          "en": "A transit is a planet in the sky right now.",
+          "ja": "トランジットとは、今この時の空にある天体のことだ。"
+        },
+        {
+          "en": "Your natal chart does not change, but the sky moves.",
+          "ja": "あなたの出生チャートは変わらないが、空は動く。"
+        },
+        {
+          "en": "Transits show the present, and your chart shows your birth.",
+          "ja": "トランジットは現在を示し、あなたのチャートは誕生の時を示す。"
+        },
+        {
+          "en": "Today, the Moon is in Leo.",
+          "ja": "今日、月は獅子座にある。"
+        },
+        {
+          "en": "The Moon moves into Virgo tonight.",
+          "ja": "月は今夜、乙女座に入る。"
+        },
+        {
+          "en": "The Moon stays in a sign for about two days.",
+          "ja": "月は一つの星座に約2日とどまる。"
+        },
+        {
+          "en": "The Moon passes through every sign in about a month.",
+          "ja": "月は約1か月ですべての星座を通り過ぎる。"
+        },
+        {
+          "en": "When the Moon crosses your Sun, you may feel more like yourself.",
+          "ja": "月があなたの太陽に重なるとき、より自分らしく感じるかもしれない。"
+        },
+        {
+          "en": "Mars may visit your 10th house this week.",
+          "ja": "今週、火星があなたの第10ハウスを訪れるかもしれない。"
+        },
+        {
+          "en": "When Venus enters a new sign, the mood of love may shift.",
+          "ja": "金星が新しい星座に入ると、恋の雰囲気が移り変わるかもしれない。"
+        },
+        {
+          "en": "The Sun arrives in Aries in spring.",
+          "ja": "太陽は春に牡羊座に到着する。"
+        },
+        {
+          "en": "Each planet has its own path and speed.",
+          "ja": "それぞれの天体には、それぞれの道筋と速さがある。"
+        },
+        {
+          "en": "Watch the movement of the Moon on your calendar.",
+          "ja": "カレンダーで月の動きを見てみよう。"
+        },
+        {
+          "en": "Check the sky like you check the weather.",
+          "ja": "天気を確かめるように、空を確かめよう。"
+        },
+        {
+          "en": "A transit is like a weather forecast, not a rule.",
+          "ja": "トランジットは天気予報のようなもので、ルールではない。"
+        },
+        {
+          "en": "A storm can pass, and sunshine may come back.",
+          "ja": "嵐は過ぎることがあり、日差しが戻るかもしれない。"
+        },
+        {
+          "en": "Some weeks feel dry, like a summer without rain.",
+          "ja": "雨のない夏のように、乾いて感じられる週もある。"
+        },
+        {
+          "en": "After the rain, the road is wet.",
+          "ja": "雨のあと、道はぬれている。"
+        },
+        {
+          "en": "A bad day is not a bad life.",
+          "ja": "つらい日があっても、つらい人生というわけではない。"
+        },
+        {
+          "en": "You are doing well.",
+          "ja": "あなたはうまくやっている。"
+        },
+        {
+          "en": "Tomorrow may be better.",
+          "ja": "明日はもっと良くなるかもしれない。"
+        },
+        {
+          "en": "Do your best, and then rest.",
+          "ja": "ベストを尽くしたら、休もう。"
+        },
+        {
+          "en": "If you feel worse, ask for help.",
+          "ja": "具合が悪くなったら、助けを求めよう。"
+        },
+        {
+          "en": "You are a person, not a planet.",
+          "ja": "あなたは人であって、天体ではない。"
+        },
+        {
+          "en": "Look at your schedule for the weekend.",
+          "ja": "週末の予定を見てみよう。"
+        },
+        {
+          "en": "Good timing can make a small step easy.",
+          "ja": "良いタイミングは、小さな一歩を簡単にすることがある。"
+        },
+        {
+          "en": "The Moon moves the tide of the sea.",
+          "ja": "月は海の潮を動かす。"
+        },
+        {
+          "en": "The full Moon glows at midnight.",
+          "ja": "満月は真夜中に輝く。"
+        },
+        {
+          "en": "At noon, the Sun is high in the sky.",
+          "ja": "正午には、太陽は空高くにある。"
+        },
+        {
+          "en": "Watch the sunrise, or watch the sunset.",
+          "ja": "日の出か、日の入りを眺めよう。"
+        },
+        {
+          "en": "A quarter Moon is half light and half dark.",
+          "ja": "半月は、半分が明るく半分が暗い。"
+        },
+        {
+          "en": "The Moon has phases, and so do you.",
+          "ja": "月には満ち欠けがあり、あなたにもある。"
+        },
+        {
+          "en": "This is a quiet period for you.",
+          "ja": "今は、あなたにとって静かな期間だ。"
+        },
+        {
+          "en": "Your current transits may feel intense.",
+          "ja": "あなたの今のトランジットは、強烈に感じられるかもしれない。"
+        },
+        {
+          "en": "Open the app, and read your line for today.",
+          "ja": "アプリを開いて、今日の一文を読もう。"
+        },
+        {
+          "en": "Look away from your screen for a minute.",
+          "ja": "少しのあいだ、画面から目を離そう。"
+        },
+        {
+          "en": "Eat a good breakfast.",
+          "ja": "しっかり朝食をとろう。"
+        },
+        {
+          "en": "Have lunch with a friend.",
+          "ja": "友達と昼食をとろう。"
+        },
+        {
+          "en": "Share dinner with your family.",
+          "ja": "家族と夕食をともにしよう。"
+        },
+        {
+          "en": "Enjoy your meal slowly.",
+          "ja": "ゆっくり食事を楽しもう。"
+        },
+        {
+          "en": "Coffee in the morning can make you active.",
+          "ja": "朝のコーヒーは、あなたを活動的にすることがある。"
+        },
+        {
+          "en": "What time is it on the clock?",
+          "ja": "時計では何時？"
+        },
+        {
+          "en": "You may feel sleepy after lunch.",
+          "ja": "昼食のあと、眠くなるかもしれない。"
+        },
+        {
+          "en": "If you feel grumpy, eat something first.",
+          "ja": "不機嫌なときは、まず何か食べよう。"
+        },
+        {
+          "en": "You may feel thrilled about a new plan.",
+          "ja": "新しい計画にわくわくするかもしれない。"
+        },
+        {
+          "en": "Let the full Moon inspire you.",
+          "ja": "満月にひらめきをもらおう。"
+        },
+        {
+          "en": "A small goal can motivate you.",
+          "ja": "小さな目標が、あなたをやる気にさせることがある。"
+        },
+        {
+          "en": "On a hard day, you may be irritable.",
+          "ja": "つらい日には、怒りっぽくなるかもしれない。"
+        },
+        {
+          "en": "It is okay to be silly with friends.",
+          "ja": "友達とふざけてもいい。"
+        }
+      ],
+      "theme_ja": "トランジット（今の空を動く天体）を学び、出生チャートと重ねて「今」を読む。move into 〜（〜に入る）や tonight・weekend などの時間の言葉で、空の動きを読む。",
+      "title_en": "Today's Sky",
+      "title_ja": "今日の空 ― The Moon moves into 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "active",
+        "after",
+        "and",
+        "app",
+        "are",
+        "arrive",
+        "ask",
+        "at",
+        "away",
+        "back",
+        "bad",
+        "be",
+        "best",
+        "better",
+        "birth",
+        "breakfast",
+        "but",
+        "calendar",
+        "can",
+        "change",
+        "check",
+        "clock",
+        "coffee",
+        "come",
+        "cross",
+        "current",
+        "dark",
+        "day",
+        "dinner",
+        "do",
+        "dry",
+        "each",
+        "easy",
+        "eat",
+        "enjoy",
+        "enter",
+        "every",
+        "family",
+        "feel",
+        "first",
+        "for",
+        "forecast",
+        "friend",
+        "from",
+        "full",
+        "glow",
+        "goal",
+        "good",
+        "grumpy",
+        "half",
+        "hard",
+        "have",
+        "help",
+        "high",
+        "if",
+        "in",
+        "inspire",
+        "intense",
+        "into",
+        "irritable",
+        "is",
+        "it",
+        "its",
+        "let",
+        "life",
+        "light",
+        "like",
+        "line",
+        "look",
+        "love",
+        "lunch",
+        "make",
+        "may",
+        "meal",
+        "midnight",
+        "minute",
+        "month",
+        "mood",
+        "more",
+        "morning",
+        "motivate",
+        "move",
+        "movement",
+        "new",
+        "noon",
+        "not",
+        "now",
+        "of",
+        "okay",
+        "on",
+        "open",
+        "or",
+        "own",
+        "pass",
+        "path",
+        "period",
+        "person",
+        "phase",
+        "plan",
+        "present",
+        "quarter",
+        "quiet",
+        "rain",
+        "read",
+        "rest",
+        "right",
+        "road",
+        "rule",
+        "schedule",
+        "screen",
+        "sea",
+        "share",
+        "shift",
+        "show",
+        "silly",
+        "sky",
+        "sleepy",
+        "slowly",
+        "small",
+        "so",
+        "some",
+        "something",
+        "speed",
+        "spring",
+        "stay",
+        "step",
+        "storm",
+        "summer",
+        "sunrise",
+        "sunset",
+        "sunshine",
+        "the",
+        "then",
+        "this",
+        "thrilled",
+        "through",
+        "tide",
+        "time",
+        "timing",
+        "to",
+        "today",
+        "tomorrow",
+        "tonight",
+        "touch",
+        "two",
+        "visit",
+        "watch",
+        "weather",
+        "week",
+        "weekend",
+        "well",
+        "wet",
+        "what",
+        "when",
+        "with",
+        "without",
+        "worse",
+        "you",
+        "your",
+        "yourself"
+      ]
+    },
+    {
+      "canDo_ja": "逆行の意味がわかり、「Yesterday, I felt calm.」のような過去形の文と、見直しをすすめる文が読める。",
+      "chartLine": {
+        "ja": "あなたの水星は{mercurySignJa}にある。水星が逆行しているときは、メッセージをゆっくり読み直そう。",
+        "note_ja": "アプリでは学習者の実際の水星星座を当てはめる。言葉と連絡の天体である水星の逆行を、禁止ではなく「読み直し」という活かし方で読む。",
+        "template_en": "Your Mercury is in {mercurySign}. When Mercury is retrograde, read your messages again, slowly."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "水星逆行は、言葉や連絡を見直す時期と読まれることが多い。禁止ではなく、読み直しをすすめる読み方。",
+          "options": [
+            "水星が逆行しているので、送る前にメールを読み直そう",
+            "水星が逆行しているので、メールを送ってはいけない",
+            "水星が順行しているので、メールはすぐに送ろう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Mercury is retrograde, so read your email again before you send it.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "retrograde は、地球から見て天体が逆向きに動いて見える期間。その天体のテーマを見直す時期と読まれることが多い。",
+          "options": [
+            "逆行（レトログレード。天体が逆向きに動いて見える期間）",
+            "トランジット（現在の空を運行中の天体）",
+            "オーブ（アスペクトの許容範囲）"
+          ],
+          "prompt_ja": "「retrograde」の意味は？",
+          "question_en": "retrograde",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "review は「見直す」。",
+          "options": [
+            "review",
+            "cancel",
+            "receive"
+          ],
+          "promptJa": "逆行は、始めるより見直すのに良い時期だ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "A retrograde is a good time to ___, not to start.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "felt は feel の過去形（不規則な形）。Yesterday（昨日）があるので過去形を使う。",
+          "options": [
+            "felt",
+            "feel",
+            "feels"
+          ],
+          "promptJa": "昨日、私は穏やかな気持ちだった。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Yesterday, I ___ calm.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Revisit an unfinished project.",
+          "explanation_ja": "Revisit（もう一度見る）のあとに an unfinished project（やりかけのプロジェクト）。",
+          "prompt_ja": "語を並べ替えて「やりかけのプロジェクトをもう一度見てみよう」という文を作ろう。",
+          "tiles": [
+            "project",
+            "Revisit",
+            "unfinished",
+            "an"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。stuck は stick の過去分詞で、feel stuck は「行き詰まりを感じる」。pause（一時停止）と受け止め、slowly で急がせない。",
+          "options": [
+            "行き詰まりを感じるかもしれないが、それは一時停止だ。ゆっくり計画を考え直そう",
+            "行き詰まったら、計画をすべて捨てよう",
+            "行き詰まりは失敗なので、急いで進もう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You may feel stuck. That is okay; it is a pause. Rethink your plan, slowly.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "was は be の過去形で、主語が I のときの形。we／you／they なら were。",
+          "options": [
+            "was",
+            "were",
+            "am"
+          ],
+          "promptJa": "先週、私は疲れていた。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Last week, I ___ tired.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson8_2",
+      "newTerms": [
+        {
+          "en": "retrograde",
+          "ja": "逆行（レトログレード）",
+          "note_ja": "地球から見て天体が逆向きに動いて見える期間のこと。その天体のテーマを見直す時期、と読まれることが多い。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "backward",
+          "ja": "後ろ向きに"
+        },
+        {
+          "en": "review",
+          "ja": "見直す"
+        },
+        {
+          "en": "revisit",
+          "ja": "もう一度訪れる／見直す"
+        },
+        {
+          "en": "rethink",
+          "ja": "考え直す"
+        },
+        {
+          "en": "email",
+          "ja": "メール"
+        },
+        {
+          "en": "text",
+          "ja": "（携帯の）メッセージ／文章"
+        },
+        {
+          "en": "send",
+          "ja": "送る（過去形 sent）"
+        },
+        {
+          "en": "receive",
+          "ja": "受け取る"
+        },
+        {
+          "en": "mail",
+          "ja": "郵便"
+        },
+        {
+          "en": "computer",
+          "ja": "コンピューター"
+        },
+        {
+          "en": "machine",
+          "ja": "機械"
+        },
+        {
+          "en": "repair",
+          "ja": "修理"
+        },
+        {
+          "en": "fix",
+          "ja": "直す"
+        },
+        {
+          "en": "ex",
+          "ja": "元恋人"
+        },
+        {
+          "en": "history",
+          "ja": "歴史"
+        },
+        {
+          "en": "diary",
+          "ja": "日記"
+        },
+        {
+          "en": "photo",
+          "ja": "写真"
+        },
+        {
+          "en": "record",
+          "ja": "記録"
+        },
+        {
+          "en": "organize",
+          "ja": "整理する"
+        },
+        {
+          "en": "tidy",
+          "ja": "片づける"
+        },
+        {
+          "en": "cancel",
+          "ja": "取り消す"
+        },
+        {
+          "en": "key",
+          "ja": "鍵"
+        },
+        {
+          "en": "remind",
+          "ja": "思い出させる"
+        },
+        {
+          "en": "childhood",
+          "ja": "子ども時代"
+        },
+        {
+          "en": "grandmother",
+          "ja": "祖母"
+        },
+        {
+          "en": "grandfather",
+          "ja": "祖父"
+        },
+        {
+          "en": "contact",
+          "ja": "連絡をとる"
+        },
+        {
+          "en": "apologize",
+          "ja": "謝る"
+        },
+        {
+          "en": "misunderstanding",
+          "ja": "誤解"
+        },
+        {
+          "en": "ticket",
+          "ja": "切符"
+        },
+        {
+          "en": "bag",
+          "ja": "かばん"
+        },
+        {
+          "en": "station",
+          "ja": "駅"
+        },
+        {
+          "en": "train",
+          "ja": "電車"
+        },
+        {
+          "en": "airport",
+          "ja": "空港"
+        },
+        {
+          "en": "flight",
+          "ja": "（飛行機の）便"
+        },
+        {
+          "en": "map",
+          "ja": "地図"
+        },
+        {
+          "en": "sentence",
+          "ja": "文"
+        },
+        {
+          "en": "page",
+          "ja": "ページ"
+        },
+        {
+          "en": "note",
+          "ja": "メモ"
+        },
+        {
+          "en": "delete",
+          "ja": "削除する"
+        },
+        {
+          "en": "edit",
+          "ja": "編集する／書き直す"
+        },
+        {
+          "en": "former",
+          "ja": "以前の"
+        },
+        {
+          "en": "previous",
+          "ja": "前の"
+        },
+        {
+          "en": "unfinished",
+          "ja": "やりかけの"
+        },
+        {
+          "en": "rewind",
+          "ja": "巻き戻す"
+        },
+        {
+          "en": "unexpected",
+          "ja": "思いがけない"
+        },
+        {
+          "en": "nostalgic",
+          "ja": "懐かしい気持ちの"
+        },
+        {
+          "en": "bitter",
+          "ja": "苦い／つらい"
+        },
+        {
+          "en": "numb",
+          "ja": "感覚がまひした"
+        },
+        {
+          "en": "stick",
+          "ja": "くっつく（過去形・過去分詞 stuck。feel stuck＝行き詰まりを感じる）"
+        },
+        {
+          "en": "unhappy",
+          "ja": "不幸せな"
+        },
+        {
+          "en": "heartbroken",
+          "ja": "悲嘆にくれた"
+        },
+        {
+          "en": "empty",
+          "ja": "空っぽの／むなしい"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "Last week, I was 〜. / Yesterday, I felt 〜. / Mercury is retrograde.",
+      "sentences": [
+        {
+          "en": "Sometimes a planet seems to move backward.",
+          "ja": "ときどき、天体が後ろ向きに動くように見える。"
+        },
+        {
+          "en": "We call this retrograde.",
+          "ja": "これを逆行と呼ぶ。"
+        },
+        {
+          "en": "The planet does not really move backward; it only looks that way from here.",
+          "ja": "天体が本当に後ろ向きに動くわけではなく、ここからそう見えるだけだ。"
+        },
+        {
+          "en": "Mercury is retrograde a few times a year.",
+          "ja": "水星は1年に数回逆行する。"
+        },
+        {
+          "en": "During Mercury retrograde, emails and texts may get lost.",
+          "ja": "水星逆行のあいだ、メールやメッセージが届かないことがあるかもしれない。"
+        },
+        {
+          "en": "Read your email again before you send it.",
+          "ja": "送る前に、メールをもう一度読もう。"
+        },
+        {
+          "en": "A letter may come in the mail.",
+          "ja": "郵便で手紙が届くかもしれない。"
+        },
+        {
+          "en": "You may receive a message from the past.",
+          "ja": "過去からのメッセージを受け取るかもしれない。"
+        },
+        {
+          "en": "Your computer may stop at a bad time.",
+          "ja": "あなたのコンピューターが、間の悪いときに止まるかもしれない。"
+        },
+        {
+          "en": "Old machines may need repair.",
+          "ja": "古い機械は修理が必要かもしれない。"
+        },
+        {
+          "en": "Fix small things, and leave big plans for later.",
+          "ja": "小さなことを直し、大きな計画はあとにとっておこう。"
+        },
+        {
+          "en": "A retrograde is a good time to review, not to start.",
+          "ja": "逆行は、始めるより見直すのに良い時期だ。"
+        },
+        {
+          "en": "Revisit an unfinished project.",
+          "ja": "やりかけのプロジェクトをもう一度見てみよう。"
+        },
+        {
+          "en": "Rethink your plan, slowly.",
+          "ja": "ゆっくり、計画を考え直そう。"
+        },
+        {
+          "en": "An ex may contact you.",
+          "ja": "元恋人から連絡があるかもしれない。"
+        },
+        {
+          "en": "Read your old diary.",
+          "ja": "昔の日記を読もう。"
+        },
+        {
+          "en": "Look at old photos and remember your childhood.",
+          "ja": "古い写真を見て、子ども時代を思い出そう。"
+        },
+        {
+          "en": "My grandmother and grandfather were young once.",
+          "ja": "私の祖母と祖父も、かつては若かった。"
+        },
+        {
+          "en": "History can teach us a lot.",
+          "ja": "歴史は、私たちに多くを教えてくれることがある。"
+        },
+        {
+          "en": "Keep a record of your dreams.",
+          "ja": "自分の夢を記録しておこう。"
+        },
+        {
+          "en": "Organize your bag, and tidy your room.",
+          "ja": "かばんを整理して、部屋を片づけよう。"
+        },
+        {
+          "en": "Your train may be late, so check the time.",
+          "ja": "電車が遅れるかもしれないので、時間を確かめよう。"
+        },
+        {
+          "en": "You may lose your key or your ticket.",
+          "ja": "鍵や切符をなくすかもしれない。"
+        },
+        {
+          "en": "Arrive at the station or the airport early.",
+          "ja": "駅や空港には早めに着こう。"
+        },
+        {
+          "en": "A flight may be late.",
+          "ja": "飛行機の便が遅れるかもしれない。"
+        },
+        {
+          "en": "Check the map before you go.",
+          "ja": "出かける前に地図を確かめよう。"
+        },
+        {
+          "en": "You may need to cancel a plan.",
+          "ja": "予定を取り消す必要があるかもしれない。"
+        },
+        {
+          "en": "Something unexpected may happen.",
+          "ja": "何か思いがけないことが起こるかもしれない。"
+        },
+        {
+          "en": "If there is a misunderstanding, you can apologize.",
+          "ja": "誤解があったら、謝ることができる。"
+        },
+        {
+          "en": "Delete old messages, or edit your words.",
+          "ja": "古いメッセージを削除するか、言葉を書き直そう。"
+        },
+        {
+          "en": "Write a short note to your former self.",
+          "ja": "以前の自分に、短いメモを書こう。"
+        },
+        {
+          "en": "Read the page again, sentence by sentence.",
+          "ja": "そのページを、一文ずつもう一度読もう。"
+        },
+        {
+          "en": "Look at your previous choices without blame.",
+          "ja": "責めずに、前の選択を見てみよう。"
+        },
+        {
+          "en": "Time does not rewind, but you can learn from it.",
+          "ja": "時間は巻き戻らないが、そこから学ぶことはできる。"
+        },
+        {
+          "en": "Let the retrograde remind you to slow down.",
+          "ja": "逆行を、ペースを落とすきっかけにしよう。"
+        },
+        {
+          "en": "Last week, I was tired.",
+          "ja": "先週、私は疲れていた。"
+        },
+        {
+          "en": "Yesterday, I felt calm.",
+          "ja": "昨日、私は穏やかな気持ちだった。"
+        },
+        {
+          "en": "I thought about my old friends.",
+          "ja": "私は昔の友達のことを考えた。"
+        },
+        {
+          "en": "We went to the sea last summer.",
+          "ja": "私たちは去年の夏、海へ行った。"
+        },
+        {
+          "en": "She said kind words to me.",
+          "ja": "彼女は私に優しい言葉をかけてくれた。"
+        },
+        {
+          "en": "You did your best.",
+          "ja": "あなたはベストを尽くした。"
+        },
+        {
+          "en": "He came back home late.",
+          "ja": "彼は遅くに家に帰ってきた。"
+        },
+        {
+          "en": "Old songs may make you nostalgic.",
+          "ja": "古い歌は、あなたを懐かしい気持ちにさせるかもしれない。"
+        },
+        {
+          "en": "Do not let a bitter memory stay too long.",
+          "ja": "苦い記憶を長く居座らせないで。"
+        },
+        {
+          "en": "After a hard week, you may feel numb.",
+          "ja": "つらい週のあとは、感覚がまひしたように感じるかもしれない。"
+        },
+        {
+          "en": "You may feel stuck. That is okay; it is a pause.",
+          "ja": "行き詰まりを感じるかもしれない。それでいい。それは一時停止だ。"
+        },
+        {
+          "en": "If you are unhappy, talk to someone.",
+          "ja": "幸せでないと感じたら、誰かと話そう。"
+        },
+        {
+          "en": "A heartbroken person needs time.",
+          "ja": "悲嘆にくれた人には、時間が必要だ。"
+        },
+        {
+          "en": "An empty page is a new beginning.",
+          "ja": "空白のページは、新しい始まりだ。"
+        }
+      ],
+      "theme_ja": "逆行（レトログレード）を学び、過去を振り返る言葉と過去形（was／were／felt／thought／went／said／did／came）を読む。逆行を「見直しの時期」として読む。",
+      "title_en": "Looking Back",
+      "title_ja": "振り返りの時期 ― I was 〜 / I felt 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "after",
+        "again",
+        "airport",
+        "am",
+        "and",
+        "apologize",
+        "are",
+        "arrive",
+        "at",
+        "back",
+        "backward",
+        "bad",
+        "bag",
+        "be",
+        "before",
+        "begin",
+        "best",
+        "big",
+        "bitter",
+        "blame",
+        "but",
+        "by",
+        "call",
+        "calm",
+        "can",
+        "cancel",
+        "check",
+        "childhood",
+        "choice",
+        "come",
+        "computer",
+        "contact",
+        "delete",
+        "diary",
+        "do",
+        "down",
+        "dream",
+        "during",
+        "early",
+        "edit",
+        "email",
+        "empty",
+        "ex",
+        "feel",
+        "few",
+        "fix",
+        "flight",
+        "for",
+        "former",
+        "friend",
+        "from",
+        "get",
+        "go",
+        "good",
+        "grandfather",
+        "grandmother",
+        "happen",
+        "hard",
+        "he",
+        "heartbroken",
+        "here",
+        "history",
+        "home",
+        "I",
+        "if",
+        "in",
+        "is",
+        "it",
+        "keep",
+        "key",
+        "kind",
+        "last",
+        "late",
+        "later",
+        "learn",
+        "leave",
+        "let",
+        "letter",
+        "long",
+        "look",
+        "lose",
+        "lot",
+        "machine",
+        "mail",
+        "make",
+        "map",
+        "may",
+        "me",
+        "memory",
+        "message",
+        "misunderstanding",
+        "move",
+        "my",
+        "need",
+        "new",
+        "nostalgic",
+        "not",
+        "note",
+        "numb",
+        "of",
+        "okay",
+        "old",
+        "once",
+        "only",
+        "or",
+        "organize",
+        "page",
+        "past",
+        "pause",
+        "person",
+        "photo",
+        "plan",
+        "previous",
+        "project",
+        "read",
+        "really",
+        "receive",
+        "record",
+        "remember",
+        "remind",
+        "repair",
+        "rethink",
+        "review",
+        "revisit",
+        "rewind",
+        "room",
+        "say",
+        "sea",
+        "seem",
+        "self",
+        "send",
+        "sentence",
+        "she",
+        "short",
+        "slow",
+        "slowly",
+        "small",
+        "so",
+        "someone",
+        "something",
+        "sometimes",
+        "song",
+        "start",
+        "station",
+        "stay",
+        "stick",
+        "stop",
+        "summer",
+        "talk",
+        "teach",
+        "text",
+        "that",
+        "the",
+        "there",
+        "thing",
+        "think",
+        "this",
+        "ticket",
+        "tidy",
+        "time",
+        "tired",
+        "to",
+        "too",
+        "train",
+        "unexpected",
+        "unfinished",
+        "unhappy",
+        "us",
+        "way",
+        "we",
+        "week",
+        "when",
+        "without",
+        "word",
+        "write",
+        "year",
+        "yesterday",
+        "you",
+        "young",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "リターンの意味がわかり、「This week may be a good time to rest.」のような Today's Line 風のリーディング文が辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にある。今週は休むのに良い時期かもしれない。あなたの電池は少なくなっている。充電しよう。",
+        "note_ja": "Unit 8 の到達点。アプリでは学習者の実際の太陽星座を当てはめ、Today's Line 風の短いリーディングとして提示する。may で言い切らず、recharge（充電）で無理をさせない活かし方に結ぶ。",
+        "template_en": "Your Sun is in {sunSign}. This week may be a good time to rest. Your battery is low; recharge it."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "a good time to 〜 で「〜するのに良い時期」。may と組み合わせて、Today's Line のように言い切らずに読む。",
+          "options": [
+            "今週は休むのに良い時期かもしれない",
+            "今週は休んではいけない",
+            "今週は休む時間がない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "This week may be a good time to rest.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "return は、天体が出発点（出生時の位置）に戻ること。約29年周期のサターンリターンが特に知られる。",
+          "options": [
+            "リターン（天体が出生時の位置に戻ること）",
+            "逆行（天体が逆向きに動いて見える期間）",
+            "トランジット（現在の空を運行中の天体）"
+          ],
+          "prompt_ja": "「return」の意味は？（占星術の用語）",
+          "question_en": "return",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "year は「年」。about every 29 years で「約29年ごとに」。",
+          "options": [
+            "years",
+            "weeks",
+            "hours"
+          ],
+          "promptJa": "土星は約29年ごとに、元の場所に戻ってくる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Saturn comes back to its place about every 29 ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "bloom は「咲く」。",
+          "options": [
+            "bloom",
+            "harvest",
+            "avoid"
+          ],
+          "promptJa": "花は、それぞれの時期に咲く。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Flowers ___ in their own time.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "There is plenty of time.",
+          "explanation_ja": "There is 〜 で「〜がある」。plenty of time で「たっぷりの時間」。",
+          "prompt_ja": "語を並べ替えて「時間はたっぷりある」という文を作ろう。",
+          "tiles": [
+            "plenty",
+            "There",
+            "of time",
+            "is"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。battery is low（電池が少ない）は疲れのたとえ。recharge（充電する）で休むことをすすめ、can still teach（それでも教えてくれることがある）で結ぶ。",
+          "options": [
+            "エネルギーが減っているので、充電しよう。つらい週からも学べることがある",
+            "エネルギーが減っているので、もっと働こう",
+            "つらい週は何も教えてくれない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Your battery is low; recharge it. A rough week can still teach you something.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "panic は「あわてる」。Do not 〜 で「〜しないで」。",
+          "options": [
+            "panic",
+            "celebrate",
+            "renew"
+          ],
+          "promptJa": "あわてないで。ゆっくり息をしよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Do not ___; take a slow breath.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson8_3",
+      "newTerms": [
+        {
+          "en": "return",
+          "ja": "リターン",
+          "note_ja": "天体が出発点（出生時の位置）に戻ること。約29年周期のサターンリターンが特に知られ、人生の節目の読みに使われる。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "birthday",
+          "ja": "誕生日"
+        },
+        {
+          "en": "anniversary",
+          "ja": "記念日"
+        },
+        {
+          "en": "celebrate",
+          "ja": "祝う"
+        },
+        {
+          "en": "candle",
+          "ja": "ろうそく"
+        },
+        {
+          "en": "cake",
+          "ja": "ケーキ"
+        },
+        {
+          "en": "adult",
+          "ja": "大人"
+        },
+        {
+          "en": "mature",
+          "ja": "成熟した"
+        },
+        {
+          "en": "responsibility",
+          "ja": "責任"
+        },
+        {
+          "en": "turn",
+          "ja": "曲がり角／転機"
+        },
+        {
+          "en": "chapter",
+          "ja": "章"
+        },
+        {
+          "en": "generation",
+          "ja": "世代"
+        },
+        {
+          "en": "decade",
+          "ja": "10年"
+        },
+        {
+          "en": "century",
+          "ja": "世紀"
+        },
+        {
+          "en": "lifetime",
+          "ja": "一生"
+        },
+        {
+          "en": "journey",
+          "ja": "旅路"
+        },
+        {
+          "en": "destination",
+          "ja": "目的地"
+        },
+        {
+          "en": "harvest",
+          "ja": "収穫する"
+        },
+        {
+          "en": "seed",
+          "ja": "種"
+        },
+        {
+          "en": "bloom",
+          "ja": "咲く"
+        },
+        {
+          "en": "fruit",
+          "ja": "果実"
+        },
+        {
+          "en": "leaf",
+          "ja": "葉（複数形 leaves）"
+        },
+        {
+          "en": "branch",
+          "ja": "枝"
+        },
+        {
+          "en": "soil",
+          "ja": "土"
+        },
+        {
+          "en": "avoid",
+          "ja": "避ける"
+        },
+        {
+          "en": "mild",
+          "ja": "穏やかな"
+        },
+        {
+          "en": "likely",
+          "ja": "〜しそうな"
+        },
+        {
+          "en": "possible",
+          "ja": "可能な"
+        },
+        {
+          "en": "impossible",
+          "ja": "不可能な"
+        },
+        {
+          "en": "potential",
+          "ja": "可能性"
+        },
+        {
+          "en": "theme",
+          "ja": "テーマ"
+        },
+        {
+          "en": "topic",
+          "ja": "話題"
+        },
+        {
+          "en": "overall",
+          "ja": "全体として"
+        },
+        {
+          "en": "general",
+          "ja": "一般的な（in general＝一般に）"
+        },
+        {
+          "en": "specific",
+          "ja": "具体的な"
+        },
+        {
+          "en": "particular",
+          "ja": "特定の"
+        },
+        {
+          "en": "clear",
+          "ja": "澄んだ／はっきりした"
+        },
+        {
+          "en": "peak",
+          "ja": "頂点"
+        },
+        {
+          "en": "battery",
+          "ja": "電池"
+        },
+        {
+          "en": "recharge",
+          "ja": "充電する"
+        },
+        {
+          "en": "reset",
+          "ja": "リセットする"
+        },
+        {
+          "en": "refresh",
+          "ja": "新たにする"
+        },
+        {
+          "en": "restart",
+          "ja": "やり直す"
+        },
+        {
+          "en": "renew",
+          "ja": "新たにする／更新する"
+        },
+        {
+          "en": "growth",
+          "ja": "成長"
+        },
+        {
+          "en": "wisdom",
+          "ja": "知恵"
+        },
+        {
+          "en": "experience",
+          "ja": "経験"
+        },
+        {
+          "en": "plenty",
+          "ja": "たくさん（plenty of 〜）"
+        },
+        {
+          "en": "rough",
+          "ja": "荒れた／つらい"
+        },
+        {
+          "en": "gratitude",
+          "ja": "感謝"
+        },
+        {
+          "en": "fulfilled",
+          "ja": "満たされた"
+        },
+        {
+          "en": "exhausted",
+          "ja": "疲れ果てた"
+        },
+        {
+          "en": "panic",
+          "ja": "あわてる"
+        },
+        {
+          "en": "isolated",
+          "ja": "孤立した"
+        },
+        {
+          "en": "ease",
+          "ja": "（at ease で）気楽に"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "This week may be a good time to 〜. / 〜 comes back about every 〜 years.",
+      "sentences": [
+        {
+          "en": "In a return, a planet comes back to its birth place.",
+          "ja": "リターンでは、天体が出生時の場所に戻ってくる。"
+        },
+        {
+          "en": "Every year, the Sun comes back to its place on your birthday.",
+          "ja": "毎年、太陽はあなたの誕生日に元の場所に戻ってくる。"
+        },
+        {
+          "en": "We call it a Sun return.",
+          "ja": "これを太陽のリターンと呼ぶ。"
+        },
+        {
+          "en": "Light a candle, and celebrate your new year.",
+          "ja": "ろうそくに火をともし、あなたの新しい1年を祝おう。"
+        },
+        {
+          "en": "An anniversary can remind you of a happy day.",
+          "ja": "記念日は、幸せな日を思い出させてくれることがある。"
+        },
+        {
+          "en": "A birthday cake can be a sweet thank you.",
+          "ja": "誕生日のケーキは、甘い「ありがとう」になることがある。"
+        },
+        {
+          "en": "Saturn comes back to its place about every 29 years.",
+          "ja": "土星は約29年ごとに元の場所に戻ってくる。"
+        },
+        {
+          "en": "Many people call it the Saturn return.",
+          "ja": "多くの人が、それをサターンリターンと呼ぶ。"
+        },
+        {
+          "en": "Your Saturn return may come near the age of 29.",
+          "ja": "あなたのサターンリターンは、29歳ごろに来るかもしれない。"
+        },
+        {
+          "en": "It can be a turn in your life, like a new chapter.",
+          "ja": "それは新しい章のように、人生の転機になることがある。"
+        },
+        {
+          "en": "Many adults feel more mature after it.",
+          "ja": "多くの大人が、そのあとでより成熟したと感じる。"
+        },
+        {
+          "en": "You may take on new responsibility.",
+          "ja": "新しい責任を引き受けるかもしれない。"
+        },
+        {
+          "en": "Jupiter comes back about every 12 years.",
+          "ja": "木星は約12年ごとに戻ってくる。"
+        },
+        {
+          "en": "Each generation has its own Pluto sign.",
+          "ja": "それぞれの世代には、それぞれの冥王星の星座がある。"
+        },
+        {
+          "en": "A decade can change a person.",
+          "ja": "10年は人を変えることがある。"
+        },
+        {
+          "en": "A century is short for Pluto.",
+          "ja": "冥王星にとって、1世紀は短い。"
+        },
+        {
+          "en": "Life is a long journey with many stops.",
+          "ja": "人生は、たくさん立ち止まる長い旅路だ。"
+        },
+        {
+          "en": "The journey is as important as the destination.",
+          "ja": "旅路は、目的地と同じくらい大切だ。"
+        },
+        {
+          "en": "Across a lifetime, the planets come back again and again.",
+          "ja": "一生のあいだに、天体は何度も戻ってくる。"
+        },
+        {
+          "en": "Seasons of growth come and go.",
+          "ja": "成長の季節は、来ては去る。"
+        },
+        {
+          "en": "Plant a seed today.",
+          "ja": "今日、種をまこう。"
+        },
+        {
+          "en": "Flowers bloom in their own time.",
+          "ja": "花は、それぞれの時期に咲く。"
+        },
+        {
+          "en": "In autumn, you may harvest the fruit of your work.",
+          "ja": "秋には、自分の仕事の果実を収穫するかもしれない。"
+        },
+        {
+          "en": "A leaf falls, and a new leaf grows.",
+          "ja": "葉が落ち、新しい葉が育つ。"
+        },
+        {
+          "en": "A tree needs good soil and strong branches.",
+          "ja": "木には、良い土と強い枝が必要だ。"
+        },
+        {
+          "en": "Experience can give you wisdom.",
+          "ja": "経験は、あなたに知恵を与えることがある。"
+        },
+        {
+          "en": "This week may be a good time to rest.",
+          "ja": "今週は休むのに良い時期かもしれない。"
+        },
+        {
+          "en": "It is likely to be a mild week.",
+          "ja": "穏やかな週になりそうだ。"
+        },
+        {
+          "en": "A rough week can still teach you something.",
+          "ja": "つらい週でも、何かを教えてくれることがある。"
+        },
+        {
+          "en": "Everything is possible, but you do not need to do everything.",
+          "ja": "何でも可能だが、すべてをする必要はない。"
+        },
+        {
+          "en": "Some things feel impossible today, and that is okay.",
+          "ja": "今日は不可能に感じられることもあるが、それでいい。"
+        },
+        {
+          "en": "You have a lot of potential.",
+          "ja": "あなたには多くの可能性がある。"
+        },
+        {
+          "en": "Avoid big changes today.",
+          "ja": "今日は大きな変化を避けよう。"
+        },
+        {
+          "en": "The theme of this month is home.",
+          "ja": "今月のテーマは家だ。"
+        },
+        {
+          "en": "Choose a topic for your diary.",
+          "ja": "日記の話題を選ぼう。"
+        },
+        {
+          "en": "Overall, it is a calm week.",
+          "ja": "全体として、穏やかな週だ。"
+        },
+        {
+          "en": "In general, the Moon changes your mood fast.",
+          "ja": "一般に、月はあなたの気分をすばやく変える。"
+        },
+        {
+          "en": "Be specific about what you need.",
+          "ja": "自分に必要なことを、具体的に言おう。"
+        },
+        {
+          "en": "Notice a particular moment of joy.",
+          "ja": "喜びを感じた特定の瞬間に気づこう。"
+        },
+        {
+          "en": "A clear sky at night can calm you.",
+          "ja": "夜の澄んだ空は、あなたを落ち着かせることがある。"
+        },
+        {
+          "en": "Your energy may reach a peak this week.",
+          "ja": "今週、あなたのエネルギーは頂点に達するかもしれない。"
+        },
+        {
+          "en": "Your battery is low; recharge it.",
+          "ja": "あなたの電池は少なくなっている。充電しよう。"
+        },
+        {
+          "en": "Reset your routine, and refresh your room.",
+          "ja": "日課をリセットして、部屋を新たにしよう。"
+        },
+        {
+          "en": "It is okay to restart.",
+          "ja": "やり直してもいい。"
+        },
+        {
+          "en": "Renew a promise to yourself.",
+          "ja": "自分との約束を新たにしよう。"
+        },
+        {
+          "en": "There is plenty of time.",
+          "ja": "時間はたっぷりある。"
+        },
+        {
+          "en": "Feel gratitude for the small things.",
+          "ja": "小さなことに感謝しよう。"
+        },
+        {
+          "en": "You may feel fulfilled after a simple day.",
+          "ja": "シンプルな一日のあとに、満たされた気持ちになるかもしれない。"
+        },
+        {
+          "en": "If you feel exhausted, cancel a plan.",
+          "ja": "疲れ果てたと感じたら、予定を一つ取り消そう。"
+        },
+        {
+          "en": "Do not panic; take a slow breath.",
+          "ja": "あわてないで。ゆっくり息をしよう。"
+        },
+        {
+          "en": "When you feel isolated, call a friend.",
+          "ja": "孤立していると感じたら、友達に電話しよう。"
+        },
+        {
+          "en": "Let your mind be at ease.",
+          "ja": "心を楽にしてあげよう。"
+        }
+      ],
+      "theme_ja": "Unit 8 の総仕上げ。リターン（天体が出生時の位置に戻ること）を学び、誕生日・サターンリターンなど人生の周期を読む。This week may be a good time to 〜 を使った Today's Line 風の短いリーディングを読む。",
+      "title_en": "Coming Back",
+      "title_ja": "めぐる時間 ― This week may be a good time to 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "across",
+        "adult",
+        "after",
+        "again",
+        "age",
+        "and",
+        "anniversary",
+        "as",
+        "at",
+        "autumn",
+        "avoid",
+        "back",
+        "battery",
+        "be",
+        "big",
+        "birth",
+        "birthday",
+        "bloom",
+        "branch",
+        "breath",
+        "but",
+        "cake",
+        "call",
+        "calm",
+        "can",
+        "cancel",
+        "candle",
+        "celebrate",
+        "century",
+        "change",
+        "chapter",
+        "choose",
+        "clear",
+        "come",
+        "day",
+        "decade",
+        "destination",
+        "diary",
+        "do",
+        "each",
+        "ease",
+        "energy",
+        "every",
+        "everything",
+        "exhausted",
+        "experience",
+        "fall",
+        "fast",
+        "feel",
+        "flower",
+        "for",
+        "friend",
+        "fruit",
+        "fulfilled",
+        "general",
+        "generation",
+        "give",
+        "go",
+        "good",
+        "gratitude",
+        "grow",
+        "growth",
+        "happy",
+        "harvest",
+        "have",
+        "home",
+        "hour",
+        "if",
+        "important",
+        "impossible",
+        "in",
+        "is",
+        "isolated",
+        "it",
+        "its",
+        "journey",
+        "joy",
+        "leaf",
+        "let",
+        "life",
+        "lifetime",
+        "light",
+        "like",
+        "likely",
+        "long",
+        "lot",
+        "low",
+        "many",
+        "mature",
+        "may",
+        "mild",
+        "mind",
+        "moment",
+        "month",
+        "mood",
+        "more",
+        "near",
+        "need",
+        "new",
+        "night",
+        "not",
+        "notice",
+        "of",
+        "okay",
+        "on",
+        "overall",
+        "own",
+        "panic",
+        "particular",
+        "peak",
+        "people",
+        "person",
+        "place",
+        "plan",
+        "plant",
+        "plenty",
+        "possible",
+        "potential",
+        "promise",
+        "reach",
+        "recharge",
+        "refresh",
+        "remind",
+        "renew",
+        "reset",
+        "responsibility",
+        "rest",
+        "restart",
+        "room",
+        "rough",
+        "routine",
+        "season",
+        "seed",
+        "short",
+        "simple",
+        "sky",
+        "slow",
+        "small",
+        "soil",
+        "some",
+        "something",
+        "specific",
+        "still",
+        "stop",
+        "strong",
+        "sweet",
+        "take",
+        "teach",
+        "thank",
+        "that",
+        "the",
+        "their",
+        "theme",
+        "there",
+        "thing",
+        "this",
+        "time",
+        "to",
+        "today",
+        "topic",
+        "tree",
+        "turn",
+        "we",
+        "week",
+        "what",
+        "when",
+        "wisdom",
+        "with",
+        "work",
+        "year",
+        "you",
+        "your",
+        "yourself"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-23",
+    "id": "unit8",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 8 の新規一般語は160語（53・53・54語）で、累計1,050語に到達する（CURRICULUM §4 の配分どおり）。",
+      "うち感情・心の語は20語（7・7・6語）。CURRICULUM §2.2／§4 の「早く薄く撒く」方針の最終ユニット。8.1：sleepy, grumpy, thrilled, inspire, motivate, irritable, silly／8.2：nostalgic, bitter, numb, stick, unhappy, heartbroken, empty／8.3：gratitude, fulfilled, exhausted, panic, isolated, ease。",
+      "専門用語レイヤーの追加は transit, retrograde, return の3語（CURRICULUM §3）。1レッスン1語ずつ導入した。表記は glossary.json に合わせた。return は専門用語として扱い、一般語の「戻る」は come back で表した。",
+      "不規則な過去形は、原形と同一語として数え（CURRICULUM 2.1）、Lesson 8.2 で初出として文型・解説に併記した：was／were（be）、felt（feel）、thought（think）、went（go）、said（say）、did（do）、came（come）、stuck（stick）。比較級・最上級の better／best／worse は不規則形のため、8.1 で語として導入した。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形・所有格の 's は原形と同一語として数える（CURRICULUM 2.1）。",
+      "例文・演習で使う一般語は「Unit 1〜7 導入済み890語＋当該レッスンまでの Unit 8 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "chartLine は既存の星座プレースホルダの範囲で構成した。トランジットの星座（Today's Line 用の {transitMoonSign} など）は chartLine の置換仕様にないため使っていない。",
+      "トランジットは「天気予報のようなもので、ルールではない」と例文で明示し、未来を言い切る読み方にならないようにした。Lesson 8.3 の chartLine は Today's Line 風の短いリーディングとして構成している。"
+    ],
+    "order": 8,
+    "status": "draft",
+    "theme_ja": "今の空を動く天体（トランジット）、逆行、リターンを学び、時間を表す言葉と過去形で「今」と「めぐる時間」を読む。Today's Line 入門のユニット。",
+    "title_en": "Transits and Time",
+    "title_ja": "トランジットと時間 ― 今の空を読む",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson8_1": 53,
+        "lesson8_2": 53,
+        "lesson8_3": 54
+      },
+      "newGeneralWordsTotal": 160,
+      "newTermsTotal": 3
+    }
+  }
+}
