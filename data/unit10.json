@@ -1,0 +1,2002 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "仕事とお金の言葉がわかり、「Do: finish your report. Don't: say yes to everything.」のような Do／Don't の文が読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にある。すること：優先することの一覧を作る。しないこと：何にでも「はい」と言う。",
+        "note_ja": "アプリでは学習者の実際の太陽星座を当てはめる。Co-Star の Do／Don't の形で、仕事運を「無理を引き受けすぎない」活かし方として読む。",
+        "template_en": "Your Sun is in {sunSign}. Do: make a list of your priorities. Don't: say yes to everything."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "Co-Star の Do／Don't の一覧。Don't は do not の短い形（縮約形）。",
+          "options": [
+            "すること：報告書を終える。しないこと：何にでも「はい」と言う",
+            "報告書を終えてはいけない。何にでも「はい」と言おう",
+            "報告書は明日でいい。誰にも返事をしなくていい"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Do: finish your report. Don't: say yes to everything.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "salary は「給料」、value は「価値」。お金と自分の価値を分けて読む。",
+          "options": [
+            "あなたの給料は、あなたの価値ではない",
+            "あなたの給料が、あなたの価値だ",
+            "あなたの給料は、来月上がる"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Your salary is not your value.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "budget は「予算」。make a budget で「予算を立てる」。",
+          "options": [
+            "budget",
+            "priority",
+            "reward"
+          ],
+          "promptJa": "予算を立てて、請求書を確かめよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Make a ___, and check your bills.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "interview は「面接」。母音で始まるので a ではなく an。",
+          "options": [
+            "interview",
+            "account",
+            "income"
+          ],
+          "promptJa": "面接の前には、緊張するかもしれない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Before an ___, you may feel nervous.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Give yourself a reward after hard work.",
+          "explanation_ja": "Give ＋ 人 ＋ もの で「人にものをあげる」。after hard work（がんばったあと）は最後。",
+          "prompt_ja": "語を並べ替えて「がんばったあとは、自分にごほうびをあげよう」という文を作ろう。",
+          "tiles": [
+            "a reward",
+            "Give yourself",
+            "after hard work"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。can manage it（うまくやれる）と can wait（待ってもいい）。急がせない仕事運の読み方。",
+          "options": [
+            "締め切りは近いが、うまくやれる。大きな決断は明日まで待ってもいい",
+            "締め切りは近いので、今日すべてを決めなければならない",
+            "締め切りはもう過ぎたので、何もできない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "The deadline is close, but you can manage it. A big decision can wait until tomorrow.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "quit は「やめる」。過去形も quit。",
+          "options": [
+            "quit",
+            "hire",
+            "sell"
+          ],
+          "promptJa": "あなたを傷つける仕事はやめてもいい。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "It is okay to ___ a job that hurts you.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson10_1",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "employee",
+          "ja": "従業員"
+        },
+        {
+          "en": "colleague",
+          "ja": "同僚"
+        },
+        {
+          "en": "manager",
+          "ja": "管理職／マネージャー"
+        },
+        {
+          "en": "client",
+          "ja": "依頼主／顧客"
+        },
+        {
+          "en": "customer",
+          "ja": "お客さん"
+        },
+        {
+          "en": "deadline",
+          "ja": "締め切り"
+        },
+        {
+          "en": "report",
+          "ja": "報告書"
+        },
+        {
+          "en": "presentation",
+          "ja": "発表"
+        },
+        {
+          "en": "interview",
+          "ja": "面接"
+        },
+        {
+          "en": "salary",
+          "ja": "給料"
+        },
+        {
+          "en": "income",
+          "ja": "収入"
+        },
+        {
+          "en": "budget",
+          "ja": "予算"
+        },
+        {
+          "en": "contract",
+          "ja": "契約"
+        },
+        {
+          "en": "promotion",
+          "ja": "昇進"
+        },
+        {
+          "en": "raise",
+          "ja": "昇給／上げる"
+        },
+        {
+          "en": "quit",
+          "ja": "やめる（過去形も quit）"
+        },
+        {
+          "en": "hire",
+          "ja": "雇う"
+        },
+        {
+          "en": "apply",
+          "ja": "申し込む／応募する"
+        },
+        {
+          "en": "application",
+          "ja": "申し込み"
+        },
+        {
+          "en": "desk",
+          "ja": "机"
+        },
+        {
+          "en": "chair",
+          "ja": "いす"
+        },
+        {
+          "en": "document",
+          "ja": "書類"
+        },
+        {
+          "en": "file",
+          "ja": "ファイル"
+        },
+        {
+          "en": "print",
+          "ja": "印刷する"
+        },
+        {
+          "en": "copy",
+          "ja": "写し／コピー"
+        },
+        {
+          "en": "approve",
+          "ja": "承認する"
+        },
+        {
+          "en": "decision",
+          "ja": "決断"
+        },
+        {
+          "en": "network",
+          "ja": "人脈／ネットワーク"
+        },
+        {
+          "en": "market",
+          "ja": "市場"
+        },
+        {
+          "en": "product",
+          "ja": "製品"
+        },
+        {
+          "en": "sell",
+          "ja": "売る（過去形 sold）"
+        },
+        {
+          "en": "cost",
+          "ja": "費用"
+        },
+        {
+          "en": "profit",
+          "ja": "利益"
+        },
+        {
+          "en": "loss",
+          "ja": "損失"
+        },
+        {
+          "en": "invest",
+          "ja": "投資する"
+        },
+        {
+          "en": "bill",
+          "ja": "請求書"
+        },
+        {
+          "en": "rent",
+          "ja": "家賃"
+        },
+        {
+          "en": "debt",
+          "ja": "借金"
+        },
+        {
+          "en": "loan",
+          "ja": "ローン／貸付"
+        },
+        {
+          "en": "cash",
+          "ja": "現金"
+        },
+        {
+          "en": "bank",
+          "ja": "銀行"
+        },
+        {
+          "en": "account",
+          "ja": "口座"
+        },
+        {
+          "en": "card",
+          "ja": "カード"
+        },
+        {
+          "en": "wallet",
+          "ja": "財布"
+        },
+        {
+          "en": "shop",
+          "ja": "店"
+        },
+        {
+          "en": "store",
+          "ja": "店"
+        },
+        {
+          "en": "priority",
+          "ja": "優先すること"
+        },
+        {
+          "en": "manage",
+          "ja": "うまく扱う／管理する"
+        },
+        {
+          "en": "efficient",
+          "ja": "効率のいい"
+        },
+        {
+          "en": "productive",
+          "ja": "はかどる／生産的な"
+        },
+        {
+          "en": "ambition",
+          "ja": "野心"
+        },
+        {
+          "en": "ambitious",
+          "ja": "野心的な"
+        },
+        {
+          "en": "compete",
+          "ja": "競う"
+        },
+        {
+          "en": "competition",
+          "ja": "競争"
+        },
+        {
+          "en": "achieve",
+          "ja": "達成する"
+        },
+        {
+          "en": "yes",
+          "ja": "はい"
+        },
+        {
+          "en": "reward",
+          "ja": "ごほうび／報い"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "Do: 〜. / Don't: 〜.",
+      "sentences": [
+        {
+          "en": "Your app may give you a list: Do and Don't.",
+          "ja": "アプリは「すること」と「しないこと」の一覧をくれるかもしれない。"
+        },
+        {
+          "en": "Do: finish your report. Don't: say yes to everything.",
+          "ja": "すること：報告書を終える。しないこと：何にでも「はい」と言う。"
+        },
+        {
+          "en": "Don't is a short way to say do not.",
+          "ja": "Don't は do not の短い言い方だ。"
+        },
+        {
+          "en": "A colleague may need your help with a document.",
+          "ja": "同僚が書類のことであなたの助けを必要とするかもしれない。"
+        },
+        {
+          "en": "Your manager may ask for a copy of the file.",
+          "ja": "マネージャーがファイルのコピーを求めるかもしれない。"
+        },
+        {
+          "en": "Print it, and put it on your desk.",
+          "ja": "それを印刷して、机の上に置こう。"
+        },
+        {
+          "en": "Sit on your chair, and take a deep breath.",
+          "ja": "いすに座って、深く息をしよう。"
+        },
+        {
+          "en": "Every employee has a different pace.",
+          "ja": "従業員には、それぞれ違うペースがある。"
+        },
+        {
+          "en": "A client may want a fast answer.",
+          "ja": "依頼主は早い答えを求めるかもしれない。"
+        },
+        {
+          "en": "Be kind to the customer, and kind to yourself.",
+          "ja": "お客さんにも、自分にも優しくしよう。"
+        },
+        {
+          "en": "The deadline is close, but you can manage it.",
+          "ja": "締め切りは近いが、あなたはうまくやれる。"
+        },
+        {
+          "en": "Your presentation may go better than you think.",
+          "ja": "発表は、思っているよりうまくいくかもしれない。"
+        },
+        {
+          "en": "Before an interview, you may feel nervous.",
+          "ja": "面接の前には、緊張するかもしれない。"
+        },
+        {
+          "en": "You can apply for a new job when you feel ready.",
+          "ja": "準備ができたら、新しい仕事に応募できる。"
+        },
+        {
+          "en": "Read the application carefully.",
+          "ja": "申し込みを注意深く読もう。"
+        },
+        {
+          "en": "They may hire you, or they may not.",
+          "ja": "彼らはあなたを雇うかもしれないし、雇わないかもしれない。"
+        },
+        {
+          "en": "It is okay to quit a job that hurts you.",
+          "ja": "あなたを傷つける仕事はやめてもいい。"
+        },
+        {
+          "en": "Your salary is not your value.",
+          "ja": "あなたの給料は、あなたの価値ではない。"
+        },
+        {
+          "en": "Your income may change this year.",
+          "ja": "今年、あなたの収入は変わるかもしれない。"
+        },
+        {
+          "en": "Make a budget, and check your bills.",
+          "ja": "予算を立てて、請求書を確かめよう。"
+        },
+        {
+          "en": "Pay the rent first.",
+          "ja": "まず家賃を払おう。"
+        },
+        {
+          "en": "Debt is heavy, but a loan can be a step.",
+          "ja": "借金は重いが、ローンが一歩になることもある。"
+        },
+        {
+          "en": "Keep some cash in your wallet.",
+          "ja": "財布に少し現金を入れておこう。"
+        },
+        {
+          "en": "Check your bank account and your card.",
+          "ja": "銀行口座とカードを確かめよう。"
+        },
+        {
+          "en": "Read a contract slowly before you sign it.",
+          "ja": "契約書は、署名する前にゆっくり読もう。"
+        },
+        {
+          "en": "A promotion or a raise may come later.",
+          "ja": "昇進や昇給は、あとで来るかもしれない。"
+        },
+        {
+          "en": "Your manager may approve your plan.",
+          "ja": "マネージャーがあなたの計画を承認するかもしれない。"
+        },
+        {
+          "en": "A big decision can wait until tomorrow.",
+          "ja": "大きな決断は明日まで待ってもいい。"
+        },
+        {
+          "en": "Your network can open new doors.",
+          "ja": "あなたの人脈は、新しい扉を開くことがある。"
+        },
+        {
+          "en": "The market changes, and so do you.",
+          "ja": "市場は変わり、あなたも変わる。"
+        },
+        {
+          "en": "A good product needs a good story.",
+          "ja": "良い製品には、良い物語が必要だ。"
+        },
+        {
+          "en": "Some people sell things at a shop or a store.",
+          "ja": "店で物を売る人もいる。"
+        },
+        {
+          "en": "Think about the cost and the profit.",
+          "ja": "費用と利益について考えよう。"
+        },
+        {
+          "en": "A small loss is not the end.",
+          "ja": "小さな損失は終わりではない。"
+        },
+        {
+          "en": "Invest in your health and your skills.",
+          "ja": "健康とスキルに投資しよう。"
+        },
+        {
+          "en": "What is your first priority today?",
+          "ja": "今日いちばん優先することは何？"
+        },
+        {
+          "en": "Be efficient, but do not be too hard on yourself.",
+          "ja": "効率よくしよう。でも、自分に厳しくしすぎないで。"
+        },
+        {
+          "en": "You may feel productive in the morning.",
+          "ja": "午前中ははかどると感じるかもしれない。"
+        },
+        {
+          "en": "Ambition can be a good fire.",
+          "ja": "野心は、良い火になることがある。"
+        },
+        {
+          "en": "Ambitious people may want to compete.",
+          "ja": "野心的な人は、競いたくなるかもしれない。"
+        },
+        {
+          "en": "Competition is not the only way to grow.",
+          "ja": "競争だけが成長の道ではない。"
+        },
+        {
+          "en": "You can achieve a lot with small steps.",
+          "ja": "小さな一歩で、多くを達成できる。"
+        },
+        {
+          "en": "Give yourself a reward after hard work.",
+          "ja": "がんばったあとは、自分にごほうびをあげよう。"
+        },
+        {
+          "en": "Do: take a break. Don't: forget lunch.",
+          "ja": "すること：ひと休みする。しないこと：昼食を忘れる。"
+        }
+      ],
+      "theme_ja": "Co-Star の「仕事」のカテゴリを読む。職場・お金・キャリアの言葉と、Do／Don't（すること／しないこと）の一覧の形を学ぶ。don't などの縮約形もここで読む。",
+      "title_en": "Work and Money",
+      "title_ja": "仕事とお金 ― Do: 〜 / Don't: 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "account",
+        "achieve",
+        "after",
+        "ambition",
+        "ambitious",
+        "and",
+        "answer",
+        "app",
+        "application",
+        "apply",
+        "approve",
+        "ask",
+        "at",
+        "bank",
+        "be",
+        "before",
+        "better",
+        "big",
+        "bill",
+        "break",
+        "breath",
+        "budget",
+        "but",
+        "can",
+        "card",
+        "carefully",
+        "cash",
+        "chair",
+        "change",
+        "check",
+        "client",
+        "close",
+        "colleague",
+        "come",
+        "compete",
+        "competition",
+        "contract",
+        "copy",
+        "cost",
+        "customer",
+        "deadline",
+        "debt",
+        "decision",
+        "deep",
+        "desk",
+        "different",
+        "do",
+        "document",
+        "door",
+        "efficient",
+        "employee",
+        "end",
+        "every",
+        "everything",
+        "fast",
+        "feel",
+        "file",
+        "finish",
+        "first",
+        "for",
+        "forget",
+        "give",
+        "go",
+        "good",
+        "grow",
+        "hard",
+        "have",
+        "health",
+        "heavy",
+        "help",
+        "hire",
+        "hurt",
+        "in",
+        "income",
+        "interview",
+        "invest",
+        "is",
+        "it",
+        "job",
+        "keep",
+        "kind",
+        "later",
+        "list",
+        "loan",
+        "loss",
+        "lot",
+        "lunch",
+        "make",
+        "manage",
+        "manager",
+        "market",
+        "may",
+        "morning",
+        "need",
+        "nervous",
+        "network",
+        "new",
+        "not",
+        "of",
+        "okay",
+        "on",
+        "only",
+        "open",
+        "or",
+        "pace",
+        "pay",
+        "people",
+        "plan",
+        "presentation",
+        "print",
+        "priority",
+        "product",
+        "productive",
+        "profit",
+        "promotion",
+        "put",
+        "quit",
+        "raise",
+        "read",
+        "ready",
+        "rent",
+        "report",
+        "reward",
+        "salary",
+        "say",
+        "sell",
+        "shop",
+        "short",
+        "sit",
+        "skill",
+        "slowly",
+        "small",
+        "so",
+        "some",
+        "step",
+        "store",
+        "story",
+        "take",
+        "than",
+        "that",
+        "the",
+        "they",
+        "thing",
+        "think",
+        "this",
+        "to",
+        "today",
+        "tomorrow",
+        "too",
+        "until",
+        "value",
+        "wait",
+        "wallet",
+        "want",
+        "way",
+        "what",
+        "when",
+        "with",
+        "work",
+        "year",
+        "yes",
+        "you",
+        "your",
+        "yourself"
+      ]
+    },
+    {
+      "canDo_ja": "恋愛と人間関係の言葉がわかり、「It's okay to flirt a little.」のような関係のリーディング文が読める。",
+      "chartLine": {
+        "ja": "あなたの金星は{venusSignJa}にある。感じていることを言いたくなるかもしれない。正直になってもいい。",
+        "note_ja": "アプリでは学習者の実際の金星星座を当てはめる。愛の天体である金星の一文を、It's okay to 〜 で追い詰めない形に結ぶ。",
+        "template_en": "Your Venus is in {venusSign}. You might want to say what you feel. It's okay to be honest."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "It's は it is の縮約形。It's okay to 〜 で「〜してもいい」。",
+          "options": [
+            "少し気を引いてみてもいい",
+            "少しも気を引いてはいけない",
+            "気を引くのは失礼だ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "It's okay to flirt a little.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "single は「独身の」。Being 〜 で「〜でいること」。",
+          "options": [
+            "独身でいることは間違いではない",
+            "独身でいることは間違いだ",
+            "独身でいると幸せになれない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Being single is not a mistake.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "apology は「謝罪」。apologize（謝る、Unit 8）の名詞。",
+          "options": [
+            "apology",
+            "attraction",
+            "intimacy"
+          ],
+          "promptJa": "口論のあとは、謝罪が助けになることがある。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "After an argument, an ___ can help.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "communication は「コミュニケーション」。communicate（Unit 7）の名詞。",
+          "options": [
+            "communication",
+            "gossip",
+            "jealousy"
+          ],
+          "promptJa": "相性のいい人どうしでも、コミュニケーションは必要だ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Compatible people still need ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Mutual respect is the base of love.",
+          "explanation_ja": "Mutual respect（おたがいの尊重）が主語。the base of love（愛の土台）。",
+          "prompt_ja": "語を並べ替えて「おたがいの尊重は、愛の土台だ」という文を作ろう。",
+          "tiles": [
+            "is the base",
+            "Mutual respect",
+            "of love"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。can hurt（傷つくこともある）と can also free you（自由にすることもある）の両面を読む。without losing yourself で「自分を失わずに」。",
+          "options": [
+            "別れは傷つくこともあるが、自由にもしてくれる。自分を失わずに歩み寄れる",
+            "別れは悪いことなので、避けなければならない",
+            "歩み寄ると、自分がなくなってしまう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "A breakup can hurt, and it can also free you. You can compromise without losing yourself.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "rumor は「うわさ」。gossip（うわさ話）と近い語。",
+          "options": [
+            "rumor",
+            "guest",
+            "ring"
+          ],
+          "promptJa": "すべてのうわさを信じないで。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Do not believe every ___.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson10_2",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "crush",
+          "ja": "（片思いの）好きな人"
+        },
+        {
+          "en": "flirt",
+          "ja": "いちゃつく／気を引く"
+        },
+        {
+          "en": "romance",
+          "ja": "恋愛"
+        },
+        {
+          "en": "romantic",
+          "ja": "ロマンチックな"
+        },
+        {
+          "en": "attractive",
+          "ja": "魅力的な"
+        },
+        {
+          "en": "handsome",
+          "ja": "かっこいい"
+        },
+        {
+          "en": "cute",
+          "ja": "かわいい"
+        },
+        {
+          "en": "chemistry",
+          "ja": "相性（の良さ）"
+        },
+        {
+          "en": "breakup",
+          "ja": "別れ"
+        },
+        {
+          "en": "divorce",
+          "ja": "離婚"
+        },
+        {
+          "en": "single",
+          "ja": "独身の／一つの"
+        },
+        {
+          "en": "match",
+          "ja": "お似合いの相手／一致"
+        },
+        {
+          "en": "compatible",
+          "ja": "相性のいい"
+        },
+        {
+          "en": "commitment",
+          "ja": "真剣な関わり／約束"
+        },
+        {
+          "en": "commit",
+          "ja": "真剣に関わる"
+        },
+        {
+          "en": "faithful",
+          "ja": "誠実な"
+        },
+        {
+          "en": "cheat",
+          "ja": "浮気する／ずるをする"
+        },
+        {
+          "en": "compromise",
+          "ja": "歩み寄る"
+        },
+        {
+          "en": "communication",
+          "ja": "コミュニケーション"
+        },
+        {
+          "en": "embrace",
+          "ja": "抱きしめる／受け入れる"
+        },
+        {
+          "en": "mutual",
+          "ja": "おたがいの"
+        },
+        {
+          "en": "buddy",
+          "ja": "仲間"
+        },
+        {
+          "en": "roommate",
+          "ja": "ルームメイト"
+        },
+        {
+          "en": "classmate",
+          "ja": "同級生"
+        },
+        {
+          "en": "guest",
+          "ja": "客"
+        },
+        {
+          "en": "host",
+          "ja": "もてなす人"
+        },
+        {
+          "en": "visitor",
+          "ja": "訪問者"
+        },
+        {
+          "en": "gossip",
+          "ja": "うわさ話"
+        },
+        {
+          "en": "rumor",
+          "ja": "うわさ"
+        },
+        {
+          "en": "introduce",
+          "ja": "紹介する"
+        },
+        {
+          "en": "gather",
+          "ja": "集まる"
+        },
+        {
+          "en": "crowd",
+          "ja": "人ごみ"
+        },
+        {
+          "en": "wedding",
+          "ja": "結婚式"
+        },
+        {
+          "en": "ring",
+          "ja": "指輪"
+        },
+        {
+          "en": "propose",
+          "ja": "プロポーズする"
+        },
+        {
+          "en": "boyfriend",
+          "ja": "彼氏"
+        },
+        {
+          "en": "girlfriend",
+          "ja": "彼女（恋人）"
+        },
+        {
+          "en": "relative",
+          "ja": "親戚"
+        },
+        {
+          "en": "cousin",
+          "ja": "いとこ"
+        },
+        {
+          "en": "aunt",
+          "ja": "おば"
+        },
+        {
+          "en": "uncle",
+          "ja": "おじ"
+        },
+        {
+          "en": "son",
+          "ja": "息子"
+        },
+        {
+          "en": "daughter",
+          "ja": "娘"
+        },
+        {
+          "en": "kid",
+          "ja": "子ども"
+        },
+        {
+          "en": "teenager",
+          "ja": "10代の若者"
+        },
+        {
+          "en": "loyalty",
+          "ja": "誠実さ"
+        },
+        {
+          "en": "betray",
+          "ja": "裏切る"
+        },
+        {
+          "en": "lie",
+          "ja": "うそ（をつく）"
+        },
+        {
+          "en": "rude",
+          "ja": "失礼な"
+        },
+        {
+          "en": "argument",
+          "ja": "口論"
+        },
+        {
+          "en": "apology",
+          "ja": "謝罪"
+        },
+        {
+          "en": "honesty",
+          "ja": "正直さ"
+        },
+        {
+          "en": "intimacy",
+          "ja": "親密さ"
+        },
+        {
+          "en": "admire",
+          "ja": "尊敬する／感心する"
+        },
+        {
+          "en": "appreciate",
+          "ja": "ありがたく思う"
+        },
+        {
+          "en": "jealousy",
+          "ja": "嫉妬"
+        },
+        {
+          "en": "attraction",
+          "ja": "引かれる気持ち"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "It's okay to 〜. / You might want to 〜.",
+      "sentences": [
+        {
+          "en": "Love is a big part of your daily line.",
+          "ja": "恋愛は、毎日の一文の大きな部分だ。"
+        },
+        {
+          "en": "You might want to talk to your crush today.",
+          "ja": "今日は好きな人と話したくなるかもしれない。"
+        },
+        {
+          "en": "It's okay to flirt a little.",
+          "ja": "少し気を引いてみてもいい。"
+        },
+        {
+          "en": "It's is a short way to say it is.",
+          "ja": "It's は it is の短い言い方だ。"
+        },
+        {
+          "en": "Romance can be quiet, not only romantic.",
+          "ja": "恋愛は、ロマンチックなだけでなく、静かなものでもある。"
+        },
+        {
+          "en": "You may find someone attractive, cute, or handsome.",
+          "ja": "誰かを魅力的だ、かわいい、かっこいいと思うかもしれない。"
+        },
+        {
+          "en": "Chemistry is hard to explain.",
+          "ja": "相性は説明しにくい。"
+        },
+        {
+          "en": "Attraction can be strong at first.",
+          "ja": "引かれる気持ちは、はじめは強いことがある。"
+        },
+        {
+          "en": "A good match can still be hard.",
+          "ja": "お似合いの相手でも、難しいことはある。"
+        },
+        {
+          "en": "Compatible people still need communication.",
+          "ja": "相性のいい人どうしでも、コミュニケーションは必要だ。"
+        },
+        {
+          "en": "Commitment means you choose each other again and again.",
+          "ja": "真剣な関わりとは、何度もおたがいを選ぶことだ。"
+        },
+        {
+          "en": "You do not need to commit today.",
+          "ja": "今日、真剣な約束をする必要はない。"
+        },
+        {
+          "en": "A faithful partner shows loyalty and honesty.",
+          "ja": "誠実なパートナーは、誠実さと正直さを見せる。"
+        },
+        {
+          "en": "If someone may cheat or lie, trust your gut.",
+          "ja": "誰かが浮気やうそをするかもしれないと思ったら、自分の直感を信じよう。"
+        },
+        {
+          "en": "Nobody needs to betray you to teach you.",
+          "ja": "誰かに裏切られなくても、学ぶことはできる。"
+        },
+        {
+          "en": "After an argument, an apology can help.",
+          "ja": "口論のあとは、謝罪が助けになることがある。"
+        },
+        {
+          "en": "You can compromise without losing yourself.",
+          "ja": "自分を失わずに歩み寄ることができる。"
+        },
+        {
+          "en": "Embrace the people who are kind to you.",
+          "ja": "あなたに優しい人を抱きしめよう。"
+        },
+        {
+          "en": "Mutual respect is the base of love.",
+          "ja": "おたがいの尊重は、愛の土台だ。"
+        },
+        {
+          "en": "Intimacy takes time.",
+          "ja": "親密さには時間がかかる。"
+        },
+        {
+          "en": "A breakup can hurt, and it can also free you.",
+          "ja": "別れは傷つくこともあるが、あなたを自由にすることもある。"
+        },
+        {
+          "en": "Some people divorce, and they find peace later.",
+          "ja": "離婚して、あとで安らぎを見つける人もいる。"
+        },
+        {
+          "en": "Being single is not a mistake.",
+          "ja": "独身でいることは間違いではない。"
+        },
+        {
+          "en": "Your boyfriend or girlfriend may want more time with you.",
+          "ja": "あなたの彼氏や彼女は、もっとあなたと過ごしたいのかもしれない。"
+        },
+        {
+          "en": "He may propose with a ring.",
+          "ja": "彼は指輪でプロポーズするかもしれない。"
+        },
+        {
+          "en": "A wedding can bring the family together.",
+          "ja": "結婚式は家族を集めることがある。"
+        },
+        {
+          "en": "Your relatives may gather this weekend.",
+          "ja": "今週末、親戚が集まるかもしれない。"
+        },
+        {
+          "en": "Your aunt, your uncle, and your cousin may visit.",
+          "ja": "おば、おじ、いとこが訪ねてくるかもしれない。"
+        },
+        {
+          "en": "A son or a daughter can teach a parent a lot.",
+          "ja": "息子や娘は、親に多くを教えることがある。"
+        },
+        {
+          "en": "Kids and teenagers feel things deeply.",
+          "ja": "子どもや10代の若者は、物事を深く感じる。"
+        },
+        {
+          "en": "Your buddy may need a call.",
+          "ja": "あなたの仲間は、電話を待っているかもしれない。"
+        },
+        {
+          "en": "Your roommate or classmate may surprise you.",
+          "ja": "ルームメイトや同級生が、あなたを驚かせるかもしれない。"
+        },
+        {
+          "en": "Be a good host, and welcome your guests.",
+          "ja": "良いもてなし役になって、客を歓迎しよう。"
+        },
+        {
+          "en": "A visitor may bring news.",
+          "ja": "訪問者が知らせを運んでくるかもしれない。"
+        },
+        {
+          "en": "Do not believe every rumor.",
+          "ja": "すべてのうわさを信じないで。"
+        },
+        {
+          "en": "Gossip can hurt people.",
+          "ja": "うわさ話は人を傷つけることがある。"
+        },
+        {
+          "en": "Introduce yourself in your own way.",
+          "ja": "自分らしいやり方で自己紹介しよう。"
+        },
+        {
+          "en": "In a big crowd, you may feel alone.",
+          "ja": "大きな人ごみの中では、一人に感じるかもしれない。"
+        },
+        {
+          "en": "Do not be rude, even when you are tired.",
+          "ja": "疲れているときでも、失礼にならないで。"
+        },
+        {
+          "en": "Jealousy may show you what you need.",
+          "ja": "嫉妬は、あなたに必要なものを教えてくれるかもしれない。"
+        },
+        {
+          "en": "Tell your friends that you admire them.",
+          "ja": "友達に、尊敬していると伝えよう。"
+        },
+        {
+          "en": "Appreciate the small things your partner does.",
+          "ja": "パートナーがしてくれる小さなことを、ありがたく思おう。"
+        }
+      ],
+      "theme_ja": "Co-Star の「恋愛」と「人間関係」のカテゴリを読む。恋人・家族・友達・集まりの言葉と、It's okay to 〜／You might want to 〜 の形を学ぶ。",
+      "title_en": "Love and People",
+      "title_ja": "恋愛と人間関係 ― It's okay to 〜 / You might want to 〜",
+      "wordsUsed": [
+        "a",
+        "admire",
+        "after",
+        "again",
+        "alone",
+        "also",
+        "and",
+        "apology",
+        "appreciate",
+        "are",
+        "argument",
+        "at",
+        "attraction",
+        "attractive",
+        "aunt",
+        "base",
+        "be",
+        "believe",
+        "betray",
+        "big",
+        "boyfriend",
+        "breakup",
+        "bring",
+        "buddy",
+        "call",
+        "can",
+        "cheat",
+        "chemistry",
+        "choose",
+        "classmate",
+        "commit",
+        "commitment",
+        "communication",
+        "compatible",
+        "compromise",
+        "cousin",
+        "crowd",
+        "crush",
+        "cute",
+        "daily",
+        "daughter",
+        "deeply",
+        "divorce",
+        "do",
+        "each",
+        "embrace",
+        "even",
+        "every",
+        "explain",
+        "faithful",
+        "family",
+        "feel",
+        "find",
+        "first",
+        "flirt",
+        "free",
+        "friend",
+        "gather",
+        "girlfriend",
+        "good",
+        "gossip",
+        "guest",
+        "gut",
+        "handsome",
+        "hard",
+        "he",
+        "help",
+        "honest",
+        "honesty",
+        "host",
+        "hurt",
+        "if",
+        "in",
+        "intimacy",
+        "introduce",
+        "is",
+        "it",
+        "jealousy",
+        "kid",
+        "kind",
+        "later",
+        "lie",
+        "line",
+        "little",
+        "lose",
+        "lot",
+        "love",
+        "loyalty",
+        "match",
+        "may",
+        "mean",
+        "might",
+        "mistake",
+        "more",
+        "mutual",
+        "need",
+        "news",
+        "nobody",
+        "not",
+        "of",
+        "okay",
+        "only",
+        "or",
+        "other",
+        "own",
+        "parent",
+        "part",
+        "partner",
+        "peace",
+        "people",
+        "propose",
+        "quiet",
+        "relative",
+        "respect",
+        "ring",
+        "romance",
+        "romantic",
+        "roommate",
+        "rude",
+        "rumor",
+        "say",
+        "short",
+        "show",
+        "single",
+        "small",
+        "some",
+        "someone",
+        "son",
+        "still",
+        "strong",
+        "surprise",
+        "take",
+        "talk",
+        "teach",
+        "teenager",
+        "tell",
+        "that",
+        "the",
+        "them",
+        "they",
+        "thing",
+        "this",
+        "time",
+        "tired",
+        "to",
+        "today",
+        "together",
+        "trust",
+        "uncle",
+        "visit",
+        "visitor",
+        "want",
+        "way",
+        "wedding",
+        "weekend",
+        "welcome",
+        "what",
+        "when",
+        "who",
+        "with",
+        "without",
+        "you",
+        "your",
+        "yourself"
+      ]
+    },
+    {
+      "canDo_ja": "日常の言葉がわかり、「Work: 〜. Love: 〜. Self: 〜.」のようなカテゴリ別の Co-Star 風リーディングが辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にある。今日は家で休むのに良い日だ。長いおふろに入って、早めに寝よう。",
+        "note_ja": "Unit 10 の到達点。アプリでは学習者の実際の月星座を当てはめ、日常のリーディングとして提示する。感情の天体である月の一文を、日常の小さな活かし方（おふろ・早寝）で結ぶ。",
+        "template_en": "Your Moon is in {moonSign}. Today is a good day to rest at home. Take a long bath, and go to bed early."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "a good day to 〜 で「〜するのに良い日」。Co-Star の日々の一文でよく見る形。",
+          "options": [
+            "今日は家で休むのに良い日だ",
+            "今日は家で休んではいけない",
+            "今日は家にいる時間がない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Today is a good day to rest at home.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "social media は「SNS」。take a break from 〜 で「〜からひと休みする」。",
+          "options": [
+            "SNS からひと休みしよう",
+            "SNS をもっと使おう",
+            "SNS で休みを報告しよう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Take a break from social media.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "teeth は tooth（歯）の複数形（不規則な形）。",
+          "options": [
+            "teeth",
+            "hair",
+            "shoes"
+          ],
+          "promptJa": "顔を洗って、歯をみがこう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Wash your face, and brush your ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "thirsty は「のどがかわいた」。hungry（おなかがすいた）と区別する。",
+          "options": [
+            "thirsty",
+            "hungry",
+            "messy"
+          ],
+          "promptJa": "のどがかわいたら、お茶を飲もう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "If you are ___, drink some tea.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Take a short nap on the sofa.",
+          "explanation_ja": "Take a nap で「昼寝をする」。on the sofa（ソファで）は最後。",
+          "prompt_ja": "語を並べ替えて「ソファで短い昼寝をしよう」という文を作ろう。",
+          "tiles": [
+            "a short nap",
+            "Take",
+            "on the sofa"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。make your mind messy（心を散らかす）と a little at a time（少しずつ）。一度に全部ではなく、無理のない活かし方を読む。",
+          "options": [
+            "散らかった部屋は心も散らかすことがある。少しずつ片づけよう",
+            "部屋を一度に全部片づけなければならない",
+            "部屋が散らかっていても、心にはまったく関係ない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "A messy room can make your mind messy, too. Clean the mess a little at a time.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "journal は「日誌」。気持ちを書き出すジャーナリングにも使う。",
+          "options": [
+            "journal",
+            "towel",
+            "pillow"
+          ],
+          "promptJa": "寝る前に日誌を書こう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Write in your ___ before bed.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson10_3",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "shower",
+          "ja": "シャワー"
+        },
+        {
+          "en": "bath",
+          "ja": "おふろ"
+        },
+        {
+          "en": "wash",
+          "ja": "洗う"
+        },
+        {
+          "en": "brush",
+          "ja": "みがく／ブラシ"
+        },
+        {
+          "en": "tooth",
+          "ja": "歯（複数形 teeth）"
+        },
+        {
+          "en": "hair",
+          "ja": "髪"
+        },
+        {
+          "en": "dress",
+          "ja": "服を着る／ドレス"
+        },
+        {
+          "en": "shirt",
+          "ja": "シャツ"
+        },
+        {
+          "en": "shoe",
+          "ja": "くつ"
+        },
+        {
+          "en": "grocery",
+          "ja": "食料品（groceries）"
+        },
+        {
+          "en": "cook",
+          "ja": "料理する"
+        },
+        {
+          "en": "recipe",
+          "ja": "レシピ"
+        },
+        {
+          "en": "vegetable",
+          "ja": "野菜"
+        },
+        {
+          "en": "bread",
+          "ja": "パン"
+        },
+        {
+          "en": "rice",
+          "ja": "ごはん／米"
+        },
+        {
+          "en": "tea",
+          "ja": "お茶"
+        },
+        {
+          "en": "drink",
+          "ja": "飲む（過去形 drank）"
+        },
+        {
+          "en": "sugar",
+          "ja": "砂糖"
+        },
+        {
+          "en": "salt",
+          "ja": "塩"
+        },
+        {
+          "en": "hungry",
+          "ja": "おなかがすいた"
+        },
+        {
+          "en": "thirsty",
+          "ja": "のどがかわいた"
+        },
+        {
+          "en": "diet",
+          "ja": "食生活"
+        },
+        {
+          "en": "nap",
+          "ja": "昼寝"
+        },
+        {
+          "en": "alarm",
+          "ja": "目覚まし"
+        },
+        {
+          "en": "wake",
+          "ja": "目を覚ます（wake up。過去形 woke）"
+        },
+        {
+          "en": "laundry",
+          "ja": "洗濯物"
+        },
+        {
+          "en": "dish",
+          "ja": "皿"
+        },
+        {
+          "en": "trash",
+          "ja": "ごみ"
+        },
+        {
+          "en": "mess",
+          "ja": "散らかった状態"
+        },
+        {
+          "en": "messy",
+          "ja": "散らかった"
+        },
+        {
+          "en": "neighborhood",
+          "ja": "近所"
+        },
+        {
+          "en": "street",
+          "ja": "通り"
+        },
+        {
+          "en": "park",
+          "ja": "公園"
+        },
+        {
+          "en": "bus",
+          "ja": "バス"
+        },
+        {
+          "en": "car",
+          "ja": "車"
+        },
+        {
+          "en": "drive",
+          "ja": "運転する（過去形 drove）"
+        },
+        {
+          "en": "bike",
+          "ja": "自転車"
+        },
+        {
+          "en": "ride",
+          "ja": "乗る（過去形 rode）"
+        },
+        {
+          "en": "traffic",
+          "ja": "交通"
+        },
+        {
+          "en": "umbrella",
+          "ja": "かさ"
+        },
+        {
+          "en": "coat",
+          "ja": "コート"
+        },
+        {
+          "en": "holiday",
+          "ja": "休日"
+        },
+        {
+          "en": "vacation",
+          "ja": "休暇"
+        },
+        {
+          "en": "journal",
+          "ja": "日誌／ジャーナル"
+        },
+        {
+          "en": "meditate",
+          "ja": "瞑想する"
+        },
+        {
+          "en": "stretch",
+          "ja": "ストレッチする"
+        },
+        {
+          "en": "movie",
+          "ja": "映画"
+        },
+        {
+          "en": "media",
+          "ja": "メディア（social media＝SNS）"
+        },
+        {
+          "en": "library",
+          "ja": "図書館"
+        },
+        {
+          "en": "chore",
+          "ja": "家事"
+        },
+        {
+          "en": "snack",
+          "ja": "おやつ"
+        },
+        {
+          "en": "dessert",
+          "ja": "デザート"
+        },
+        {
+          "en": "blanket",
+          "ja": "毛布"
+        },
+        {
+          "en": "pillow",
+          "ja": "まくら"
+        },
+        {
+          "en": "towel",
+          "ja": "タオル"
+        },
+        {
+          "en": "sofa",
+          "ja": "ソファ"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "Today is a good day to 〜. / Work: 〜. Love: 〜. Self: 〜.",
+      "sentences": [
+        {
+          "en": "Today is a good day to rest at home.",
+          "ja": "今日は家で休むのに良い日だ。"
+        },
+        {
+          "en": "Wake up slowly, without an alarm.",
+          "ja": "目覚ましなしで、ゆっくり目を覚まそう。"
+        },
+        {
+          "en": "Take a warm shower, or a long bath.",
+          "ja": "温かいシャワーか、長いおふろに入ろう。"
+        },
+        {
+          "en": "Wash your face, and brush your teeth.",
+          "ja": "顔を洗って、歯をみがこう。"
+        },
+        {
+          "en": "Brush your hair, and dress in soft clothes.",
+          "ja": "髪をとかして、やわらかい服を着よう。"
+        },
+        {
+          "en": "A clean shirt can change your mood.",
+          "ja": "きれいなシャツは、気分を変えることがある。"
+        },
+        {
+          "en": "Put on comfortable shoes, and walk to the park.",
+          "ja": "楽なくつをはいて、公園まで歩こう。"
+        },
+        {
+          "en": "Walk down your street, and look at your neighborhood.",
+          "ja": "通りを歩いて、近所を見てみよう。"
+        },
+        {
+          "en": "Take the bus, or ride your bike.",
+          "ja": "バスに乗るか、自転車に乗ろう。"
+        },
+        {
+          "en": "If you drive a car, be careful in traffic.",
+          "ja": "車を運転するなら、交通に気をつけよう。"
+        },
+        {
+          "en": "Bring an umbrella and a coat.",
+          "ja": "かさとコートを持っていこう。"
+        },
+        {
+          "en": "Buy groceries for the week.",
+          "ja": "1週間分の食料品を買おう。"
+        },
+        {
+          "en": "Cook a simple recipe.",
+          "ja": "シンプルなレシピで料理しよう。"
+        },
+        {
+          "en": "Eat vegetables, bread, or rice.",
+          "ja": "野菜、パン、ごはんを食べよう。"
+        },
+        {
+          "en": "A little sugar or salt is okay.",
+          "ja": "少しの砂糖や塩は大丈夫だ。"
+        },
+        {
+          "en": "Your diet can change your mood.",
+          "ja": "食生活は気分を変えることがある。"
+        },
+        {
+          "en": "If you are hungry, eat; if you are thirsty, drink some tea.",
+          "ja": "おなかがすいたら食べ、のどがかわいたらお茶を飲もう。"
+        },
+        {
+          "en": "A small snack or a sweet dessert can make you smile.",
+          "ja": "小さなおやつや甘いデザートで、笑顔になれることがある。"
+        },
+        {
+          "en": "Take a short nap on the sofa.",
+          "ja": "ソファで短い昼寝をしよう。"
+        },
+        {
+          "en": "Use a soft pillow and a warm blanket.",
+          "ja": "やわらかいまくらと暖かい毛布を使おう。"
+        },
+        {
+          "en": "Do the laundry, and wash the dishes.",
+          "ja": "洗濯をして、皿を洗おう。"
+        },
+        {
+          "en": "Take out the trash.",
+          "ja": "ごみを出そう。"
+        },
+        {
+          "en": "A messy room can make your mind messy, too.",
+          "ja": "散らかった部屋は、心まで散らかすことがある。"
+        },
+        {
+          "en": "Clean the mess a little at a time.",
+          "ja": "散らかったところを、少しずつ片づけよう。"
+        },
+        {
+          "en": "Chores can be a quiet way to rest your mind.",
+          "ja": "家事は、心を休める静かな方法にもなる。"
+        },
+        {
+          "en": "Put a fresh towel by the bath.",
+          "ja": "おふろのそばに新しいタオルを置こう。"
+        },
+        {
+          "en": "Stretch your body in the morning.",
+          "ja": "朝に体をストレッチしよう。"
+        },
+        {
+          "en": "Meditate for a few minutes.",
+          "ja": "数分間、瞑想しよう。"
+        },
+        {
+          "en": "Write in your journal before bed.",
+          "ja": "寝る前に日誌を書こう。"
+        },
+        {
+          "en": "Take a break from social media.",
+          "ja": "SNS からひと休みしよう。"
+        },
+        {
+          "en": "Watch a movie, or read a book from the library.",
+          "ja": "映画を見るか、図書館の本を読もう。"
+        },
+        {
+          "en": "A holiday is a good time to rest.",
+          "ja": "休日は休むのに良いときだ。"
+        },
+        {
+          "en": "Plan a short vacation.",
+          "ja": "短い休暇を計画しよう。"
+        },
+        {
+          "en": "Try to go to bed early tonight.",
+          "ja": "今夜は早く寝るようにしよう。"
+        },
+        {
+          "en": "Work: finish a task. Love: send a kind text. Self: take a long bath.",
+          "ja": "仕事：作業を一つ終える。恋愛：優しいメッセージを送る。自分：長いおふろに入る。"
+        }
+      ],
+      "theme_ja": "Unit 10 の総仕上げ。身じたく・食事・家事・移動・休日など日常の言葉を学ぶ。Co-Star のカテゴリ別の短いリーディング（Work／Love／Self）を読む。",
+      "title_en": "Daily Life and Self",
+      "title_ja": "日常と自分 ― Today is a good day to 〜",
+      "wordsUsed": [
+        "a",
+        "alarm",
+        "and",
+        "are",
+        "at",
+        "bath",
+        "be",
+        "bed",
+        "before",
+        "bike",
+        "blanket",
+        "body",
+        "book",
+        "bread",
+        "break",
+        "bring",
+        "brush",
+        "bus",
+        "buy",
+        "by",
+        "can",
+        "car",
+        "careful",
+        "change",
+        "chore",
+        "clean",
+        "clothes",
+        "coat",
+        "comfortable",
+        "cook",
+        "day",
+        "dessert",
+        "diet",
+        "dish",
+        "do",
+        "down",
+        "dress",
+        "drink",
+        "drive",
+        "early",
+        "eat",
+        "face",
+        "few",
+        "finish",
+        "for",
+        "fresh",
+        "from",
+        "go",
+        "good",
+        "grocery",
+        "hair",
+        "holiday",
+        "home",
+        "hungry",
+        "if",
+        "in",
+        "is",
+        "journal",
+        "kind",
+        "laundry",
+        "library",
+        "little",
+        "long",
+        "look",
+        "love",
+        "make",
+        "media",
+        "meditate",
+        "mess",
+        "messy",
+        "mind",
+        "minute",
+        "mood",
+        "morning",
+        "movie",
+        "nap",
+        "neighborhood",
+        "okay",
+        "on",
+        "or",
+        "out",
+        "park",
+        "pillow",
+        "plan",
+        "put",
+        "quiet",
+        "read",
+        "recipe",
+        "rest",
+        "rice",
+        "ride",
+        "room",
+        "salt",
+        "self",
+        "send",
+        "shirt",
+        "shoe",
+        "short",
+        "shower",
+        "simple",
+        "slowly",
+        "small",
+        "smile",
+        "snack",
+        "social",
+        "sofa",
+        "soft",
+        "some",
+        "street",
+        "stretch",
+        "sugar",
+        "sweet",
+        "take",
+        "task",
+        "tea",
+        "text",
+        "the",
+        "thirsty",
+        "time",
+        "to",
+        "today",
+        "tonight",
+        "too",
+        "tooth",
+        "towel",
+        "traffic",
+        "trash",
+        "try",
+        "umbrella",
+        "up",
+        "use",
+        "vacation",
+        "vegetable",
+        "wake",
+        "walk",
+        "warm",
+        "wash",
+        "watch",
+        "way",
+        "week",
+        "without",
+        "work",
+        "write",
+        "you",
+        "your"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-23",
+    "id": "unit10",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 10 の新規一般語は170語（57・57・56語）で、累計1,300語に到達する（CURRICULUM §4 の配分どおり）。",
+      "専門用語の新規導入はなし（CURRICULUM §3）。テーマは Co-Star のカテゴリ別運勢（仕事・恋愛と人間関係・日常と自分）。",
+      "縮約形（don't, it's など）は、元の形（do not, it is）の語として数える。Lesson 10.1・10.2 で「短い言い方」として例文に明示した。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形・所有格の 's は原形と同一語として数える（CURRICULUM 2.1）。不規則形は初出の語の ja に併記した（quit→quit、sell→sold、tooth→teeth、drink→drank、wake→woke、drive→drove、ride→rode）。",
+      "例文・演習で使う一般語は「Unit 1〜9 導入済み1,130語＋当該レッスンまでの Unit 10 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "お金・恋愛の文では、効果や結果を保証する言い方を避け、may／can と「〜してもいい」で、無理をさせない活かし方に結んでいる（指示書 7.3）。"
+    ],
+    "order": 10,
+    "status": "draft",
+    "theme_ja": "Co-Star のカテゴリ別運勢（仕事・恋愛と人間関係・日常と自分）を読むための言葉を学ぶ。Do／Don't の一覧や It's okay to 〜 など、Co-Star でよく見る形を読む。",
+    "title_en": "Life Categories",
+    "title_ja": "仕事・人間関係・日常 ― カテゴリ別の運勢を読む",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson10_1": 57,
+        "lesson10_2": 57,
+        "lesson10_3": 56
+      },
+      "newGeneralWordsTotal": 170,
+      "newTermsTotal": 0
+    }
+  }
+}
