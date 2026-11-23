@@ -1,0 +1,1411 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "感情語の強さの違いがわかり、「I feel slightly nervous.」「My shoulders feel tight.」のような文が読める。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にある。今日は、わずかに張りつめた気持ちになるかもしれない。肩に気づいて、休ませてあげよう。",
+        "note_ja": "アプリでは学習者の実際の月星座を当てはめる。感情の天体である月の一文で、slightly（わずかに）という強さの言葉と体の感覚を読む。",
+        "template_en": "Your Moon is in {moonSign}. Today, you may feel slightly tense. Notice your shoulders, and let them rest."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "slightly は「わずかに」。気持ちの強さを表す語で、extremely（きわめて）の反対側にある。",
+          "options": [
+            "会う前に、私はわずかに緊張している",
+            "会う前に、私はひどく緊張している",
+            "会う前に、私はまったく緊張していない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "I feel slightly nervous before the meeting.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "heartbroken は Unit 8 の語。sad（悲しい）よりずっと強く、鋭い痛みのような悲しみを表す。",
+          "options": [
+            "悲嘆にくれた（とても強い悲しみ）",
+            "少し悲しい",
+            "悲しくない"
+          ],
+          "prompt_ja": "「heartbroken」の強さに近いのは？",
+          "question_en": "heartbroken",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "hardly は「ほとんど〜ない」。not を使わずに否定の意味になる。",
+          "options": [
+            "hardly",
+            "fairly",
+            "pretty"
+          ],
+          "promptJa": "不安なとき、私はほとんど眠れない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I can ___ sleep when I feel anxious.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "shoulder は「肩」。複数形 shoulders。",
+          "options": [
+            "shoulders",
+            "stomach",
+            "throat"
+          ],
+          "promptJa": "張りつめていると、肩がこわばる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "When I am tense, my ___ feel tight.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Trust your gut.",
+          "explanation_ja": "Trust your gut は Co-Star でもよく見る言い方。gut はもともと「おなか」で、ここでは「直感」。",
+          "prompt_ja": "語を並べ替えて「自分の直感を信じよう」という文を作ろう。",
+          "tiles": [
+            "your gut",
+            "Trust"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。slightly（わずかに）と a bit（少し）で強さを控えめに言い、let them rest（休ませて）で結ぶ。",
+          "options": [
+            "今日は少し張りつめるかもしれない。肩に気づいて休ませよう。少しの休息で十分だ",
+            "今日はひどく張りつめるので、何もしてはいけない",
+            "今日は肩をたくさん動かして働こう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Today, you may feel slightly tense. Notice your shoulders, and let them rest. A bit of rest is enough.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "sharp は「鋭い」、dull は「鈍い」。気持ちの強さを痛みにたとえている。",
+          "options": [
+            "sharp",
+            "dull",
+            "slow"
+          ],
+          "promptJa": "悲しいは鈍い痛みで、悲嘆にくれるは鋭い痛みだ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Sad is a dull pain; heartbroken is a ___ pain.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson9_1",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "slightly",
+          "ja": "わずかに"
+        },
+        {
+          "en": "extremely",
+          "ja": "きわめて"
+        },
+        {
+          "en": "somewhat",
+          "ja": "いくらか"
+        },
+        {
+          "en": "totally",
+          "ja": "まったく"
+        },
+        {
+          "en": "completely",
+          "ja": "完全に"
+        },
+        {
+          "en": "partly",
+          "ja": "部分的に"
+        },
+        {
+          "en": "hardly",
+          "ja": "ほとんど〜ない"
+        },
+        {
+          "en": "fairly",
+          "ja": "かなり／まあまあ"
+        },
+        {
+          "en": "pretty",
+          "ja": "（副詞で）かなり"
+        },
+        {
+          "en": "bit",
+          "ja": "（a bit で）少し"
+        },
+        {
+          "en": "level",
+          "ja": "程度／レベル"
+        },
+        {
+          "en": "amount",
+          "ja": "量"
+        },
+        {
+          "en": "sharp",
+          "ja": "鋭い"
+        },
+        {
+          "en": "dull",
+          "ja": "鈍い"
+        },
+        {
+          "en": "chest",
+          "ja": "胸"
+        },
+        {
+          "en": "stomach",
+          "ja": "おなか／胃"
+        },
+        {
+          "en": "shoulder",
+          "ja": "肩"
+        },
+        {
+          "en": "throat",
+          "ja": "のど"
+        },
+        {
+          "en": "head",
+          "ja": "頭"
+        },
+        {
+          "en": "skin",
+          "ja": "肌"
+        },
+        {
+          "en": "neck",
+          "ja": "首"
+        },
+        {
+          "en": "gut",
+          "ja": "（trust your gut で）直感／おなか"
+        },
+        {
+          "en": "heartbeat",
+          "ja": "鼓動"
+        },
+        {
+          "en": "ache",
+          "ja": "痛み／うずく"
+        },
+        {
+          "en": "sigh",
+          "ja": "ため息（をつく）"
+        },
+        {
+          "en": "shiver",
+          "ja": "震え（る）"
+        },
+        {
+          "en": "shake",
+          "ja": "揺れる／震える（過去形 shook）"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "I feel slightly 〜. / I am extremely 〜. / My 〜 feels 〜.",
+      "sentences": [
+        {
+          "en": "A feeling can be strong or weak, like a voice.",
+          "ja": "気持ちは、声のように強いことも弱いこともある。"
+        },
+        {
+          "en": "I feel slightly nervous before the meeting.",
+          "ja": "会う前に、私はわずかに緊張している。"
+        },
+        {
+          "en": "I feel a bit tired, but I am okay.",
+          "ja": "少し疲れているが、大丈夫だ。"
+        },
+        {
+          "en": "I am somewhat anxious about money.",
+          "ja": "私はお金のことで、いくらか不安だ。"
+        },
+        {
+          "en": "She is fairly calm, and he is pretty tense.",
+          "ja": "彼女はかなり落ち着いていて、彼はかなり張りつめている。"
+        },
+        {
+          "en": "I am extremely happy today.",
+          "ja": "今日、私はきわめて幸せだ。"
+        },
+        {
+          "en": "You may feel totally exhausted after a long week.",
+          "ja": "長い週のあとは、まったく疲れ果てたと感じるかもしれない。"
+        },
+        {
+          "en": "I am completely relaxed at home.",
+          "ja": "私は家で完全にくつろいでいる。"
+        },
+        {
+          "en": "I am partly sad and partly relieved.",
+          "ja": "私は、半分は悲しく、半分はほっとしている。"
+        },
+        {
+          "en": "I can hardly sleep when I feel anxious.",
+          "ja": "不安なとき、私はほとんど眠れない。"
+        },
+        {
+          "en": "Nervous, anxious, and afraid are not the same level of fear.",
+          "ja": "緊張、不安、恐れは、同じ程度の怖さではない。"
+        },
+        {
+          "en": "A small amount of stress can help you focus.",
+          "ja": "少しのストレスは、集中の助けになることがある。"
+        },
+        {
+          "en": "Sad is a dull pain; heartbroken is a sharp pain.",
+          "ja": "悲しいは鈍い痛みで、悲嘆にくれるは鋭い痛みだ。"
+        },
+        {
+          "en": "Feelings often live in the body.",
+          "ja": "気持ちは、よく体の中に住んでいる。"
+        },
+        {
+          "en": "When I am nervous, my stomach feels strange.",
+          "ja": "緊張すると、おなかが変な感じになる。"
+        },
+        {
+          "en": "When I am tense, my shoulders feel tight.",
+          "ja": "張りつめていると、肩がこわばる。"
+        },
+        {
+          "en": "Anger can make your chest feel hot.",
+          "ja": "怒りは、胸を熱く感じさせることがある。"
+        },
+        {
+          "en": "Sorrow can sit in your throat.",
+          "ja": "悲しみは、のどにつかえることがある。"
+        },
+        {
+          "en": "Too many ideas can make your head heavy.",
+          "ja": "考えが多すぎると、頭が重くなることがある。"
+        },
+        {
+          "en": "When I am embarrassed, my skin feels hot.",
+          "ja": "恥ずかしいとき、私は肌が熱くなる。"
+        },
+        {
+          "en": "Stress can make your neck ache.",
+          "ja": "ストレスで首が痛むことがある。"
+        },
+        {
+          "en": "Trust your gut.",
+          "ja": "自分の直感を信じよう。"
+        },
+        {
+          "en": "Listen to your heartbeat when you feel afraid.",
+          "ja": "怖いときは、自分の鼓動に耳を傾けよう。"
+        },
+        {
+          "en": "A long sigh can be a small rest.",
+          "ja": "長いため息は、小さな休息になることがある。"
+        },
+        {
+          "en": "You may shiver when you feel afraid.",
+          "ja": "怖いとき、あなたは震えるかもしれない。"
+        },
+        {
+          "en": "My hands shake when I am nervous.",
+          "ja": "緊張すると、私の手は震える。"
+        },
+        {
+          "en": "Today, you may feel slightly tense. Notice your shoulders, and let them rest. A bit of rest is enough.",
+          "ja": "今日は、わずかに張りつめた気持ちになるかもしれない。肩に気づいて、休ませてあげよう。少しの休息で十分だ。"
+        },
+        {
+          "en": "You may feel totally lost this week. That is okay. Your body may know what you need before your head does.",
+          "ja": "今週は、まったく迷っていると感じるかもしれない。それでいい。頭より先に、体が必要なものを知っていることもある。"
+        }
+      ],
+      "theme_ja": "既出の感情語を、slightly／a bit／extremely などの強さの言葉と組み合わせて読み、緊張・不安・恐れなどの程度の違いを深掘りする。気持ちが体のどこに表れるかを読む言葉も学ぶ。",
+      "title_en": "How Strong Is the Feeling?",
+      "title_ja": "気持ちの強さ ― I feel slightly 〜 / extremely 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "ache",
+        "afraid",
+        "after",
+        "am",
+        "amount",
+        "and",
+        "anger",
+        "anxious",
+        "are",
+        "at",
+        "be",
+        "before",
+        "bit",
+        "body",
+        "but",
+        "calm",
+        "can",
+        "chest",
+        "completely",
+        "do",
+        "dull",
+        "embarrassed",
+        "enough",
+        "exhausted",
+        "extremely",
+        "fairly",
+        "fear",
+        "feel",
+        "focus",
+        "gut",
+        "hand",
+        "happy",
+        "hardly",
+        "he",
+        "head",
+        "heartbeat",
+        "heartbroken",
+        "heavy",
+        "help",
+        "home",
+        "hot",
+        "I",
+        "idea",
+        "in",
+        "is",
+        "know",
+        "let",
+        "level",
+        "like",
+        "listen",
+        "live",
+        "long",
+        "lose",
+        "make",
+        "many",
+        "may",
+        "meet",
+        "money",
+        "my",
+        "neck",
+        "need",
+        "nervous",
+        "not",
+        "notice",
+        "of",
+        "often",
+        "okay",
+        "or",
+        "pain",
+        "partly",
+        "pretty",
+        "relax",
+        "relieved",
+        "rest",
+        "sad",
+        "same",
+        "shake",
+        "sharp",
+        "she",
+        "shiver",
+        "shoulder",
+        "sigh",
+        "sit",
+        "skin",
+        "sleep",
+        "slightly",
+        "slow",
+        "small",
+        "somewhat",
+        "sorrow",
+        "stomach",
+        "strange",
+        "stress",
+        "strong",
+        "tense",
+        "that",
+        "the",
+        "them",
+        "this",
+        "throat",
+        "tight",
+        "tired",
+        "to",
+        "today",
+        "too",
+        "totally",
+        "trust",
+        "voice",
+        "weak",
+        "week",
+        "what",
+        "when",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "似ている感情語の違いがわかり、「Lonely is similar to alone, but there is a difference.」のような文が読める。",
+      "chartLine": {
+        "ja": "あなたの金星は{venusSignJa}にある。今夜は一人かもしれないが、寂しく感じる必要はない。",
+        "note_ja": "アプリでは学習者の実際の金星星座を当てはめる。愛と人との関係の天体である金星の一文で、alone と lonely のニュアンスの違いを読む。",
+        "template_en": "Your Venus is in {venusSign}. You may be alone tonight, but you do not need to feel lonely."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "alone（一人で）は状態、lonely（寂しい）は気持ち。似ているが違う語。",
+          "options": [
+            "一人でいても、寂しくないことがある",
+            "一人でいると、いつも寂しい",
+            "寂しいときは、一人になれない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You can be alone and not lonely.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "annoyed（いらいら）→ angry（怒った）→ furious（激怒した）の順に強くなる。",
+          "options": [
+            "激怒した（angry よりずっと強い）",
+            "いらいらした（angry より弱い）",
+            "落ち着いた"
+          ],
+          "prompt_ja": "「furious」の意味に近いのは？",
+          "question_en": "furious",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "similar to 〜 で「〜に似ている」。",
+          "options": [
+            "similar",
+            "obvious",
+            "exact"
+          ],
+          "promptJa": "lonely は alone に似ているが、違いがある。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Lonely is ___ to alone, but there is a difference.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "give it a name で「それに名前をつける」。気持ちに名前をつけると扱いやすくなる。",
+          "options": [
+            "name",
+            "layer",
+            "tone"
+          ],
+          "promptJa": "その気持ちを見きわめて、名前をつけよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Identify the feeling, and give it a ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "A reading may give you a hint.",
+          "explanation_ja": "give ＋ 人 ＋ もの で「人にものを与える」。",
+          "prompt_ja": "語を並べ替えて「リーディングはヒントをくれるかもしれない」という文を作ろう。",
+          "tiles": [
+            "a hint",
+            "A reading",
+            "may give",
+            "you"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。surface（表面）の annoyed と、下の layer（層）の sadness を区別して読む。",
+          "options": [
+            "いらいらの下に悲しみがあるかもしれない。深い層に名前をつけて、優しく扱おう",
+            "いらいらしたら、すぐに怒りを外に出そう",
+            "悲しみは表面だけのものなので、気にしなくていい"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You may feel annoyed, but under it there may be sorrow. Name the deeper layer, and be gentle with it.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "nuance は「ニュアンス」。似た語の微妙な違いを読むことが Unit 9 のテーマ。",
+          "options": [
+            "nuance",
+            "surface",
+            "label"
+          ],
+          "promptJa": "may はやわらかいニュアンス、should はしっかりした調子を持つ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "May has a soft ___, and should has a firm tone.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson9_2",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "difference",
+          "ja": "違い"
+        },
+        {
+          "en": "similar",
+          "ja": "似ている"
+        },
+        {
+          "en": "contrast",
+          "ja": "対比"
+        },
+        {
+          "en": "example",
+          "ja": "例"
+        },
+        {
+          "en": "instance",
+          "ja": "（for instance で）たとえば"
+        },
+        {
+          "en": "definition",
+          "ja": "定義"
+        },
+        {
+          "en": "phrase",
+          "ja": "言い回し"
+        },
+        {
+          "en": "expression",
+          "ja": "表現"
+        },
+        {
+          "en": "translate",
+          "ja": "訳す"
+        },
+        {
+          "en": "translation",
+          "ja": "翻訳"
+        },
+        {
+          "en": "native",
+          "ja": "母語の"
+        },
+        {
+          "en": "tone",
+          "ja": "調子／トーン"
+        },
+        {
+          "en": "nuance",
+          "ja": "ニュアンス"
+        },
+        {
+          "en": "subtle",
+          "ja": "かすかな／微妙な"
+        },
+        {
+          "en": "obvious",
+          "ja": "明らかな"
+        },
+        {
+          "en": "hint",
+          "ja": "ヒント"
+        },
+        {
+          "en": "imply",
+          "ja": "ほのめかす"
+        },
+        {
+          "en": "recognize",
+          "ja": "気づく／見分ける"
+        },
+        {
+          "en": "identify",
+          "ja": "見きわめる"
+        },
+        {
+          "en": "name",
+          "ja": "名前／名づける"
+        },
+        {
+          "en": "label",
+          "ja": "ラベル（をはる）"
+        },
+        {
+          "en": "exact",
+          "ja": "正確な"
+        },
+        {
+          "en": "replace",
+          "ja": "置きかえる"
+        },
+        {
+          "en": "sort",
+          "ja": "種類（a sort of 〜）"
+        },
+        {
+          "en": "layer",
+          "ja": "層"
+        },
+        {
+          "en": "surface",
+          "ja": "表面"
+        },
+        {
+          "en": "core",
+          "ja": "核／中心"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "〜 is similar to 〜, but 〜. / 〜 is a stronger word than 〜.",
+      "sentences": [
+        {
+          "en": "Some words are similar, but they are not the same.",
+          "ja": "似ている語もあるが、同じではない。"
+        },
+        {
+          "en": "Lonely is similar to alone, but there is a difference.",
+          "ja": "lonely は alone に似ているが、違いがある。"
+        },
+        {
+          "en": "Alone means nobody is with you; lonely is a feeling.",
+          "ja": "alone は誰もそばにいないこと、lonely は気持ちだ。"
+        },
+        {
+          "en": "You can be alone and not lonely.",
+          "ja": "一人でいても、寂しくないことがある。"
+        },
+        {
+          "en": "Isolated is a stronger word than lonely.",
+          "ja": "isolated は lonely より強い語だ。"
+        },
+        {
+          "en": "Jealous and envy are a similar sort of feeling.",
+          "ja": "jealous と envy は、似た種類の気持ちだ。"
+        },
+        {
+          "en": "For instance, you may envy a friend with a new job.",
+          "ja": "たとえば、新しい仕事についた友達をうらやむかもしれない。"
+        },
+        {
+          "en": "Annoyed, angry, and furious show a contrast in heat.",
+          "ja": "annoyed、angry、furious は、熱さの違いを見せる。"
+        },
+        {
+          "en": "Glad is quiet, but joyful is bright.",
+          "ja": "glad は静かで、joyful は明るい。"
+        },
+        {
+          "en": "Here is an example: I am glad you called.",
+          "ja": "例を一つ。「電話してくれてうれしい」。"
+        },
+        {
+          "en": "Sleepy, tired, and exhausted are different levels of the same thing.",
+          "ja": "sleepy、tired、exhausted は、同じものの違う程度だ。"
+        },
+        {
+          "en": "Calm and peaceful are close, but peaceful is deeper.",
+          "ja": "calm と peaceful は近いが、peaceful のほうが深い。"
+        },
+        {
+          "en": "A good definition is short and clear.",
+          "ja": "良い定義は、短くてはっきりしている。"
+        },
+        {
+          "en": "This phrase is a common expression in readings.",
+          "ja": "この言い回しは、リーディングでよく見る表現だ。"
+        },
+        {
+          "en": "Do not translate every word.",
+          "ja": "すべての語を訳さなくていい。"
+        },
+        {
+          "en": "A translation can lose a little meaning.",
+          "ja": "翻訳では、意味が少し失われることがある。"
+        },
+        {
+          "en": "Read with your heart, like a child reads a story.",
+          "ja": "子どもが物語を読むように、心で読もう。"
+        },
+        {
+          "en": "English is not my native language, but I can read it.",
+          "ja": "英語は私の母語ではないが、私は英語を読める。"
+        },
+        {
+          "en": "The tone of a sentence can be soft or sharp.",
+          "ja": "文の調子は、やわらかいことも鋭いこともある。"
+        },
+        {
+          "en": "May has a soft nuance; should has a firm nuance.",
+          "ja": "may はやわらかいニュアンス、should はしっかりしたニュアンスを持つ。"
+        },
+        {
+          "en": "Some changes are subtle, and some are obvious.",
+          "ja": "かすかな変化もあれば、明らかな変化もある。"
+        },
+        {
+          "en": "A reading may give you a hint, not an answer.",
+          "ja": "リーディングは答えではなく、ヒントをくれるかもしれない。"
+        },
+        {
+          "en": "Perhaps implies a small chance.",
+          "ja": "perhaps は小さな可能性をほのめかす。"
+        },
+        {
+          "en": "Can you recognize this feeling?",
+          "ja": "この気持ちに気づける？"
+        },
+        {
+          "en": "Identify the feeling, and give it a name.",
+          "ja": "その気持ちを見きわめて、名前をつけよう。"
+        },
+        {
+          "en": "A label can help you, but you are more than a label.",
+          "ja": "ラベルは助けになるが、あなたはラベル以上の存在だ。"
+        },
+        {
+          "en": "You do not need the exact word.",
+          "ja": "正確な語でなくてもいい。"
+        },
+        {
+          "en": "Replace hate with a softer word, like annoyed.",
+          "ja": "hate を annoyed のような、もっとやわらかい語に置きかえてみよう。"
+        },
+        {
+          "en": "On the surface you look calm, but there is another layer.",
+          "ja": "表面は落ち着いて見えるが、別の層がある。"
+        },
+        {
+          "en": "At your core, you may feel afraid.",
+          "ja": "心の核では、怖いと感じているのかもしれない。"
+        },
+        {
+          "en": "You may feel annoyed, but under it there may be sorrow. Name the deeper layer, and be gentle with it.",
+          "ja": "いらいらしているかもしれないが、その下には悲しみがあるかもしれない。深い層に名前をつけて、優しく扱おう。"
+        },
+        {
+          "en": "You may be alone tonight, but you do not need to feel lonely. Alone time can be peaceful.",
+          "ja": "今夜は一人かもしれないが、寂しく感じる必要はない。一人の時間は穏やかなものにもなる。"
+        }
+      ],
+      "theme_ja": "既出の感情語どうしのニュアンスの違いを深掘りする（lonely と alone、jealous と envy、annoyed／angry／furious など）。similar to 〜（〜に似ている）や replace（置きかえる）で、言い換えの言葉を学ぶ。",
+      "title_en": "Similar Words, Different Colors",
+      "title_ja": "似ている語の違い ― 〜 is similar to 〜, but 〜",
+      "wordsUsed": [
+        "a",
+        "afraid",
+        "alone",
+        "am",
+        "and",
+        "angry",
+        "annoyed",
+        "another",
+        "answer",
+        "are",
+        "at",
+        "be",
+        "bright",
+        "but",
+        "call",
+        "calm",
+        "can",
+        "chance",
+        "change",
+        "child",
+        "clear",
+        "close",
+        "common",
+        "contrast",
+        "core",
+        "deep",
+        "definition",
+        "difference",
+        "different",
+        "do",
+        "envy",
+        "every",
+        "exact",
+        "example",
+        "exhausted",
+        "expression",
+        "feel",
+        "firm",
+        "for",
+        "friend",
+        "furious",
+        "gentle",
+        "give",
+        "glad",
+        "good",
+        "hate",
+        "have",
+        "heart",
+        "heat",
+        "help",
+        "here",
+        "hint",
+        "I",
+        "identify",
+        "imply",
+        "in",
+        "instance",
+        "is",
+        "isolated",
+        "it",
+        "jealous",
+        "job",
+        "joyful",
+        "label",
+        "language",
+        "layer",
+        "level",
+        "like",
+        "little",
+        "lonely",
+        "look",
+        "lose",
+        "may",
+        "mean",
+        "meaning",
+        "more",
+        "my",
+        "name",
+        "native",
+        "need",
+        "new",
+        "nobody",
+        "not",
+        "nuance",
+        "obvious",
+        "of",
+        "on",
+        "or",
+        "peaceful",
+        "perhaps",
+        "phrase",
+        "quiet",
+        "read",
+        "recognize",
+        "replace",
+        "same",
+        "sentence",
+        "sharp",
+        "short",
+        "should",
+        "show",
+        "similar",
+        "sleepy",
+        "small",
+        "soft",
+        "some",
+        "sorrow",
+        "sort",
+        "story",
+        "strong",
+        "subtle",
+        "surface",
+        "than",
+        "the",
+        "there",
+        "they",
+        "thing",
+        "this",
+        "time",
+        "tired",
+        "to",
+        "tone",
+        "tonight",
+        "translate",
+        "translation",
+        "under",
+        "with",
+        "word",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "題名と段落のある長めのリーディングを、推測・確認・要約しながら辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にあり、月は{moonSignJa}にある。今週はいつもより敏感になるかもしれない。これは間違いではなく、合図だ。自分に優しくしよう。",
+        "note_ja": "Unit 9 の到達点。アプリでは学習者の実際の太陽・月星座を当てはめ、これまでより長い Co-Star 風のリーディングとして提示する。傾向（敏感になる）→ 受け止め方（合図）→ 活かし方（自分に優しく）の流れで読む。",
+        "template_en": "Your Sun is in {sunSign}, and your Moon is in {moonSign}. You may feel more sensitive than usual this week. This is not a mistake; it is a signal. Be gentle with yourself."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "not sure は「確かではない」。may／might／perhaps は、書き手が断定していない合図。",
+          "options": [
+            "これらの語は、書き手が言い切っていないことを示す",
+            "これらの語は、書き手が確信していることを示す",
+            "これらの語は、読み手が間違っていることを示す"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "These words show that the writer is not sure.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "題名から内容を推測してから読む。more sensitive than usual で「いつもより敏感」。",
+          "options": [
+            "今週は月が水の星座にあるので、いつもより敏感になるかもしれない",
+            "今週は月が火の星座にあるので、とても活動的になる",
+            "今週は誰も敏感にならない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Title: A Quiet Week. The Moon is in a water sign this week, so you may feel more sensitive than usual.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "guess は「推測する」。読み終えたら confirm（確かめる）する。",
+          "options": [
+            "guess",
+            "confirm",
+            "underline"
+          ],
+          "promptJa": "まず題名を読んで、主な考えを推測しよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Read the title first, and ___ the main idea.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "summary は「要約」。",
+          "options": [
+            "summary",
+            "title",
+            "section"
+          ],
+          "promptJa": "自分の言葉で短い要約を書こう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Write a short ___ in your own words.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Whisper kind words to yourself.",
+          "explanation_ja": "Whisper（ささやこう）のあとに kind words（優しい言葉）、to yourself（自分に）。",
+          "prompt_ja": "語を並べ替えて「自分に優しい言葉をささやこう」という文を作ろう。",
+          "tiles": [
+            "kind words",
+            "Whisper",
+            "to yourself"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。not a mistake（間違いではない）と signal（合図）の対比を読み、if you feel exhausted（疲れ果てたら）の条件で何をすすめているかを読む。",
+          "options": [
+            "これは間違いではなく合図だ。疲れ果てたら予定を一つ取り消し、できれば家にいよう",
+            "これは間違いなので、急いで直そう",
+            "疲れていても、予定はすべて守らなければならない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "This is not a mistake; it is a signal. Your heart may want a slow pace. Cancel a plan if you feel exhausted, and stay home if you can.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "burst into tears で「急に泣き出す」。tear（涙）の複数形 tears。",
+          "options": [
+            "tears",
+            "skin",
+            "titles"
+          ],
+          "promptJa": "急に涙があふれるかもしれないが、それでいい。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You may burst into ___, and that is okay.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson9_3",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "paragraph",
+          "ja": "段落"
+        },
+        {
+          "en": "title",
+          "ja": "題名"
+        },
+        {
+          "en": "reader",
+          "ja": "読み手"
+        },
+        {
+          "en": "writer",
+          "ja": "書き手"
+        },
+        {
+          "en": "author",
+          "ja": "著者"
+        },
+        {
+          "en": "main",
+          "ja": "主な"
+        },
+        {
+          "en": "summary",
+          "ja": "要約"
+        },
+        {
+          "en": "section",
+          "ja": "部分／区切り"
+        },
+        {
+          "en": "final",
+          "ja": "最後の"
+        },
+        {
+          "en": "guess",
+          "ja": "推測する"
+        },
+        {
+          "en": "confirm",
+          "ja": "確かめる"
+        },
+        {
+          "en": "conclusion",
+          "ja": "結論"
+        },
+        {
+          "en": "order",
+          "ja": "順序"
+        },
+        {
+          "en": "list",
+          "ja": "一覧／リスト"
+        },
+        {
+          "en": "mark",
+          "ja": "しるしをつける"
+        },
+        {
+          "en": "highlight",
+          "ja": "目立たせる"
+        },
+        {
+          "en": "underline",
+          "ja": "下線を引く"
+        },
+        {
+          "en": "usual",
+          "ja": "いつもの"
+        },
+        {
+          "en": "meaningful",
+          "ja": "意味のある"
+        },
+        {
+          "en": "tremble",
+          "ja": "震える"
+        },
+        {
+          "en": "frown",
+          "ja": "顔をしかめる"
+        },
+        {
+          "en": "blush",
+          "ja": "顔を赤らめる"
+        },
+        {
+          "en": "yawn",
+          "ja": "あくびをする"
+        },
+        {
+          "en": "whisper",
+          "ja": "ささやく"
+        },
+        {
+          "en": "burst",
+          "ja": "（burst into 〜で）急に〜し出す／はじける（過去形も burst）"
+        },
+        {
+          "en": "flash",
+          "ja": "ひらめき／ぱっと光る"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "First, 〜. Then, 〜. Finally, 〜. / Title: 〜.",
+      "sentences": [
+        {
+          "en": "A longer reading has a title and a few paragraphs.",
+          "ja": "長めのリーディングには、題名といくつかの段落がある。"
+        },
+        {
+          "en": "Read the title first, and guess the main idea.",
+          "ja": "まず題名を読んで、主な考えを推測しよう。"
+        },
+        {
+          "en": "Then read each paragraph in order.",
+          "ja": "それから、それぞれの段落を順に読もう。"
+        },
+        {
+          "en": "Underline the feeling words, and mark the time words.",
+          "ja": "気持ちの語に下線を引き、時間の語にしるしをつけよう。"
+        },
+        {
+          "en": "Highlight may, might, and perhaps.",
+          "ja": "may、might、perhaps を目立たせよう。"
+        },
+        {
+          "en": "These words show that the writer is not sure.",
+          "ja": "これらの語は、書き手が言い切っていないことを示す。"
+        },
+        {
+          "en": "A good author leaves space for the reader.",
+          "ja": "良い著者は、読み手のために余白を残す。"
+        },
+        {
+          "en": "The first section is about today; the final section is about what to do.",
+          "ja": "最初の部分は今日について、最後の部分はすべきことについてだ。"
+        },
+        {
+          "en": "At the end, confirm your guess.",
+          "ja": "最後に、自分の推測を確かめよう。"
+        },
+        {
+          "en": "Write a short summary in your own words.",
+          "ja": "自分の言葉で短い要約を書こう。"
+        },
+        {
+          "en": "Your conclusion does not need to be exact.",
+          "ja": "あなたの結論は正確でなくていい。"
+        },
+        {
+          "en": "Make a list of the feelings in the reading.",
+          "ja": "リーディングの中の気持ちを一覧にしよう。"
+        },
+        {
+          "en": "This is not a usual week for you.",
+          "ja": "今週は、あなたにとっていつもの週ではない。"
+        },
+        {
+          "en": "A small moment can be meaningful.",
+          "ja": "小さな瞬間が、意味のあるものになることがある。"
+        },
+        {
+          "en": "You may tremble before a big talk.",
+          "ja": "大事な話の前に、震えるかもしれない。"
+        },
+        {
+          "en": "You may frown when you feel confused.",
+          "ja": "混乱すると、顔をしかめるかもしれない。"
+        },
+        {
+          "en": "You may blush when someone says something kind.",
+          "ja": "誰かに優しいことを言われると、顔を赤らめるかもしれない。"
+        },
+        {
+          "en": "If you yawn a lot, your body wants rest.",
+          "ja": "あくびがたくさん出るなら、体は休息を求めている。"
+        },
+        {
+          "en": "Whisper kind words to yourself.",
+          "ja": "自分に優しい言葉をささやこう。"
+        },
+        {
+          "en": "You may burst into tears, and that is okay.",
+          "ja": "急に涙があふれるかもしれないが、それでいい。"
+        },
+        {
+          "en": "A flash of joy can come on a gloomy day.",
+          "ja": "どんよりした日にも、喜びがぱっとひらめくことがある。"
+        },
+        {
+          "en": "Title: A Quiet Week. The Moon is in a water sign this week, so you may feel more sensitive than usual. Old memories may come back, and you may feel nostalgic or slightly sad.",
+          "ja": "題名：静かな週。今週、月は水の星座にあるので、いつもより敏感になるかもしれない。古い記憶がよみがえり、懐かしい気持ちや、わずかな悲しみを感じるかもしれない。"
+        },
+        {
+          "en": "This is not a mistake; it is a signal. Your heart may want a slow pace. Cancel a plan if you feel exhausted, and stay home if you can.",
+          "ja": "これは間違いではなく、合図だ。あなたの心はゆっくりしたペースを求めているのかもしれない。疲れ果てたら予定を一つ取り消し、できれば家にいよう。"
+        },
+        {
+          "en": "By the end of the week, you may feel lighter. Perhaps a friend may call, and you may laugh again. Be gentle with yourself until then.",
+          "ja": "週の終わりまでには、心が軽くなっているかもしれない。もしかすると友達から電話があり、また笑えるかもしれない。それまでは自分に優しくしよう。"
+        },
+        {
+          "en": "Title: A Bright Day. Mars is in a fire sign, so you may feel eager and bold today. Start the project you love, but do not rush. A small step is enough.",
+          "ja": "題名：明るい日。火星が火の星座にあるので、今日は意欲的で大胆な気分になるかもしれない。好きなプロジェクトを始めよう。でも急がないで。小さな一歩で十分だ。"
+        }
+      ],
+      "theme_ja": "Unit 9 の総仕上げ。題名と複数の段落がある長めのリーディングを読む。題名から推測し、順に読み、気持ちの語と言い切らない語に印をつけ、最後に要約する読み方を学ぶ。",
+      "title_en": "Reading a Longer Line",
+      "title_ja": "長めのリーディング ― First, 〜. Then, 〜. Finally, 〜.",
+      "wordsUsed": [
+        "a",
+        "about",
+        "again",
+        "and",
+        "at",
+        "author",
+        "back",
+        "be",
+        "before",
+        "big",
+        "blush",
+        "body",
+        "bold",
+        "bright",
+        "burst",
+        "but",
+        "by",
+        "call",
+        "can",
+        "cancel",
+        "come",
+        "conclusion",
+        "confirm",
+        "confused",
+        "day",
+        "do",
+        "each",
+        "eager",
+        "end",
+        "enough",
+        "exact",
+        "exhausted",
+        "feel",
+        "few",
+        "final",
+        "first",
+        "flash",
+        "for",
+        "friend",
+        "frown",
+        "gentle",
+        "gloomy",
+        "good",
+        "guess",
+        "have",
+        "heart",
+        "highlight",
+        "home",
+        "idea",
+        "if",
+        "in",
+        "into",
+        "is",
+        "it",
+        "joy",
+        "kind",
+        "laugh",
+        "leaf",
+        "light",
+        "list",
+        "long",
+        "lot",
+        "love",
+        "main",
+        "make",
+        "mark",
+        "may",
+        "meaningful",
+        "memory",
+        "might",
+        "mistake",
+        "moment",
+        "more",
+        "need",
+        "nostalgic",
+        "not",
+        "of",
+        "okay",
+        "old",
+        "on",
+        "or",
+        "order",
+        "own",
+        "pace",
+        "paragraph",
+        "perhaps",
+        "plan",
+        "project",
+        "quiet",
+        "read",
+        "reader",
+        "rest",
+        "rush",
+        "sad",
+        "say",
+        "section",
+        "sensitive",
+        "short",
+        "show",
+        "signal",
+        "skin",
+        "slightly",
+        "slow",
+        "small",
+        "so",
+        "someone",
+        "something",
+        "space",
+        "start",
+        "stay",
+        "step",
+        "summary",
+        "sure",
+        "talk",
+        "tear",
+        "than",
+        "that",
+        "the",
+        "then",
+        "these",
+        "this",
+        "time",
+        "title",
+        "to",
+        "today",
+        "tremble",
+        "underline",
+        "until",
+        "usual",
+        "want",
+        "week",
+        "what",
+        "when",
+        "whisper",
+        "with",
+        "word",
+        "write",
+        "writer",
+        "yawn",
+        "you",
+        "your",
+        "yourself"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-23",
+    "id": "unit9",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 9 の新規一般語は80語（27・27・26語）で、累計1,130語に到達する（CURRICULUM §4 の配分どおり）。",
+      "Unit 9 は新規の感情語を覚える回ではない（CURRICULUM §4、2026-11-22 本人決定）。新規語は、気持ちの強さ（slightly, extremely など）、体の感覚（chest, shoulder, gut など）、言い換えとニュアンス（similar, nuance など）、長文読解（paragraph, summary など）の語に限り、感情そのものは Unit 4〜8 で導入した感情語を使って深掘りした。",
+      "専門用語の新規導入はなし（CURRICULUM §3）。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形・所有格の 's は原形と同一語として数える（CURRICULUM 2.1）。不規則形は初出の語の ja に併記した（shake→shook、burst→burst）。",
+      "例文・演習で使う一般語は「Unit 1〜8 導入済み1,050語＋当該レッスンまでの Unit 9 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "Lesson 9.3 の例文には、題名と複数の文からなる長めのリーディングを含めた（CURRICULUM §4「既出の感情語で長めのリーディングを読む」）。文体は readings-core.json に倣い「傾向 → 受け止め方 → 活かし方」の流れにしている。"
+    ],
+    "order": 9,
+    "status": "draft",
+    "theme_ja": "Unit 4〜8 で薄く撒いた感情語を使い、気持ちの強さ・体の感覚・似ている語のニュアンスを深掘りする。最後に、題名と段落のある長めのリーディングを読む。",
+    "title_en": "Feelings in Depth",
+    "title_ja": "感情の深掘り ― 長めのリーディングを読む",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson9_1": 27,
+        "lesson9_2": 27,
+        "lesson9_3": 26
+      },
+      "newGeneralWordsTotal": 80,
+      "newTermsTotal": 0
+    }
+  }
+}
