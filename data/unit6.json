@@ -1,0 +1,1940 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "コンジャンクションとオポジションの意味がわかり、「月は太陽と向かい合っている」のような関係の文が読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にあり、あなたの月は{moonSignJa}にある。それらは古い友達のように語り合うかもしれない。",
+        "note_ja": "アプリでは学習者の実際の太陽・月星座を当てはめる。天体どうしのアスペクトは既存の置換仕様にプレースホルダがないため、2天体の星座を並べて「天体どうしが語り合う」というアスペクトの考え方の入口にする。",
+        "template_en": "Your Sun is in {sunSign}, and your Moon is in {moonSign}. They may talk to each other like old friends."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "opposite は「向かい合った」。Moon opposite Sun で「月と太陽がオポジション（180°）」。",
+          "options": [
+            "あなたの月は、あなたの太陽と向かい合っている",
+            "あなたの月は、あなたの太陽と一緒にいる",
+            "あなたの月は、あなたの太陽より大きい"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Your Moon is opposite your Sun.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "conjunction は2つの天体がほぼ同じ位置に重なるアスペクト。2つのテーマが強く結びついて働くと読まれる。",
+          "options": [
+            "コンジャンクション（0°。2つの天体が重なるアスペクト）",
+            "オポジション（180°。2つの天体が向かい合うアスペクト）",
+            "ハウスとハウスの境界線"
+          ],
+          "prompt_ja": "「conjunction」の意味は？",
+          "question_en": "conjunction",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "apart は「離れて」。180° apart で「180°離れている」。",
+          "options": [
+            "apart",
+            "together",
+            "alike"
+          ],
+          "promptJa": "オポジションでは、2つの天体は180°離れている。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "In an opposition, two planets are 180° ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "toward は「〜のほうへ」。against（〜に逆らって）と区別する。",
+          "options": [
+            "toward",
+            "against",
+            "through"
+          ],
+          "promptJa": "あなたが愛する人たちのほうへ進もう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Move ___ the people you love.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Opposite people often attract.",
+          "explanation_ja": "Opposite people（正反対の人々）が主語。often は動詞 attract の前に置く。",
+          "prompt_ja": "語を並べ替えて「正反対の人どうしは、よく引かれ合う」という文を作ろう。",
+          "tiles": [
+            "attract",
+            "Opposite",
+            "often",
+            "people"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。may で言い切らず、Try to understand（理解しようとする）と keep some distance（少し距離をとる）で結ぶ。",
+          "options": [
+            "パートナーがよそよそしく感じられることもある。理解しようとして、少し距離をとろう",
+            "パートナーはそばにいるので、何もしなくていい",
+            "パートナーがよそよそしいので、すぐに別れよう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Sometimes your partner may feel distant. Try to understand, and keep some distance.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "close は「親しい」（Unit 5）。though は「〜だけれども」。",
+          "options": [
+            "close",
+            "distant",
+            "opposite"
+          ],
+          "promptJa": "あなたたちは違っていても、親しくなれる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Though you are different, you can be ___.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson6_1",
+      "newTerms": [
+        {
+          "en": "aspect",
+          "ja": "アスペクト",
+          "note_ja": "天体同士が作る角度のこと。角度の種類によって、関係の質（後押し、緊張、調和など）を読み分ける。"
+        },
+        {
+          "en": "conjunction",
+          "ja": "コンジャンクション（0度）",
+          "note_ja": "2つの天体がほぼ同じ位置に重なるアスペクト。2つのテーマが強く結びついて働くと読まれる。"
+        },
+        {
+          "en": "opposition",
+          "ja": "オポジション（180度）",
+          "note_ja": "向かい合う2つのテーマの間で揺れることを表すと読まれるアスペクト。バランスの取り方が読みの中心になる。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "whose",
+          "ja": "誰の"
+        },
+        {
+          "en": "itself",
+          "ja": "それ自体"
+        },
+        {
+          "en": "myself",
+          "ja": "私自身"
+        },
+        {
+          "en": "himself",
+          "ja": "彼自身"
+        },
+        {
+          "en": "herself",
+          "ja": "彼女自身"
+        },
+        {
+          "en": "themselves",
+          "ja": "彼ら自身"
+        },
+        {
+          "en": "across",
+          "ja": "〜を横切って"
+        },
+        {
+          "en": "toward",
+          "ja": "〜のほうへ"
+        },
+        {
+          "en": "along",
+          "ja": "〜に沿って"
+        },
+        {
+          "en": "through",
+          "ja": "〜を通して"
+        },
+        {
+          "en": "against",
+          "ja": "〜に逆らって／〜に反して"
+        },
+        {
+          "en": "apart",
+          "ja": "離れて"
+        },
+        {
+          "en": "alike",
+          "ja": "似ている"
+        },
+        {
+          "en": "though",
+          "ja": "〜だけれども"
+        },
+        {
+          "en": "join",
+          "ja": "加わる／結びつく"
+        },
+        {
+          "en": "mix",
+          "ja": "混ぜる／混ざる"
+        },
+        {
+          "en": "blend",
+          "ja": "溶け合わせる"
+        },
+        {
+          "en": "pair",
+          "ja": "一組／ペア"
+        },
+        {
+          "en": "couple",
+          "ja": "カップル／二人組"
+        },
+        {
+          "en": "opposite",
+          "ja": "反対の／向かい合った"
+        },
+        {
+          "en": "mirror",
+          "ja": "鏡"
+        },
+        {
+          "en": "line",
+          "ja": "線"
+        },
+        {
+          "en": "point",
+          "ja": "点"
+        },
+        {
+          "en": "straight",
+          "ja": "まっすぐな"
+        },
+        {
+          "en": "half",
+          "ja": "半分"
+        },
+        {
+          "en": "middle",
+          "ja": "真ん中"
+        },
+        {
+          "en": "edge",
+          "ja": "端"
+        },
+        {
+          "en": "distance",
+          "ja": "距離"
+        },
+        {
+          "en": "connect",
+          "ja": "つなぐ／つながる"
+        },
+        {
+          "en": "link",
+          "ja": "結びつける"
+        },
+        {
+          "en": "bond",
+          "ja": "絆"
+        },
+        {
+          "en": "attract",
+          "ja": "引きつける"
+        },
+        {
+          "en": "understand",
+          "ja": "理解する（過去形 understood）"
+        },
+        {
+          "en": "agree",
+          "ja": "同意する"
+        },
+        {
+          "en": "twin",
+          "ja": "双子"
+        },
+        {
+          "en": "stranger",
+          "ja": "見知らぬ人"
+        },
+        {
+          "en": "lover",
+          "ja": "恋人"
+        },
+        {
+          "en": "friendship",
+          "ja": "友情"
+        },
+        {
+          "en": "kiss",
+          "ja": "キス"
+        },
+        {
+          "en": "hug",
+          "ja": "ハグ"
+        },
+        {
+          "en": "touch",
+          "ja": "触れること／触れる"
+        },
+        {
+          "en": "reflect",
+          "ja": "映す"
+        },
+        {
+          "en": "affection",
+          "ja": "愛情"
+        },
+        {
+          "en": "attached",
+          "ja": "愛着のある"
+        },
+        {
+          "en": "desire",
+          "ja": "欲求"
+        },
+        {
+          "en": "passion",
+          "ja": "情熱"
+        },
+        {
+          "en": "distant",
+          "ja": "よそよそしい／遠い"
+        },
+        {
+          "en": "lovely",
+          "ja": "すてきな"
+        },
+        {
+          "en": "pride",
+          "ja": "誇り"
+        },
+        {
+          "en": "delighted",
+          "ja": "とてもうれしい"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "Your Moon is opposite your Sun. / 〜 and 〜 are together.",
+      "sentences": [
+        {
+          "en": "An aspect is a line between two planets.",
+          "ja": "アスペクトは、2つの天体のあいだの線だ。"
+        },
+        {
+          "en": "Aspects show how your planets talk to each other.",
+          "ja": "アスペクトは、あなたの天体どうしがどう語り合うかを示す。"
+        },
+        {
+          "en": "Planets connect through aspects, like people through friendship.",
+          "ja": "人が友情を通してつながるように、天体はアスペクトを通してつながる。"
+        },
+        {
+          "en": "In a conjunction, two planets are together at 0°.",
+          "ja": "コンジャンクションでは、2つの天体が0°で一緒にいる。"
+        },
+        {
+          "en": "They join and mix like two colors.",
+          "ja": "それらは2つの色のように結びつき、混ざり合う。"
+        },
+        {
+          "en": "A conjunction can blend two parts of you.",
+          "ja": "コンジャンクションは、あなたの2つの部分を溶け合わせることがある。"
+        },
+        {
+          "en": "Two planets in a conjunction are like twins.",
+          "ja": "コンジャンクションの2つの天体は、双子のようだ。"
+        },
+        {
+          "en": "In an opposition, two planets are 180° apart.",
+          "ja": "オポジションでは、2つの天体は180°離れている。"
+        },
+        {
+          "en": "They sit on opposite sides of the chart.",
+          "ja": "それらはチャートの反対側どうしにある。"
+        },
+        {
+          "en": "A straight line goes across the chart, from edge to edge.",
+          "ja": "まっすぐな線が、端から端までチャートを横切る。"
+        },
+        {
+          "en": "The two planets pull against each other.",
+          "ja": "2つの天体は、互いに逆向きに引っぱり合う。"
+        },
+        {
+          "en": "Half of you wants to stay; half of you wants to go.",
+          "ja": "あなたの半分はとどまりたいと思い、もう半分は行きたいと思う。"
+        },
+        {
+          "en": "Find a middle point between the two sides.",
+          "ja": "2つの側のあいだに、真ん中の点を見つけよう。"
+        },
+        {
+          "en": "An opposition is like a mirror.",
+          "ja": "オポジションは鏡のようなものだ。"
+        },
+        {
+          "en": "Other people may reflect your own heart.",
+          "ja": "ほかの人が、あなた自身の心を映すかもしれない。"
+        },
+        {
+          "en": "Some couples are alike, and some are opposite.",
+          "ja": "似ているカップルもいれば、正反対のカップルもいる。"
+        },
+        {
+          "en": "Opposite people often attract.",
+          "ja": "正反対の人どうしは、よく引かれ合う。"
+        },
+        {
+          "en": "A stranger can become a lover.",
+          "ja": "見知らぬ人が恋人になることもある。"
+        },
+        {
+          "en": "A pair of old friends may feel like family.",
+          "ja": "古い友達の二人組は、家族のように感じられるかもしれない。"
+        },
+        {
+          "en": "A hug, a kiss, or a touch can say a lot.",
+          "ja": "ハグ、キス、触れることは、多くを語ることがある。"
+        },
+        {
+          "en": "There is a bond between you and your friend.",
+          "ja": "あなたと友達のあいだには絆がある。"
+        },
+        {
+          "en": "Love can link two lives.",
+          "ja": "愛は2つの人生を結びつけることがある。"
+        },
+        {
+          "en": "Try to understand him, and he may understand you.",
+          "ja": "彼を理解しようとすれば、彼もあなたを理解するかもしれない。"
+        },
+        {
+          "en": "You do not need to agree on everything.",
+          "ja": "すべてに同意する必要はない。"
+        },
+        {
+          "en": "Keep some distance when you feel tired.",
+          "ja": "疲れているときは、少し距離をとろう。"
+        },
+        {
+          "en": "Whose voice do you hear in your heart?",
+          "ja": "あなたは心の中で、誰の声を聞いている？"
+        },
+        {
+          "en": "I talk to myself in my book.",
+          "ja": "私は本の中で自分自身と話す。"
+        },
+        {
+          "en": "He knows himself, and she knows herself.",
+          "ja": "彼は彼自身を知り、彼女は彼女自身を知っている。"
+        },
+        {
+          "en": "Let them find the answer themselves.",
+          "ja": "彼らに自分たちで答えを見つけさせよう。"
+        },
+        {
+          "en": "The planet itself is just a planet.",
+          "ja": "天体それ自体は、ただの天体だ。"
+        },
+        {
+          "en": "Move toward the people you love.",
+          "ja": "あなたが愛する人たちのほうへ進もう。"
+        },
+        {
+          "en": "Walk along the river, and think about your heart.",
+          "ja": "川に沿って歩き、自分の心について考えよう。"
+        },
+        {
+          "en": "Though you are different, you can be close.",
+          "ja": "あなたたちは違っていても、親しくなれる。"
+        },
+        {
+          "en": "You may feel affection for an old friend.",
+          "ja": "古い友達に愛情を感じるかもしれない。"
+        },
+        {
+          "en": "You may feel attached to your home.",
+          "ja": "あなたは自分の家に愛着を感じるかもしれない。"
+        },
+        {
+          "en": "Desire and passion live in your Mars.",
+          "ja": "欲求と情熱は、あなたの火星に住んでいる。"
+        },
+        {
+          "en": "Sometimes your partner may feel distant.",
+          "ja": "パートナーがよそよそしく感じられることもある。"
+        },
+        {
+          "en": "What a lovely day to meet someone new.",
+          "ja": "新しい誰かに出会うには、なんてすてきな日だろう。"
+        },
+        {
+          "en": "Feel pride in your small steps.",
+          "ja": "自分の小さな一歩に誇りを感じよう。"
+        },
+        {
+          "en": "I am delighted to see you again.",
+          "ja": "またあなたに会えて、とてもうれしい。"
+        }
+      ],
+      "theme_ja": "アスペクト（天体どうしが作る角度）を学び、コンジャンクション（0°）とオポジション（180°）を読む。重なる・向かい合うという星の関係を、人と人の関係の言葉と重ねて読む。",
+      "title_en": "Together and Opposite",
+      "title_ja": "重なる星と向かい合う星 ― 〜 is opposite 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "across",
+        "affection",
+        "again",
+        "against",
+        "agree",
+        "alike",
+        "along",
+        "am",
+        "and",
+        "answer",
+        "apart",
+        "are",
+        "at",
+        "attached",
+        "attract",
+        "be",
+        "become",
+        "between",
+        "blend",
+        "bond",
+        "book",
+        "can",
+        "close",
+        "color",
+        "connect",
+        "couple",
+        "day",
+        "delighted",
+        "desire",
+        "different",
+        "distance",
+        "distant",
+        "do",
+        "each",
+        "edge",
+        "everything",
+        "family",
+        "feel",
+        "find",
+        "for",
+        "friend",
+        "friendship",
+        "from",
+        "go",
+        "half",
+        "he",
+        "hear",
+        "heart",
+        "herself",
+        "him",
+        "himself",
+        "home",
+        "how",
+        "hug",
+        "I",
+        "in",
+        "is",
+        "itself",
+        "join",
+        "just",
+        "keep",
+        "kiss",
+        "know",
+        "let",
+        "like",
+        "line",
+        "link",
+        "live",
+        "lot",
+        "love",
+        "lovely",
+        "lover",
+        "may",
+        "meet",
+        "middle",
+        "mirror",
+        "mix",
+        "move",
+        "my",
+        "myself",
+        "need",
+        "new",
+        "not",
+        "of",
+        "often",
+        "old",
+        "on",
+        "opposite",
+        "or",
+        "other",
+        "own",
+        "pair",
+        "part",
+        "partner",
+        "passion",
+        "people",
+        "point",
+        "pride",
+        "pull",
+        "reflect",
+        "river",
+        "say",
+        "see",
+        "she",
+        "show",
+        "side",
+        "sit",
+        "small",
+        "some",
+        "someone",
+        "sometimes",
+        "stay",
+        "step",
+        "straight",
+        "stranger",
+        "talk",
+        "the",
+        "them",
+        "themselves",
+        "there",
+        "they",
+        "think",
+        "though",
+        "through",
+        "tired",
+        "to",
+        "together",
+        "touch",
+        "toward",
+        "try",
+        "twin",
+        "two",
+        "understand",
+        "voice",
+        "walk",
+        "want",
+        "what",
+        "when",
+        "whose",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "スクエア・トライン・セクスタイルを読み分け、「Mars square Moon may make you feel tense.」のような文が読める。",
+      "chartLine": {
+        "ja": "あなたの火星は{marsSignJa}にある。張りつめた気持ちのとき、あなたの火星は行動を求めるかもしれない。穏やかに歩いてみよう。",
+        "note_ja": "アプリでは学習者の実際の火星星座を当てはめる。スクエアの緊張を受け止める天体として火星を読み、may で断定を避け、gentle walk（穏やかな散歩）という無理のない活かし方で結ぶ。",
+        "template_en": "Your Mars is in {marsSign}. When you feel tense, your Mars may want action. Try a gentle walk."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "Mars square Moon は「火星と月がスクエア（90°）」。make you feel tense で「張りつめた気持ちにさせる」。",
+          "options": [
+            "火星と月のスクエアで、張りつめた気持ちになるかもしれない",
+            "火星と月のトラインで、穏やかな気持ちになる",
+            "火星と月は、まったく関係がない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Mars square Moon may make you feel tense.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "trine は調和や自然な流れを表すと読まれるアスペクト。無理なく発揮できる才能の形として読まれることが多い。",
+          "options": [
+            "トライン（120°。調和や自然な流れを表すアスペクト）",
+            "スクエア（90°。緊張や摩擦を表すアスペクト）",
+            "オポジション（180°。向かい合うアスペクト）"
+          ],
+          "prompt_ja": "「trine」の意味は？",
+          "question_en": "trine",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "offer は「差し出す」。offer you an opportunity で「あなたに機会を差し出す」。",
+          "options": [
+            "offer",
+            "block",
+            "force"
+          ],
+          "promptJa": "セクスタイルは、あなたに機会を差し出すかもしれない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "A sextile may ___ you an opportunity.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "whatever は「何を〜しても」。whenever（〜するときはいつでも）と区別する。",
+          "options": [
+            "Whatever",
+            "Whenever",
+            "However"
+          ],
+          "promptJa": "何を感じても、それでいい。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___ you feel, it is okay.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "You can improve a little every day.",
+          "explanation_ja": "You can improve（よくなれる）のあとに a little（少し）、最後に every day（毎日）。",
+          "prompt_ja": "語を並べ替えて「あなたは毎日少しずつよくなれる」という文を作ろう。",
+          "tiles": [
+            "a little",
+            "You can",
+            "every day",
+            "improve"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。challenge（試練）を can help you grow（成長を助けることもある）と読み、step by step（一歩ずつ）で結ぶ。",
+          "options": [
+            "スクエアは試練だが、成長を助けることもある。一歩ずつ解決できる",
+            "スクエアは悪いアスペクトなので、何もできない",
+            "スクエアがあると、成長は止まる"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "A square is a challenge, but it can help you grow. You can solve it, step by step.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "alone は「一人で」（Unit 3）。although は「〜だけれども」。",
+          "options": [
+            "alone",
+            "lazy",
+            "weak"
+          ],
+          "promptJa": "つらくても、あなたは一人ではない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Although it is hard, you are not ___.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson6_2",
+      "newTerms": [
+        {
+          "en": "square",
+          "ja": "スクエア（90度）",
+          "note_ja": "緊張や摩擦を表すと読まれるアスペクト。葛藤を通じて成長の材料になると読むこともある。"
+        },
+        {
+          "en": "trine",
+          "ja": "トライン（120度）",
+          "note_ja": "調和や自然な流れを表すと読まれるアスペクト。無理なく発揮できる才能の形として読まれることが多い。"
+        },
+        {
+          "en": "sextile",
+          "ja": "セクスタイル（60度）",
+          "note_ja": "機会や流れの良さを表すと読まれるアスペクト。活かすかどうかは本人次第、という読み方が多い。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "during",
+          "ja": "〜のあいだ"
+        },
+        {
+          "en": "since",
+          "ja": "〜なので／〜以来"
+        },
+        {
+          "en": "although",
+          "ja": "〜だけれども"
+        },
+        {
+          "en": "unless",
+          "ja": "〜でないかぎり"
+        },
+        {
+          "en": "however",
+          "ja": "しかし"
+        },
+        {
+          "en": "whatever",
+          "ja": "何を〜しても"
+        },
+        {
+          "en": "whenever",
+          "ja": "〜するときはいつでも"
+        },
+        {
+          "en": "quite",
+          "ja": "かなり"
+        },
+        {
+          "en": "rather",
+          "ja": "（rather than 〜 で）〜よりむしろ"
+        },
+        {
+          "en": "actually",
+          "ja": "実は"
+        },
+        {
+          "en": "probably",
+          "ja": "たぶん（maybe より確からしい）"
+        },
+        {
+          "en": "either",
+          "ja": "（either A or B で）A か B か"
+        },
+        {
+          "en": "tension",
+          "ja": "緊張"
+        },
+        {
+          "en": "conflict",
+          "ja": "対立／葛藤"
+        },
+        {
+          "en": "challenge",
+          "ja": "試練／挑戦"
+        },
+        {
+          "en": "problem",
+          "ja": "問題"
+        },
+        {
+          "en": "solve",
+          "ja": "解決する"
+        },
+        {
+          "en": "argue",
+          "ja": "言い争う"
+        },
+        {
+          "en": "struggle",
+          "ja": "もがく／苦労する"
+        },
+        {
+          "en": "block",
+          "ja": "ふさぐ"
+        },
+        {
+          "en": "harmony",
+          "ja": "調和"
+        },
+        {
+          "en": "flow",
+          "ja": "流れ"
+        },
+        {
+          "en": "smooth",
+          "ja": "なめらかな"
+        },
+        {
+          "en": "natural",
+          "ja": "自然な"
+        },
+        {
+          "en": "talent",
+          "ja": "才能"
+        },
+        {
+          "en": "skill",
+          "ja": "技能／スキル"
+        },
+        {
+          "en": "lazy",
+          "ja": "怠けた"
+        },
+        {
+          "en": "opportunity",
+          "ja": "機会"
+        },
+        {
+          "en": "chat",
+          "ja": "おしゃべり"
+        },
+        {
+          "en": "friendly",
+          "ja": "親しみやすい"
+        },
+        {
+          "en": "invite",
+          "ja": "招く"
+        },
+        {
+          "en": "welcome",
+          "ja": "歓迎する"
+        },
+        {
+          "en": "offer",
+          "ja": "差し出す／提供する"
+        },
+        {
+          "en": "choice",
+          "ja": "選択／選択肢"
+        },
+        {
+          "en": "action",
+          "ja": "行動"
+        },
+        {
+          "en": "force",
+          "ja": "無理にさせる／力"
+        },
+        {
+          "en": "strength",
+          "ja": "強さ"
+        },
+        {
+          "en": "weak",
+          "ja": "弱い"
+        },
+        {
+          "en": "progress",
+          "ja": "前進"
+        },
+        {
+          "en": "improve",
+          "ja": "よくなる／改善する"
+        },
+        {
+          "en": "result",
+          "ja": "結果"
+        },
+        {
+          "en": "comfort",
+          "ja": "慰め／安らぎ"
+        },
+        {
+          "en": "tense",
+          "ja": "張りつめた"
+        },
+        {
+          "en": "annoyed",
+          "ja": "いらいらした"
+        },
+        {
+          "en": "impatient",
+          "ja": "せっかちな／待ちきれない"
+        },
+        {
+          "en": "defensive",
+          "ja": "身構えた"
+        },
+        {
+          "en": "overwhelmed",
+          "ja": "圧倒された／いっぱいいっぱいの"
+        },
+        {
+          "en": "confident",
+          "ja": "自信のある"
+        },
+        {
+          "en": "playful",
+          "ja": "遊び心のある"
+        },
+        {
+          "en": "gentle",
+          "ja": "穏やかな／優しい"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "Mars square Moon may make you 〜. / A trine brings 〜.",
+      "sentences": [
+        {
+          "en": "In a square, two planets are 90° apart.",
+          "ja": "スクエアでは、2つの天体は90°離れている。"
+        },
+        {
+          "en": "A square can bring tension and conflict.",
+          "ja": "スクエアは緊張と葛藤をもたらすことがある。"
+        },
+        {
+          "en": "Mars square Moon may make you feel tense.",
+          "ja": "火星と月のスクエアは、あなたを張りつめた気持ちにさせるかもしれない。"
+        },
+        {
+          "en": "A square is a challenge, but it can help you grow.",
+          "ja": "スクエアは試練だが、あなたの成長を助けることもある。"
+        },
+        {
+          "en": "A square feels hard. However, it is not a mistake.",
+          "ja": "スクエアはつらく感じられる。しかし、間違いではない。"
+        },
+        {
+          "en": "You may argue with someone you love.",
+          "ja": "あなたは愛する人と言い争うかもしれない。"
+        },
+        {
+          "en": "A problem is a door to a new skill.",
+          "ja": "問題は、新しいスキルへの扉だ。"
+        },
+        {
+          "en": "You can solve it, step by step.",
+          "ja": "あなたは一歩ずつ、それを解決できる。"
+        },
+        {
+          "en": "When you struggle, your strength grows.",
+          "ja": "もがくとき、あなたの強さは育つ。"
+        },
+        {
+          "en": "Something may block your way, but there is another road.",
+          "ja": "何かがあなたの道をふさぐかもしれないが、別の道もある。"
+        },
+        {
+          "en": "In a trine, two planets are 120° apart.",
+          "ja": "トラインでは、2つの天体は120°離れている。"
+        },
+        {
+          "en": "A trine brings harmony and a smooth flow.",
+          "ja": "トラインは調和となめらかな流れをもたらす。"
+        },
+        {
+          "en": "Your talent may feel natural to you.",
+          "ja": "あなたの才能は、あなたにとって自然に感じられるかもしれない。"
+        },
+        {
+          "en": "Easy things can make you lazy.",
+          "ja": "簡単なことは、あなたを怠けさせることがある。"
+        },
+        {
+          "en": "A trine may make you confident.",
+          "ja": "トラインは、あなたに自信を持たせるかもしれない。"
+        },
+        {
+          "en": "In a sextile, two planets are 60° apart.",
+          "ja": "セクスタイルでは、2つの天体は60°離れている。"
+        },
+        {
+          "en": "A sextile may offer you an opportunity.",
+          "ja": "セクスタイルは、あなたに機会を差し出すかもしれない。"
+        },
+        {
+          "en": "But you need to take action.",
+          "ja": "でも、あなたは行動を起こす必要がある。"
+        },
+        {
+          "en": "A friendly chat can open a door.",
+          "ja": "親しみやすいおしゃべりが、扉を開くことがある。"
+        },
+        {
+          "en": "Invite a friend, and welcome new ideas.",
+          "ja": "友達を招き、新しい考えを歓迎しよう。"
+        },
+        {
+          "en": "You have a choice.",
+          "ja": "あなたには選択肢がある。"
+        },
+        {
+          "en": "Do not force yourself.",
+          "ja": "自分に無理をさせないで。"
+        },
+        {
+          "en": "Weak days are part of life, too.",
+          "ja": "弱い日も、人生の一部だ。"
+        },
+        {
+          "en": "Small progress is still progress.",
+          "ja": "小さな前進も、前進だ。"
+        },
+        {
+          "en": "You can improve a little every day.",
+          "ja": "あなたは毎日少しずつよくなれる。"
+        },
+        {
+          "en": "The result is not everything.",
+          "ja": "結果がすべてではない。"
+        },
+        {
+          "en": "Find comfort in music.",
+          "ja": "音楽の中に安らぎを見つけよう。"
+        },
+        {
+          "en": "During a hard week, rest when you can.",
+          "ja": "つらい週のあいだは、休めるときに休もう。"
+        },
+        {
+          "en": "Since you are tired, go to bed early.",
+          "ja": "疲れているので、早めに寝よう。"
+        },
+        {
+          "en": "Although it is hard, you are not alone.",
+          "ja": "つらくても、あなたは一人ではない。"
+        },
+        {
+          "en": "Unless you feel ready, wait.",
+          "ja": "準備ができたと感じないなら、待とう。"
+        },
+        {
+          "en": "Whatever you feel, it is okay.",
+          "ja": "何を感じても、それでいい。"
+        },
+        {
+          "en": "Whenever you feel annoyed, take a slow walk.",
+          "ja": "いらいらしたときはいつでも、ゆっくり歩こう。"
+        },
+        {
+          "en": "You may be quite tired today.",
+          "ja": "今日はかなり疲れているかもしれない。"
+        },
+        {
+          "en": "Rather than fight, talk.",
+          "ja": "戦うよりむしろ、話そう。"
+        },
+        {
+          "en": "Actually, you are doing a good job.",
+          "ja": "実は、あなたはよくやっている。"
+        },
+        {
+          "en": "It is probably a good time to rest.",
+          "ja": "たぶん、今は休むのに良いときだ。"
+        },
+        {
+          "en": "You can either wait or try again.",
+          "ja": "待つことも、もう一度試すこともできる。"
+        },
+        {
+          "en": "Do not be impatient with yourself.",
+          "ja": "自分に対してせっかちにならないで。"
+        },
+        {
+          "en": "You may feel defensive when someone asks hard questions.",
+          "ja": "誰かに厳しい質問をされると、身構えてしまうかもしれない。"
+        },
+        {
+          "en": "If you feel overwhelmed, do a small thing first.",
+          "ja": "いっぱいいっぱいだと感じたら、まず小さなことをしよう。"
+        },
+        {
+          "en": "Be playful, and be gentle.",
+          "ja": "遊び心を持ち、穏やかでいよう。"
+        }
+      ],
+      "theme_ja": "スクエア（90°）・トライン（120°）・セクスタイル（60°）を学ぶ。緊張・調和・機会という角度の質を、Co-Star と同じ「Mars square Moon」の形で読み、although／however などのつなぎの言葉で文を結ぶ。",
+      "title_en": "Square, Trine, and Sextile",
+      "title_ja": "緊張と調和の角度 ― 〜 square 〜 may make you 〜",
+      "wordsUsed": [
+        "a",
+        "action",
+        "actually",
+        "again",
+        "alone",
+        "although",
+        "and",
+        "annoyed",
+        "another",
+        "apart",
+        "are",
+        "argue",
+        "ask",
+        "be",
+        "bed",
+        "block",
+        "bring",
+        "but",
+        "by",
+        "can",
+        "challenge",
+        "chat",
+        "choice",
+        "comfort",
+        "confident",
+        "conflict",
+        "day",
+        "defensive",
+        "do",
+        "door",
+        "during",
+        "early",
+        "easy",
+        "either",
+        "every",
+        "everything",
+        "feel",
+        "fight",
+        "find",
+        "first",
+        "flow",
+        "force",
+        "friend",
+        "friendly",
+        "gentle",
+        "go",
+        "good",
+        "grow",
+        "hard",
+        "harmony",
+        "have",
+        "help",
+        "however",
+        "idea",
+        "if",
+        "impatient",
+        "improve",
+        "in",
+        "invite",
+        "is",
+        "it",
+        "job",
+        "lazy",
+        "life",
+        "little",
+        "love",
+        "make",
+        "may",
+        "mistake",
+        "music",
+        "natural",
+        "need",
+        "new",
+        "not",
+        "of",
+        "offer",
+        "okay",
+        "open",
+        "opportunity",
+        "or",
+        "overwhelmed",
+        "part",
+        "playful",
+        "probably",
+        "problem",
+        "progress",
+        "question",
+        "quite",
+        "rather",
+        "ready",
+        "rest",
+        "result",
+        "road",
+        "since",
+        "skill",
+        "slow",
+        "small",
+        "smooth",
+        "solve",
+        "someone",
+        "something",
+        "step",
+        "still",
+        "strength",
+        "struggle",
+        "take",
+        "talent",
+        "talk",
+        "tense",
+        "tension",
+        "than",
+        "the",
+        "there",
+        "thing",
+        "time",
+        "tired",
+        "to",
+        "today",
+        "too",
+        "try",
+        "two",
+        "unless",
+        "wait",
+        "walk",
+        "want",
+        "way",
+        "weak",
+        "week",
+        "welcome",
+        "whatever",
+        "when",
+        "whenever",
+        "with",
+        "you",
+        "your",
+        "yourself"
+      ]
+    },
+    {
+      "canDo_ja": "オーブの意味がわかり、feel like 〜ing や Please 〜 を使った Co-Star 風の関係のリーディング文が辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にある。今日は家にいたい気分になるかもしれない。それでいい。どうか自分に優しくしてください。",
+        "note_ja": "Unit 6 の到達点。アプリでは学習者の実際の月星座を当てはめ、Co-Star 風の短いリーディングとして提示する。feel like 〜ing で気分を読み、That is okay と Please be gentle で追い詰めない形に結ぶ。",
+        "template_en": "Your Moon is in {moonSign}. You may feel like staying home today. That is okay. Please be gentle with yourself."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "feel like 〜ing で「〜したい気分だ」。may と組み合わせて、言い切らずに気分を読む。",
+          "options": [
+            "今日は家にいたい気分になるかもしれない",
+            "今日は家にいなければならない",
+            "今日は家にいることができない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You may feel like staying home today.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "orb は、アスペクトが「成立している」とみなす角度の許容範囲。何度までを有効とするかは流派によって異なる。",
+          "options": [
+            "オーブ（アスペクトが成立しているとみなす角度の許容範囲）",
+            "アスペクト（天体同士が作る角度）",
+            "ハウスとハウスの境界線"
+          ],
+          "prompt_ja": "「orb」の意味は？",
+          "question_en": "orb",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "tight は「きつい／タイトな」。オーブが小さいほどタイトで、影響が強いと読まれることが多い。",
+          "options": [
+            "tight",
+            "loose",
+            "nearly"
+          ],
+          "promptJa": "オーブが小さいと、アスペクトはタイトだ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "With a small orb, an aspect is ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "judge は「裁く」。blame（責める）とあわせて、自分にも人にも厳しくしすぎない読み方。",
+          "options": [
+            "judge",
+            "compare",
+            "handle"
+          ],
+          "promptJa": "自分を裁かないで。人を責めないで。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Do not ___ yourself, and do not blame others.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Please be gentle with yourself.",
+          "explanation_ja": "Please のあとに命令の形 be gentle（優しくして）、最後に with yourself（自分に）。",
+          "prompt_ja": "語を並べ替えて「どうか自分に優しくしてください」という文を作ろう。",
+          "tiles": [
+            "with yourself",
+            "Please",
+            "gentle",
+            "be"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。may で言い切らず、do not need to 〜（〜しなくていい）と Simply rest（ただ休もう）で結ぶ。",
+          "options": [
+            "今日は気分が変わりやすいかもしれない。すぐに返事をしなくていいし、ただ休めばいい",
+            "今日は気分が良いので、すぐにみんなに返事をしよう",
+            "火星と月のスクエアがあるので、今日は誰とも話せない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Mars square your Moon may make you moody today. You do not need to reply at once. Simply rest.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "deal with 〜 で「〜に対処する」。",
+          "options": [
+            "deal",
+            "reach",
+            "reply"
+          ],
+          "promptJa": "あなたはこれに一歩ずつ対処できる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You can ___ with this, step by step.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson6_3",
+      "newTerms": [
+        {
+          "en": "orb",
+          "ja": "オーブ",
+          "note_ja": "アスペクトが「成立している」とみなす角度の許容範囲のこと。何度までを有効とするかは占い師や流派によって異なる。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "would",
+          "ja": "（Would you like to 〜? で）〜しませんか"
+        },
+        {
+          "en": "please",
+          "ja": "どうか／〜してください"
+        },
+        {
+          "en": "thank",
+          "ja": "感謝する"
+        },
+        {
+          "en": "among",
+          "ja": "〜のあいだで（3つ以上）"
+        },
+        {
+          "en": "beyond",
+          "ja": "〜の向こうに"
+        },
+        {
+          "en": "within",
+          "ja": "〜の内側に"
+        },
+        {
+          "en": "exactly",
+          "ja": "ちょうど／正確に"
+        },
+        {
+          "en": "nearly",
+          "ja": "ほとんど"
+        },
+        {
+          "en": "especially",
+          "ja": "特に"
+        },
+        {
+          "en": "simply",
+          "ja": "ただ／単に"
+        },
+        {
+          "en": "clearly",
+          "ja": "はっきりと"
+        },
+        {
+          "en": "someday",
+          "ja": "いつか"
+        },
+        {
+          "en": "anyway",
+          "ja": "それでも／とにかく"
+        },
+        {
+          "en": "tight",
+          "ja": "きつい／タイトな"
+        },
+        {
+          "en": "loose",
+          "ja": "ゆるい"
+        },
+        {
+          "en": "effect",
+          "ja": "効果／影響"
+        },
+        {
+          "en": "influence",
+          "ja": "影響を与える"
+        },
+        {
+          "en": "explain",
+          "ja": "説明する"
+        },
+        {
+          "en": "conversation",
+          "ja": "会話"
+        },
+        {
+          "en": "advice",
+          "ja": "助言"
+        },
+        {
+          "en": "opinion",
+          "ja": "意見"
+        },
+        {
+          "en": "judge",
+          "ja": "裁く／判断する"
+        },
+        {
+          "en": "blame",
+          "ja": "責める"
+        },
+        {
+          "en": "compare",
+          "ja": "比べる"
+        },
+        {
+          "en": "react",
+          "ja": "反応する"
+        },
+        {
+          "en": "reply",
+          "ja": "返事をする"
+        },
+        {
+          "en": "pattern",
+          "ja": "パターン／くり返しの型"
+        },
+        {
+          "en": "repeat",
+          "ja": "くり返す"
+        },
+        {
+          "en": "attention",
+          "ja": "注意"
+        },
+        {
+          "en": "boundary",
+          "ja": "境界線"
+        },
+        {
+          "en": "reach",
+          "ja": "手を伸ばす／届く"
+        },
+        {
+          "en": "ignore",
+          "ja": "無視する"
+        },
+        {
+          "en": "depend",
+          "ja": "頼る（depend on 〜）"
+        },
+        {
+          "en": "connection",
+          "ja": "つながり"
+        },
+        {
+          "en": "suggest",
+          "ja": "提案する"
+        },
+        {
+          "en": "mention",
+          "ja": "話に出す"
+        },
+        {
+          "en": "express",
+          "ja": "表現する"
+        },
+        {
+          "en": "deal",
+          "ja": "対処する（deal with 〜。過去形 dealt）"
+        },
+        {
+          "en": "handle",
+          "ja": "扱う／乗りきる"
+        },
+        {
+          "en": "signal",
+          "ja": "合図／サイン"
+        },
+        {
+          "en": "softly",
+          "ja": "やわらかく"
+        },
+        {
+          "en": "vulnerable",
+          "ja": "傷つきやすい"
+        },
+        {
+          "en": "insecure",
+          "ja": "自信がない／不安定な"
+        },
+        {
+          "en": "awkward",
+          "ja": "ぎこちない"
+        },
+        {
+          "en": "moody",
+          "ja": "気分が変わりやすい"
+        },
+        {
+          "en": "emotional",
+          "ja": "感情的な／感じやすい"
+        },
+        {
+          "en": "uneasy",
+          "ja": "落ち着かない"
+        },
+        {
+          "en": "intense",
+          "ja": "強烈な"
+        },
+        {
+          "en": "loyal",
+          "ja": "誠実な／忠実な"
+        },
+        {
+          "en": "forgive",
+          "ja": "許す（過去形 forgave）"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "You may feel like 〜ing. / Please 〜.",
+      "sentences": [
+        {
+          "en": "Planets are not often exactly 90° apart.",
+          "ja": "天体がちょうど90°離れていることは、あまりない。"
+        },
+        {
+          "en": "With a small orb, an aspect is tight.",
+          "ja": "オーブが小さいと、アスペクトはタイトだ。"
+        },
+        {
+          "en": "With a wide orb, an aspect is loose.",
+          "ja": "オーブが大きいと、アスペクトはゆるい。"
+        },
+        {
+          "en": "A tight aspect may have a strong effect.",
+          "ja": "タイトなアスペクトは、強い影響を持つかもしれない。"
+        },
+        {
+          "en": "Some people use an orb of 8°, and some use less.",
+          "ja": "オーブを8°にする人もいれば、もっと小さくする人もいる。"
+        },
+        {
+          "en": "Your Moon is nearly opposite your Venus.",
+          "ja": "あなたの月は、あなたの金星とほとんど向かい合っている。"
+        },
+        {
+          "en": "Aspects between people show your connection.",
+          "ja": "人と人のあいだのアスペクトは、あなたたちのつながりを示す。"
+        },
+        {
+          "en": "His Mars may influence your Moon.",
+          "ja": "彼の火星は、あなたの月に影響を与えるかもしれない。"
+        },
+        {
+          "en": "Pay attention to your patterns.",
+          "ja": "自分のパターンに注意を向けよう。"
+        },
+        {
+          "en": "You may repeat the same mistake in love.",
+          "ja": "あなたは恋で同じ間違いをくり返すかもしれない。"
+        },
+        {
+          "en": "Do not judge yourself, and do not blame others.",
+          "ja": "自分を裁かないで。人を責めないで。"
+        },
+        {
+          "en": "Do not compare your chart with other charts.",
+          "ja": "自分のチャートをほかのチャートと比べないで。"
+        },
+        {
+          "en": "You may react fast when you feel insecure.",
+          "ja": "自信がないとき、あなたはすぐに反応するかもしれない。"
+        },
+        {
+          "en": "You do not need to reply at once.",
+          "ja": "すぐに返事をする必要はない。"
+        },
+        {
+          "en": "Explain what you need, softly and clearly.",
+          "ja": "必要なことを、やわらかく、はっきりと説明しよう。"
+        },
+        {
+          "en": "A good conversation can heal a lot.",
+          "ja": "良い会話は、多くを癒やすことがある。"
+        },
+        {
+          "en": "Ask a friend for advice.",
+          "ja": "友達に助言を求めよう。"
+        },
+        {
+          "en": "Your opinion is important, too.",
+          "ja": "あなたの意見も大切だ。"
+        },
+        {
+          "en": "A boundary can protect your heart.",
+          "ja": "境界線は、あなたの心を守ることがある。"
+        },
+        {
+          "en": "Reach out to someone you trust.",
+          "ja": "信頼できる誰かに手を伸ばそう。"
+        },
+        {
+          "en": "Do not ignore the signals of your body.",
+          "ja": "体からの合図を無視しないで。"
+        },
+        {
+          "en": "You do not need to depend on your partner for everything.",
+          "ja": "すべてをパートナーに頼る必要はない。"
+        },
+        {
+          "en": "I suggest a quiet day at home.",
+          "ja": "私は家での静かな一日を提案する。"
+        },
+        {
+          "en": "If someone mentions your past, you may feel uneasy.",
+          "ja": "誰かがあなたの過去を話に出すと、落ち着かなくなるかもしれない。"
+        },
+        {
+          "en": "Express your love in your own way.",
+          "ja": "あなた自身のやり方で愛を表現しよう。"
+        },
+        {
+          "en": "You can deal with this, step by step.",
+          "ja": "あなたはこれに一歩ずつ対処できる。"
+        },
+        {
+          "en": "You can handle a hard day.",
+          "ja": "あなたはつらい一日を乗りきれる。"
+        },
+        {
+          "en": "Among your friends, someone may need you today.",
+          "ja": "友達のなかの誰かが、今日はあなたを必要としているかもしれない。"
+        },
+        {
+          "en": "Look beyond the problem.",
+          "ja": "問題の向こうを見よう。"
+        },
+        {
+          "en": "The answer may be within you.",
+          "ja": "答えはあなたの内側にあるかもしれない。"
+        },
+        {
+          "en": "Especially today, be kind to yourself.",
+          "ja": "特に今日は、自分に優しくしよう。"
+        },
+        {
+          "en": "Simply rest, and do nothing today.",
+          "ja": "今日はただ休んで、何もしないでいよう。"
+        },
+        {
+          "en": "Someday, you may understand why.",
+          "ja": "いつか、その理由がわかるかもしれない。"
+        },
+        {
+          "en": "It is hard, but try anyway.",
+          "ja": "つらいけれど、それでもやってみよう。"
+        },
+        {
+          "en": "Would you like to talk?",
+          "ja": "話してみませんか？"
+        },
+        {
+          "en": "Please be gentle with yourself.",
+          "ja": "どうか自分に優しくしてください。"
+        },
+        {
+          "en": "Thank your body for its work.",
+          "ja": "自分の体に、その働きを感謝しよう。"
+        },
+        {
+          "en": "You may feel like staying home today.",
+          "ja": "今日は家にいたい気分になるかもしれない。"
+        },
+        {
+          "en": "You may feel like talking to someone.",
+          "ja": "誰かと話したい気分になるかもしれない。"
+        },
+        {
+          "en": "You may feel vulnerable when you open your heart.",
+          "ja": "心を開くとき、傷つきやすく感じるかもしれない。"
+        },
+        {
+          "en": "A new place can feel awkward at first.",
+          "ja": "新しい場所は、はじめはぎこちなく感じられることがある。"
+        },
+        {
+          "en": "The Moon can make you moody and emotional.",
+          "ja": "月は、あなたを気分屋で感じやすくすることがある。"
+        },
+        {
+          "en": "Pluto aspects can feel intense.",
+          "ja": "冥王星のアスペクトは、強烈に感じられることがある。"
+        },
+        {
+          "en": "You are loyal to your friends.",
+          "ja": "あなたは友達に誠実だ。"
+        },
+        {
+          "en": "Forgive yourself, and forgive others.",
+          "ja": "自分を許し、人を許そう。"
+        }
+      ],
+      "theme_ja": "Unit 6 の総仕上げ。オーブ（アスペクトの許容範囲）を学び、人と人のあいだのアスペクトを関係の言葉で読む。feel like 〜ing（〜したい気分だ）を使った Co-Star 風の短いリーディングを読む。",
+      "title_en": "Orbs and People",
+      "title_ja": "オーブと人との関係 ― You may feel like 〜",
+      "wordsUsed": [
+        "a",
+        "advice",
+        "among",
+        "and",
+        "answer",
+        "anyway",
+        "apart",
+        "are",
+        "ask",
+        "at",
+        "attention",
+        "awkward",
+        "be",
+        "between",
+        "beyond",
+        "blame",
+        "body",
+        "boundary",
+        "but",
+        "by",
+        "can",
+        "clearly",
+        "compare",
+        "connection",
+        "conversation",
+        "day",
+        "deal",
+        "depend",
+        "do",
+        "effect",
+        "emotional",
+        "especially",
+        "everything",
+        "exactly",
+        "explain",
+        "express",
+        "fast",
+        "feel",
+        "first",
+        "for",
+        "forgive",
+        "friend",
+        "gentle",
+        "good",
+        "handle",
+        "hard",
+        "have",
+        "heal",
+        "heart",
+        "his",
+        "home",
+        "I",
+        "if",
+        "ignore",
+        "important",
+        "in",
+        "influence",
+        "insecure",
+        "intense",
+        "is",
+        "it",
+        "its",
+        "judge",
+        "kind",
+        "less",
+        "like",
+        "look",
+        "loose",
+        "lot",
+        "love",
+        "loyal",
+        "make",
+        "may",
+        "mention",
+        "mistake",
+        "moody",
+        "nearly",
+        "need",
+        "new",
+        "not",
+        "nothing",
+        "of",
+        "often",
+        "okay",
+        "on",
+        "once",
+        "open",
+        "opinion",
+        "opposite",
+        "other",
+        "out",
+        "own",
+        "partner",
+        "past",
+        "pattern",
+        "pay",
+        "people",
+        "place",
+        "please",
+        "problem",
+        "protect",
+        "quiet",
+        "reach",
+        "react",
+        "repeat",
+        "reply",
+        "rest",
+        "same",
+        "show",
+        "signal",
+        "simply",
+        "small",
+        "softly",
+        "some",
+        "someday",
+        "someone",
+        "stay",
+        "step",
+        "strong",
+        "suggest",
+        "talk",
+        "thank",
+        "that",
+        "the",
+        "this",
+        "tight",
+        "to",
+        "today",
+        "too",
+        "trust",
+        "try",
+        "understand",
+        "uneasy",
+        "use",
+        "vulnerable",
+        "way",
+        "what",
+        "when",
+        "why",
+        "wide",
+        "with",
+        "within",
+        "work",
+        "would",
+        "you",
+        "your",
+        "yourself"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-23",
+    "id": "unit6",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 6 の新規一般語は150語（50語×3レッスン）で、累計740語に到達する（CURRICULUM §4 の配分どおり）。",
+      "うち感情・心の語は25語（8・8・9語）。CURRICULUM §2.2／§4 の「早く薄く撒く」方針に従い、テーマ語彙とは別枠で織り込んだ。6.1：affection, attached, desire, passion, distant, lovely, pride, delighted／6.2：tense, annoyed, impatient, defensive, overwhelmed, confident, playful, gentle／6.3：vulnerable, insecure, awkward, moody, emotional, uneasy, intense, loyal, forgive。",
+      "専門用語レイヤーの追加は aspect、主要アスペクト5つ（conjunction, opposition, square, trine, sextile）、orb の7語（CURRICULUM §3）。1レッスン5語以内に収めるため 3・3・1語に分けた。表記は glossary.json に合わせた。",
+      "アスペクトの角度は「90°」のように数字と記号で表記した。数字は語数に数えない（CURRICULUM 2.1）。度数を表す専門用語 degree は CURRICULUM §3 の Unit 6 の導入対象に含まれていないため導入していない。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形・所有格の 's は原形と同一語として数える（CURRICULUM 2.1）。不規則形は初出の語の ja に併記した（understand→understood、deal→dealt、forgive→forgave）。",
+      "例文・演習で使う一般語は「Unit 1〜5 導入済み590語＋当該レッスンまでの Unit 6 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "chartLine は既存の星座プレースホルダの範囲で構成した。天体どうしのアスペクトは置換仕様にないため、アスペクトそのものは例文・演習の中で一般的な文として扱った。",
+      "Lesson 6.3 の chartLine と例文の一部は Co-Star 風の短いリーディングとして構成し、may／feel like 〜ing で断定を避け、That is okay／Please 〜 で追い詰めない形にしている。"
+    ],
+    "order": 6,
+    "status": "draft",
+    "theme_ja": "天体どうしが作る角度（アスペクト）と、主要アスペクト5つ・オーブを学ぶ。重なる・向かい合う・ぶつかる・調和するという星の関係を、人と人の関係の言葉で読む。",
+    "title_en": "Aspects",
+    "title_ja": "アスペクト ― 星と星、人と人の関係を読む",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson6_1": 50,
+        "lesson6_2": 50,
+        "lesson6_3": 50
+      },
+      "newGeneralWordsTotal": 150,
+      "newTermsTotal": 7
+    }
+  }
+}
