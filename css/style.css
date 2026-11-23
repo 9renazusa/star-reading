@@ -164,3 +164,18 @@ table.data td.deg { text-align: right; font-variant-numeric: tabular-nums; white
 .sentence .en { font-size: 17px; }
 .sentence .ja { color: var(--grey); font-size: 13px; }
 .error-box { border: 1px solid var(--line); padding: 16px; font-size: 14px; }
+
+/* profile reading （基本鑑定） */
+.lang-toggle { display: flex; border: 1px solid var(--line); margin: 0 0 20px; }
+.lang-toggle button {
+  flex: 1; background: var(--paper); color: var(--grey);
+  border: none; padding: 10px 4px;
+  font: inherit; font-size: 12px; letter-spacing: 0.18em; cursor: pointer;
+}
+.lang-toggle button.active { background: var(--ink); color: var(--paper); font-weight: 700; }
+.profile-line { font-size: 24px; font-weight: 300; line-height: 1.5; letter-spacing: 0.02em; }
+.profile-block { padding: 14px 0 12px; border-bottom: 1px solid var(--hair); }
+.profile-block .p-label { font-size: 11px; letter-spacing: 0.24em; color: var(--grey); margin: 0 0 6px; }
+.profile-block .p-main { font-size: 16px; }
+.profile-block .p-sub { color: var(--grey); font-size: 13px; margin-top: 6px; }
+.profile-summary-ja { font-size: 16px; line-height: 1.9; }
