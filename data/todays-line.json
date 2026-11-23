@@ -1,0 +1,1848 @@
+{
+  "meta": {
+    "name": "STAR READING - Today's Line テンプレート集",
+    "version": "1.0",
+    "created": "2026-11-22",
+    "status": "下書き（梓さんのレビュー前提）。アプリへの組み込みは未実施。",
+    "description": "Today's Line をデータ駆動で生成するためのテンプレート集。既存実装（js/core.js の buildTodaysLine）は「今日の月×出生の月」の基本形のみだったものを、4つの軸に拡張した。",
+    "style_rules": [
+      "断定回避：'You can feel 〜.' '〜can be〜' 等の可能性の言い方に寄せ、'You will 〜' で言い切らない（CURRICULUM §6）。",
+      "英文は短く平易に。低レベル帯では原則1文10語以内を目安。",
+      "日本語訳は直訳に寄せ、文型の対応が見えるようにする。",
+      "文中の英語の固有名詞（星座名・天体名）は専門用語レイヤーとして扱い、一般語数には数えない。"
+    ],
+    "axes": {
+      "transitMoon_x_natalMoon": "①今日の月 × 出生の月（既存軸の拡張）",
+      "transitMoonSign_x_natalSun": "②今日の月の星座 × 出生の太陽",
+      "seasonSun_x_natalSunMoon": "③季節の太陽（現在の太陽の星座）× 出生の太陽・月",
+      "aspect_moon_x_natal": "④今日の月と出生天体の角度（簡易アスペクト：星座単位のホールサイン方式で判定）"
+    },
+    "selection_note_ja": "テンプレートの選択は「関係が具体的なもの優先」が原則：sameSign/opposite/harmonious/tense やアスペクトが成立する日はその専用テンプレートを、成立しない日は relation='any' の基本形から選ぶ。出生時刻が不明でも、月以外の出生天体の星座は使える（月は時刻不明時にずれる場合があるため、その場合は出生の月を使う軸①④の一部は無効化する想定）。",
+    "levels": {
+      "unit1": "Unit 1 修了時点。一般語 累計54語＋専門用語（Sun, Moon, Mercury, Venus, Mars, planet, chart）。",
+      "unit2": "Unit 2 修了時点。一般語 累計174語＋星座12・sign。",
+      "unit3": "Unit 3 修了時点。一般語 累計300語＋配置文型 be in 〜。「自分の配置同士の関係を読む」型は、英文が易しくてもこのレベルに置く。",
+      "unit6": "Unit 6 修了時点。一般語 累計約730語＋アスペクト用語（aspect, conjunction, sextile, square, trine, opposition, orb）。"
+    },
+    "placeholders": {
+      "{transitMoonSignEn}": "今日の月の星座（英語）。signData の sign_en。",
+      "{transitMoonSignJa}": "今日の月の星座（日本語）。signData の sign_ja。",
+      "{natalMoonSignEn}": "出生の月の星座（英語）。",
+      "{natalMoonSignJa}": "出生の月の星座（日本語）。",
+      "{natalSunSignEn}": "出生の太陽の星座（英語）。",
+      "{natalSunSignJa}": "出生の太陽の星座（日本語）。",
+      "{seasonSunSignEn}": "現在の太陽の星座＝季節の太陽（英語）。",
+      "{seasonSunSignJa}": "現在の太陽の星座（日本語）。",
+      "{feelEn}": "今日の月の星座の気分（英語）。signData の feel_en。",
+      "{feelJa}": "今日の月の星座の気分（日本語）。signData の feel_ja。",
+      "{extraEn}": "今日の月の星座の「できること」の一文（英語）。signData の extra_en。",
+      "{extraJa}": "今日の月の星座の「できること」の一文（日本語）。signData の extra_ja。",
+      "{natalSunThemeEn}": "出生の太陽の星座のテーマ語句（英語）。signData の theme_en。",
+      "{natalSunThemeJa}": "出生の太陽の星座のテーマ語句（日本語）。signData の theme_ja。",
+      "{seasonThemeEn}": "現在の太陽の星座のテーマ語句（英語）。signData の theme_en。",
+      "{seasonThemeJa}": "現在の太陽の星座のテーマ語句（日本語）。signData の theme_ja。",
+      "{seasonActEn}": "現在の太陽の星座の季節のテーマ行動（英語の動詞句）。signData の season_act_en。",
+      "{seasonActJa}": "現在の太陽の星座の季節のテーマ行動（日本語）。signData の season_act_ja。",
+      "{seasonFeelEn}": "現在の太陽の星座の気分（英語）。signData の feel_en を流用。",
+      "{seasonFeelJa}": "現在の太陽の星座の気分（日本語）。signData の feel_ja を流用。",
+      "{natalMoonFeelEn}": "出生の月の星座の気分（英語）。signData の feel_en。",
+      "{natalMoonFeelJa}": "出生の月の星座の気分（日本語）。signData の feel_ja。",
+      "{aspectEn}": "アスペクト名（英語）。aspectData の en。",
+      "{aspectJa}": "アスペクト名（日本語）。aspectData の ja。",
+      "{distractorFeelJa}": "クイズ誤答用：今日の月の星座から5つ先の星座の feel_ja（既存実装の方式）。",
+      "{distractorExtraJa}": "クイズ誤答用：今日の月の星座から5つ先の星座の extra_ja。",
+      "{distractorThemeJa}": "クイズ誤答用：別の星座の theme_ja。",
+      "{distractorSeasonActJa}": "クイズ誤答用：別の星座の season_act_ja。"
+    },
+    "known_gaps_ja": [
+      "'today' は Unit 1〜2 の導入リストに未収録のため、低レベル帯（unit1〜unit3）の英文では 'now' で代替した。unit6 帯でのみ使用し、各テンプレートの beyond_level_words に明記した。",
+      "'for' は Unit 1〜2 の導入リストに未収録。unit3 帯の一部テンプレートで使用し、beyond_level_words に明記した（Unit 3 の文型拡張で導入見込み）。",
+      "'your' は Unit 1〜2 の導入リストに未収録（you/my のみ）。低レベル帯では一人称（My 〜）の言い方で統一し回避した。unit6 帯の1テンプレートでのみ使用し明記した。",
+      "簡易アスペクトは星座単位（ホールサイン）で判定する。度数ベースのオーブ判定は計算コア側の今後の課題。"
+    ]
+  },
+  "signData": [
+    {
+      "sign_en": "Aries",
+      "sign_ja": "牡羊座",
+      "feel_en": "strong and fast",
+      "feel_ja": "強く、速い気持ち",
+      "extra_en": "You can begin now.",
+      "extra_ja": "今、始めることができる。",
+      "theme_en": "new work",
+      "theme_ja": "新しい仕事・始めること",
+      "season_act_en": "begin",
+      "season_act_ja": "始める"
+    },
+    {
+      "sign_en": "Taurus",
+      "sign_ja": "牡牛座",
+      "feel_en": "calm and slow",
+      "feel_ja": "穏やかで、ゆっくりした気持ち",
+      "extra_en": "You can eat sweet food.",
+      "extra_ja": "甘い食べ物を食べることができる。",
+      "theme_en": "good food",
+      "theme_ja": "おいしい食べ物",
+      "season_act_en": "grow",
+      "season_act_ja": "育つ"
+    },
+    {
+      "sign_en": "Gemini",
+      "sign_ja": "双子座",
+      "feel_en": "light",
+      "feel_ja": "軽やかな気持ち",
+      "extra_en": "You can talk and learn with friends.",
+      "extra_ja": "友達と話して、学ぶことができる。",
+      "theme_en": "talk and words",
+      "theme_ja": "おしゃべりと言葉",
+      "season_act_en": "talk and learn",
+      "season_act_ja": "話して学ぶ"
+    },
+    {
+      "sign_en": "Cancer",
+      "sign_ja": "蟹座",
+      "feel_en": "quiet and calm",
+      "feel_ja": "静かで、穏やかな気持ち",
+      "extra_en": "You can be with family.",
+      "extra_ja": "家族と一緒にいることができる。",
+      "theme_en": "home and family",
+      "theme_ja": "家と家族",
+      "season_act_en": "be with family",
+      "season_act_ja": "家族と過ごす"
+    },
+    {
+      "sign_en": "Leo",
+      "sign_ja": "獅子座",
+      "feel_en": "happy and warm",
+      "feel_ja": "幸せで、暖かい気持ち",
+      "extra_en": "You can sing and dance.",
+      "extra_ja": "歌って、踊ることができる。",
+      "theme_en": "song and dance",
+      "theme_ja": "歌とダンス",
+      "season_act_en": "sing and dance",
+      "season_act_ja": "歌って踊る"
+    },
+    {
+      "sign_en": "Virgo",
+      "sign_ja": "乙女座",
+      "feel_en": "calm",
+      "feel_ja": "穏やかな気持ち",
+      "extra_en": "You can work and learn now.",
+      "extra_ja": "今は働いて、学ぶことができる。",
+      "theme_en": "clean work",
+      "theme_ja": "きれいに整える仕事",
+      "season_act_en": "work and clean",
+      "season_act_ja": "働いて整える"
+    },
+    {
+      "sign_en": "Libra",
+      "sign_ja": "天秤座",
+      "feel_en": "calm",
+      "feel_ja": "穏やかな気持ち",
+      "extra_en": "You can feel music and love.",
+      "extra_ja": "音楽と愛を感じることができる。",
+      "theme_en": "music and love",
+      "theme_ja": "音楽と愛",
+      "season_act_en": "feel music",
+      "season_act_ja": "音楽を感じる"
+    },
+    {
+      "sign_en": "Scorpio",
+      "sign_ja": "蠍座",
+      "feel_en": "quiet and strong",
+      "feel_ja": "静かで、強い気持ち",
+      "extra_en": "You can keep a secret.",
+      "extra_ja": "秘密を守ることができる。",
+      "theme_en": "deep secrets",
+      "theme_ja": "深い秘密",
+      "season_act_en": "be quiet",
+      "season_act_ja": "静かにする"
+    },
+    {
+      "sign_en": "Sagittarius",
+      "sign_ja": "射手座",
+      "feel_en": "happy",
+      "feel_ja": "幸せな気持ち",
+      "extra_en": "You can go and play now.",
+      "extra_ja": "今は出かけて、遊ぶことができる。",
+      "theme_en": "far trips",
+      "theme_ja": "遠くへの旅",
+      "season_act_en": "travel far",
+      "season_act_ja": "遠くへ旅する"
+    },
+    {
+      "sign_en": "Capricorn",
+      "sign_ja": "山羊座",
+      "feel_en": "strong",
+      "feel_ja": "強い気持ち",
+      "extra_en": "You can work and win.",
+      "extra_ja": "働いて、勝つことができる。",
+      "theme_en": "the top of the mountain",
+      "theme_ja": "山の頂上",
+      "season_act_en": "build and climb",
+      "season_act_ja": "建てて登る"
+    },
+    {
+      "sign_en": "Aquarius",
+      "sign_ja": "水瓶座",
+      "feel_en": "light",
+      "feel_ja": "軽やかな気持ち",
+      "extra_en": "You can think and read books.",
+      "extra_ja": "考えて、本を読むことができる。",
+      "theme_en": "new ideas",
+      "theme_ja": "新しいアイデア",
+      "season_act_en": "make new ideas",
+      "season_act_ja": "新しいアイデアを作る"
+    },
+    {
+      "sign_en": "Pisces",
+      "sign_ja": "魚座",
+      "feel_en": "quiet",
+      "feel_ja": "静かな気持ち",
+      "extra_en": "You can feel music in the night.",
+      "extra_ja": "夜に音楽を感じることができる。",
+      "theme_en": "dreams and the sea",
+      "theme_ja": "夢と海",
+      "season_act_en": "dream and sleep",
+      "season_act_ja": "夢を見て眠る"
+    }
+  ],
+  "aspectData": [
+    {
+      "id": "conjunction",
+      "en": "conjunction",
+      "ja": "合（コンジャンクション）",
+      "degrees": 0,
+      "sign_distance": [
+        0
+      ],
+      "nature": "strong",
+      "plain_ja": "同じ星座で重なっている",
+      "note_ja": "重なり合って強め合う角度。良し悪しではなく「濃さ」として読む。"
+    },
+    {
+      "id": "sextile",
+      "en": "sextile",
+      "ja": "セクスタイル",
+      "degrees": 60,
+      "sign_distance": [
+        2,
+        10
+      ],
+      "nature": "soft",
+      "plain_ja": "60度で、やさしくつながっている",
+      "note_ja": "無理なく手が届く、やさしい角度。"
+    },
+    {
+      "id": "square",
+      "en": "square",
+      "ja": "スクエア",
+      "degrees": 90,
+      "sign_distance": [
+        3,
+        9
+      ],
+      "nature": "tense",
+      "plain_ja": "90度で、ぶつかり合う角度にある",
+      "note_ja": "引っかかりが出やすい角度。成長のきっかけにもなる。"
+    },
+    {
+      "id": "trine",
+      "en": "trine",
+      "ja": "トライン",
+      "degrees": 120,
+      "sign_distance": [
+        4,
+        8
+      ],
+      "nature": "harmonious",
+      "plain_ja": "120度で、なめらかにつながっている",
+      "note_ja": "同じ元素同士で、自然に流れやすい角度。"
+    },
+    {
+      "id": "opposition",
+      "en": "opposition",
+      "ja": "衝（オポジション）",
+      "degrees": 180,
+      "sign_distance": [
+        6
+      ],
+      "nature": "tense",
+      "plain_ja": "180度で、向かい合っている",
+      "note_ja": "向かい合って意識し合う角度。バランスを考えるきっかけになる。"
+    }
+  ],
+  "templates": [
+    {
+      "id": "tm_nm_base",
+      "axis": "transitMoon_x_natalMoon",
+      "title_ja": "基本形（既存実装の拡張）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "今日の月がどの星座でも使う基本形。出生の月の星座を併記する。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "You can feel {feelEn}.",
+        "My Moon is in {natalMoonSignEn}."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "あなたは{feelJa}になることができる。",
+        "私の月は{natalMoonSignJa}にある。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit1",
+      "terms_used": [
+        "Moon"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 1の一般語54語と専門用語 Moon のみで構成。既存実装と同一レベル。"
+    },
+    {
+      "id": "tm_nm_extra",
+      "axis": "transitMoon_x_natalMoon",
+      "title_ja": "基本形＋「できること」の一文",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalMoonSign"
+        ],
+        "needs_sign_extra": true
+      },
+      "condition_ja": "基本形に、今日の月の星座の extra（できること）の一文を足す形。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "You can feel {feelEn}.",
+        "{extraEn}",
+        "My Moon is in {natalMoonSignEn}."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "あなたは{feelJa}になることができる。",
+        "{extraJa}",
+        "私の月は{natalMoonSignJa}にある。"
+      ],
+      "quiz": {
+        "type": "activity_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "{extraJa}",
+        "distractor_ja": "{distractorExtraJa}",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の extra_ja を使う。{distractorExtraJa} はその星座の extra_ja に置換する。",
+        "explanation_ja": "文の中の「できること」の一文（{extraJa}）が、そのまま正解の内容です。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "extra文のうち8星座分（Aries/Gemini/Virgo/Libra/Sagittarius/Capricorn/Aquarius/Pisces）は Unit 1 語彙のみ。残り4星座（Taurus の eat/sweet/food、Cancer の family、Leo の sing/dance、Scorpio の keep/secret）は Unit 2 語彙を含むため、テンプレート全体としては unit2 とした。"
+    },
+    {
+      "id": "tm_nm_same",
+      "axis": "transitMoon_x_natalMoon",
+      "title_ja": "今日の月＝出生の月（同じ星座）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "sameSign",
+        "sign_distance": [
+          0
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "今日の月の星座と出生の月の星座が同じときに使う。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "My Moon is in the same sign.",
+        "You can feel {feelEn}. It can feel like home."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "私の月も、同じ星座にある。",
+        "{feelJa}になれて、家にいるような気持ちにもなりやすい。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の月と同じ星座にある",
+        "distractor_ja": "今日の月は、自分の月の反対側の星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今日の月と自分の月は、どちらも{transitMoonSignJa}にあります。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語（same, home 等）と専門用語 sign で構成。"
+    },
+    {
+      "id": "tm_nm_opposite",
+      "axis": "transitMoon_x_natalMoon",
+      "title_ja": "今日の月が出生の月の反対側",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "opposite",
+        "sign_distance": [
+          6
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "今日の月の星座が、出生の月の星座から6つ先（180度）のときに使う。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "My Moon is in {natalMoonSignEn}.",
+        "You can feel {feelEn}, and it can feel new to me."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "私の月は{natalMoonSignJa}。向かい合う星座同士だ。",
+        "{feelJa}に、いつもと違う新鮮な感覚も混ざりやすい。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の月と向かい合う星座にある",
+        "distractor_ja": "今日の月は、自分の月と同じ星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今日の月（{transitMoonSignJa}）と自分の月（{natalMoonSignJa}）は向かい合う位置にあります。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語（new 等）で構成。関係の説明は日本語訳とクイズ側で補う。"
+    },
+    {
+      "id": "tm_nm_harmony",
+      "axis": "transitMoon_x_natalMoon",
+      "title_ja": "今日の月が出生の月と調和（同じ元素・用語なし）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "harmonious",
+        "sign_distance": [
+          4,
+          8
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "星座の距離が4または8（トライン圏＝同じ元素）のときに使う。元素・アスペクトの用語は出さない平易版。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "This sign and my Moon can be good friends.",
+        "You can feel {feelEn}. And my heart can feel it."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "この星座は、私の月と仲良くなりやすい組み合わせだ。",
+        "{feelJa}が、自分の心にも届きやすい。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Moon",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "英文自体は Unit 2 までの語彙で構成できるが、「自分の配置同士の関係を読む」段階として Unit 3（自分の配置）修了を前提にする。元素の概念そのものは Unit 7 で正式に学ぶ。"
+    },
+    {
+      "id": "tm_nm_tense",
+      "axis": "transitMoon_x_natalMoon",
+      "title_ja": "今日の月が出生の月と緊張（スクエア圏・用語なし）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "tense",
+        "sign_distance": [
+          3,
+          9
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "星座の距離が3または9（スクエア圏）のときに使う。用語は出さない平易版。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "This sign can be hard for my Moon.",
+        "You can feel {feelEn}. I can go slow."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "この星座は、私の月には少し難しい角度だ。",
+        "{feelJa}になりやすい。ゆっくり進めばいい。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Moon",
+        "sign"
+      ],
+      "beyond_level_words": [
+        "for"
+      ],
+      "vocab_note_ja": "関係を読む段階として Unit 3 前提。'for' は Unit 1〜2 の導入リストに未収録のため明記する（Unit 3 の文型拡張で導入見込みの基本語）。"
+    },
+    {
+      "id": "tm_nm_care",
+      "axis": "transitMoon_x_natalMoon",
+      "title_ja": "セルフケアの形",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "関係を問わず使える、自分の月（心）へのケアを促す形。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "My Moon is in {natalMoonSignEn}.",
+        "I can give my heart a slow and quiet day."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "私の月は{natalMoonSignJa}にある。",
+        "今日は自分の心に、ゆっくり静かな一日をあげたい。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語（give, heart 等）で構成。"
+    },
+    {
+      "id": "tm_nm_night",
+      "axis": "transitMoon_x_natalMoon",
+      "title_ja": "夜の形（夢・眠り）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "夜に読む想定の形。夢の中の気分に触れる。",
+      "lines_en": [
+        "In the night, the Moon is in {transitMoonSignEn}.",
+        "I can feel {feelEn} in my dreams."
+      ],
+      "lines_ja": [
+        "夜、月は{transitMoonSignJa}にある。",
+        "夢の中でも{feelJa}になりやすい。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語（dream の複数形 dreams を含む。複数形は原形と同一語として数える＝CURRICULUM 2.1）で構成。"
+    },
+    {
+      "id": "tm_ns_base",
+      "axis": "transitMoonSign_x_natalSun",
+      "title_ja": "基本形",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "今日の月の星座と、出生の太陽の星座を併記する基本形。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "My Sun is in {natalSunSignEn}.",
+        "You can feel {feelEn} and be bright in the day."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "私の太陽は{natalSunSignJa}にある。",
+        "{feelJa}になりながら、昼は明るくいられる。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon",
+        "Sun"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語（bright 等）と専門用語 Sun/Moon で構成。"
+    },
+    {
+      "id": "tm_ns_same",
+      "axis": "transitMoonSign_x_natalSun",
+      "title_ja": "今日の月＝出生の太陽（同じ星座）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "sameSign",
+        "sign_distance": [
+          0
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "今日の月の星座と出生の太陽の星座が同じときに使う。",
+      "lines_en": [
+        "The Moon is in my Sun sign now.",
+        "You can feel {feelEn}.",
+        "My day and my heart can move together."
+      ],
+      "lines_ja": [
+        "月は今、私の太陽と同じ星座にある。",
+        "{feelJa}になりやすい。",
+        "表の自分と心が、同じ方向に動きやすい日だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の太陽と同じ星座にある",
+        "distractor_ja": "今日の月は、自分の太陽の反対側の星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今日の月は、自分の太陽の星座（{natalSunSignJa}）に入っています。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon",
+        "Sun",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語（move, together, heart 等）で構成。"
+    },
+    {
+      "id": "tm_ns_opposite",
+      "axis": "transitMoonSign_x_natalSun",
+      "title_ja": "今日の月が出生の太陽の反対側",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "opposite",
+        "sign_distance": [
+          6
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "今日の月の星座が、出生の太陽の星座から6つ先（180度）のときに使う。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "My Sun is in {natalSunSignEn}.",
+        "You can feel {feelEn}. My heart and my day can be different now."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "私の太陽は{natalSunSignJa}。向かい合う星座同士だ。",
+        "{feelJa}になりやすい。心と表の自分が違う動きをする日で、それも悪くない。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の太陽と向かい合う星座にある",
+        "distractor_ja": "今日の月は、自分の太陽と同じ星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今日の月（{transitMoonSignJa}）と自分の太陽（{natalSunSignJa}）は向かい合う位置にあります。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon",
+        "Sun"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語（different 等）で構成。"
+    },
+    {
+      "id": "tm_ns_harmony",
+      "axis": "transitMoonSign_x_natalSun",
+      "title_ja": "今日の月が出生の太陽と調和（用語なし）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "harmonious",
+        "sign_distance": [
+          4,
+          8
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "星座の距離が4または8（トライン圏）のときに使う平易版。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "This sign can be a good friend to my Sun.",
+        "You can feel {feelEn} and be bright."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "この星座は、私の太陽と仲良くなりやすい組み合わせだ。",
+        "{feelJa}になりながら、明るくいられる。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Moon",
+        "Sun",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "英文は Unit 2 までの語彙で構成できるが、配置同士の関係を読む段階として Unit 3 前提。"
+    },
+    {
+      "id": "tm_ns_tense",
+      "axis": "transitMoonSign_x_natalSun",
+      "title_ja": "今日の月が出生の太陽と緊張（用語なし）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "tense",
+        "sign_distance": [
+          3,
+          9
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "星座の距離が3または9（スクエア圏）のときに使う平易版。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "This sign can be hard for my Sun.",
+        "You can feel {feelEn}. Slow can be strong."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "この星座は、私の太陽には少し難しい角度だ。",
+        "{feelJa}になりやすい。ゆっくりでも、強くいられる。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Moon",
+        "Sun",
+        "sign"
+      ],
+      "beyond_level_words": [
+        "for"
+      ],
+      "vocab_note_ja": "'for' は Unit 1〜2 の導入リスト未収録のため明記（Unit 3 で導入見込みの基本語）。関係読みの段階として Unit 3 前提。"
+    },
+    {
+      "id": "tm_ns_theme",
+      "axis": "transitMoonSign_x_natalSun",
+      "title_ja": "太陽のテーマ（好きなもの）を添える形",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "出生の太陽の星座のテーマ（その星座の太陽が好むもの）を添える形。",
+      "lines_en": [
+        "My Sun is in {natalSunSignEn}. My Sun likes {natalSunThemeEn}.",
+        "The Moon is in {transitMoonSignEn} now.",
+        "You can feel {feelEn}."
+      ],
+      "lines_ja": [
+        "私の太陽は{natalSunSignJa}。太陽は{natalSunThemeJa}が好きだ。",
+        "月は今、{transitMoonSignJa}にある。",
+        "{feelJa}になりやすい。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "自分の太陽は{natalSunThemeJa}が好きだ、と書いてある",
+        "distractor_ja": "自分の太陽は{distractorThemeJa}が好きだ、と書いてある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "文では、自分の太陽（{natalSunSignJa}）のテーマは「{natalSunThemeJa}」だと書かれています。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon",
+        "Sun"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "テーマ語句（signData.theme）は全星座分とも Unit 2 までの一般語のみで作ってある。クイズの {distractorThemeJa} は別の星座の theme_ja に置換する。"
+    },
+    {
+      "id": "tm_ns_extra",
+      "axis": "transitMoonSign_x_natalSun",
+      "title_ja": "「できること」＋太陽の形",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalSunSign"
+        ],
+        "needs_sign_extra": true
+      },
+      "condition_ja": "今日の月の extra（できること）の一文と、出生の太陽を組み合わせる形。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "{extraEn}",
+        "My Sun in {natalSunSignEn} can like this day."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "{extraJa}",
+        "{natalSunSignJa}の太陽にも、合う一日になりやすい。"
+      ],
+      "quiz": {
+        "type": "activity_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "{extraJa}",
+        "distractor_ja": "{distractorExtraJa}",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の extra_ja を使う。{distractorExtraJa} はその星座の extra_ja に置換する。",
+        "explanation_ja": "文の中の「できること」の一文（{extraJa}）が、そのまま正解の内容です。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Moon",
+        "Sun"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "extra文の語彙レベルについては tm_nm_extra の注記と同じ（4星座分は Unit 2 語彙を含む）。"
+    },
+    {
+      "id": "ss_ns_base",
+      "axis": "seasonSun_x_natalSunMoon",
+      "title_ja": "基本形（太陽×太陽）",
+      "condition": {
+        "transit_body": "Sun",
+        "natal_body": "Sun",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "現在の太陽の星座（季節）と出生の太陽を併記し、季節のテーマ行動を添える基本形。",
+      "lines_en": [
+        "The Sun is in {seasonSunSignEn} now.",
+        "This is a time to {seasonActEn}.",
+        "My Sun is in {natalSunSignEn}."
+      ],
+      "lines_ja": [
+        "太陽は今、{seasonSunSignJa}にある。",
+        "今は{seasonActJa}季節だ。",
+        "私の太陽は{natalSunSignJa}にある。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今は{seasonActJa}季節だ、と書いてある",
+        "distractor_ja": "今は{distractorSeasonActJa}季節だ、と書いてある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "文では、今の太陽（{seasonSunSignJa}）の季節のテーマは「{seasonActJa}」だと書かれています。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Sun"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "seasonAct（signData.season_act）は全星座分とも Unit 2 までの一般語のみ。クイズの {distractorSeasonActJa} は別の星座の season_act_ja に置換する。"
+    },
+    {
+      "id": "ss_ns_return",
+      "axis": "seasonSun_x_natalSunMoon",
+      "title_ja": "太陽が自分の星座に戻る季節（ソーラーリターン期・用語なし）",
+      "condition": {
+        "transit_body": "Sun",
+        "natal_body": "Sun",
+        "relation": "sameSign",
+        "sign_distance": [
+          0
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "現在の太陽の星座と出生の太陽の星座が同じ（誕生日前後の季節）ときに使う。",
+      "lines_en": [
+        "The Sun is in my Sun sign now.",
+        "A new year can begin.",
+        "I can think of {seasonThemeEn}."
+      ],
+      "lines_ja": [
+        "太陽は今、私の太陽と同じ星座にある。",
+        "新しい一年を始められる季節だ。",
+        "{seasonThemeJa}を思い浮かべやすい。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今の太陽は、自分の太陽と同じ星座にある",
+        "distractor_ja": "今の太陽は、自分の太陽の反対側の星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今の太陽と自分の太陽は、どちらも{natalSunSignJa}にあります。誕生日の季節です。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Sun",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語と、季節のテーマ語句（signData.theme）で構成。return の用語は Unit 8 で正式導入のため、ここでは使わない。"
+    },
+    {
+      "id": "ss_ns_opposite",
+      "axis": "seasonSun_x_natalSunMoon",
+      "title_ja": "太陽が自分の太陽の反対側の季節",
+      "condition": {
+        "transit_body": "Sun",
+        "natal_body": "Sun",
+        "relation": "opposite",
+        "sign_distance": [
+          6
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "現在の太陽の星座が、出生の太陽から6つ先（半年ずれた季節）のときに使う。",
+      "lines_en": [
+        "The Sun is in {seasonSunSignEn} now.",
+        "My Sun is in {natalSunSignEn}.",
+        "I can see my year with new eyes."
+      ],
+      "lines_ja": [
+        "太陽は今、{seasonSunSignJa}にある。",
+        "私の太陽は{natalSunSignJa}。一年の、ちょうど反対側の季節だ。",
+        "新しい目で自分の一年を見られる。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今の太陽は、自分の太陽と向かい合う星座にある",
+        "distractor_ja": "今の太陽は、自分の太陽と同じ星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今の太陽（{seasonSunSignJa}）と自分の太陽（{natalSunSignJa}）は向かい合う位置にあります。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Sun"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語（see, eye の複数形 eyes 等）で構成。"
+    },
+    {
+      "id": "ss_ns_harmony",
+      "axis": "seasonSun_x_natalSunMoon",
+      "title_ja": "季節の太陽が出生の太陽と調和（用語なし）",
+      "condition": {
+        "transit_body": "Sun",
+        "natal_body": "Sun",
+        "relation": "harmonious",
+        "sign_distance": [
+          4,
+          8
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "星座の距離が4または8（トライン圏）のときに使う平易版。",
+      "lines_en": [
+        "The Sun is in {seasonSunSignEn} now.",
+        "This sign can be a good friend to my Sun.",
+        "This is a time to {seasonActEn}."
+      ],
+      "lines_ja": [
+        "太陽は今、{seasonSunSignJa}にある。",
+        "この星座は、私の太陽と仲良くなりやすい組み合わせだ。",
+        "今は{seasonActJa}季節だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今は{seasonActJa}季節だ、と書いてある",
+        "distractor_ja": "今は{distractorSeasonActJa}季節だ、と書いてある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "文では、今の季節のテーマは「{seasonActJa}」だと書かれています。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Sun",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "英文は Unit 2 までの語彙で構成できるが、関係を読む段階として Unit 3 前提。"
+    },
+    {
+      "id": "ss_ns_tense",
+      "axis": "seasonSun_x_natalSunMoon",
+      "title_ja": "季節の太陽が出生の太陽と緊張（用語なし）",
+      "condition": {
+        "transit_body": "Sun",
+        "natal_body": "Sun",
+        "relation": "tense",
+        "sign_distance": [
+          3,
+          9
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "星座の距離が3または9（スクエア圏）のときに使う平易版。",
+      "lines_en": [
+        "The Sun is in {seasonSunSignEn} now.",
+        "This sign can be hard for my Sun.",
+        "Small steps can be strong."
+      ],
+      "lines_ja": [
+        "太陽は今、{seasonSunSignJa}にある。",
+        "この星座は、私の太陽には少し難しい角度だ。",
+        "小さな一歩でも、強さになる季節だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今の太陽の星座は、自分の太陽には少し難しい角度だ、と書いてある",
+        "distractor_ja": "今の太陽の星座は、自分の太陽と仲良くなりやすい、と書いてある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "文では、今の太陽（{seasonSunSignJa}）は自分の太陽にとって少し難しい角度だと書かれています。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Sun",
+        "sign"
+      ],
+      "beyond_level_words": [
+        "for"
+      ],
+      "vocab_note_ja": "'for' は Unit 1〜2 の導入リスト未収録のため明記（Unit 3 で導入見込み）。関係読みの段階として Unit 3 前提。"
+    },
+    {
+      "id": "ss_nm_base",
+      "axis": "seasonSun_x_natalSunMoon",
+      "title_ja": "基本形（太陽×月）昼と夜",
+      "condition": {
+        "transit_body": "Sun",
+        "natal_body": "Moon",
+        "relation": "any",
+        "sign_distance": null,
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "現在の太陽の星座のテーマと、出生の月の気分を「昼／夜」で対比する形。",
+      "lines_en": [
+        "The Sun is in {seasonSunSignEn} now.",
+        "My Moon is in {natalMoonSignEn}.",
+        "In the day, I can think of {seasonThemeEn}. In the night, I can feel {natalMoonFeelEn}."
+      ],
+      "lines_ja": [
+        "太陽は今、{seasonSunSignJa}にある。",
+        "私の月は{natalMoonSignJa}にある。",
+        "昼は{seasonThemeJa}を思い浮かべ、夜は{natalMoonFeelJa}になりやすい。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "夜は{natalMoonFeelJa}になりやすい、と書いてある",
+        "distractor_ja": "夜は{distractorFeelJa}になりやすい、と書いてある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "文の後半では、自分の月（{natalMoonSignJa}）の気分「{natalMoonFeelJa}」に触れています。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Sun",
+        "Moon"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "Unit 2までの一般語と、季節テーマ語句・月の気分語句（いずれも signData 内、Unit 2 までの語で作成）で構成。クイズの {distractorFeelJa} は別の星座の feel_ja に置換する。"
+    },
+    {
+      "id": "ss_nm_same",
+      "axis": "seasonSun_x_natalSunMoon",
+      "title_ja": "季節の太陽＝出生の月（同じ星座）",
+      "condition": {
+        "transit_body": "Sun",
+        "natal_body": "Moon",
+        "relation": "sameSign",
+        "sign_distance": [
+          0
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "現在の太陽の星座と出生の月の星座が同じときに使う。",
+      "lines_en": [
+        "The Sun is in {seasonSunSignEn} now.",
+        "My Moon is in the same sign.",
+        "I can feel {seasonFeelEn}."
+      ],
+      "lines_ja": [
+        "太陽は今、{seasonSunSignJa}にある。",
+        "私の月も、同じ星座にある。",
+        "{seasonFeelJa}になりやすい季節だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今の太陽は、自分の月と同じ星座にある",
+        "distractor_ja": "今の太陽は、自分の月の反対側の星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今の太陽と自分の月は、どちらも{seasonSunSignJa}にあります。"
+      },
+      "required_level": "unit2",
+      "terms_used": [
+        "Sun",
+        "Moon",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "{seasonFeelEn/Ja} は現在の太陽の星座の feel（signData の気分表を流用）。Unit 2までの語彙で構成。"
+    },
+    {
+      "id": "ss_nm_opposite",
+      "axis": "seasonSun_x_natalSunMoon",
+      "title_ja": "季節の太陽が出生の月の反対側",
+      "condition": {
+        "transit_body": "Sun",
+        "natal_body": "Moon",
+        "relation": "opposite",
+        "sign_distance": [
+          6
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "現在の太陽の星座が、出生の月から6つ先（180度）のときに使う。",
+      "lines_en": [
+        "The Sun is in {seasonSunSignEn} now.",
+        "My Moon is in {natalMoonSignEn}, a different sign.",
+        "My day and my night can be different now."
+      ],
+      "lines_ja": [
+        "太陽は今、{seasonSunSignJa}にある。",
+        "私の月は{natalMoonSignJa}。今の太陽とは向かい合う星座だ。",
+        "昼と夜の感覚が違いやすい季節だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今の太陽は、自分の月と向かい合う星座にある",
+        "distractor_ja": "今の太陽は、自分の月と同じ星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今の太陽（{seasonSunSignJa}）と自分の月（{natalMoonSignJa}）は向かい合う位置にあります。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Sun",
+        "Moon"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "英文は Unit 2 までの語彙で構成できるが、関係を読む段階として Unit 3 前提。"
+    },
+    {
+      "id": "asp_conj_natalMoon",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の月 コンジャンクション",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "conjunction",
+        "aspect": "conjunction",
+        "sign_distance": [
+          0
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "今日の月が出生の月と同じ星座に入り、合（0度）を作るときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Moon today.",
+        "You can feel {feelEn}.",
+        "It can feel strong and close to my heart."
+      ],
+      "lines_ja": [
+        "今日、月は私の月と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "心に強く、近く感じやすい日だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の月と同じ星座で重なっている",
+        "distractor_ja": "今日の月は、自分の月と向かい合っている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "コンジャンクションは、2つの天体が同じ星座で重なる角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "aspect",
+        "conjunction"
+      ],
+      "beyond_level_words": [
+        "today",
+        "close"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。"
+    },
+    {
+      "id": "asp_conj_natalSun",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の太陽 コンジャンクション",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "conjunction",
+        "aspect": "conjunction",
+        "sign_distance": [
+          0
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "今日の月が出生の太陽と同じ星座に入り、合を作るときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Sun today.",
+        "You can feel {feelEn}.",
+        "You can feel it in your day and in your heart."
+      ],
+      "lines_ja": [
+        "今日、月は私の太陽と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "昼の自分にも、心にも、届きやすい日だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の太陽と同じ星座で重なっている",
+        "distractor_ja": "今日の月は、自分の太陽と90度でぶつかり合っている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "コンジャンクションは、2つの天体が同じ星座で重なる角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "Sun",
+        "aspect",
+        "conjunction"
+      ],
+      "beyond_level_words": [
+        "today",
+        "your"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。"
+    },
+    {
+      "id": "asp_sextile_natalVenus",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の金星 セクスタイル",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Venus",
+        "relation": "sextile",
+        "aspect": "sextile",
+        "sign_distance": [
+          2,
+          10
+        ],
+        "requires": [
+          "natalVenusSign"
+        ]
+      },
+      "condition_ja": "今日の月と出生の金星の星座の距離が2または10（60度）のときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Venus today.",
+        "You can feel {feelEn}.",
+        "It can be a soft day for love and music."
+      ],
+      "lines_ja": [
+        "今日、月は私の金星と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "愛や音楽に、やさしく触れやすい日だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の金星と60度でやさしくつながっている",
+        "distractor_ja": "今日の月は、自分の金星と90度でぶつかり合っている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "セクスタイルは60度の、やさしくつながる角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "Venus",
+        "aspect",
+        "sextile"
+      ],
+      "beyond_level_words": [
+        "today",
+        "soft"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。 なお soft は Unit 2 で導入済み。"
+    },
+    {
+      "id": "asp_square_natalMars",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の火星 スクエア",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Mars",
+        "relation": "square",
+        "aspect": "square",
+        "sign_distance": [
+          3,
+          9
+        ],
+        "requires": [
+          "natalMarsSign"
+        ]
+      },
+      "condition_ja": "今日の月と出生の火星の星座の距離が3または9（90度）のときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Mars today.",
+        "You can feel {feelEn}.",
+        "You do not have to win today. Slow can be strong."
+      ],
+      "lines_ja": [
+        "今日、月は私の火星と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "今日は勝たなくていい。ゆっくりでも、強くいられる。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の火星と90度でぶつかり合う角度にある",
+        "distractor_ja": "今日の月は、自分の火星と120度でなめらかにつながっている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "スクエアは90度の、ぶつかり合いやすい角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "Mars",
+        "aspect",
+        "square"
+      ],
+      "beyond_level_words": [
+        "today"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。"
+    },
+    {
+      "id": "asp_trine_natalSun",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の太陽 トライン",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "trine",
+        "aspect": "trine",
+        "sign_distance": [
+          4,
+          8
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "今日の月と出生の太陽の星座の距離が4または8（120度）のときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Sun today.",
+        "You can feel {feelEn}.",
+        "It can be a bright and easy day."
+      ],
+      "lines_ja": [
+        "今日、月は私の太陽と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "明るく、無理のない一日になりやすい。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の太陽と120度でなめらかにつながっている",
+        "distractor_ja": "今日の月は、自分の太陽と同じ星座で重なっている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "トラインは120度の、なめらかにつながる角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "Sun",
+        "aspect",
+        "trine"
+      ],
+      "beyond_level_words": [
+        "today",
+        "easy"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。"
+    },
+    {
+      "id": "asp_opposition_natalMoon",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の月 オポジション",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "opposition",
+        "aspect": "opposition",
+        "sign_distance": [
+          6
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "今日の月が出生の月の反対側（180度）にあるときに使う。満月の時期と重なりやすい。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Moon today.",
+        "You can feel {feelEn}.",
+        "I can look at my heart with new eyes."
+      ],
+      "lines_ja": [
+        "今日、月は私の月と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "新しい目で自分の心を見られる日だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の月と向かい合っている",
+        "distractor_ja": "今日の月は、自分の月と同じ星座で重なっている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "オポジションは180度の、向かい合う角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "aspect",
+        "opposition"
+      ],
+      "beyond_level_words": [
+        "today",
+        "look"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。"
+    },
+    {
+      "id": "asp_opposition_natalVenus",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の金星 オポジション",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Venus",
+        "relation": "opposition",
+        "aspect": "opposition",
+        "sign_distance": [
+          6
+        ],
+        "requires": [
+          "natalVenusSign"
+        ]
+      },
+      "condition_ja": "今日の月が出生の金星の反対側（180度）にあるときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Venus today.",
+        "You can feel {feelEn}.",
+        "Love can feel near and far on the same day."
+      ],
+      "lines_ja": [
+        "今日、月は私の金星と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "愛が近くにも遠くにも感じられる日だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の金星と向かい合っている",
+        "distractor_ja": "今日の月は、自分の金星と60度でやさしくつながっている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "オポジションは180度の、向かい合う角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "Venus",
+        "aspect",
+        "opposition"
+      ],
+      "beyond_level_words": [
+        "today",
+        "near"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。"
+    },
+    {
+      "id": "asp_square_natalMercury",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の水星 スクエア",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Mercury",
+        "relation": "square",
+        "aspect": "square",
+        "sign_distance": [
+          3,
+          9
+        ],
+        "requires": [
+          "natalMercurySign"
+        ]
+      },
+      "condition_ja": "今日の月と出生の水星の星座の距離が3または9（90度）のときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Mercury today.",
+        "You can feel {feelEn}.",
+        "Words can be hard today. I can speak slow and kind."
+      ],
+      "lines_ja": [
+        "今日、月は私の水星と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "言葉が難しくなりやすい日。ゆっくり、優しく話せる。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の水星と90度でぶつかり合う角度にある",
+        "distractor_ja": "今日の月は、自分の水星と120度でなめらかにつながっている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "スクエアは90度の、ぶつかり合いやすい角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "Mercury",
+        "aspect",
+        "square"
+      ],
+      "beyond_level_words": [
+        "today"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。 speak/kind/slow はいずれも Unit 1〜2 で導入済み。"
+    },
+    {
+      "id": "asp_trine_natalMoon",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の月 トライン",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "trine",
+        "aspect": "trine",
+        "sign_distance": [
+          4,
+          8
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "今日の月と出生の月の星座の距離が4または8（120度）のときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Moon today.",
+        "You can feel {feelEn}.",
+        "My heart can feel at home."
+      ],
+      "lines_ja": [
+        "今日、月は私の月と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "心が家にいるように落ち着きやすい日だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の月と120度でなめらかにつながっている",
+        "distractor_ja": "今日の月は、自分の月と90度でぶつかり合っている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "トラインは120度の、なめらかにつながる角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "aspect",
+        "trine"
+      ],
+      "beyond_level_words": [
+        "today",
+        "at"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。"
+    },
+    {
+      "id": "asp_sextile_natalSun",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月×出生の太陽 セクスタイル",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Sun",
+        "relation": "sextile",
+        "aspect": "sextile",
+        "sign_distance": [
+          2,
+          10
+        ],
+        "requires": [
+          "natalSunSign"
+        ]
+      },
+      "condition_ja": "今日の月と出生の太陽の星座の距離が2または10（60度）のときに使う。",
+      "lines_en": [
+        "The Moon is in {aspectEn} with my Sun today.",
+        "You can feel {feelEn}.",
+        "A small good step can come to my day."
+      ],
+      "lines_ja": [
+        "今日、月は私の太陽と{aspectJa}になっている。",
+        "{feelJa}になりやすい。",
+        "小さな良い一歩が来やすい日だ。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の太陽と60度でやさしくつながっている",
+        "distractor_ja": "今日の月は、自分の太陽と向かい合っている",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "セクスタイルは60度の、やさしくつながる角度です。"
+      },
+      "required_level": "unit6",
+      "terms_used": [
+        "Moon",
+        "Sun",
+        "aspect",
+        "sextile"
+      ],
+      "beyond_level_words": [
+        "today"
+      ],
+      "vocab_note_ja": "アスペクト名（専門用語）は CURRICULUM §3 のとおり Unit 6 で導入されるため required_level は unit6。一般語は Unit 6 までの累計（約730語）範囲を前提に短く平易に保ったが、語単位の監査は未実施。'today' 'your' 等の基本語を含む。"
+    },
+    {
+      "id": "asp_plain_same_natalVenus",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月が出生の金星と同じ星座（アスペクト用語なし）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Venus",
+        "relation": "sameSign",
+        "sign_distance": [
+          0
+        ],
+        "requires": [
+          "natalVenusSign"
+        ]
+      },
+      "condition_ja": "今日の月が出生の金星と同じ星座にあるときに使う。コンジャンクションの平易版。",
+      "lines_en": [
+        "The Moon is in the sign of my Venus now.",
+        "I can feel love and music.",
+        "And I can feel {feelEn}."
+      ],
+      "lines_ja": [
+        "月は今、私の金星と同じ星座にある。",
+        "愛や音楽を感じやすい。",
+        "そして{feelJa}にもなりやすい。"
+      ],
+      "quiz": {
+        "type": "content_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日の月は、自分の金星と同じ星座にある",
+        "distractor_ja": "今日の月は、自分の金星の反対側の星座にある",
+        "distractor_rule_ja": "星座名・テーマ語を別のものに差し替えた文を誤答にする（各テンプレートの distractor_ja が完成形）。",
+        "explanation_ja": "今日の月と自分の金星は、同じ星座にあります。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Moon",
+        "Venus",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "アスペクト用語を使わない平易版。英文は Unit 2 までの語彙で構成できるが、配置同士の重なりを読む段階として Unit 3 前提。用語を使う版は asp_conj 系（unit6）。"
+    },
+    {
+      "id": "asp_plain_harmony_natalMars",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月が出生の火星と調和する星座（用語なし）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Mars",
+        "relation": "harmonious",
+        "sign_distance": [
+          4,
+          8
+        ],
+        "requires": [
+          "natalMarsSign"
+        ]
+      },
+      "condition_ja": "今日の月と出生の火星の星座の距離が4または8（トライン圏）のときに使う平易版。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "This sign can be kind to my Mars.",
+        "I can feel {feelEn}. I can run and play."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "この星座は、私の火星に優しくなりやすい組み合わせだ。",
+        "{feelJa}になりやすい。走って、遊べる日だ。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Moon",
+        "Mars",
+        "sign"
+      ],
+      "beyond_level_words": [],
+      "vocab_note_ja": "アスペクト用語を使わない平易版。英文は Unit 2 までの語彙（kind, run, play 等）で構成。関係読みの段階として Unit 3 前提。"
+    },
+    {
+      "id": "asp_plain_tense_natalMoon",
+      "axis": "aspect_moon_x_natal",
+      "title_ja": "月が出生の月と緊張する星座（用語なし）",
+      "condition": {
+        "transit_body": "Moon",
+        "natal_body": "Moon",
+        "relation": "tense",
+        "sign_distance": [
+          3,
+          9
+        ],
+        "requires": [
+          "natalMoonSign"
+        ]
+      },
+      "condition_ja": "今日の月と出生の月の星座の距離が3または9（スクエア圏）のときに使う平易版。tm_nm_tense と同条件だが、こちらはアスペクト軸のバリエーションとして文を変えてある。",
+      "lines_en": [
+        "The Moon is in {transitMoonSignEn} now.",
+        "This sign can be hard for my Moon.",
+        "I can go slow. Slow can be strong."
+      ],
+      "lines_ja": [
+        "月は今、{transitMoonSignJa}にある。",
+        "この星座は、私の月には少し難しい角度だ。",
+        "ゆっくり進める。ゆっくりでも、強くいられる。"
+      ],
+      "quiz": {
+        "type": "mood_match",
+        "prompt_ja": "読み取りチェック：この文の内容と合っているのは？",
+        "correct_ja": "今日は{feelJa}になりやすい傾向",
+        "distractor_ja": "今日は{distractorFeelJa}になりやすい傾向",
+        "distractor_rule_ja": "誤答は、今日の月の星座から5つ先の星座の feel_ja を使う（既存実装 js/core.js の方式と同じ）。{distractorFeelJa} はその星座の feel_ja に置換する。",
+        "explanation_ja": "文では今日の月の星座の気分（{feelJa}）に触れています。これは傾向を読むための練習文で、断定するものではありません。"
+      },
+      "required_level": "unit3",
+      "terms_used": [
+        "Moon",
+        "sign"
+      ],
+      "beyond_level_words": [
+        "for"
+      ],
+      "vocab_note_ja": "アスペクト用語を使わない平易版。'for' は Unit 1〜2 未収録のため明記（Unit 3 で導入見込み）。"
+    }
+  ]
+}
