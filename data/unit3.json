@@ -1,0 +1,1422 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "自分の太陽と月がどの星座にあるかを be in の文型で読み、生まれた季節や場所と結びつけて理解できる。",
+      "chartLine": {
+        "ja": "私の太陽は{sunSignJa}にあり、私の月は{moonSignJa}にある。これが私の出生（ネイタル）チャートだ。",
+        "note_ja": "アプリでは学習者の実際の太陽星座・月星座を当てはめる。Unit 3 の核となる be in 文型を、自分の配置そのもので読む。",
+        "template_en": "My Sun is in {sunSign}, and my Moon is in {moonSign}. This is my natal chart."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "left は「左」、part は「部分」。配置を読む文型 be in の確認。",
+          "options": [
+            "私の月はチャートの左の部分にある",
+            "私の月はチャートの終わりにある",
+            "私の太陽は海の近くにある"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "My Moon is in the left part of my chart.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "season は「季節」。spring・summer・autumn・winter の総称。",
+          "options": [
+            "季節",
+            "月（暦）",
+            "週"
+          ],
+          "prompt_ja": "「season」の意味は？",
+          "question_en": "season",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "early は「早い」。rises は rise の三単現。",
+          "options": [
+            "early",
+            "late",
+            "never"
+          ],
+          "promptJa": "太陽は朝早く昇る。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "The Sun rises ___ in the morning.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "over は「〜の上に」。under（下に）・near（近く）と区別する。",
+          "options": [
+            "over",
+            "under",
+            "near"
+          ],
+          "promptJa": "私の太陽は夕方、海の上にある。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "My Sun is ___ the sea in the evening.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "My Moon is round and full in the winter.",
+          "explanation_ja": "round は「丸い」、full は「満ちた」。冬の満月の描写。",
+          "prompt_ja": "語を並べ替えて「私の月は冬に丸く満ちている」という文を作ろう。",
+          "tiles": [
+            "round and full",
+            "My Moon",
+            "is",
+            "in the winter"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "right は「右」。side は「側」。",
+          "options": [
+            "right",
+            "left",
+            "end"
+          ],
+          "promptJa": "私の水星はチャートの右側にある。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "My Mercury is in the ___ side of my chart.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "soon は「すぐに」。",
+          "options": [
+            "soon",
+            "late",
+            "never"
+          ],
+          "promptJa": "夕方はすぐに来る。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "The evening comes ___.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson3_1",
+      "newTerms": [
+        {
+          "en": "natal",
+          "ja": "出生の（ネイタル）",
+          "note_ja": "natal chart で「出生チャート」。生まれた瞬間の配置図を指す基本概念"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "birth",
+          "ja": "出生"
+        },
+        {
+          "en": "place",
+          "ja": "場所"
+        },
+        {
+          "en": "here",
+          "ja": "ここ"
+        },
+        {
+          "en": "there",
+          "ja": "そこ"
+        },
+        {
+          "en": "where",
+          "ja": "どこ"
+        },
+        {
+          "en": "when",
+          "ja": "いつ／〜のとき"
+        },
+        {
+          "en": "morning",
+          "ja": "朝"
+        },
+        {
+          "en": "evening",
+          "ja": "夕方"
+        },
+        {
+          "en": "today",
+          "ja": "今日"
+        },
+        {
+          "en": "tomorrow",
+          "ja": "明日"
+        },
+        {
+          "en": "yesterday",
+          "ja": "昨日"
+        },
+        {
+          "en": "week",
+          "ja": "週"
+        },
+        {
+          "en": "month",
+          "ja": "月（暦）"
+        },
+        {
+          "en": "season",
+          "ja": "季節"
+        },
+        {
+          "en": "spring",
+          "ja": "春"
+        },
+        {
+          "en": "summer",
+          "ja": "夏"
+        },
+        {
+          "en": "autumn",
+          "ja": "秋"
+        },
+        {
+          "en": "winter",
+          "ja": "冬"
+        },
+        {
+          "en": "city",
+          "ja": "都市"
+        },
+        {
+          "en": "town",
+          "ja": "町"
+        },
+        {
+          "en": "shine",
+          "ja": "輝く"
+        },
+        {
+          "en": "rise",
+          "ja": "昇る"
+        },
+        {
+          "en": "high",
+          "ja": "高い"
+        },
+        {
+          "en": "low",
+          "ja": "低い"
+        },
+        {
+          "en": "over",
+          "ja": "〜の上に"
+        },
+        {
+          "en": "under",
+          "ja": "〜の下に"
+        },
+        {
+          "en": "near",
+          "ja": "近く"
+        },
+        {
+          "en": "hour",
+          "ja": "時間"
+        },
+        {
+          "en": "early",
+          "ja": "早い"
+        },
+        {
+          "en": "late",
+          "ja": "遅い"
+        },
+        {
+          "en": "soon",
+          "ja": "すぐに"
+        },
+        {
+          "en": "again",
+          "ja": "また"
+        },
+        {
+          "en": "always",
+          "ja": "いつも"
+        },
+        {
+          "en": "never",
+          "ja": "決して〜ない"
+        },
+        {
+          "en": "left",
+          "ja": "左"
+        },
+        {
+          "en": "right",
+          "ja": "右"
+        },
+        {
+          "en": "side",
+          "ja": "側"
+        },
+        {
+          "en": "end",
+          "ja": "終わり"
+        },
+        {
+          "en": "part",
+          "ja": "部分"
+        },
+        {
+          "en": "own",
+          "ja": "自分自身の"
+        },
+        {
+          "en": "real",
+          "ja": "本物の"
+        },
+        {
+          "en": "round",
+          "ja": "丸い"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "My Sun is in Cancer. / 〜 is in 〜.",
+      "sentences": [
+        {
+          "en": "My Sun is in Cancer.",
+          "ja": "私の太陽は蟹座にある。"
+        },
+        {
+          "en": "My Moon is in Leo.",
+          "ja": "私の月は獅子座にある。"
+        },
+        {
+          "en": "The Sun rises in the morning and shines in the day.",
+          "ja": "太陽は朝に昇り、昼に輝く。"
+        },
+        {
+          "en": "The Moon rises in the evening and comes late in the winter.",
+          "ja": "月は夕方に昇り、冬には遅くやって来る。"
+        },
+        {
+          "en": "This is my birth chart, my real chart.",
+          "ja": "これが私の出生チャート、私の本物のチャートだ。"
+        },
+        {
+          "en": "My birth place is a small town near the sea.",
+          "ja": "私の出生地は、海の近くの小さな町だ。"
+        },
+        {
+          "en": "I live in a city near the sea.",
+          "ja": "私は海の近くの都市に住んでいる。"
+        },
+        {
+          "en": "My home is here, near the sea.",
+          "ja": "私の家はここ、海の近くにある。"
+        },
+        {
+          "en": "My Sun is high in the summer sky.",
+          "ja": "私の太陽は、夏の空で高い。"
+        },
+        {
+          "en": "The Moon is low in the winter night, under the stars.",
+          "ja": "月は冬の夜に低く、星の下にある。"
+        },
+        {
+          "en": "The Sun is over the sea in the evening.",
+          "ja": "太陽は夕方、海の上にある。"
+        },
+        {
+          "en": "Where is the Moon in my chart?",
+          "ja": "私のチャートの中で、月はどこにある？"
+        },
+        {
+          "en": "My Sun is in the left side of my chart.",
+          "ja": "私の太陽はチャートの左側にある。"
+        },
+        {
+          "en": "My Mars is near the end of my chart.",
+          "ja": "私の火星はチャートの終わりの近くにある。"
+        },
+        {
+          "en": "When the Moon is full, I feel calm.",
+          "ja": "月が満ちるとき、私は穏やかな気持ちになる。"
+        },
+        {
+          "en": "My Moon is always in my heart.",
+          "ja": "私の月はいつも私の心の中にある。"
+        },
+        {
+          "en": "There is a star over the town.",
+          "ja": "町の上に星がある。"
+        },
+        {
+          "en": "Tomorrow is a new day, and yesterday is a part of my life.",
+          "ja": "明日は新しい日で、昨日は私の人生の一部だ。"
+        },
+        {
+          "en": "A week is a part of a month.",
+          "ja": "1週間は1か月の一部だ。"
+        },
+        {
+          "en": "My birth season is summer.",
+          "ja": "私の生まれた季節は夏だ。"
+        },
+        {
+          "en": "In spring, I feel new, and in autumn, I feel calm.",
+          "ja": "春には新しい気持ちになり、秋には穏やかな気持ちになる。"
+        },
+        {
+          "en": "I read my own chart in the early morning hour.",
+          "ja": "私は朝早い時間に、自分のチャートを読む。"
+        },
+        {
+          "en": "I read my chart again today.",
+          "ja": "私は今日またチャートを読む。"
+        },
+        {
+          "en": "I never read my chart late in the night.",
+          "ja": "私は夜遅くにチャートを読むことは決してない。"
+        }
+      ],
+      "theme_ja": "自分の配置の入口。be in の文型で「私の太陽は〜座にある」と読み、生まれた季節・時間・場所の言葉と結びつける。",
+      "title_en": "My Sun and Moon in Signs",
+      "title_ja": "私の太陽と月 ― be in の文型",
+      "wordsUsed": [
+        "a",
+        "again",
+        "always",
+        "and",
+        "autumn",
+        "birth",
+        "calm",
+        "city",
+        "come",
+        "day",
+        "early",
+        "end",
+        "evening",
+        "feel",
+        "full",
+        "heart",
+        "here",
+        "high",
+        "home",
+        "hour",
+        "I",
+        "in",
+        "is",
+        "late",
+        "left",
+        "life",
+        "live",
+        "low",
+        "month",
+        "morning",
+        "my",
+        "near",
+        "never",
+        "new",
+        "night",
+        "of",
+        "over",
+        "own",
+        "part",
+        "place",
+        "read",
+        "real",
+        "right",
+        "rise",
+        "round",
+        "sea",
+        "season",
+        "shine",
+        "side",
+        "sky",
+        "small",
+        "soon",
+        "spring",
+        "star",
+        "summer",
+        "the",
+        "there",
+        "this",
+        "today",
+        "tomorrow",
+        "town",
+        "under",
+        "week",
+        "when",
+        "where",
+        "winter",
+        "yesterday"
+      ]
+    },
+    {
+      "canDo_ja": "水星・金星・火星が自分のどの星座にあるかを読み、心・好き・力の動きを表す文が理解できる。",
+      "chartLine": {
+        "ja": "私の水星は{mercurySignJa}にあり、私の金星は{venusSignJa}にあり、私の火星は{marsSignJa}にある。",
+        "note_ja": "アプリでは学習者の実際の水星・金星・火星の星座を当てはめる。Unit 1 の5天体すべての配置がここで出そろう。",
+        "template_en": "My Mercury is in {mercurySign}. My Venus is in {venusSign}, and my Mars is in {marsSign}."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "be in の文型で配置を読む。Venus＝金星、Taurus＝牡牛座。",
+          "options": [
+            "私の金星は牡牛座にある",
+            "私の金星は美しい",
+            "私の月は牡牛座にある"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "My Venus is in Taurus.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "remember は「覚えている」。反対は forget（忘れる）。",
+          "options": [
+            "覚えている",
+            "忘れる",
+            "答える"
+          ],
+          "prompt_ja": "「remember」の意味は？",
+          "question_en": "remember",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "show 〜 to … で「〜を…に見せる」。",
+          "options": [
+            "show",
+            "call",
+            "hit"
+          ],
+          "promptJa": "私は友達にチャートを見せる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ my chart to my friends.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "lonely は「寂しい」。",
+          "options": [
+            "lonely",
+            "glad",
+            "strong"
+          ],
+          "promptJa": "私は大きな街で寂しく感じる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I feel ___ in a big city.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "My Mars is in Aries.",
+          "explanation_ja": "Unit 3 の核となる配置文型。My Mars is in 〜.",
+          "prompt_ja": "語を並べ替えて「私の火星は牡羊座にある」という文を作ろう。",
+          "tiles": [
+            "in Aries",
+            "My Mars",
+            "is"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "fight は「争う」。never と組んで「決して〜ない」。",
+          "options": [
+            "fight",
+            "carry",
+            "sit"
+          ],
+          "promptJa": "私は決して争わない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I never ___ and I never shout.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "happen は「起こる」。story は「物語」。",
+          "options": [
+            "私の人生に新しい物語が起こる",
+            "私は新しい物語を書く",
+            "私の人生は悲しい物語だ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "A new story happens in my life.",
+          "type": "multiple_choice"
+        }
+      ],
+      "id": "lesson3_2",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "mind",
+          "ja": "心（思考）"
+        },
+        {
+          "en": "voice",
+          "ja": "声"
+        },
+        {
+          "en": "letter",
+          "ja": "手紙"
+        },
+        {
+          "en": "story",
+          "ja": "物語"
+        },
+        {
+          "en": "school",
+          "ja": "学校"
+        },
+        {
+          "en": "student",
+          "ja": "生徒"
+        },
+        {
+          "en": "lesson",
+          "ja": "授業"
+        },
+        {
+          "en": "class",
+          "ja": "授業／クラス"
+        },
+        {
+          "en": "paper",
+          "ja": "紙"
+        },
+        {
+          "en": "pen",
+          "ja": "ペン"
+        },
+        {
+          "en": "draw",
+          "ja": "描く"
+        },
+        {
+          "en": "picture",
+          "ja": "絵"
+        },
+        {
+          "en": "sad",
+          "ja": "悲しい"
+        },
+        {
+          "en": "afraid",
+          "ja": "怖い"
+        },
+        {
+          "en": "tired",
+          "ja": "疲れた"
+        },
+        {
+          "en": "angry",
+          "ja": "怒った"
+        },
+        {
+          "en": "glad",
+          "ja": "嬉しい"
+        },
+        {
+          "en": "sorry",
+          "ja": "ごめんなさい／残念な"
+        },
+        {
+          "en": "lonely",
+          "ja": "寂しい"
+        },
+        {
+          "en": "worry",
+          "ja": "心配する"
+        },
+        {
+          "en": "fight",
+          "ja": "争う"
+        },
+        {
+          "en": "push",
+          "ja": "押す"
+        },
+        {
+          "en": "pull",
+          "ja": "引く"
+        },
+        {
+          "en": "hit",
+          "ja": "打つ"
+        },
+        {
+          "en": "cut",
+          "ja": "切る"
+        },
+        {
+          "en": "break",
+          "ja": "壊す"
+        },
+        {
+          "en": "carry",
+          "ja": "運ぶ"
+        },
+        {
+          "en": "hold",
+          "ja": "握る／保つ"
+        },
+        {
+          "en": "stand",
+          "ja": "立つ"
+        },
+        {
+          "en": "sit",
+          "ja": "座る"
+        },
+        {
+          "en": "jump",
+          "ja": "跳ぶ"
+        },
+        {
+          "en": "cry",
+          "ja": "泣く"
+        },
+        {
+          "en": "laugh",
+          "ja": "笑う"
+        },
+        {
+          "en": "shout",
+          "ja": "叫ぶ"
+        },
+        {
+          "en": "call",
+          "ja": "呼ぶ"
+        },
+        {
+          "en": "answer",
+          "ja": "答える"
+        },
+        {
+          "en": "meet",
+          "ja": "会う"
+        },
+        {
+          "en": "show",
+          "ja": "見せる"
+        },
+        {
+          "en": "happen",
+          "ja": "起こる"
+        },
+        {
+          "en": "mean",
+          "ja": "意味する"
+        },
+        {
+          "en": "remember",
+          "ja": "覚えている"
+        },
+        {
+          "en": "forget",
+          "ja": "忘れる"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "My Mercury is in 〜. / My Venus is in 〜. / My Mars is in 〜.",
+      "sentences": [
+        {
+          "en": "My Mercury is in Gemini.",
+          "ja": "私の水星は双子座にある。"
+        },
+        {
+          "en": "My Mercury is in my mind and my voice.",
+          "ja": "私の水星は、私の思考と声の中にある。"
+        },
+        {
+          "en": "I write letters and read stories in class.",
+          "ja": "私は授業で手紙を書き、物語を読む。"
+        },
+        {
+          "en": "The student draws a picture with a pen and paper.",
+          "ja": "生徒はペンと紙で絵を描く。"
+        },
+        {
+          "en": "My Venus is in Taurus.",
+          "ja": "私の金星は牡牛座にある。"
+        },
+        {
+          "en": "I feel glad with my friends, and I laugh and sing.",
+          "ja": "私は友達といると嬉しく、笑って歌う。"
+        },
+        {
+          "en": "I say sorry to my friend.",
+          "ja": "私は友達にごめんと言う。"
+        },
+        {
+          "en": "I feel lonely in a big city.",
+          "ja": "私は大きな街で寂しく感じる。"
+        },
+        {
+          "en": "My Mars is in Aries.",
+          "ja": "私の火星は牡羊座にある。"
+        },
+        {
+          "en": "My Mars is strong: I push, I pull, I stand, and I jump.",
+          "ja": "私の火星は強い。押して、引いて、立って、跳ぶ。"
+        },
+        {
+          "en": "I carry my books and hold my pen.",
+          "ja": "私は本を運び、ペンを握る。"
+        },
+        {
+          "en": "I never fight, and I never shout.",
+          "ja": "私は決して争わず、決して叫ばない。"
+        },
+        {
+          "en": "I sit under a tree and read.",
+          "ja": "私は木の下に座って読む。"
+        },
+        {
+          "en": "I meet my teacher and answer questions.",
+          "ja": "私は先生に会い、質問に答える。"
+        },
+        {
+          "en": "My friends call me in the evening.",
+          "ja": "友達が夕方に私を呼ぶ。"
+        },
+        {
+          "en": "I show my chart to my friends.",
+          "ja": "私は友達にチャートを見せる。"
+        },
+        {
+          "en": "I remember my school lessons.",
+          "ja": "私は学校の授業を覚えている。"
+        },
+        {
+          "en": "I forget the sad story, and I feel calm again.",
+          "ja": "私は悲しい物語を忘れ、また穏やかな気持ちになる。"
+        },
+        {
+          "en": "A new story happens in my life.",
+          "ja": "私の人生に新しい物語が起こる。"
+        },
+        {
+          "en": "My signs mean a story.",
+          "ja": "私の星座は一つの物語を意味する。"
+        },
+        {
+          "en": "I worry in the night, and I feel afraid.",
+          "ja": "私は夜に心配し、怖く感じる。"
+        },
+        {
+          "en": "I feel tired in the evening.",
+          "ja": "私は夕方に疲れを感じる。"
+        },
+        {
+          "en": "I feel angry in the fight.",
+          "ja": "私は争いの中で怒りを感じる。"
+        },
+        {
+          "en": "I cut paper and draw a star.",
+          "ja": "私は紙を切り、星を描く。"
+        },
+        {
+          "en": "I hold my heart and never break.",
+          "ja": "私は心を保ち、決して壊れない。"
+        },
+        {
+          "en": "I cry in the night, and I feel calm in the morning.",
+          "ja": "私は夜に泣き、朝には穏やかな気持ちになる。"
+        }
+      ],
+      "theme_ja": "水星＝思考と声、金星＝好きと感情、火星＝力の使い方。自分の3天体の配置を be in で読み、心と行動の言葉を増やす。",
+      "title_en": "Mercury, Venus, and Mars in Signs",
+      "title_ja": "水星・金星・火星の配置 ― 心と好きと力",
+      "wordsUsed": [
+        "a",
+        "afraid",
+        "again",
+        "and",
+        "angry",
+        "answer",
+        "big",
+        "book",
+        "break",
+        "call",
+        "calm",
+        "carry",
+        "city",
+        "class",
+        "cry",
+        "cut",
+        "draw",
+        "evening",
+        "feel",
+        "fight",
+        "forget",
+        "friend",
+        "glad",
+        "happen",
+        "heart",
+        "hit",
+        "hold",
+        "I",
+        "in",
+        "is",
+        "jump",
+        "laugh",
+        "lesson",
+        "letter",
+        "life",
+        "lonely",
+        "me",
+        "mean",
+        "meet",
+        "mind",
+        "morning",
+        "my",
+        "never",
+        "new",
+        "night",
+        "paper",
+        "pen",
+        "picture",
+        "pull",
+        "push",
+        "question",
+        "read",
+        "remember",
+        "sad",
+        "say",
+        "school",
+        "shout",
+        "show",
+        "sing",
+        "sit",
+        "sorry",
+        "stand",
+        "star",
+        "story",
+        "strong",
+        "student",
+        "teacher",
+        "the",
+        "tired",
+        "to",
+        "tree",
+        "under",
+        "voice",
+        "with",
+        "worry",
+        "write"
+      ]
+    },
+    {
+      "canDo_ja": "5天体の配置を全部読み、may／maybe を使った Co-Star 風の短いリーディング文が辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にあり、月は{moonSignJa}にある。今日は静かな気持ちになるかもしれない。だから、休息をとって。",
+        "note_ja": "Unit 3 の到達点。アプリでは学習者の実際の太陽・月星座を当てはめ、Co-Star 風の短いリーディングとして提示する。断定ではなく may と so で柔らかく結ぶ。",
+        "template_en": "Your Sun is in {sunSign}. Your Moon is in {moonSign}. You may feel quiet today, so take a rest."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "may は「〜かもしれない」。断定しないのが Co-Star 風リーディングの読み方。",
+          "options": [
+            "今日は疲れを感じるかもしれない",
+            "今日は必ず疲れる",
+            "今日は疲れを感じることはない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You may feel tired today.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "maybe は「たぶん」。may と同じく、言い切らない語。",
+          "options": [
+            "たぶん",
+            "いつも",
+            "決して〜ない"
+          ],
+          "prompt_ja": "「maybe」の意味は？",
+          "question_en": "maybe",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "sometimes は「ときどき」。「こともある」という日本語が手がかり。",
+          "options": [
+            "sometimes",
+            "never",
+            "your"
+          ],
+          "promptJa": "私は朝、強い気持ちになることもある。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ feel strong in the morning.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "文頭の If は「もし〜なら／〜のときは」。",
+          "options": [
+            "If",
+            "So",
+            "About"
+          ],
+          "promptJa": "悲しい気持ちのときは、音楽を聴く。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___ I feel sad, I listen to music.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Take a rest and stay home today.",
+          "explanation_ja": "リーディングの締めの形。Take a rest（休息をとる）、stay home（家にいる）。",
+          "prompt_ja": "語を並べ替えて「今日は休息をとって、家にいよう」という文を作ろう。",
+          "tiles": [
+            "a rest",
+            "Take",
+            "and stay home",
+            "today"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。maybe で言い切らず、job と health の両方を important と読む。",
+          "options": [
+            "休息も大切だという読み",
+            "仕事だけが大切だという読み",
+            "今日は走るべきだという読み"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Maybe your heart wants a rest. Your job is important, but your health is also important.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "about は「〜について」。read about 〜 で「〜について読む」。",
+          "options": [
+            "about",
+            "before",
+            "so"
+          ],
+          "promptJa": "私は自分の星座と自分自身について読む。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I read ___ my signs and my self.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson3_3",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "may",
+          "ja": "〜かもしれない"
+        },
+        {
+          "en": "maybe",
+          "ja": "たぶん"
+        },
+        {
+          "en": "sometimes",
+          "ja": "ときどき"
+        },
+        {
+          "en": "often",
+          "ja": "よく／しばしば"
+        },
+        {
+          "en": "usually",
+          "ja": "ふだんは"
+        },
+        {
+          "en": "easy",
+          "ja": "簡単な"
+        },
+        {
+          "en": "ready",
+          "ja": "準備ができている"
+        },
+        {
+          "en": "sure",
+          "ja": "確かな"
+        },
+        {
+          "en": "important",
+          "ja": "大切な"
+        },
+        {
+          "en": "special",
+          "ja": "特別な"
+        },
+        {
+          "en": "money",
+          "ja": "お金"
+        },
+        {
+          "en": "job",
+          "ja": "仕事"
+        },
+        {
+          "en": "health",
+          "ja": "健康"
+        },
+        {
+          "en": "rest",
+          "ja": "休息／休む"
+        },
+        {
+          "en": "alone",
+          "ja": "一人で"
+        },
+        {
+          "en": "self",
+          "ja": "自分自身"
+        },
+        {
+          "en": "your",
+          "ja": "あなたの"
+        },
+        {
+          "en": "stay",
+          "ja": "とどまる"
+        },
+        {
+          "en": "leave",
+          "ja": "出る／去る"
+        },
+        {
+          "en": "bring",
+          "ja": "持っていく"
+        },
+        {
+          "en": "take",
+          "ja": "とる"
+        },
+        {
+          "en": "put",
+          "ja": "置く"
+        },
+        {
+          "en": "choose",
+          "ja": "選ぶ"
+        },
+        {
+          "en": "decide",
+          "ja": "決める"
+        },
+        {
+          "en": "plan",
+          "ja": "計画する"
+        },
+        {
+          "en": "try",
+          "ja": "試みる"
+        },
+        {
+          "en": "use",
+          "ja": "使う"
+        },
+        {
+          "en": "listen",
+          "ja": "聴く"
+        },
+        {
+          "en": "watch",
+          "ja": "眺める"
+        },
+        {
+          "en": "look",
+          "ja": "見る"
+        },
+        {
+          "en": "seem",
+          "ja": "〜に見える"
+        },
+        {
+          "en": "become",
+          "ja": "〜になる"
+        },
+        {
+          "en": "before",
+          "ja": "〜の前に"
+        },
+        {
+          "en": "after",
+          "ja": "〜のあとに"
+        },
+        {
+          "en": "about",
+          "ja": "〜について"
+        },
+        {
+          "en": "because",
+          "ja": "なぜなら"
+        },
+        {
+          "en": "if",
+          "ja": "もし〜なら"
+        },
+        {
+          "en": "so",
+          "ja": "だから"
+        },
+        {
+          "en": "thing",
+          "ja": "こと／もの"
+        },
+        {
+          "en": "way",
+          "ja": "形／方法"
+        },
+        {
+          "en": "something",
+          "ja": "何か"
+        },
+        {
+          "en": "nothing",
+          "ja": "何も〜ない"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "You may feel 〜. / 〜 is in 〜.（配置の総復習）",
+      "sentences": [
+        {
+          "en": "My Sun is in Cancer, and my Moon is in Leo.",
+          "ja": "私の太陽は蟹座にあり、私の月は獅子座にある。"
+        },
+        {
+          "en": "All my planets are in my natal chart.",
+          "ja": "私の天体はすべて、出生チャートの中にある。"
+        },
+        {
+          "en": "You may feel tired today.",
+          "ja": "今日は疲れを感じるかもしれない。"
+        },
+        {
+          "en": "Maybe your heart wants a rest.",
+          "ja": "たぶん、あなたの心は休息を望んでいる。"
+        },
+        {
+          "en": "Take a rest, and stay home today.",
+          "ja": "今日は休息をとって、家にいよう。"
+        },
+        {
+          "en": "I often read my chart in the morning.",
+          "ja": "私はよく朝にチャートを読む。"
+        },
+        {
+          "en": "I sometimes feel lonely, and sometimes I feel strong.",
+          "ja": "寂しく感じることもあれば、強く感じることもある。"
+        },
+        {
+          "en": "I usually work in the day and rest in the night.",
+          "ja": "私はふだん、昼に働き、夜に休む。"
+        },
+        {
+          "en": "It is easy to read my signs.",
+          "ja": "自分の星座を読むのは簡単だ。"
+        },
+        {
+          "en": "I am ready to learn about my self.",
+          "ja": "私は自分自身について学ぶ準備ができている。"
+        },
+        {
+          "en": "I am sure: my chart is special.",
+          "ja": "確かに、私のチャートは特別だ。"
+        },
+        {
+          "en": "My job is important, but my health is also important.",
+          "ja": "仕事は大切だが、健康も大切だ。"
+        },
+        {
+          "en": "I use my money to learn about the stars.",
+          "ja": "私は星について学ぶためにお金を使う。"
+        },
+        {
+          "en": "I feel alone in the evening, so I call my friends.",
+          "ja": "夕方、私は一人だと感じ、だから友達を呼ぶ。"
+        },
+        {
+          "en": "Before the night, I plan my tomorrow.",
+          "ja": "夜の前に、明日の計画を立てる。"
+        },
+        {
+          "en": "After the lesson, I leave school and go home.",
+          "ja": "授業のあと、学校を出て家に帰る。"
+        },
+        {
+          "en": "If I feel sad, I listen to music.",
+          "ja": "悲しい気持ちのときは、音楽を聴く。"
+        },
+        {
+          "en": "I watch the Moon because the Moon is beautiful.",
+          "ja": "月が美しいので、私は月を眺める。"
+        },
+        {
+          "en": "I look to the sky in the night.",
+          "ja": "私は夜に空を見上げる。"
+        },
+        {
+          "en": "My life seems quiet, but my heart is deep.",
+          "ja": "私の人生は静かに見えるが、心は深い。"
+        },
+        {
+          "en": "I become calm when I read my chart.",
+          "ja": "チャートを読むと、私は穏やかになる。"
+        },
+        {
+          "en": "I choose to stay, and I decide to rest.",
+          "ja": "私はとどまることを選び、休むことを決める。"
+        },
+        {
+          "en": "I bring something sweet to my friends.",
+          "ja": "私は友達に甘いものを持っていく。"
+        },
+        {
+          "en": "I try to use my Mars in a good way.",
+          "ja": "私は火星を良い形で使おうとする。"
+        },
+        {
+          "en": "I put my chart in my book.",
+          "ja": "私はチャートを本の中に入れる。"
+        },
+        {
+          "en": "I learn a new thing about my Mars.",
+          "ja": "私は火星について新しいことを一つ学ぶ。"
+        },
+        {
+          "en": "There is nothing new under the Sun.",
+          "ja": "太陽の下に新しいものはない。"
+        }
+      ],
+      "theme_ja": "Unit 3 の総仕上げ。may／maybe で断定を避ける言い方を覚え、自分の配置から作る Co-Star 風の短いリーディングを読む。",
+      "title_en": "Reading My Chart",
+      "title_ja": "自分のチャートを読む ― Co-Star風リーディング",
+      "wordsUsed": [
+        "a",
+        "about",
+        "after",
+        "all",
+        "alone",
+        "also",
+        "am",
+        "and",
+        "are",
+        "beautiful",
+        "because",
+        "become",
+        "before",
+        "book",
+        "bring",
+        "but",
+        "call",
+        "calm",
+        "choose",
+        "day",
+        "decide",
+        "deep",
+        "easy",
+        "evening",
+        "feel",
+        "friend",
+        "go",
+        "good",
+        "health",
+        "heart",
+        "home",
+        "I",
+        "if",
+        "important",
+        "in",
+        "is",
+        "it",
+        "job",
+        "learn",
+        "leave",
+        "lesson",
+        "life",
+        "listen",
+        "lonely",
+        "look",
+        "may",
+        "maybe",
+        "money",
+        "morning",
+        "music",
+        "my",
+        "never",
+        "new",
+        "night",
+        "nothing",
+        "often",
+        "plan",
+        "put",
+        "quiet",
+        "read",
+        "ready",
+        "rest",
+        "sad",
+        "school",
+        "seem",
+        "self",
+        "sky",
+        "so",
+        "something",
+        "sometimes",
+        "special",
+        "star",
+        "stay",
+        "strong",
+        "sure",
+        "sweet",
+        "take",
+        "the",
+        "there",
+        "thing",
+        "tired",
+        "to",
+        "today",
+        "tomorrow",
+        "try",
+        "under",
+        "use",
+        "usually",
+        "want",
+        "watch",
+        "way",
+        "when",
+        "work",
+        "you",
+        "your"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-22",
+    "id": "unit3",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 3 の新規一般語は126語（42語×3レッスン）で、累計300語に到達する（CURRICULUM §4 の配分どおり）。",
+      "専門用語レイヤーの追加は、配置文型 be in 〜（CURRICULUM §3）と基本概念 natal。be in は文型として pattern と例文で導入し、terms には natal のみを数える。",
+      "複数形（letters, stories, planets, signs など）は原形と同一語として数える。三単現の -s（rises, happens など）も同様。",
+      "例文・演習で使う一般語は「Unit 1〜2 導入済み174語＋当該レッスンまでの Unit 3 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には必ず promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "chartLine の {sunSign} / {moonSign} / {mercurySign} / {venusSign} / {marsSign} は、アプリが学習者の実際の配置を当てはめるプレースホルダ（日本語側は {sunSignJa} など）。",
+      "Lesson 3.3 の chartLine と例文の一部は Co-Star 風の短いリーディングとして構成し、may／maybe で断定を避けている。"
+    ],
+    "order": 3,
+    "status": "draft",
+    "theme_ja": "学習者自身のチャートで、天体がどの星座にあるかを be in の文型で読む。最後のレッスンでは Co-Star 風の短いリーディング文を読む。",
+    "title_en": "My Placements",
+    "title_ja": "自分の配置 ― チャートを読む",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson3_1": 42,
+        "lesson3_2": 42,
+        "lesson3_3": 42
+      },
+      "newGeneralWordsTotal": 126,
+      "newTermsTotal": 1
+    }
+  }
+}
