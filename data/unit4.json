@@ -1,7 +1,7 @@
 {
   "lessons": [
     {
-      "canDo_ja": "木星と土星の働きを、help／should／must を使った短い文で読み分けられる。",
+      "canDo_ja": "木星と土星の働きを、help／should／not を使った短い文で読み分けられる。",
       "chartLine": {
         "ja": "あなたの太陽は{sunSignJa}にある。木星はあなたの太陽が育つのを助け、土星はあなたに辛抱強くいるよう求めるかもしれない。",
         "note_ja": "アプリでは学習者の実際の太陽星座を当てはめる。木星・土星の星座のプレースホルダは現行アプリ（js/core.js の fillChartLine）が太陽〜火星の5天体にしか対応していないため使わず、天体の働きとして一般的に述べる。may で断定を避ける。",
@@ -9,11 +9,11 @@
       },
       "exercises": [
         {
-          "answerIndex": 1,
+          "answerIndex": 0,
           "explanation_ja": "help ＋ 人 ＋ 動詞 で「人が〜するのを助ける」。木星は広げる・育てる天体。",
           "options": [
-            "木星はあなたの成長を止める",
             "木星はあなたが成長するのを助ける",
+            "木星はあなたの成長を止める",
             "木星はあなたより大きい"
           ],
           "prompt_ja": "次の文の意味は？",
@@ -33,11 +33,11 @@
           "type": "multiple_choice"
         },
         {
-          "answerIndex": 1,
+          "answerIndex": 0,
           "explanation_ja": "should は「〜したほうがいい／〜すべき」。should not で「〜すべきではない」。",
           "options": [
-            "have",
             "should",
+            "have",
             "from"
           ],
           "promptJa": "あなたは土星を恐れるべきではない。",
@@ -46,12 +46,12 @@
           "type": "fill_blank"
         },
         {
-          "answerIndex": 2,
+          "answerIndex": 0,
           "explanation_ja": "than は「〜より」。more 〜 than … で「…より多くの〜」。",
           "options": [
+            "than",
             "for",
-            "on",
-            "than"
+            "on"
           ],
           "promptJa": "土星は木星より多くの時間をかける。",
           "prompt_ja": "空欄に入る語は？",
@@ -75,19 +75,19 @@
           "explanation_ja": "読解問題。may で言い切らず、Do not doubt（疑わないで）と give it some space（余白をあげて）で結ぶ。",
           "options": [
             "今日は心が重く感じるかもしれない。心を疑わず、少し余白をあげよう",
-            "今日は心が必ず重くなるので、何もしてはいけない",
-            "今日は心が軽いので、もっと働こう"
+            "今日は心が軽いので、もっと働こう",
+            "今日は心が重いので、心を疑おう"
           ],
           "prompt_ja": "次の文の意味は？",
           "question_en": "Your heart may feel heavy today. Do not doubt your heart, and give it some space.",
           "type": "multiple_choice"
         },
         {
-          "answerIndex": 1,
+          "answerIndex": 0,
           "explanation_ja": "or は「または／それとも」。A or B? で「A？それとも B？」と尋ねる。",
           "options": [
-            "at",
             "or",
+            "at",
             "that"
           ],
           "promptJa": "あなたが欲しいのは運？それとも教訓？",
@@ -101,12 +101,12 @@
         {
           "en": "Jupiter",
           "ja": "木星",
-          "note_ja": "広げる・育てる働きを象徴すると読まれる天体。expand（広げる）などの概念語は一般語側で導入する"
+          "note_ja": "物事を広げる働きを象徴すると読まれる天体。何が増えやすいか、どこに余裕や寛容さが出るかを読む手がかりになる。"
         },
         {
           "en": "Saturn",
           "ja": "土星",
-          "note_ja": "課題・鍛錬・時間をかけて積み上げるものを象徴すると読まれる天体。restrict／limit（制限する）は一般語側で導入する"
+          "note_ja": "課題や鍛錬、時間をかけて積み上げるものを象徴すると読まれる天体。約29年周期で出生位置に戻る「サターンリターン」は、人生の節目の読みで知られる。"
         }
       ],
       "newWords": [
@@ -157,10 +157,6 @@
         {
           "en": "should",
           "ja": "〜したほうがいい／〜すべき"
-        },
-        {
-          "en": "must",
-          "ja": "〜しなければならない"
         },
         {
           "en": "be",
@@ -271,44 +267,41 @@
           "ja": "目標"
         },
         {
-          "category": "emotion",
+          "en": "simple",
+          "ja": "シンプルな／簡単な"
+        },
+        {
           "en": "excited",
           "ja": "わくわくした"
         },
         {
-          "category": "emotion",
           "en": "nervous",
           "ja": "緊張した"
         },
         {
-          "category": "emotion",
           "en": "safe",
           "ja": "安全な／安心な"
         },
         {
-          "category": "emotion",
           "en": "trust",
           "ja": "信じる／信頼する"
         },
         {
-          "category": "emotion",
           "en": "doubt",
           "ja": "疑う"
         },
         {
-          "category": "emotion",
           "en": "stress",
           "ja": "ストレス"
         },
         {
-          "category": "emotion",
           "en": "joy",
           "ja": "喜び"
         }
       ],
       "order": 1,
       "outOfScope": [],
-      "pattern": "Jupiter helps you 〜. / You should 〜. / You must 〜.",
+      "pattern": "Jupiter helps you 〜. / You should 〜.",
       "sentences": [
         {
           "en": "Jupiter is a very big planet.",
@@ -399,8 +392,8 @@
           "ja": "あなたは土星を恐れるべきではない。"
         },
         {
-          "en": "Saturn says: you must do the work.",
-          "ja": "土星は言う。「あなたはその仕事をしなければならない」。"
+          "en": "Keep your plan simple.",
+          "ja": "計画はシンプルにしておこう。"
         },
         {
           "en": "Be careful with your money and your time.",
@@ -459,9 +452,9 @@
           "ja": "ストレスが多すぎるのは、あなたにとって良くない。"
         }
       ],
-      "theme_ja": "木星（広げる）と土星（制限する）を対で学ぶ。否定の not、助言の should、義務の must で、星が語りかける言い方を読む。",
+      "theme_ja": "木星（広げる）と土星（制限する）を対で学ぶ。否定の not と、助言の should で、星が語りかける言い方を読む。",
       "title_en": "Jupiter and Saturn",
-      "title_ja": "木星と土星 ― 広げる星と止める星",
+      "title_ja": "木星と土星 ― 〜 helps you / You should 〜",
       "wordsUsed": [
         "a",
         "about",
@@ -514,6 +507,7 @@
         "is",
         "it",
         "joy",
+        "keep",
         "learn",
         "less",
         "lesson",
@@ -526,7 +520,6 @@
         "money",
         "more",
         "much",
-        "must",
         "nervous",
         "new",
         "not",
@@ -539,6 +532,7 @@
         "over",
         "own",
         "patient",
+        "plan",
         "practice",
         "restrict",
         "rich",
@@ -550,6 +544,7 @@
         "serious",
         "should",
         "show",
+        "simple",
         "some",
         "space",
         "stress",
@@ -559,7 +554,6 @@
         "test",
         "than",
         "that",
-        "the",
         "them",
         "they",
         "thing",
@@ -576,7 +570,6 @@
         "way",
         "wide",
         "with",
-        "work",
         "world",
         "year",
         "you",
@@ -604,12 +597,12 @@
           "type": "multiple_choice"
         },
         {
-          "answerIndex": 2,
+          "answerIndex": 0,
           "explanation_ja": "Neptune は海王星。夢や想像力の天体。Uranus は天王星、Pluto は冥王星。",
           "options": [
+            "海王星",
             "冥王星",
-            "天王星",
-            "海王星"
+            "天王星"
           ],
           "prompt_ja": "「Neptune」の意味は？",
           "question_en": "Neptune",
@@ -629,11 +622,11 @@
           "type": "fill_blank"
         },
         {
-          "answerIndex": 1,
+          "answerIndex": 0,
           "explanation_ja": "inside は「内側」。make ＋ 人 ＋ 動詞 で「人に〜させる」。",
           "options": [
-            "outside",
             "inside",
+            "outside",
             "up"
           ],
           "promptJa": "冥王星はあなたに内側を見させる。",
@@ -654,11 +647,11 @@
           "type": "reorder"
         },
         {
-          "answerIndex": 1,
+          "answerIndex": 0,
           "explanation_ja": "読解問題。behind は「〜の向こうに」、lose your way は「道に迷う」、come back は「戻ってくる」。",
           "options": [
-            "霧の中では必ず道に迷い、二度と戻れない",
             "霧の向こうに真実が見つかるかもしれないし、道に迷っても戻ってこられる",
+            "霧の向こうには何もないので、戻ろう",
             "霧はすぐに晴れ、真実はどこにもない"
           ],
           "prompt_ja": "次の文の意味は？",
@@ -666,11 +659,11 @@
           "type": "multiple_choice"
         },
         {
-          "answerIndex": 1,
+          "answerIndex": 0,
           "explanation_ja": "why は「なぜ」。I wonder why 〜 で「なぜ〜なのだろう」。",
           "options": [
-            "what",
             "why",
+            "what",
             "who"
           ],
           "promptJa": "なぜ自分がこんなふうに感じるのだろう。",
@@ -684,17 +677,17 @@
         {
           "en": "Uranus",
           "ja": "天王星",
-          "note_ja": "変化・刷新・枠からの解放を象徴すると読まれる天体。一つの星座に約7年とどまる"
+          "note_ja": "変化や刷新、既存の枠からの解放を象徴すると読まれる天体。世代ごとに長く同じ星座に留まるため、個人より時代の色として読まれることも多い。"
         },
         {
           "en": "Neptune",
           "ja": "海王星",
-          "note_ja": "夢・想像力・境界の曖昧さを象徴すると読まれる天体。一つの星座に約14年とどまる"
+          "note_ja": "夢や想像力、境界の曖昧さを象徴すると読まれる天体。理想や憧れの方向を読む手がかりになるとされる。"
         },
         {
           "en": "Pluto",
           "ja": "冥王星",
-          "note_ja": "根本的な変容や、表に出にくい深い動きを象徴すると読まれる天体。動きが遅く、世代のテーマとして読まれることが多い"
+          "note_ja": "根本的な変容や、表に出にくい深い動きを象徴すると読まれる天体。動きがゆっくりなため、世代のテーマとして読まれることが多い。"
         }
       ],
       "newWords": [
@@ -859,37 +852,30 @@
           "ja": "〜だろうかと思う／不思議に思う"
         },
         {
-          "category": "emotion",
           "en": "fear",
           "ja": "恐れ"
         },
         {
-          "category": "emotion",
           "en": "pain",
           "ja": "痛み"
         },
         {
-          "category": "emotion",
           "en": "hurt",
           "ja": "傷ついた／傷つける"
         },
         {
-          "category": "emotion",
           "en": "confused",
           "ja": "混乱した"
         },
         {
-          "category": "emotion",
           "en": "peaceful",
           "ja": "穏やかな"
         },
         {
-          "category": "emotion",
           "en": "bored",
           "ja": "退屈した"
         },
         {
-          "category": "emotion",
           "en": "hate",
           "ja": "嫌う"
         }
@@ -1037,7 +1023,7 @@
       ],
       "theme_ja": "遠くをゆっくり動く3天体を学ぶ。make ＋ 人・もの ＋ 形容詞／動詞（〜を…にする／〜に…させる）と、what／how／why／who の疑問詞で、変化・夢・深さを読む。",
       "title_en": "Uranus, Neptune, and Pluto",
-      "title_ja": "天王星・海王星・冥王星 ― 変える星、夢見る星、深める星",
+      "title_ja": "天王星・海王星・冥王星 ― 〜 makes you 〜",
       "wordsUsed": [
         "a",
         "again",
@@ -1181,12 +1167,12 @@
       },
       "exercises": [
         {
-          "answerIndex": 1,
+          "answerIndex": 0,
           "explanation_ja": "might は「〜かもしれない」。may よりさらに控えめに可能性を言う、Co-Star で頻出の語。",
           "options": [
-            "今日は必ず気後れする",
             "今日は気後れするかもしれない",
-            "今日は気後れすることはない"
+            "昨日は気後れした",
+            "今日は誰も気後れしない"
           ],
           "prompt_ja": "次の文の意味は？",
           "question_en": "You might feel shy today.",
@@ -1218,12 +1204,12 @@
           "type": "fill_blank"
         },
         {
-          "answerIndex": 2,
+          "answerIndex": 0,
           "explanation_ja": "everything は「すべてのこと」。everyone（みんな）、someone（誰か）と区別する。",
           "options": [
+            "everything",
             "someone",
-            "everyone",
-            "everything"
+            "everyone"
           ],
           "promptJa": "あなたはすべてを知る必要はない。",
           "prompt_ja": "空欄に入る語は？",
@@ -1243,23 +1229,23 @@
           "type": "reorder"
         },
         {
-          "answerIndex": 2,
+          "answerIndex": 0,
           "explanation_ja": "読解問題。could で可能性、just take a rest で「ただ休めばいい」、still learning で「まだ学んでいる途中」。",
           "options": [
+            "気分は一瞬で変わりうる。動揺したら休めばいいし、学びの途中でも十分だ",
             "気分は変わらないので、休む必要はない",
-            "すべてを学び終えるまで、休んではいけない",
-            "気分は一瞬で変わりうる。動揺したら休めばいいし、学びの途中でも十分だ"
+            "すべてを学び終えてから休もう"
           ],
           "prompt_ja": "次の文の意味は？",
           "question_en": "Your mood could change in a moment. If you feel upset, just take a rest. You are still learning, and that is enough.",
           "type": "multiple_choice"
         },
         {
-          "answerIndex": 1,
+          "answerIndex": 0,
           "explanation_ja": "slowly は「ゆっくりと」。動詞 move を説明するので -ly の形を使う。",
           "options": [
-            "quick",
             "slowly",
+            "quick",
             "early"
           ],
           "promptJa": "外惑星はゆっくり動くので、多くの人々について語る。",
@@ -1432,32 +1418,26 @@
           "ja": "分かち合う"
         },
         {
-          "category": "emotion",
           "en": "shy",
           "ja": "恥ずかしがりの／気後れした"
         },
         {
-          "category": "emotion",
           "en": "jealous",
           "ja": "嫉妬した"
         },
         {
-          "category": "emotion",
           "en": "mood",
           "ja": "気分"
         },
         {
-          "category": "emotion",
           "en": "emotion",
           "ja": "感情"
         },
         {
-          "category": "emotion",
           "en": "relax",
           "ja": "くつろぐ／リラックスする"
         },
         {
-          "category": "emotion",
           "en": "upset",
           "ja": "動揺した"
         }
@@ -1593,7 +1573,7 @@
       ],
       "theme_ja": "Unit 4 の総仕上げ。速く動く個人天体（太陽〜火星）と、ゆっくり動く外惑星を読み分ける。might／could／Let 〜 を使った Co-Star 風の短いリーディングを読む。",
       "title_en": "Fast Planets, Slow Planets",
-      "title_ja": "速い星と遅い星 ― 10天体で読むリーディング",
+      "title_ja": "速い星と遅い星 ― You might 〜 / Let 〜",
       "wordsUsed": [
         "a",
         "about",
@@ -1725,32 +1705,26 @@
     }
   ],
   "unit": {
-    "created": "2026-11-24",
+    "created": "2026-11-23",
     "id": "unit4",
     "notes_ja": [
       "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
       "Unit 4 の新規一般語は140語（47・47・46語）で、累計440語に到達する（CURRICULUM §4 の配分どおり）。",
-      "うち感情・心の語は20語（7・7・6語）。CURRICULUM §2.2／§4 の「早く薄く撒く」方針に従い、テーマ語彙とは別枠で織り込んだ。該当する newWords の項目には \"category\": \"emotion\" を付けた。",
+      "うち感情・心の語は20語（7・7・6語）。CURRICULUM §2.2／§4 の「早く薄く撒く」方針に従い、テーマ語彙とは別枠で織り込んだ。4.1：excited, nervous, safe, trust, doubt, stress, joy／4.2：fear, pain, hurt, confused, peaceful, bored, hate／4.3：shy, jealous, mood, emotion, relax, upset。",
       "専門用語レイヤーの追加は残りの天体5つ（Jupiter, Saturn, Uranus, Neptune, Pluto。CURRICULUM §3）。expand／restrict などの概念語は一般語側で導入した（CURRICULUM §4）。",
-      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形は原形と同一語として数える（CURRICULUM 2.1）。規則的な比較級（slower など）も同様に扱う。不規則形は初出の語の ja に併記した（have→has、lose→lost、hide→hidden、fall→fell、know→knew）。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形は原形と同一語として数える（CURRICULUM 2.1）。不規則形は初出の語の ja に併記した（have→has、lose→lost、hide→hidden、fall→fell、know→knew）。",
       "例文・演習で使う一般語は「Unit 1〜3 導入済み300語＋当該レッスンまでの Unit 4 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
-      "穴埋め形式には必ず promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
       "chartLine のプレースホルダは現行アプリが対応する {sunSign} / {moonSign} など5天体分のみを使った。{jupiterSign} などの外惑星のプレースホルダは js/core.js の fillChartLine が未対応のため使っていない。",
       "Lesson 4.3 の chartLine と例文の一部は Co-Star 風の短いリーディングとして構成し、might／could／may で断定を避けている。"
     ],
     "order": 4,
     "status": "draft",
-    "theme_ja": "木星・土星・天王星・海王星・冥王星の5天体を学び、10天体をそろえる。広げる／制限する／変える／夢見る／深める働きを、should・must・make・might などの文型で読む。",
+    "theme_ja": "木星・土星・天王星・海王星・冥王星の5天体を学び、10天体をそろえる。広げる／制限する／変える／夢見る／深める働きを、should・make・might などの文型で読む。",
     "title_en": "The Slow Planets",
     "title_ja": "残りの天体 ― 木星から冥王星まで",
     "version": "0.1",
     "wordCountSummary": {
-      "emotionWordsBreakdown": {
-        "lesson4_1": 7,
-        "lesson4_2": 7,
-        "lesson4_3": 6
-      },
-      "emotionWordsTotal": 20,
       "lessonsBreakdown": {
         "lesson4_1": 47,
         "lesson4_2": 47,
