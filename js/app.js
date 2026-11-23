@@ -180,7 +180,7 @@
     var el = $('view-setup');
     var b = state.birth || { date: '', time: '', timeUnknown: false, placeName: '', lat: 35.61, lon: 140.11, utcOffset: 9 };
     var cityOptions = Core.CITIES.map(function (c) {
-      return '<option value="' + c.id + '">' + esc(c.name_ja) + '（' + esc(c.name_en) + '）</option>';
+      return '<option value="' + esc(Core.cityLabel(c)) + '"></option>';
     }).join('');
     el.innerHTML =
       '<h2 class="view-title">Birth Data</h2>' +
@@ -192,13 +192,15 @@
       '<input type="time" id="f-time" value="' + esc(b.time || '') + '"' + (b.timeUnknown ? ' disabled' : '') + '></div>' +
       '<label class="check"><input type="checkbox" id="f-unknown"' + (b.timeUnknown ? ' checked' : '') + '> 出生時刻がわからない（制限モード）</label>' +
       '<p class="small">時刻がわからない場合は正午で計算し、天体の星座配置のみを表示します。ハウスとASC/MCは時刻に依存するため表示しません。</p>' +
-      '<div class="field"><label for="f-city">出生地プリセット（選ぶと緯度・経度・時差が入ります）</label>' +
-      '<select id="f-city"><option value="">— 選んでください —</option>' + cityOptions + '</select></div>' +
+      '<div class="field"><label for="f-city">出生地を検索（都市名を入力すると緯度・経度・時差が入ります）</label>' +
+      '<input type="text" id="f-city" list="city-list" autocomplete="off" placeholder="例：大阪、Osaka、鹿児島">' +
+      '<datalist id="city-list">' + cityOptions + '</datalist></div>' +
+      '<p class="small">プリセットは全都道府県庁所在地＋政令指定都市と、主な海外都市です。リストにない場所（海外の都市も含みます）は、下の緯度・経度・UTC時差を直接入力すれば、そのまま計算に使えます。</p>' +
       '<div class="field"><label for="f-place">出生地の名前（表示用）</label>' +
       '<input type="text" id="f-place" value="' + esc(b.placeName || '') + '" placeholder="例：千葉"></div>' +
       '<div class="field-row">' +
-      '<div class="field"><label for="f-lat">緯度（北緯＋）</label><input type="number" id="f-lat" step="0.01" min="-90" max="90" value="' + esc(b.lat) + '"></div>' +
-      '<div class="field"><label for="f-lon">経度（東経＋）</label><input type="number" id="f-lon" step="0.01" min="-180" max="180" value="' + esc(b.lon) + '"></div>' +
+      '<div class="field"><label for="f-lat">緯度（北緯＋／南緯−）</label><input type="number" id="f-lat" step="0.0001" min="-90" max="90" value="' + esc(b.lat) + '"></div>' +
+      '<div class="field"><label for="f-lon">経度（東経＋／西経−）</label><input type="number" id="f-lon" step="0.0001" min="-180" max="180" value="' + esc(b.lon) + '"></div>' +
       '<div class="field"><label for="f-tz">UTC時差（日本は9）</label><input type="number" id="f-tz" step="0.5" min="-14" max="14" value="' + esc(b.utcOffset) + '"></div>' +
       '</div>' +
       '<div class="btn-row"><button type="submit" class="btn">保存してチャートを見る</button></div>' +
@@ -208,13 +210,14 @@
         '<div class="btn-row"><button class="btn ghost" id="del-birth">出生データだけ削除</button>' +
         '<button class="btn ghost" id="del-all">学習記録も含めて全部削除</button></div>' : '');
 
-    $('f-city').addEventListener('change', function () {
-      var cityId = this.value;
-      var c = Core.CITIES.filter(function (x) { return x.id === cityId; })[0];
+    function applyCity() {
+      var c = Core.findCity($('f-city').value);
       if (!c) return;
       $('f-lat').value = c.lat; $('f-lon').value = c.lon; $('f-tz').value = c.utcOffset;
       if (!$('f-place').value) $('f-place').value = c.name_ja;
-    });
+    }
+    $('f-city').addEventListener('change', applyCity);
+    $('f-city').addEventListener('input', applyCity);
     $('f-unknown').addEventListener('change', function () { $('f-time').disabled = this.checked; });
     $('birth-form').addEventListener('submit', function (ev) {
       ev.preventDefault();
@@ -228,8 +231,13 @@
         lon: parseFloat($('f-lon').value),
         utcOffset: parseFloat($('f-tz').value)
       };
-      if (!birth.date || isNaN(birth.lat) || isNaN(birth.lon) || isNaN(birth.utcOffset)) {
-        alert('生年月日と緯度・経度・時差を入力してください。');
+      if (!birth.date || isNaN(birth.utcOffset)) {
+        alert('生年月日と時差を入力してください。');
+        return;
+      }
+      var latLonError = Core.validateLatLon(birth.lat, birth.lon);
+      if (latLonError) {
+        alert(latLonError);
         return;
       }
       if (!unknown && !birth.time) {
