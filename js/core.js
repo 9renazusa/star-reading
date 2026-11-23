@@ -207,16 +207,17 @@
   /* ---------------------------------------------------------------- */
   /* Profile reading （基本鑑定）                                       */
   /* A first-person summary built from the learner's own chart:        */
-  /*   Sun / Moon  -> full Japanese text + English key line            */
-  /*                  (data/readings-core.json)                        */
-  /*   ASC         -> short text written for this feature              */
-  /*                  (data/readings-profile.json)                     */
-  /*   Mercury / Venus / Mars -> one line each (Japanese short line    */
-  /*                  from readings-profile.json, English key line     */
-  /*                  from readings-core.json)                         */
-  /* plus a one-line profile ("I am a Cancer Sun, ...") and a full     */
+  /*   Sun / Moon / Mercury / Venus / Mars -> full Japanese text       */
+  /*                  (data/readings-core.json) + two-sentence         */
+  /*                  English text (enLong in                          */
+  /*                  data/readings-profile.json)                      */
+  /*   ASC         -> text written for this feature (Japanese +        */
+  /*                  two-sentence English, readings-profile.json)     */
+  /* plus a one-line profile ("I am a Cancer Sun, ..."), a full        */
   /* English summary paragraph in first person, so the learner can     */
-  /* practise reading it fluently. In limited mode (birth time         */
+  /* practise reading it fluently, and an overall wrap-up paragraph    */
+  /* that reads the Sun / Moon / ASC combination and the element       */
+  /* balance of the main placements. In limited mode (birth time       */
   /* unknown) nothing that depends on the ASC is included.             */
   /* ---------------------------------------------------------------- */
 
@@ -242,6 +243,105 @@
       if (list[i].planet === planet && list[i].sign === signEn) return list[i].ja;
     }
     return null;
+  }
+
+  /** Two-sentence English text for a planet x sign (readings-profile.json enLong). */
+  function findEnLong(profileData, planet, signEn) {
+    var list = (profileData && profileData.enLong) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].planet === planet && list[i].sign === signEn) return list[i].en;
+    }
+    return null;
+  }
+
+  /* Element balance templates for the overall wrap-up （全体のまとめ）.
+     Sign index % 4 -> 0 fire, 1 earth, 2 air, 3 water. */
+  var ELEMENT_KEYS = ['fire', 'earth', 'air', 'water'];
+  var ELEMENT_JA = { fire: '火', earth: '地', air: '風', water: '水' };
+  var ELEMENT_EN = { fire: 'Fire', earth: 'Earth', air: 'Air', water: 'Water' };
+  var ELEMENT_TRAIT_JA = {
+    fire: '火の要素は、情熱と直感で動く力です。思い立ったときの勢いが、あなたのエンジンになりやすいでしょう。',
+    earth: '地の要素は、こつこつ積み上げて形にする力です。確かな成果を大切にする姿勢が、安定感につながりやすいでしょう。',
+    air: '風の要素は、言葉と情報で世界とつながる力です。考えること、伝えることが、自然な呼吸のようになっているかもしれません。',
+    water: '水の要素は、気持ちを感じ取り、寄り添う力です。感情の機微を読むことが、あなたの静かな強みになりやすいでしょう。'
+  };
+  var ELEMENT_TRAIT_EN = {
+    fire: 'Fire is the power to move with passion and a quick heart. Your fast start may be your engine.',
+    earth: 'Earth is the power to build things step by step. Your love of solid results may bring a steady feel.',
+    air: 'Air is the power to join the world with words and ideas. Thinking and talking may feel like natural breathing.',
+    water: 'Water is the power to feel feelings and stay close to hearts. Reading small changes in feelings may be your quiet strength.'
+  };
+  var ELEMENT_GAP_JA = {
+    fire: '勢いや遊び心',
+    earth: '体の感覚や休息',
+    air: '言葉にして整理すること',
+    water: '気持ちを味わう時間'
+  };
+  var ELEMENT_GAP_EN = {
+    fire: 'speed and play',
+    earth: 'rest and body sense',
+    air: 'clear words and sorting ideas',
+    water: 'time to feel your feelings'
+  };
+
+  /**
+   * Overall wrap-up （全体のまとめ）: reads the Sun / Moon (/ ASC)
+   * combination and the element balance across Sun, Moon, Mercury,
+   * Venus, Mars (and the ASC when the birth time is known).
+   * Template-generated; works without the ASC in limited mode.
+   */
+  function buildOverall(chart, limited) {
+    var counted = ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars'];
+    var counts = { fire: 0, earth: 0, air: 0, water: 0 };
+    counted.forEach(function (p) {
+      counts[ELEMENT_KEYS[chart.planets[p].sign.index % 4]] += 1;
+    });
+    var asc = limited ? null : chart.asc.sign;
+    if (asc) counts[ELEMENT_KEYS[asc.index % 4]] += 1;
+
+    var sun = chart.planets.Sun.sign;
+    var moon = chart.planets.Moon.sign;
+
+    var max = 0;
+    ELEMENT_KEYS.forEach(function (k) { if (counts[k] > max) max = counts[k]; });
+    var top = ELEMENT_KEYS.filter(function (k) { return counts[k] === max; });
+    var gaps = ELEMENT_KEYS.filter(function (k) { return counts[k] === 0; });
+
+    var jaParts = [];
+    jaParts.push('全体として、太陽の' + sun.ja + '（目指す姿）と月の' + moon.ja + '（素の自分）' +
+      (asc ? '、アセンダントの' + asc.ja + '（第一印象）' : '') +
+      'が、あなたらしさの土台になっています。');
+    var scopeJa = '主要な天体' + (asc ? 'とアセンダント' : '') + 'の元素を見ると、';
+    if (top.length === 1) {
+      jaParts.push(scopeJa + ELEMENT_JA[top[0]] + 'の要素が' + max + 'つと最も多く集まっています。' +
+        ELEMENT_TRAIT_JA[top[0]]);
+    } else {
+      jaParts.push(scopeJa + '偏りは小さく、元素がほどよく散らばっています。' +
+        '状況に合わせて力の出し方を切り替えられる、柔軟さがあるかもしれません。');
+    }
+    if (gaps.length) {
+      jaParts.push(ELEMENT_JA[gaps[0]] + 'の要素はこの中には入っていません。' +
+        ELEMENT_GAP_JA[gaps[0]] + 'は、意識して取り入れると幅が広がる余地かもしれません。');
+    }
+
+    var enParts = [];
+    enParts.push('As a whole, your Sun in ' + sun.en + ' shows what you aim for, and your Moon in ' +
+      moon.en + ' shows your true, soft self.' +
+      (asc ? ' Your rising sign in ' + asc.en + ' colors your first look.' : ''));
+    var scopeEn = 'Looking at the elements of your main planets' + (asc ? ' and rising sign' : '') + ', ';
+    if (top.length === 1) {
+      enParts.push(scopeEn + ELEMENT_EN[top[0]].toLowerCase() + ' comes up most often, ' + max + ' times. ' +
+        ELEMENT_TRAIT_EN[top[0]]);
+    } else {
+      enParts.push(scopeEn + 'the four elements are spread out in a balanced way. ' +
+        'You may change your style to fit each place and time.');
+    }
+    if (gaps.length) {
+      enParts.push('There is no ' + ELEMENT_EN[gaps[0]].toLowerCase() + ' in this group. ' +
+        'Adding a bit of ' + ELEMENT_GAP_EN[gaps[0]] + ' may open a new side of you.');
+    }
+
+    return { ja: jaParts.join(''), en: enParts.join(' '), elements: counts };
   }
 
   /** "Your Sun in Cancer may ..." -> "My Sun in Cancer may ..." (also you->I, your->my). */
@@ -271,8 +371,8 @@
     if (!sunR || !moonR) return null;
 
     var sections = [];
-    sections.push({ key: 'sun', planet: 'Sun', signEn: sun.en, signJa: sun.ja, ja: sunR.ja, en: sunR.en });
-    sections.push({ key: 'moon', planet: 'Moon', signEn: moon.en, signJa: moon.ja, ja: moonR.ja, en: moonR.en });
+    sections.push({ key: 'sun', planet: 'Sun', signEn: sun.en, signJa: sun.ja, ja: sunR.ja, en: findEnLong(profileData, 'Sun', sun.en) || sunR.en });
+    sections.push({ key: 'moon', planet: 'Moon', signEn: moon.en, signJa: moon.ja, ja: moonR.ja, en: findEnLong(profileData, 'Moon', moon.en) || moonR.en });
 
     var ascT = null;
     if (asc) {
@@ -286,9 +386,8 @@
       var planet = trio[i];
       var sign = chart.planets[planet].sign;
       var r = findReading(readingsCore, planet, sign.en);
-      var shortJa = findShortJa(profileData, planet, sign.en);
-      if (!r || !shortJa) return null;
-      sections.push({ key: planet.toLowerCase(), planet: planet, signEn: sign.en, signJa: sign.ja, ja: shortJa, en: r.en });
+      if (!r || !findShortJa(profileData, planet, sign.en)) return null;
+      sections.push({ key: planet.toLowerCase(), planet: planet, signEn: sign.en, signJa: sign.ja, ja: r.ja, en: findEnLong(profileData, planet, sign.en) || r.en });
     }
 
     var profileLine = {
@@ -315,7 +414,8 @@
       summary: {
         en: summaryEnParts.join(' '),
         ja: summaryJaParts.join('')
-      }
+      },
+      overall: buildOverall(chart, limited)
     };
   }
 
