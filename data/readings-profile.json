@@ -1,1 +1,670 @@
-{"asc":[{"en":"Your rising sign in Aries may give a quick, brave first look.","ja":"第一印象は、率直でエネルギッシュ。初対面でも物怖じせず、自分から話しかける姿が印象に残りやすいようです。急いで見えることもあるかもしれませんが、その速さが場を動かす力にもなります。","sign":"Aries"},{"en":"Your rising sign in Taurus may give a calm, steady first look.","ja":"落ち着いていて、安心感のある第一印象を持たれやすい配置です。ゆっくりと構える姿が信頼につながる一方、頑固そうに見えることもあるかもしれません。声のトーンや身につけるものの質感が、印象を大きく左右しやすいでしょう。","sign":"Taurus"},{"en":"Your rising sign in Gemini may give a bright, friendly first look.","ja":"軽やかで話しやすい第一印象を持たれやすい配置です。好奇心のままに話題を広げる姿が、場を和ませるかもしれません。年齢より若く見られることも多いようです。第一声の明るさが、そのままあなたの看板になりやすいでしょう。","sign":"Gemini"},{"en":"Your rising sign in Cancer may give a kind, gentle first look.","ja":"優しく、親しみやすい第一印象を持たれやすい配置です。相手の様子をよく見てから距離を詰める慎重さがあり、慣れるほど素顔が出てきます。警戒しているように見えることもあるかもしれませんが、それは身近な人を大切にする姿勢の裏返しでもあります。","sign":"Cancer"},{"en":"Your rising sign in Leo may give a bright, proud first look.","ja":"華やかで、存在感のある第一印象を持たれやすい配置です。人前に出る場面で自然と目を引くかもしれません。堂々として見えるぶん、弱さを見せにくい面もあります。笑顔の多さが、そのまま魅力として届きやすいでしょう。","sign":"Leo"},{"en":"Your rising sign in Virgo may give a neat, smart first look.","ja":"きちんとしていて、知的な第一印象を持たれやすい配置です。細部まで気を配る姿が、頼りがいとして伝わるかもしれません。少し緊張して見えることもありますが、話すほどに丁寧さと誠実さが印象に残りやすいでしょう。","sign":"Virgo"},{"en":"Your rising sign in Libra may give a soft, balanced first look.","ja":"穏やかで、感じのよい第一印象を持たれやすい配置です。場の空気に合わせて振る舞えるので、初対面の相手とも波長が合いやすいかもしれません。八方美人に見えることもありますが、バランス感覚そのものがあなたの魅力になりやすいでしょう。","sign":"Libra"},{"en":"Your rising sign in Scorpio may give a calm, deep first look.","ja":"静かで、奥の深そうな第一印象を持たれやすい配置です。多くを語らないぶん、視線や佇まいに強さがにじむかもしれません。近寄りがたく見えることもありますが、信頼した相手にだけ見せる素顔との差が、魅力として語られやすいでしょう。","sign":"Scorpio"},{"en":"Your rising sign in Sagittarius may give an open, cheerful first look.","ja":"明るく、開放的な第一印象を持たれやすい配置です。率直な物言いと大きな笑い方が、場を軽くするかもしれません。大雑把に見えることもありますが、その大らかさが「一緒にいて楽」と感じさせやすいでしょう。","sign":"Sagittarius"},{"en":"Your rising sign in Capricorn may give a serious, steady first look.","ja":"真面目で、しっかりした第一印象を持たれやすい配置です。落ち着いた受け答えが、年齢以上の信頼を集めるかもしれません。堅く見えることもありますが、時間をかけるほど誠実さと頼りがいが伝わりやすいでしょう。","sign":"Capricorn"},{"en":"Your rising sign in Aquarius may give a cool, original first look.","ja":"個性的で、さっぱりした第一印象を持たれやすい配置です。人と違う視点や装いが、自然と目に留まるかもしれません。つかみどころがなく見えることもありますが、その自由さが「面白い人」という印象につながりやすいでしょう。","sign":"Aquarius"},{"en":"Your rising sign in Pisces may give a soft, dreamy first look.","ja":"柔らかく、夢見がちな第一印象を持たれやすい配置です。相手の気持ちに寄り添う空気があり、話しかけやすいと感じられるかもしれません。ぼんやりして見えることもありますが、その感受性の豊かさが、静かな魅力として届きやすいでしょう。","sign":"Pisces"}],"note_ja":"基本鑑定（プロフィール）用の追加テキスト。ASC（アセンダント）12星座の短文（日本語＋英語キーライン）と、主要5天体の日本語1行サマリー。英語の1行サマリーは readings-core.json の en を使う。断定表現を避け、傾向＋活かし方で構成。監修：九蓮梓（レビュー前提の下書き）。","short":[{"ja":"まず動くことで自分の輪郭が見えてくる、始める力の強い太陽です。","planet":"Sun","sign":"Aries"},{"ja":"自分のペースでじっくり育てるほど、確かな自信が育ちやすい太陽です。","planet":"Sun","sign":"Taurus"},{"ja":"知ること、話すことで動き出す、好奇心が輝き方そのものになる太陽です。","planet":"Sun","sign":"Gemini"},{"ja":"大切な人を守り、安心できる場所を作ることに力が宿りやすい太陽です。","planet":"Sun","sign":"Cancer"},{"ja":"表現し、誰かの心を動かすことに喜びを感じやすい太陽です。","planet":"Sun","sign":"Leo"},{"ja":"役に立つこと、整えることに自分の価値を見つけやすい太陽です。","planet":"Sun","sign":"Virgo"},{"ja":"人との関係でバランスを取り、場を美しく整えることに力が出やすい太陽です。","planet":"Sun","sign":"Libra"},{"ja":"物事の奥にある本音や核心に触れたとき、強い集中力が生まれやすい太陽です。","planet":"Sun","sign":"Scorpio"},{"ja":"遠くへ行くこと、学び続けることに人生の手応えを感じやすい太陽です。","planet":"Sun","sign":"Sagittarius"},{"ja":"時間をかけて形にすることで、確かな自信が育ちやすい太陽です。","planet":"Sun","sign":"Capricorn"},{"ja":"自分らしい視点や少し先の未来を見せることに喜びを感じやすい太陽です。","planet":"Sun","sign":"Aquarius"},{"ja":"感じ取る力や想像力が、そのまま目指す方向になりやすい太陽です。","planet":"Sun","sign":"Pisces"},{"ja":"気持ちの切り替えが速く、体を動かすことで気分が整いやすい月です。","planet":"Moon","sign":"Aries"},{"ja":"五感が喜ぶ環境や慣れたものに、安心を見つけやすい月です。","planet":"Moon","sign":"Taurus"},{"ja":"話すこと、聞くことで気持ちがほどけていく月です。","planet":"Moon","sign":"Gemini"},{"ja":"安心できる居場所と気心の知れた人が、心の土台になりやすい月です。","planet":"Moon","sign":"Cancer"},{"ja":"楽しいことや笑い合える時間に、心が充電されやすい月です。","planet":"Moon","sign":"Leo"},{"ja":"身の回りが整っていると、気持ちも落ち着きやすい月です。","planet":"Moon","sign":"Virgo"},{"ja":"穏やかな人間関係と美しい空間に、心が和みやすい月です。","planet":"Moon","sign":"Libra"},{"ja":"本音で深く分かり合えたときに、強い安心を感じやすい月です。","planet":"Moon","sign":"Scorpio"},{"ja":"広い場所や新しい景色に触れると、心が軽くなりやすい月です。","planet":"Moon","sign":"Sagittarius"},{"ja":"やるべきことが片づいていく感覚に、心の安定を見つけやすい月です。","planet":"Moon","sign":"Capricorn"},{"ja":"干渉されすぎない、少し距離のある関係に心地よさを感じやすい月です。","planet":"Moon","sign":"Aquarius"},{"ja":"音楽や物語、静かな時間に心が潤いやすい月です。","planet":"Moon","sign":"Pisces"},{"ja":"頭の回転が速く、結論を先に掴んでから考える傾向があります。","planet":"Mercury","sign":"Aries"},{"ja":"自分の感覚で確かめながら、じっくり理解を定着させる考え方です。","planet":"Mercury","sign":"Taurus"},{"ja":"好奇心のままに情報を集め、言葉にするのが得意な水星です。","planet":"Mercury","sign":"Gemini"},{"ja":"感情の流れを汲みながら考え、相手の本音に届く言葉を選べる水星です。","planet":"Mercury","sign":"Cancer"},{"ja":"自分の考えを物語のように伝える力がある水星です。","planet":"Mercury","sign":"Leo"},{"ja":"細部を見落とさず、情報を正確に整理する力がある水星です。","planet":"Mercury","sign":"Virgo"},{"ja":"相手の立場を汲んで言葉を選ぶ、対立を和らげる伝え方が得意な水星です。","planet":"Mercury","sign":"Libra"},{"ja":"言葉の裏側や本音を探り、核心に届くまで調べる水星です。","planet":"Mercury","sign":"Scorpio"},{"ja":"大きな視点で全体像から捉え、学んだことを人に伝える力がある水星です。","planet":"Mercury","sign":"Sagittarius"},{"ja":"現実的に考え、言葉にも責任を持つ、無駄のない伝え方の水星です。","planet":"Mercury","sign":"Capricorn"},{"ja":"既存の枠にとらわれない、独自の視点で考える水星です。","planet":"Mercury","sign":"Aquarius"},{"ja":"イメージや雰囲気で物事を掴む、詩的な表現が自然に出る水星です。","planet":"Mercury","sign":"Pisces"},{"ja":"好きになったら一直線、気持ちが熱いうちに動く金星です。","planet":"Venus","sign":"Aries"},{"ja":"五感で味わう喜びに恵まれ、好きなものを長く大切にする金星です。","planet":"Venus","sign":"Taurus"},{"ja":"会話の弾む相手や知的な刺激に、心が動きやすい金星です。","planet":"Venus","sign":"Gemini"},{"ja":"安心できる関係の中で愛情が深まり、相手を守ることに喜びを感じる金星です。","planet":"Venus","sign":"Cancer"},{"ja":"特別扱いと華やかな時間に心が躍る、表現の大きな金星です。","planet":"Venus","sign":"Leo"},{"ja":"ささやかな気配りや役に立つことに、愛情が表れやすい金星です。","planet":"Venus","sign":"Virgo"},{"ja":"美しいものと心地よい関係、その両方に喜びを見つける金星です。","planet":"Venus","sign":"Libra"},{"ja":"深く濃く、一人の人と結ばれることに喜びを感じる金星です。","planet":"Venus","sign":"Scorpio"},{"ja":"一緒に遠くへ行ける相手、学び合える関係に心が弾む金星です。","planet":"Venus","sign":"Sagittarius"},{"ja":"時間をかけて信頼を積む関係に、確かな喜びを感じる金星です。","planet":"Venus","sign":"Capricorn"},{"ja":"友達のような対等さと、互いの個性を認め合う関係に喜びを感じる金星です。","planet":"Venus","sign":"Aquarius"},{"ja":"優しさやロマンチックな空気に心が溶けやすい金星です。","planet":"Venus","sign":"Pisces"},{"ja":"やると決めたら即行動、正面突破で進む火星です。","planet":"Mars","sign":"Aries"},{"ja":"一度決めたら粘り強く、簡単には諦めない火星です。","planet":"Mars","sign":"Taurus"},{"ja":"頭の回転と切り替えの速さで勝負する火星です。","planet":"Mars","sign":"Gemini"},{"ja":"大切な人を守るために、強い力が出る火星です。","planet":"Mars","sign":"Cancer"},{"ja":"誇りをかけて戦うときに、力が出る火星です。","planet":"Mars","sign":"Leo"},{"ja":"緻密さと改善力で、問題を一つずつ直して結果を出す火星です。","planet":"Mars","sign":"Virgo"},{"ja":"正面衝突より、調整と交渉で物事を動かす火星です。","planet":"Mars","sign":"Libra"},{"ja":"静かに狙いを定め、ここぞで全力を出す火星です。","planet":"Mars","sign":"Scorpio"},{"ja":"大きな目標や信念があると、突き進める火星です。","planet":"Mars","sign":"Sagittarius"},{"ja":"計画と持続力で、結果が出るまで淡々と積み上げる火星です。","planet":"Mars","sign":"Capricorn"},{"ja":"独自のやり方や仕組みを変える戦い方に、力が宿る火星です。","planet":"Mars","sign":"Aquarius"},{"ja":"直感と流れに乗ることで、力が出る火星です。","planet":"Mars","sign":"Pisces"}],"version":"0.1"}
+{
+ "asc": [
+  {
+   "en": "Your rising sign in Aries may give a quick, brave first look. You may look even warmer when you add a small smile to your strong start.",
+   "ja": "第一印象は、率直でエネルギッシュ。初対面でも物怖じせず、自分から話しかける姿が印象に残りやすいようです。急いで見えることもあるかもしれませんが、その速さが場を動かす力にもなります。その第一歩の速さを大切にすると、出会いの場面でも自分らしさが伝わりやすいでしょう。",
+   "sign": "Aries"
+  },
+  {
+   "en": "Your rising sign in Taurus may give a calm, steady first look. You may look even more kind when you take your time and listen well.",
+   "ja": "落ち着いていて、安心感のある第一印象を持たれやすい配置です。ゆっくりと構える姿が信頼につながる一方、頑固そうに見えることもあるかもしれません。声のトーンや身につけるものの質感が、印象を大きく左右しやすいでしょう。急がずにいられる場面を選ぶと、その落ち着きが信頼として伝わりやすいでしょう。",
+   "sign": "Taurus"
+  },
+  {
+   "en": "Your rising sign in Gemini may give a bright, friendly first look. You may win hearts fast when you ask one good question.",
+   "ja": "軽やかで話しやすい第一印象を持たれやすい配置です。好奇心のままに話題を広げる姿が、場を和ませるかもしれません。年齢より若く見られることも多いようです。第一声の明るさが、そのままあなたの看板になりやすいでしょう。最初の話題を一つ用意しておくと、持ち前の明るさがさらに届きやすくなるかもしれません。",
+   "sign": "Gemini"
+  },
+  {
+   "en": "Your rising sign in Cancer may give a kind, gentle first look. You may open up step by step, and that slow pace may feel kind.",
+   "ja": "優しく、親しみやすい第一印象を持たれやすい配置です。相手の様子をよく見てから距離を詰める慎重さがあり、慣れるほど素顔が出てきます。警戒しているように見えることもあるかもしれませんが、それは身近な人を大切にする姿勢の裏返しでもあります。少しずつ距離を縮める進め方があなたには自然で、相手の安心にもつながりやすいでしょう。",
+   "sign": "Cancer"
+  },
+  {
+   "en": "Your rising sign in Leo may give a bright, proud first look. You may shine even more when you share the stage with others.",
+   "ja": "華やかで、存在感のある第一印象を持たれやすい配置です。人前に出る場面で自然と目を引くかもしれません。堂々として見えるぶん、弱さを見せにくい面もあります。笑顔の多さが、そのまま魅力として届きやすいでしょう。頼られたときこそ素直に応えると、華やかさに温かさが加わって印象に残りやすいでしょう。",
+   "sign": "Leo"
+  },
+  {
+   "en": "Your rising sign in Virgo may give a neat, smart first look. You may put people at ease when you smile first and speak in a soft way.",
+   "ja": "きちんとしていて、知的な第一印象を持たれやすい配置です。細部まで気を配る姿が、頼りがいとして伝わるかもしれません。少し緊張して見えることもありますが、話すほどに丁寧さと誠実さが印象に残りやすいでしょう。緊張する場面ほど先に笑顔を見せると、丁寧さが柔らかく届きやすくなるかもしれません。",
+   "sign": "Virgo"
+  },
+  {
+   "en": "Your rising sign in Libra may give a soft, balanced first look. You may show your own taste too, and that may make your charm feel real.",
+   "ja": "穏やかで、感じのよい第一印象を持たれやすい配置です。場の空気に合わせて振る舞えるので、初対面の相手とも波長が合いやすいかもしれません。八方美人に見えることもありますが、バランス感覚そのものがあなたの魅力になりやすいでしょう。迷ったときは自分の好みを一つ添えると、穏やかさに芯の強さも伝わりやすいでしょう。",
+   "sign": "Libra"
+  },
+  {
+   "en": "Your rising sign in Scorpio may give a calm, deep first look. You may open the door a little first, and people may come closer with trust.",
+   "ja": "静かで、奥の深そうな第一印象を持たれやすい配置です。多くを語らないぶん、視線や佇まいに強さがにじむかもしれません。近寄りがたく見えることもありますが、信頼した相手にだけ見せる素顔との差が、魅力として語られやすいでしょう。自分から少しだけ先に心を開く姿勢があると、深さが魅力として届きやすくなるでしょう。",
+   "sign": "Scorpio"
+  },
+  {
+   "en": "Your rising sign in Sagittarius may give an open, cheerful first look. You may win deep trust when you keep small promises with care.",
+   "ja": "明るく、開放的な第一印象を持たれやすい配置です。率直な物言いと大きな笑い方が、場を軽くするかもしれません。大雑把に見えることもありますが、その大らかさが「一緒にいて楽」と感じさせやすいでしょう。大らかさに加えて小さな約束を丁寧に守ると、信頼の厚さも伝わりやすいでしょう。",
+   "sign": "Sagittarius"
+  },
+  {
+   "en": "Your rising sign in Capricorn may give a serious, steady first look. You may surprise people in a good way when you add one small joke.",
+   "ja": "真面目で、しっかりした第一印象を持たれやすい配置です。落ち着いた受け答えが、年齢以上の信頼を集めるかもしれません。堅く見えることもありますが、時間をかけるほど誠実さと頼りがいが伝わりやすいでしょう。場が和んだタイミングで冗談を一つ挟むと、意外な一面が親しみにつながりやすいでしょう。",
+   "sign": "Capricorn"
+  },
+  {
+   "en": "Your rising sign in Aquarius may give a cool, original first look. You may share your ideas in short, clear words, and people may find them fresh and fun.",
+   "ja": "個性的で、さっぱりした第一印象を持たれやすい配置です。人と違う視点や装いが、自然と目に留まるかもしれません。つかみどころがなく見えることもありますが、その自由さが「面白い人」という印象につながりやすいでしょう。自分の視点を短く言葉にして渡すと、個性が面白さとして届きやすくなるかもしれません。",
+   "sign": "Aquarius"
+  },
+  {
+   "en": "Your rising sign in Pisces may give a soft, dreamy first look. You may turn your soft air into clear charm when you name what you feel.",
+   "ja": "柔らかく、夢見がちな第一印象を持たれやすい配置です。相手の気持ちに寄り添う空気があり、話しかけやすいと感じられるかもしれません。ぼんやりして見えることもありますが、その感受性の豊かさが、静かな魅力として届きやすいでしょう。感じたことを言葉にして少し渡すと、柔らかさが確かな魅力として伝わりやすいでしょう。",
+   "sign": "Pisces"
+  }
+ ],
+ "note_ja": "基本鑑定（プロフィール）用の追加テキスト。ASC（アセンダント）12星座の本文（日本語＋英語2文）と、主要5天体の日本語1行サマリー、主要5天体×12星座の英語2文テキスト（enLong：readings-core のキーライン＋平易な一文）。日本語の全文は readings-core.json を使う。断定表現を避け、傾向＋活かし方で構成。監修：九蓮梓（レビュー前提の下書き）。",
+ "short": [
+  {
+   "ja": "まず動くことで自分の輪郭が見えてくる、始める力の強い太陽です。",
+   "planet": "Sun",
+   "sign": "Aries"
+  },
+  {
+   "ja": "自分のペースでじっくり育てるほど、確かな自信が育ちやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Taurus"
+  },
+  {
+   "ja": "知ること、話すことで動き出す、好奇心が輝き方そのものになる太陽です。",
+   "planet": "Sun",
+   "sign": "Gemini"
+  },
+  {
+   "ja": "大切な人を守り、安心できる場所を作ることに力が宿りやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Cancer"
+  },
+  {
+   "ja": "表現し、誰かの心を動かすことに喜びを感じやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Leo"
+  },
+  {
+   "ja": "役に立つこと、整えることに自分の価値を見つけやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Virgo"
+  },
+  {
+   "ja": "人との関係でバランスを取り、場を美しく整えることに力が出やすい太陽です。",
+   "planet": "Sun",
+   "sign": "Libra"
+  },
+  {
+   "ja": "物事の奥にある本音や核心に触れたとき、強い集中力が生まれやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Scorpio"
+  },
+  {
+   "ja": "遠くへ行くこと、学び続けることに人生の手応えを感じやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Sagittarius"
+  },
+  {
+   "ja": "時間をかけて形にすることで、確かな自信が育ちやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Capricorn"
+  },
+  {
+   "ja": "自分らしい視点や少し先の未来を見せることに喜びを感じやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Aquarius"
+  },
+  {
+   "ja": "感じ取る力や想像力が、そのまま目指す方向になりやすい太陽です。",
+   "planet": "Sun",
+   "sign": "Pisces"
+  },
+  {
+   "ja": "気持ちの切り替えが速く、体を動かすことで気分が整いやすい月です。",
+   "planet": "Moon",
+   "sign": "Aries"
+  },
+  {
+   "ja": "五感が喜ぶ環境や慣れたものに、安心を見つけやすい月です。",
+   "planet": "Moon",
+   "sign": "Taurus"
+  },
+  {
+   "ja": "話すこと、聞くことで気持ちがほどけていく月です。",
+   "planet": "Moon",
+   "sign": "Gemini"
+  },
+  {
+   "ja": "安心できる居場所と気心の知れた人が、心の土台になりやすい月です。",
+   "planet": "Moon",
+   "sign": "Cancer"
+  },
+  {
+   "ja": "楽しいことや笑い合える時間に、心が充電されやすい月です。",
+   "planet": "Moon",
+   "sign": "Leo"
+  },
+  {
+   "ja": "身の回りが整っていると、気持ちも落ち着きやすい月です。",
+   "planet": "Moon",
+   "sign": "Virgo"
+  },
+  {
+   "ja": "穏やかな人間関係と美しい空間に、心が和みやすい月です。",
+   "planet": "Moon",
+   "sign": "Libra"
+  },
+  {
+   "ja": "本音で深く分かり合えたときに、強い安心を感じやすい月です。",
+   "planet": "Moon",
+   "sign": "Scorpio"
+  },
+  {
+   "ja": "広い場所や新しい景色に触れると、心が軽くなりやすい月です。",
+   "planet": "Moon",
+   "sign": "Sagittarius"
+  },
+  {
+   "ja": "やるべきことが片づいていく感覚に、心の安定を見つけやすい月です。",
+   "planet": "Moon",
+   "sign": "Capricorn"
+  },
+  {
+   "ja": "干渉されすぎない、少し距離のある関係に心地よさを感じやすい月です。",
+   "planet": "Moon",
+   "sign": "Aquarius"
+  },
+  {
+   "ja": "音楽や物語、静かな時間に心が潤いやすい月です。",
+   "planet": "Moon",
+   "sign": "Pisces"
+  },
+  {
+   "ja": "頭の回転が速く、結論を先に掴んでから考える傾向があります。",
+   "planet": "Mercury",
+   "sign": "Aries"
+  },
+  {
+   "ja": "自分の感覚で確かめながら、じっくり理解を定着させる考え方です。",
+   "planet": "Mercury",
+   "sign": "Taurus"
+  },
+  {
+   "ja": "好奇心のままに情報を集め、言葉にするのが得意な水星です。",
+   "planet": "Mercury",
+   "sign": "Gemini"
+  },
+  {
+   "ja": "感情の流れを汲みながら考え、相手の本音に届く言葉を選べる水星です。",
+   "planet": "Mercury",
+   "sign": "Cancer"
+  },
+  {
+   "ja": "自分の考えを物語のように伝える力がある水星です。",
+   "planet": "Mercury",
+   "sign": "Leo"
+  },
+  {
+   "ja": "細部を見落とさず、情報を正確に整理する力がある水星です。",
+   "planet": "Mercury",
+   "sign": "Virgo"
+  },
+  {
+   "ja": "相手の立場を汲んで言葉を選ぶ、対立を和らげる伝え方が得意な水星です。",
+   "planet": "Mercury",
+   "sign": "Libra"
+  },
+  {
+   "ja": "言葉の裏側や本音を探り、核心に届くまで調べる水星です。",
+   "planet": "Mercury",
+   "sign": "Scorpio"
+  },
+  {
+   "ja": "大きな視点で全体像から捉え、学んだことを人に伝える力がある水星です。",
+   "planet": "Mercury",
+   "sign": "Sagittarius"
+  },
+  {
+   "ja": "現実的に考え、言葉にも責任を持つ、無駄のない伝え方の水星です。",
+   "planet": "Mercury",
+   "sign": "Capricorn"
+  },
+  {
+   "ja": "既存の枠にとらわれない、独自の視点で考える水星です。",
+   "planet": "Mercury",
+   "sign": "Aquarius"
+  },
+  {
+   "ja": "イメージや雰囲気で物事を掴む、詩的な表現が自然に出る水星です。",
+   "planet": "Mercury",
+   "sign": "Pisces"
+  },
+  {
+   "ja": "好きになったら一直線、気持ちが熱いうちに動く金星です。",
+   "planet": "Venus",
+   "sign": "Aries"
+  },
+  {
+   "ja": "五感で味わう喜びに恵まれ、好きなものを長く大切にする金星です。",
+   "planet": "Venus",
+   "sign": "Taurus"
+  },
+  {
+   "ja": "会話の弾む相手や知的な刺激に、心が動きやすい金星です。",
+   "planet": "Venus",
+   "sign": "Gemini"
+  },
+  {
+   "ja": "安心できる関係の中で愛情が深まり、相手を守ることに喜びを感じる金星です。",
+   "planet": "Venus",
+   "sign": "Cancer"
+  },
+  {
+   "ja": "特別扱いと華やかな時間に心が躍る、表現の大きな金星です。",
+   "planet": "Venus",
+   "sign": "Leo"
+  },
+  {
+   "ja": "ささやかな気配りや役に立つことに、愛情が表れやすい金星です。",
+   "planet": "Venus",
+   "sign": "Virgo"
+  },
+  {
+   "ja": "美しいものと心地よい関係、その両方に喜びを見つける金星です。",
+   "planet": "Venus",
+   "sign": "Libra"
+  },
+  {
+   "ja": "深く濃く、一人の人と結ばれることに喜びを感じる金星です。",
+   "planet": "Venus",
+   "sign": "Scorpio"
+  },
+  {
+   "ja": "一緒に遠くへ行ける相手、学び合える関係に心が弾む金星です。",
+   "planet": "Venus",
+   "sign": "Sagittarius"
+  },
+  {
+   "ja": "時間をかけて信頼を積む関係に、確かな喜びを感じる金星です。",
+   "planet": "Venus",
+   "sign": "Capricorn"
+  },
+  {
+   "ja": "友達のような対等さと、互いの個性を認め合う関係に喜びを感じる金星です。",
+   "planet": "Venus",
+   "sign": "Aquarius"
+  },
+  {
+   "ja": "優しさやロマンチックな空気に心が溶けやすい金星です。",
+   "planet": "Venus",
+   "sign": "Pisces"
+  },
+  {
+   "ja": "やると決めたら即行動、正面突破で進む火星です。",
+   "planet": "Mars",
+   "sign": "Aries"
+  },
+  {
+   "ja": "一度決めたら粘り強く、簡単には諦めない火星です。",
+   "planet": "Mars",
+   "sign": "Taurus"
+  },
+  {
+   "ja": "頭の回転と切り替えの速さで勝負する火星です。",
+   "planet": "Mars",
+   "sign": "Gemini"
+  },
+  {
+   "ja": "大切な人を守るために、強い力が出る火星です。",
+   "planet": "Mars",
+   "sign": "Cancer"
+  },
+  {
+   "ja": "誇りをかけて戦うときに、力が出る火星です。",
+   "planet": "Mars",
+   "sign": "Leo"
+  },
+  {
+   "ja": "緻密さと改善力で、問題を一つずつ直して結果を出す火星です。",
+   "planet": "Mars",
+   "sign": "Virgo"
+  },
+  {
+   "ja": "正面衝突より、調整と交渉で物事を動かす火星です。",
+   "planet": "Mars",
+   "sign": "Libra"
+  },
+  {
+   "ja": "静かに狙いを定め、ここぞで全力を出す火星です。",
+   "planet": "Mars",
+   "sign": "Scorpio"
+  },
+  {
+   "ja": "大きな目標や信念があると、突き進める火星です。",
+   "planet": "Mars",
+   "sign": "Sagittarius"
+  },
+  {
+   "ja": "計画と持続力で、結果が出るまで淡々と積み上げる火星です。",
+   "planet": "Mars",
+   "sign": "Capricorn"
+  },
+  {
+   "ja": "独自のやり方や仕組みを変える戦い方に、力が宿る火星です。",
+   "planet": "Mars",
+   "sign": "Aquarius"
+  },
+  {
+   "ja": "直感と流れに乗ることで、力が出る火星です。",
+   "planet": "Mars",
+   "sign": "Pisces"
+  }
+ ],
+ "version": "0.2",
+ "enLong": [
+  {
+   "planet": "Sun",
+   "sign": "Aries",
+   "en": "Your Sun in Aries may shine when you start something first. You may keep your fire strong when you build one small habit to go on."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Taurus",
+   "en": "Your Sun in Taurus may grow strong at your own pace. You may feel more sure when you take time to check a change with your own senses."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Gemini",
+   "en": "Your Sun in Gemini may shine when you learn and talk. You may grow more when you pick one topic and go deep on some days."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Cancer",
+   "en": "Your Sun in Cancer may make home feel like your base. You may share your care in a calm way when you name your feelings first."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Leo",
+   "en": "Your Sun in Leo may shine when you show your heart. You may shine in a steady way when you ask, 'Am I happy with this?' before you ask for praise."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Virgo",
+   "en": "Your Sun in Virgo may shine when you make things work well. You may keep your care for a long time when you let some days be 'good enough'."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Libra",
+   "en": "Your Sun in Libra may shine when you bring balance to people. You may build fair bonds when you say what you want, in small words, first."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Scorpio",
+   "en": "Your Sun in Scorpio may shine when you go deep. You may feel lighter when you show your deep heart to one person you trust."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Sagittarius",
+   "en": "Your Sun in Sagittarius may shine when you look far and learn. You may make dreams real when you cut one big goal into small steps."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Capricorn",
+   "en": "Your Sun in Capricorn may shine when you build step by step. You may run far and long when you put rest in your plan, too."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Aquarius",
+   "en": "Your Sun in Aquarius may shine when you think in your own way. You may find more friends for your ideas when you build a small bridge with words."
+  },
+  {
+   "planet": "Sun",
+   "sign": "Pisces",
+   "en": "Your Sun in Pisces may shine when you follow your soft heart. You may keep your soft heart clear when you guard some quiet time alone."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Aries",
+   "en": "Your Moon in Aries may feel better when you move. You may speak in a softer way when you take one slow breath before a big talk."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Taurus",
+   "en": "Your Moon in Taurus may feel calm with simple, good things. You may cross a change with more ease when you keep one small, dear habit by your side."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Gemini",
+   "en": "Your Moon in Gemini may feel light when you talk it out. You may rest your heart well when you set a quiet time away from screens at night."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Cancer",
+   "en": "Your Moon in Cancer may need a safe place to rest. You may feel more steady when you keep time at home to rest and heal first."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Leo",
+   "en": "Your Moon in Leo may feel warm when you play and laugh. You may hold your heart up on hard days when you praise yourself in small ways."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Virgo",
+   "en": "Your Moon in Virgo may feel calm when things are in order. You may sleep with a lighter heart when you write down the rest for tomorrow."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Libra",
+   "en": "Your Moon in Libra may feel at ease with kind people around. You may guard your heart when you say your true feelings, even in a small voice."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Scorpio",
+   "en": "Your Moon in Scorpio may feel safe when a bond is deep. You may feel at home in your heart when you open up little by little to a few close people."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Sagittarius",
+   "en": "Your Moon in Sagittarius may feel free in wide, open places. You may breathe more freely when you keep some free time with no plans each week."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Capricorn",
+   "en": "Your Moon in Capricorn may feel steady when things get done. You may feel lighter when you let other people help you, as part of the work."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Aquarius",
+   "en": "Your Moon in Aquarius may feel calm with a little space. You may take better care of yourself when you catch the signs of tiredness early."
+  },
+  {
+   "planet": "Moon",
+   "sign": "Pisces",
+   "en": "Your Moon in Pisces may feel soft and full of dreams. You may sort your feelings with ease when you write them down after some time alone."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Aries",
+   "en": "Your Mercury in Aries may think fast and speak first. You may keep your clear words kind when you wait one beat before you speak."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Taurus",
+   "en": "Your Mercury in Taurus may think slowly but surely. You may use your calm mind well when you keep enough time to think first."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Gemini",
+   "en": "Your Mercury in Gemini may love words, news, and new ideas. You may turn your ideas into a strong tool when you write them down in notes."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Cancer",
+   "en": "Your Mercury in Cancer may think with the heart. You may decide with a clear heart when you sleep one night before a big choice."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Leo",
+   "en": "Your Mercury in Leo may speak with warmth and drama. You may speak with even more power when you listen to other ideas with an open heart."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Virgo",
+   "en": "Your Mercury in Virgo may see small things clearly. You may win more trust when you name one good point before you point out a problem."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Libra",
+   "en": "Your Mercury in Libra may choose words with care for others. You may show your fair mind as real skill when you set a time limit to decide."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Scorpio",
+   "en": "Your Mercury in Scorpio may read what is under the words. You may turn deep insight into trust when you draw a clear line around secrets."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Sagittarius",
+   "en": "Your Mercury in Sagittarius may think in big pictures. You may make your honest words more solid when you check your notes before a big promise."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Capricorn",
+   "en": "Your Mercury in Capricorn may speak in a clear, steady way. You may sound softer, with the same meaning, when you add one short reason first."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Aquarius",
+   "en": "Your Mercury in Aquarius may think in new and free ways. You may share your ideas with more ease when you explain the starting point in one short line."
+  },
+  {
+   "planet": "Mercury",
+   "sign": "Pisces",
+   "en": "Your Mercury in Pisces may think in images and feelings. You may feel safer when you keep key news short and check the facts together."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Aries",
+   "en": "Your Venus in Aries may love with fire and speed. You may enjoy love for longer when you check a promise again after one calm night."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Taurus",
+   "en": "Your Venus in Taurus may love slow, sweet, and real things. You may choose well in love and in things, with your own sense of comfort as your guide."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Gemini",
+   "en": "Your Venus in Gemini may fall for bright talk and ideas. You may build deep trust when you share your feelings in words, little by little."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Cancer",
+   "en": "Your Venus in Cancer may love with care and warmth. You may keep your kindness warm for a long time when you guard time to fill your own heart first."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Leo",
+   "en": "Your Venus in Leo may love in a bright, open way. You may bring a bond closer to the real thing when you show one small true feeling."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Virgo",
+   "en": "Your Venus in Virgo may show love in small, kind acts. You may feel more at ease when you ask 'Is this fun together?' before 'Is this perfect?'"
+  },
+  {
+   "planet": "Venus",
+   "sign": "Libra",
+   "en": "Your Venus in Libra may love beauty and kind balance. You may grow fair, equal love when you say 'I like this' in small, clear words."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Scorpio",
+   "en": "Your Venus in Scorpio may love deeply, with all the heart. You may keep your bond strong when you put your worry into words, early and softly."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Sagittarius",
+   "en": "Your Venus in Sagittarius may love freedom and big dreams. You may grow a sweet bond when you keep even small promises with great care."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Capricorn",
+   "en": "Your Venus in Capricorn may love slowly and mean it. You may keep a bond warm when you pass your thanks and love in words, again and again."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Aquarius",
+   "en": "Your Venus in Aquarius may love like a true friend. You may help your partner feel safe when you show your love in your own way, from time to time."
+  },
+  {
+   "planet": "Venus",
+   "sign": "Pisces",
+   "en": "Your Venus in Pisces may love with a soft, kind heart. You may guard your soft kindness when you set your own limits first, with care."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Aries",
+   "en": "Your Mars in Aries may act fast and fight head-on. You may use your sharp fire as pure strength when you move your body and let heat out first."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Taurus",
+   "en": "Your Mars in Taurus may move slowly but never give up. You may stop big fights before they start when you speak about small pains early."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Gemini",
+   "en": "Your Mars in Gemini may fight with quick words and ideas. You may get your power back when you keep your list to three things on busy days."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Cancer",
+   "en": "Your Mars in Cancer may fight to protect the people you love. You may protect yourself and others when you share small feelings in words early."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Leo",
+   "en": "Your Mars in Leo may fight with pride and a big heart. You may use your fire well when you ask, 'Do I fight the person, or the problem?'"
+  },
+  {
+   "planet": "Mars",
+   "sign": "Virgo",
+   "en": "Your Mars in Virgo may win by fixing things step by step. You may have both care and speed when you decide to share your work early, even at sixty percent."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Libra",
+   "en": "Your Mars in Libra may fight fair and seek balance. You may keep bonds smooth when you say 'This is what I want' early and clearly."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Scorpio",
+   "en": "Your Mars in Scorpio may fight quietly, with deep power. You may keep your focus clear when you let out your true feelings in a safe place, from time to time."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Sagittarius",
+   "en": "Your Mars in Sagittarius may run hard for a big goal. You may win more trust when you add one short line about your aim before the main point."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Capricorn",
+   "en": "Your Mars in Capricorn may win with plans and patience. You may keep your power to the end when you treat rest as part of your plan."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Aquarius",
+   "en": "Your Mars in Aquarius may fight in your own new way. You may pass your ideas more easily when you offer them as a clear plan, with warm feelings too."
+  },
+  {
+   "planet": "Mars",
+   "sign": "Pisces",
+   "en": "Your Mars in Pisces may fight with dreams and a soft heart. You may move with less stress when you accept that some days are for rest."
+  }
+ ]
+}
