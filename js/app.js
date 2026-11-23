@@ -402,6 +402,13 @@
       esc(lang === 'en' ? profile.summary.en : profile.summary.ja) + '</div>' +
       '<div class="today-ja">' + esc(lang === 'en' ? profile.summary.ja : profile.summary.en) + '</div></div>';
 
+    if (profile.overall) {
+      html += '<h3 class="block-title">全体のまとめ — THE WHOLE PICTURE</h3>' +
+        '<div class="card"><div class="' + (lang === 'en' ? 'today-en' : 'profile-summary-ja') + '">' +
+        esc(lang === 'en' ? profile.overall.en : profile.overall.ja) + '</div>' +
+        '<div class="today-ja">' + esc(lang === 'en' ? profile.overall.ja : profile.overall.en) + '</div></div>';
+    }
+
     html += '<p class="small">※ 傾向を読むための文章です。未来や性格を断定するものではありません。英語版は、学習の進度に合わせてスラスラ読めるようになることを目指す文章です。</p>';
 
     el.innerHTML = html;
