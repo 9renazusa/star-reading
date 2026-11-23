@@ -16,25 +16,113 @@
 
   /* ---------------------------------------------------------------- */
   /* Birthplace presets (lat: north +, lon: east +, utcOffset hours)   */
+  /* All 47 prefectural capitals + the designated cities that are     */
+  /* not capitals, then a handful of overseas cities. The list is     */
+  /* bundled data (no geocoding API), so it also works offline.       */
   /* DST is not modelled; utcOffset is the standard-time offset and    */
-  /* can be edited by hand in the form.                                */
+  /* can be edited by hand in the form. Any place not in this list     */
+  /* can be entered directly as latitude / longitude numbers.          */
   /* ---------------------------------------------------------------- */
   var CITIES = [
+    /* Japan — prefectural capitals, north to south */
+    { id: 'sapporo',   name_ja: '札幌',       name_en: 'Sapporo',     lat: 43.06,  lon: 141.35,  utcOffset: 9 },
+    { id: 'aomori',    name_ja: '青森',       name_en: 'Aomori',      lat: 40.82,  lon: 140.74,  utcOffset: 9 },
+    { id: 'morioka',   name_ja: '盛岡',       name_en: 'Morioka',     lat: 39.70,  lon: 141.15,  utcOffset: 9 },
+    { id: 'sendai',    name_ja: '仙台',       name_en: 'Sendai',      lat: 38.27,  lon: 140.87,  utcOffset: 9 },
+    { id: 'akita',     name_ja: '秋田',       name_en: 'Akita',       lat: 39.72,  lon: 140.10,  utcOffset: 9 },
+    { id: 'yamagata',  name_ja: '山形',       name_en: 'Yamagata',    lat: 38.24,  lon: 140.36,  utcOffset: 9 },
+    { id: 'fukushima', name_ja: '福島',       name_en: 'Fukushima',   lat: 37.75,  lon: 140.47,  utcOffset: 9 },
+    { id: 'mito',      name_ja: '水戸',       name_en: 'Mito',        lat: 36.34,  lon: 140.45,  utcOffset: 9 },
+    { id: 'utsunomiya', name_ja: '宇都宮',    name_en: 'Utsunomiya',  lat: 36.56,  lon: 139.88,  utcOffset: 9 },
+    { id: 'maebashi',  name_ja: '前橋',       name_en: 'Maebashi',    lat: 36.39,  lon: 139.06,  utcOffset: 9 },
+    { id: 'saitama',   name_ja: 'さいたま',   name_en: 'Saitama',     lat: 35.86,  lon: 139.65,  utcOffset: 9 },
     { id: 'chiba',     name_ja: '千葉',       name_en: 'Chiba',       lat: 35.61,  lon: 140.11,  utcOffset: 9 },
     { id: 'tokyo',     name_ja: '東京',       name_en: 'Tokyo',       lat: 35.68,  lon: 139.69,  utcOffset: 9 },
-    { id: 'sapporo',   name_ja: '札幌',       name_en: 'Sapporo',     lat: 43.06,  lon: 141.35,  utcOffset: 9 },
-    { id: 'sendai',    name_ja: '仙台',       name_en: 'Sendai',      lat: 38.27,  lon: 140.87,  utcOffset: 9 },
+    { id: 'yokohama',  name_ja: '横浜',       name_en: 'Yokohama',    lat: 35.44,  lon: 139.64,  utcOffset: 9 },
+    { id: 'niigata',   name_ja: '新潟',       name_en: 'Niigata',     lat: 37.92,  lon: 139.06,  utcOffset: 9 },
+    { id: 'toyama',    name_ja: '富山',       name_en: 'Toyama',      lat: 36.70,  lon: 137.21,  utcOffset: 9 },
+    { id: 'kanazawa',  name_ja: '金沢',       name_en: 'Kanazawa',    lat: 36.56,  lon: 136.66,  utcOffset: 9 },
+    { id: 'fukui',     name_ja: '福井',       name_en: 'Fukui',       lat: 36.07,  lon: 136.22,  utcOffset: 9 },
+    { id: 'kofu',      name_ja: '甲府',       name_en: 'Kofu',        lat: 35.66,  lon: 138.57,  utcOffset: 9 },
+    { id: 'nagano',    name_ja: '長野',       name_en: 'Nagano',      lat: 36.65,  lon: 138.18,  utcOffset: 9 },
+    { id: 'gifu',      name_ja: '岐阜',       name_en: 'Gifu',        lat: 35.42,  lon: 136.76,  utcOffset: 9 },
+    { id: 'shizuoka',  name_ja: '静岡',       name_en: 'Shizuoka',    lat: 34.98,  lon: 138.38,  utcOffset: 9 },
     { id: 'nagoya',    name_ja: '名古屋',     name_en: 'Nagoya',      lat: 35.18,  lon: 136.91,  utcOffset: 9 },
+    { id: 'tsu',       name_ja: '津',         name_en: 'Tsu',         lat: 34.72,  lon: 136.51,  utcOffset: 9 },
+    { id: 'otsu',      name_ja: '大津',       name_en: 'Otsu',        lat: 35.02,  lon: 135.85,  utcOffset: 9 },
     { id: 'kyoto',     name_ja: '京都',       name_en: 'Kyoto',       lat: 35.01,  lon: 135.77,  utcOffset: 9 },
     { id: 'osaka',     name_ja: '大阪',       name_en: 'Osaka',       lat: 34.69,  lon: 135.50,  utcOffset: 9 },
+    { id: 'kobe',      name_ja: '神戸',       name_en: 'Kobe',        lat: 34.69,  lon: 135.20,  utcOffset: 9 },
+    { id: 'nara',      name_ja: '奈良',       name_en: 'Nara',        lat: 34.69,  lon: 135.80,  utcOffset: 9 },
+    { id: 'wakayama',  name_ja: '和歌山',     name_en: 'Wakayama',    lat: 34.23,  lon: 135.17,  utcOffset: 9 },
+    { id: 'tottori',   name_ja: '鳥取',       name_en: 'Tottori',     lat: 35.50,  lon: 134.24,  utcOffset: 9 },
+    { id: 'matsue',    name_ja: '松江',       name_en: 'Matsue',      lat: 35.47,  lon: 133.05,  utcOffset: 9 },
+    { id: 'okayama',   name_ja: '岡山',       name_en: 'Okayama',     lat: 34.66,  lon: 133.92,  utcOffset: 9 },
     { id: 'hiroshima', name_ja: '広島',       name_en: 'Hiroshima',   lat: 34.39,  lon: 132.46,  utcOffset: 9 },
+    { id: 'yamaguchi', name_ja: '山口',       name_en: 'Yamaguchi',   lat: 34.19,  lon: 131.47,  utcOffset: 9 },
+    { id: 'tokushima', name_ja: '徳島',       name_en: 'Tokushima',   lat: 34.07,  lon: 134.56,  utcOffset: 9 },
+    { id: 'takamatsu', name_ja: '高松',       name_en: 'Takamatsu',   lat: 34.34,  lon: 134.04,  utcOffset: 9 },
+    { id: 'matsuyama', name_ja: '松山',       name_en: 'Matsuyama',   lat: 33.84,  lon: 132.77,  utcOffset: 9 },
+    { id: 'kochi',     name_ja: '高知',       name_en: 'Kochi',       lat: 33.55,  lon: 133.53,  utcOffset: 9 },
     { id: 'fukuoka',   name_ja: '福岡',       name_en: 'Fukuoka',     lat: 33.59,  lon: 130.40,  utcOffset: 9 },
+    { id: 'saga',      name_ja: '佐賀',       name_en: 'Saga',        lat: 33.26,  lon: 130.30,  utcOffset: 9 },
+    { id: 'nagasaki',  name_ja: '長崎',       name_en: 'Nagasaki',    lat: 32.75,  lon: 129.87,  utcOffset: 9 },
+    { id: 'kumamoto',  name_ja: '熊本',       name_en: 'Kumamoto',    lat: 32.79,  lon: 130.74,  utcOffset: 9 },
+    { id: 'oita',      name_ja: '大分',       name_en: 'Oita',        lat: 33.24,  lon: 131.67,  utcOffset: 9 },
+    { id: 'miyazaki',  name_ja: '宮崎',       name_en: 'Miyazaki',    lat: 31.91,  lon: 131.42,  utcOffset: 9 },
+    { id: 'kagoshima', name_ja: '鹿児島',     name_en: 'Kagoshima',   lat: 31.59,  lon: 130.56,  utcOffset: 9 },
     { id: 'naha',      name_ja: '那覇',       name_en: 'Naha',        lat: 26.21,  lon: 127.68,  utcOffset: 9 },
+    /* Japan — designated cities that are not prefectural capitals */
+    { id: 'kitakyushu', name_ja: '北九州',    name_en: 'Kitakyushu',  lat: 33.88,  lon: 130.87,  utcOffset: 9 },
+    { id: 'kawasaki',  name_ja: '川崎',       name_en: 'Kawasaki',    lat: 35.53,  lon: 139.70,  utcOffset: 9 },
+    { id: 'sagamihara', name_ja: '相模原',    name_en: 'Sagamihara',  lat: 35.57,  lon: 139.37,  utcOffset: 9 },
+    { id: 'hamamatsu', name_ja: '浜松',       name_en: 'Hamamatsu',   lat: 34.71,  lon: 137.73,  utcOffset: 9 },
+    { id: 'sakai',     name_ja: '堺',         name_en: 'Sakai',       lat: 34.57,  lon: 135.48,  utcOffset: 9 },
+    /* Overseas — a few major cities; anything else by direct lat/lon */
+    { id: 'seoul',     name_ja: 'ソウル',     name_en: 'Seoul',       lat: 37.57,  lon: 126.98,  utcOffset: 9 },
+    { id: 'taipei',    name_ja: '台北',       name_en: 'Taipei',      lat: 25.03,  lon: 121.56,  utcOffset: 8 },
+    { id: 'singapore', name_ja: 'シンガポール', name_en: 'Singapore', lat: 1.35,   lon: 103.82,  utcOffset: 8 },
     { id: 'london',    name_ja: 'ロンドン',   name_en: 'London',      lat: 51.51,  lon: -0.13,   utcOffset: 0 },
+    { id: 'paris',     name_ja: 'パリ',       name_en: 'Paris',       lat: 48.86,  lon: 2.35,    utcOffset: 1 },
     { id: 'newyork',   name_ja: 'ニューヨーク', name_en: 'New York',  lat: 40.71,  lon: -74.01,  utcOffset: -5 },
     { id: 'losangeles', name_ja: 'ロサンゼルス', name_en: 'Los Angeles', lat: 34.05, lon: -118.24, utcOffset: -8 },
+    { id: 'honolulu',  name_ja: 'ホノルル',   name_en: 'Honolulu',    lat: 21.31,  lon: -157.86, utcOffset: -10 },
     { id: 'sydney',    name_ja: 'シドニー',   name_en: 'Sydney',      lat: -33.87, lon: 151.21,  utcOffset: 10 }
   ];
+
+  /** Display label used by the search box / datalist: "大阪（Osaka）". */
+  function cityLabel(c) { return c.name_ja + '（' + c.name_en + '）'; }
+
+  /**
+   * Resolve a free-text query to a preset city, or null.
+   * Accepts the display label, the Japanese name, the English name
+   * (case-insensitive), or the city id.
+   */
+  function findCity(query) {
+    if (query == null) return null;
+    var q = String(query).trim();
+    if (!q) return null;
+    var ql = q.toLowerCase();
+    for (var i = 0; i < CITIES.length; i++) {
+      var c = CITIES[i];
+      if (q === c.name_ja || q === cityLabel(c) || q === c.id ||
+          ql === c.name_en.toLowerCase()) return c;
+    }
+    return null;
+  }
+
+  /**
+   * Validate a latitude / longitude pair for direct entry.
+   * Returns null when valid, otherwise a Japanese error message.
+   */
+  function validateLatLon(lat, lon) {
+    if (typeof lat !== 'number' || typeof lon !== 'number' || isNaN(lat) || isNaN(lon)) {
+      return '緯度と経度を数値で入力してください。';
+    }
+    if (lat < -90 || lat > 90) return '緯度は -90 〜 90 の範囲で入力してください。';
+    if (lon < -180 || lon > 180) return '経度は -180 〜 180 の範囲で入力してください。';
+    return null;
+  }
 
   /* ---------------------------------------------------------------- */
   /* Birth input -> UTC Date                                           */
@@ -150,6 +238,9 @@
 
   return {
     CITIES: CITIES,
+    cityLabel: cityLabel,
+    findCity: findCity,
+    validateLatLon: validateLatLon,
     birthToUtcDate: birthToUtcDate,
     buildTodaysLine: buildTodaysLine,
     masteredSets: masteredSets,
