@@ -1,0 +1,1763 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "木星と土星の働きを、help／should／must を使った短い文で読み分けられる。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にある。木星はあなたの太陽が育つのを助け、土星はあなたに辛抱強くいるよう求めるかもしれない。",
+        "note_ja": "アプリでは学習者の実際の太陽星座を当てはめる。木星・土星の星座のプレースホルダは現行アプリ（js/core.js の fillChartLine）が太陽〜火星の5天体にしか対応していないため使わず、天体の働きとして一般的に述べる。may で断定を避ける。",
+        "template_en": "Your Sun is in {sunSign}. Jupiter may help your Sun grow, and Saturn may ask you to be patient."
+      },
+      "exercises": [
+        {
+          "answerIndex": 1,
+          "explanation_ja": "help ＋ 人 ＋ 動詞 で「人が〜するのを助ける」。木星は広げる・育てる天体。",
+          "options": [
+            "木星はあなたの成長を止める",
+            "木星はあなたが成長するのを助ける",
+            "木星はあなたより大きい"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Jupiter helps you grow.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "Saturn は土星。Jupiter（木星）とあわせて、このレッスンで導入する天体。",
+          "options": [
+            "土星",
+            "木星",
+            "火星"
+          ],
+          "prompt_ja": "「Saturn」の意味は？",
+          "question_en": "Saturn",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 1,
+          "explanation_ja": "should は「〜したほうがいい／〜すべき」。should not で「〜すべきではない」。",
+          "options": [
+            "have",
+            "should",
+            "from"
+          ],
+          "promptJa": "あなたは土星を恐れるべきではない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You ___ not be afraid of Saturn.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 2,
+          "explanation_ja": "than は「〜より」。more 〜 than … で「…より多くの〜」。",
+          "options": [
+            "for",
+            "on",
+            "than"
+          ],
+          "promptJa": "土星は木星より多くの時間をかける。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Saturn takes more time ___ Jupiter.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Be patient and trust your own way.",
+          "explanation_ja": "Be patient（辛抱強くいて）と trust your own way（自分のやり方を信じて）を and でつなぐ。",
+          "prompt_ja": "語を並べ替えて「辛抱強くいて、自分のやり方を信じよう」という文を作ろう。",
+          "tiles": [
+            "trust",
+            "Be patient",
+            "your own way",
+            "and"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。may で言い切らず、Do not doubt（疑わないで）と give it some space（余白をあげて）で結ぶ。",
+          "options": [
+            "今日は心が重く感じるかもしれない。心を疑わず、少し余白をあげよう",
+            "今日は心が必ず重くなるので、何もしてはいけない",
+            "今日は心が軽いので、もっと働こう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Your heart may feel heavy today. Do not doubt your heart, and give it some space.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 1,
+          "explanation_ja": "or は「または／それとも」。A or B? で「A？それとも B？」と尋ねる。",
+          "options": [
+            "at",
+            "or",
+            "that"
+          ],
+          "promptJa": "あなたが欲しいのは運？それとも教訓？",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Do you want luck ___ a lesson?",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson4_1",
+      "newTerms": [
+        {
+          "en": "Jupiter",
+          "ja": "木星",
+          "note_ja": "広げる・育てる働きを象徴すると読まれる天体。expand（広げる）などの概念語は一般語側で導入する"
+        },
+        {
+          "en": "Saturn",
+          "ja": "土星",
+          "note_ja": "課題・鍛錬・時間をかけて積み上げるものを象徴すると読まれる天体。restrict／limit（制限する）は一般語側で導入する"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "not",
+          "ja": "〜ない（否定。do not 〜／be not 〜）"
+        },
+        {
+          "en": "have",
+          "ja": "持つ（三単現は has）"
+        },
+        {
+          "en": "for",
+          "ja": "〜のために／〜にとって"
+        },
+        {
+          "en": "at",
+          "ja": "〜で（場所・時の一点）"
+        },
+        {
+          "en": "on",
+          "ja": "〜の上に／〜に"
+        },
+        {
+          "en": "from",
+          "ja": "〜から"
+        },
+        {
+          "en": "or",
+          "ja": "または／それとも"
+        },
+        {
+          "en": "than",
+          "ja": "〜より（比較）"
+        },
+        {
+          "en": "that",
+          "ja": "あれ／それ"
+        },
+        {
+          "en": "they",
+          "ja": "彼ら／それら（3人称複数）"
+        },
+        {
+          "en": "them",
+          "ja": "彼らを／それらを"
+        },
+        {
+          "en": "should",
+          "ja": "〜したほうがいい／〜すべき"
+        },
+        {
+          "en": "must",
+          "ja": "〜しなければならない"
+        },
+        {
+          "en": "be",
+          "ja": "〜である（be動詞の原形。Be 〜. で「〜でいて」）"
+        },
+        {
+          "en": "much",
+          "ja": "たくさんの（量）"
+        },
+        {
+          "en": "too",
+          "ja": "〜すぎる"
+        },
+        {
+          "en": "expand",
+          "ja": "広げる"
+        },
+        {
+          "en": "luck",
+          "ja": "運"
+        },
+        {
+          "en": "lucky",
+          "ja": "運のいい"
+        },
+        {
+          "en": "chance",
+          "ja": "チャンス／機会"
+        },
+        {
+          "en": "gift",
+          "ja": "贈り物"
+        },
+        {
+          "en": "rich",
+          "ja": "豊かな"
+        },
+        {
+          "en": "wide",
+          "ja": "広い"
+        },
+        {
+          "en": "add",
+          "ja": "加える"
+        },
+        {
+          "en": "less",
+          "ja": "より少ない"
+        },
+        {
+          "en": "limit",
+          "ja": "限界／制限する"
+        },
+        {
+          "en": "rule",
+          "ja": "ルール／決まり"
+        },
+        {
+          "en": "restrict",
+          "ja": "制限する／縛る"
+        },
+        {
+          "en": "test",
+          "ja": "試験／試練"
+        },
+        {
+          "en": "wall",
+          "ja": "壁"
+        },
+        {
+          "en": "heavy",
+          "ja": "重い"
+        },
+        {
+          "en": "serious",
+          "ja": "まじめな／深刻な"
+        },
+        {
+          "en": "careful",
+          "ja": "注意深い"
+        },
+        {
+          "en": "patient",
+          "ja": "辛抱強い"
+        },
+        {
+          "en": "practice",
+          "ja": "練習／練習する"
+        },
+        {
+          "en": "control",
+          "ja": "コントロールする／管理する"
+        },
+        {
+          "en": "old",
+          "ja": "古い／年をとった"
+        },
+        {
+          "en": "age",
+          "ja": "年齢"
+        },
+        {
+          "en": "space",
+          "ja": "余白／空間"
+        },
+        {
+          "en": "goal",
+          "ja": "目標"
+        },
+        {
+          "category": "emotion",
+          "en": "excited",
+          "ja": "わくわくした"
+        },
+        {
+          "category": "emotion",
+          "en": "nervous",
+          "ja": "緊張した"
+        },
+        {
+          "category": "emotion",
+          "en": "safe",
+          "ja": "安全な／安心な"
+        },
+        {
+          "category": "emotion",
+          "en": "trust",
+          "ja": "信じる／信頼する"
+        },
+        {
+          "category": "emotion",
+          "en": "doubt",
+          "ja": "疑う"
+        },
+        {
+          "category": "emotion",
+          "en": "stress",
+          "ja": "ストレス"
+        },
+        {
+          "category": "emotion",
+          "en": "joy",
+          "ja": "喜び"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "Jupiter helps you 〜. / You should 〜. / You must 〜.",
+      "sentences": [
+        {
+          "en": "Jupiter is a very big planet.",
+          "ja": "木星はとても大きな天体だ。"
+        },
+        {
+          "en": "Jupiter helps you grow.",
+          "ja": "木星はあなたが成長するのを助ける。"
+        },
+        {
+          "en": "Jupiter can expand your world.",
+          "ja": "木星はあなたの世界を広げることができる。"
+        },
+        {
+          "en": "Jupiter opens a wide road for you.",
+          "ja": "木星はあなたのために広い道を開く。"
+        },
+        {
+          "en": "A new chance may come to you.",
+          "ja": "新しいチャンスがあなたのところに来るかもしれない。"
+        },
+        {
+          "en": "I have a lucky day today.",
+          "ja": "今日の私は運のいい日だ。"
+        },
+        {
+          "en": "Luck is not only about money.",
+          "ja": "運はお金のことだけではない。"
+        },
+        {
+          "en": "Every day is a gift.",
+          "ja": "毎日が贈り物だ。"
+        },
+        {
+          "en": "You may feel rich in heart.",
+          "ja": "あなたは心が豊かだと感じるかもしれない。"
+        },
+        {
+          "en": "Add a new thing to your day.",
+          "ja": "あなたの一日に新しいことを加えよう。"
+        },
+        {
+          "en": "Less is more.",
+          "ja": "少ないほうが豊かだ。"
+        },
+        {
+          "en": "Jupiter brings joy, and Saturn brings lessons.",
+          "ja": "木星は喜びを運び、土星は教訓を運ぶ。"
+        },
+        {
+          "en": "Saturn takes more time than Jupiter.",
+          "ja": "土星は木星より多くの時間をかける。"
+        },
+        {
+          "en": "Saturn has many rules.",
+          "ja": "土星はたくさんのルールを持っている。"
+        },
+        {
+          "en": "Saturn can limit and restrict you.",
+          "ja": "土星はあなたを制限し、縛ることがある。"
+        },
+        {
+          "en": "Saturn shows you your limit.",
+          "ja": "土星はあなたに、あなたの限界を見せる。"
+        },
+        {
+          "en": "Saturn gives you a test, and you learn from it.",
+          "ja": "土星はあなたに試練を与え、あなたはそこから学ぶ。"
+        },
+        {
+          "en": "They say Saturn is a hard teacher.",
+          "ja": "土星は厳しい先生だと言われる。"
+        },
+        {
+          "en": "Saturn is serious, but Saturn is also fair.",
+          "ja": "土星はまじめだが、公平でもある。"
+        },
+        {
+          "en": "You may see a wall on your road.",
+          "ja": "あなたの道に壁が見えるかもしれない。"
+        },
+        {
+          "en": "Rules help you. Do not fight them.",
+          "ja": "ルールはあなたを助ける。ルールと戦わないで。"
+        },
+        {
+          "en": "You should not be afraid of Saturn.",
+          "ja": "あなたは土星を恐れるべきではない。"
+        },
+        {
+          "en": "Saturn says: you must do the work.",
+          "ja": "土星は言う。「あなたはその仕事をしなければならない」。"
+        },
+        {
+          "en": "Be careful with your money and your time.",
+          "ja": "お金と時間には注意深くいよう。"
+        },
+        {
+          "en": "Be patient. Good things take time.",
+          "ja": "辛抱強くいよう。良いことには時間がかかる。"
+        },
+        {
+          "en": "Practice makes you strong.",
+          "ja": "練習はあなたを強くする。"
+        },
+        {
+          "en": "You can control your day, but not all of it.",
+          "ja": "あなたは一日をコントロールできるが、そのすべてではない。"
+        },
+        {
+          "en": "Old trees grow strong over many years.",
+          "ja": "古い木は長い年月をかけて強く育つ。"
+        },
+        {
+          "en": "At your age, you can begin again.",
+          "ja": "今の年齢で、あなたはもう一度始められる。"
+        },
+        {
+          "en": "Give your heart some space.",
+          "ja": "あなたの心に少し余白をあげよう。"
+        },
+        {
+          "en": "Saturn helps you find your goal.",
+          "ja": "土星はあなたが目標を見つけるのを助ける。"
+        },
+        {
+          "en": "That is a lesson from Saturn.",
+          "ja": "それは土星からの教訓だ。"
+        },
+        {
+          "en": "I feel excited about a new trip.",
+          "ja": "私は新しい旅にわくわくしている。"
+        },
+        {
+          "en": "I feel nervous before a test.",
+          "ja": "私は試験の前に緊張する。"
+        },
+        {
+          "en": "You are safe at home.",
+          "ja": "あなたは家にいれば安心だ。"
+        },
+        {
+          "en": "Trust your own way.",
+          "ja": "あなた自身のやり方を信じよう。"
+        },
+        {
+          "en": "Too much stress is not good for you.",
+          "ja": "ストレスが多すぎるのは、あなたにとって良くない。"
+        }
+      ],
+      "theme_ja": "木星（広げる）と土星（制限する）を対で学ぶ。否定の not、助言の should、義務の must で、星が語りかける言い方を読む。",
+      "title_en": "Jupiter and Saturn",
+      "title_ja": "木星と土星 ― 広げる星と止める星",
+      "wordsUsed": [
+        "a",
+        "about",
+        "add",
+        "afraid",
+        "again",
+        "age",
+        "all",
+        "also",
+        "and",
+        "are",
+        "ask",
+        "at",
+        "be",
+        "before",
+        "begin",
+        "big",
+        "bring",
+        "but",
+        "can",
+        "careful",
+        "chance",
+        "come",
+        "control",
+        "day",
+        "do",
+        "doubt",
+        "every",
+        "excited",
+        "expand",
+        "fair",
+        "feel",
+        "fight",
+        "find",
+        "for",
+        "from",
+        "gift",
+        "give",
+        "goal",
+        "good",
+        "grow",
+        "hard",
+        "have",
+        "heart",
+        "heavy",
+        "help",
+        "home",
+        "I",
+        "in",
+        "is",
+        "it",
+        "joy",
+        "learn",
+        "less",
+        "lesson",
+        "limit",
+        "luck",
+        "lucky",
+        "make",
+        "many",
+        "may",
+        "money",
+        "more",
+        "much",
+        "must",
+        "nervous",
+        "new",
+        "not",
+        "of",
+        "old",
+        "on",
+        "only",
+        "open",
+        "or",
+        "over",
+        "own",
+        "patient",
+        "practice",
+        "restrict",
+        "rich",
+        "road",
+        "rule",
+        "safe",
+        "say",
+        "see",
+        "serious",
+        "should",
+        "show",
+        "some",
+        "space",
+        "stress",
+        "strong",
+        "take",
+        "teacher",
+        "test",
+        "than",
+        "that",
+        "the",
+        "them",
+        "they",
+        "thing",
+        "time",
+        "to",
+        "today",
+        "too",
+        "tree",
+        "trip",
+        "trust",
+        "very",
+        "wall",
+        "want",
+        "way",
+        "wide",
+        "with",
+        "work",
+        "world",
+        "year",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "天王星・海王星・冥王星の働きを、make を使った文で読み分け、what／how／why／who の問いかけを理解できる。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にある。海王星はあなたの夢を深くし、天王星は突然の変化をもたらすかもしれない。",
+        "note_ja": "アプリでは学習者の実際の月星座を当てはめる。天王星・海王星・冥王星は世代ごとに同じ星座にとどまるため、個人の星座ではなく働きとして読む（星座のプレースホルダは現行アプリ未対応のため使わない）。",
+        "template_en": "Your Moon is in {moonSign}. Neptune may make your dreams deep, and Uranus may bring a sudden change."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "make ＋ 人・もの ＋ 形容詞 で「〜を…にする」。天王星は変化と刷新の天体。",
+          "options": [
+            "天王星はあなたの人生を不思議で新しいものにする",
+            "天王星はあなたの人生を静かで古いものにする",
+            "天王星はあなたの人生から遠い"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Uranus makes your life strange and new.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 2,
+          "explanation_ja": "Neptune は海王星。夢や想像力の天体。Uranus は天王星、Pluto は冥王星。",
+          "options": [
+            "冥王星",
+            "天王星",
+            "海王星"
+          ],
+          "prompt_ja": "「Neptune」の意味は？",
+          "question_en": "Neptune",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "without は「〜なしで」。a world without walls で「壁のない世界」。",
+          "options": [
+            "without",
+            "behind",
+            "around"
+          ],
+          "promptJa": "壁のない世界を想像してみて。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Imagine a world ___ walls.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 1,
+          "explanation_ja": "inside は「内側」。make ＋ 人 ＋ 動詞 で「人に〜させる」。",
+          "options": [
+            "outside",
+            "inside",
+            "up"
+          ],
+          "promptJa": "冥王星はあなたに内側を見させる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Pluto makes you look ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "You may fall, but you can start again.",
+          "explanation_ja": "may で「〜かもしれない」、but のあとに can で「でも〜できる」と続ける。",
+          "prompt_ja": "語を並べ替えて「あなたは転ぶかもしれないが、また始められる」という文を作ろう。",
+          "tiles": [
+            "start",
+            "You may fall,",
+            "again",
+            "but you can"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 1,
+          "explanation_ja": "読解問題。behind は「〜の向こうに」、lose your way は「道に迷う」、come back は「戻ってくる」。",
+          "options": [
+            "霧の中では必ず道に迷い、二度と戻れない",
+            "霧の向こうに真実が見つかるかもしれないし、道に迷っても戻ってこられる",
+            "霧はすぐに晴れ、真実はどこにもない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Behind the fog, you may find the truth. You may lose your way, but you can come back.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 1,
+          "explanation_ja": "why は「なぜ」。I wonder why 〜 で「なぜ〜なのだろう」。",
+          "options": [
+            "what",
+            "why",
+            "who"
+          ],
+          "promptJa": "なぜ自分がこんなふうに感じるのだろう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I wonder ___ I feel this way.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson4_2",
+      "newTerms": [
+        {
+          "en": "Uranus",
+          "ja": "天王星",
+          "note_ja": "変化・刷新・枠からの解放を象徴すると読まれる天体。一つの星座に約7年とどまる"
+        },
+        {
+          "en": "Neptune",
+          "ja": "海王星",
+          "note_ja": "夢・想像力・境界の曖昧さを象徴すると読まれる天体。一つの星座に約14年とどまる"
+        },
+        {
+          "en": "Pluto",
+          "ja": "冥王星",
+          "note_ja": "根本的な変容や、表に出にくい深い動きを象徴すると読まれる天体。動きが遅く、世代のテーマとして読まれることが多い"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "what",
+          "ja": "何"
+        },
+        {
+          "en": "how",
+          "ja": "どのように／どう"
+        },
+        {
+          "en": "why",
+          "ja": "なぜ"
+        },
+        {
+          "en": "who",
+          "ja": "誰"
+        },
+        {
+          "en": "their",
+          "ja": "彼らの／それらの"
+        },
+        {
+          "en": "out",
+          "ja": "外へ"
+        },
+        {
+          "en": "up",
+          "ja": "上へ"
+        },
+        {
+          "en": "down",
+          "ja": "下へ"
+        },
+        {
+          "en": "back",
+          "ja": "戻って／後ろ"
+        },
+        {
+          "en": "without",
+          "ja": "〜なしで"
+        },
+        {
+          "en": "around",
+          "ja": "〜のまわりを／あちこち"
+        },
+        {
+          "en": "behind",
+          "ja": "〜の後ろに／〜の向こうに"
+        },
+        {
+          "en": "surprise",
+          "ja": "驚かせる／驚き（surprised＝驚いた）"
+        },
+        {
+          "en": "sudden",
+          "ja": "突然の"
+        },
+        {
+          "en": "strange",
+          "ja": "不思議な／見慣れない"
+        },
+        {
+          "en": "wild",
+          "ja": "野生の／自由奔放な"
+        },
+        {
+          "en": "shock",
+          "ja": "衝撃"
+        },
+        {
+          "en": "freedom",
+          "ja": "自由"
+        },
+        {
+          "en": "imagine",
+          "ja": "想像する"
+        },
+        {
+          "en": "magic",
+          "ja": "魔法"
+        },
+        {
+          "en": "ocean",
+          "ja": "大海"
+        },
+        {
+          "en": "wave",
+          "ja": "波"
+        },
+        {
+          "en": "spirit",
+          "ja": "精神／気力"
+        },
+        {
+          "en": "soul",
+          "ja": "魂"
+        },
+        {
+          "en": "lose",
+          "ja": "失う（過去形・過去分詞 lost）"
+        },
+        {
+          "en": "hide",
+          "ja": "隠れる／隠す（過去分詞 hidden＝隠された）"
+        },
+        {
+          "en": "inside",
+          "ja": "内側／内側に"
+        },
+        {
+          "en": "shadow",
+          "ja": "影"
+        },
+        {
+          "en": "root",
+          "ja": "根／根っこ"
+        },
+        {
+          "en": "born",
+          "ja": "生まれた（be born で「生まれる」）"
+        },
+        {
+          "en": "away",
+          "ja": "離れて／遠くへ"
+        },
+        {
+          "en": "outside",
+          "ja": "外側／外に"
+        },
+        {
+          "en": "fog",
+          "ja": "霧"
+        },
+        {
+          "en": "truth",
+          "ja": "真実"
+        },
+        {
+          "en": "escape",
+          "ja": "逃げる"
+        },
+        {
+          "en": "blue",
+          "ja": "青い"
+        },
+        {
+          "en": "start",
+          "ja": "始める"
+        },
+        {
+          "en": "fall",
+          "ja": "落ちる／転ぶ（過去形 fell）"
+        },
+        {
+          "en": "whole",
+          "ja": "全体の"
+        },
+        {
+          "en": "wonder",
+          "ja": "〜だろうかと思う／不思議に思う"
+        },
+        {
+          "category": "emotion",
+          "en": "fear",
+          "ja": "恐れ"
+        },
+        {
+          "category": "emotion",
+          "en": "pain",
+          "ja": "痛み"
+        },
+        {
+          "category": "emotion",
+          "en": "hurt",
+          "ja": "傷ついた／傷つける"
+        },
+        {
+          "category": "emotion",
+          "en": "confused",
+          "ja": "混乱した"
+        },
+        {
+          "category": "emotion",
+          "en": "peaceful",
+          "ja": "穏やかな"
+        },
+        {
+          "category": "emotion",
+          "en": "bored",
+          "ja": "退屈した"
+        },
+        {
+          "category": "emotion",
+          "en": "hate",
+          "ja": "嫌う"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "Uranus makes your life 〜. / Neptune makes you 〜. / What 〜? How 〜?",
+      "sentences": [
+        {
+          "en": "Uranus, Neptune, and Pluto are far from the Sun.",
+          "ja": "天王星、海王星、冥王星は太陽から遠い。"
+        },
+        {
+          "en": "They are slow planets, so they stay in a sign for many years.",
+          "ja": "それらは遅い天体なので、一つの星座に何年もとどまる。"
+        },
+        {
+          "en": "People born in the same years have the same Pluto sign.",
+          "ja": "同じ年に生まれた人々は、同じ冥王星の星座を持つ。"
+        },
+        {
+          "en": "Their light comes from far away.",
+          "ja": "それらの光は遠くから来る。"
+        },
+        {
+          "en": "Uranus makes your life strange and new.",
+          "ja": "天王星はあなたの人生を不思議で新しいものにする。"
+        },
+        {
+          "en": "Uranus loves freedom and hates old rules.",
+          "ja": "天王星は自由を愛し、古いルールを嫌う。"
+        },
+        {
+          "en": "A sudden change may surprise you.",
+          "ja": "突然の変化があなたを驚かせるかもしれない。"
+        },
+        {
+          "en": "Uranus may bring a shock, but you can stand up again.",
+          "ja": "天王星は衝撃をもたらすかもしれないが、あなたはまた立ち上がれる。"
+        },
+        {
+          "en": "Uranus gets bored when every day is the same.",
+          "ja": "毎日が同じだと、天王星は退屈する。"
+        },
+        {
+          "en": "Sometimes you want to escape from your rules.",
+          "ja": "ときどき、あなたは自分のルールから逃げたくなる。"
+        },
+        {
+          "en": "The world outside is wild and strange.",
+          "ja": "外の世界は自由奔放で、不思議だ。"
+        },
+        {
+          "en": "Go out and walk around the town.",
+          "ja": "外に出て、町を歩き回ろう。"
+        },
+        {
+          "en": "Neptune makes you dream.",
+          "ja": "海王星はあなたに夢を見させる。"
+        },
+        {
+          "en": "Neptune lives in a deep blue ocean of dreams.",
+          "ja": "海王星は、夢の深く青い大海に住んでいる。"
+        },
+        {
+          "en": "Waves come and go on the ocean.",
+          "ja": "大海では波が寄せては返す。"
+        },
+        {
+          "en": "Neptune is soft and quiet, like magic.",
+          "ja": "海王星は魔法のように、柔らかく静かだ。"
+        },
+        {
+          "en": "Imagine a world without walls.",
+          "ja": "壁のない世界を想像してみて。"
+        },
+        {
+          "en": "Behind the fog, you may find the truth.",
+          "ja": "霧の向こうに、真実が見つかるかもしれない。"
+        },
+        {
+          "en": "You may lose your way in the fog, but you can come back.",
+          "ja": "霧の中で道に迷うかもしれないが、あなたは戻ってこられる。"
+        },
+        {
+          "en": "Neptune speaks to your soul.",
+          "ja": "海王星はあなたの魂に語りかける。"
+        },
+        {
+          "en": "Art and music are good for your spirit.",
+          "ja": "芸術と音楽はあなたの精神に良い。"
+        },
+        {
+          "en": "I wonder why I feel this way.",
+          "ja": "なぜ自分がこんなふうに感じるのだろう。"
+        },
+        {
+          "en": "Pluto makes you look inside.",
+          "ja": "冥王星はあなたに内側を見させる。"
+        },
+        {
+          "en": "Pluto hides in the shadow.",
+          "ja": "冥王星は影の中に隠れている。"
+        },
+        {
+          "en": "Some things are hidden deep inside you.",
+          "ja": "あなたの内側の深くに隠されたものがある。"
+        },
+        {
+          "en": "Pluto goes down to the root of your fear.",
+          "ja": "冥王星はあなたの恐れの根っこまで降りていく。"
+        },
+        {
+          "en": "Pain can change you, and it can make you strong.",
+          "ja": "痛みはあなたを変えることがあり、あなたを強くすることもある。"
+        },
+        {
+          "en": "When you feel hurt, be kind to your heart.",
+          "ja": "傷ついたと感じるときは、自分の心に優しくしよう。"
+        },
+        {
+          "en": "You may fall, but you can start again.",
+          "ja": "あなたは転ぶかもしれないが、また始められる。"
+        },
+        {
+          "en": "What do you want? Who do you want to become?",
+          "ja": "あなたは何が欲しい？ 誰になりたい？"
+        },
+        {
+          "en": "How do you feel today?",
+          "ja": "今日はどんな気持ち？"
+        },
+        {
+          "en": "Look at the whole sky, not only your Sun.",
+          "ja": "太陽だけでなく、空全体を見よう。"
+        },
+        {
+          "en": "I feel confused, so I write in my book.",
+          "ja": "私は混乱しているので、本に書く。"
+        },
+        {
+          "en": "A quiet night makes me peaceful.",
+          "ja": "静かな夜は私を穏やかにする。"
+        }
+      ],
+      "theme_ja": "遠くをゆっくり動く3天体を学ぶ。make ＋ 人・もの ＋ 形容詞／動詞（〜を…にする／〜に…させる）と、what／how／why／who の疑問詞で、変化・夢・深さを読む。",
+      "title_en": "Uranus, Neptune, and Pluto",
+      "title_ja": "天王星・海王星・冥王星 ― 変える星、夢見る星、深める星",
+      "wordsUsed": [
+        "a",
+        "again",
+        "and",
+        "are",
+        "around",
+        "art",
+        "at",
+        "away",
+        "back",
+        "be",
+        "become",
+        "behind",
+        "blue",
+        "book",
+        "bored",
+        "born",
+        "bring",
+        "but",
+        "can",
+        "change",
+        "come",
+        "confused",
+        "day",
+        "deep",
+        "do",
+        "down",
+        "dream",
+        "escape",
+        "every",
+        "fall",
+        "far",
+        "fear",
+        "feel",
+        "find",
+        "fog",
+        "for",
+        "freedom",
+        "from",
+        "get",
+        "go",
+        "good",
+        "hate",
+        "have",
+        "heart",
+        "hide",
+        "how",
+        "hurt",
+        "I",
+        "imagine",
+        "in",
+        "inside",
+        "is",
+        "it",
+        "kind",
+        "life",
+        "light",
+        "like",
+        "live",
+        "look",
+        "lose",
+        "love",
+        "magic",
+        "make",
+        "many",
+        "may",
+        "me",
+        "music",
+        "my",
+        "new",
+        "night",
+        "not",
+        "ocean",
+        "of",
+        "old",
+        "on",
+        "only",
+        "out",
+        "outside",
+        "pain",
+        "peaceful",
+        "people",
+        "quiet",
+        "root",
+        "rule",
+        "same",
+        "shadow",
+        "shock",
+        "sky",
+        "slow",
+        "so",
+        "soft",
+        "some",
+        "sometimes",
+        "soul",
+        "speak",
+        "spirit",
+        "stand",
+        "start",
+        "stay",
+        "strange",
+        "strong",
+        "sudden",
+        "surprise",
+        "the",
+        "their",
+        "they",
+        "thing",
+        "this",
+        "to",
+        "today",
+        "town",
+        "truth",
+        "up",
+        "walk",
+        "wall",
+        "want",
+        "wave",
+        "way",
+        "what",
+        "when",
+        "who",
+        "whole",
+        "why",
+        "wild",
+        "without",
+        "wonder",
+        "world",
+        "write",
+        "year",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "10天体を速い星と遅い星に分けて理解し、might／could／Let 〜 を使った Co-Star 風のリーディング文が辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にある。今日は緊張するかもしれないが、あなたは大丈夫。心を休ませてあげよう。",
+        "note_ja": "Unit 4 の到達点。アプリでは学習者の実際の月星座を当てはめ、Co-Star 風の短いリーディングとして提示する。might で断定を避け、Let 〜 で柔らかく結ぶ。",
+        "template_en": "Your Moon is in {moonSign}. You might feel nervous today, but you are safe. Let your mind rest."
+      },
+      "exercises": [
+        {
+          "answerIndex": 1,
+          "explanation_ja": "might は「〜かもしれない」。may よりさらに控えめに可能性を言う、Co-Star で頻出の語。",
+          "options": [
+            "今日は必ず気後れする",
+            "今日は気後れするかもしれない",
+            "今日は気後れすることはない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You might feel shy today.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "outer は「外側の」。outer planets は天王星・海王星・冥王星のような遠い天体。personal planets（個人天体）と対になる。",
+          "options": [
+            "外惑星（遠くをゆっくり動く天体）",
+            "個人天体（速く動く天体）",
+            "内面の生活"
+          ],
+          "prompt_ja": "「outer planets」の意味は？",
+          "question_en": "outer planets",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "Let ＋ 人・もの ＋ 動詞 で「〜に…させよう」。リーディングでよく使う形。",
+          "options": [
+            "Let",
+            "Just",
+            "Still"
+          ],
+          "promptJa": "感情が来ては去るのにまかせよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___ your emotions come and go.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 2,
+          "explanation_ja": "everything は「すべてのこと」。everyone（みんな）、someone（誰か）と区別する。",
+          "options": [
+            "someone",
+            "everyone",
+            "everything"
+          ],
+          "promptJa": "あなたはすべてを知る必要はない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You do not need to know ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Let yourself relax in the evening.",
+          "explanation_ja": "Let ＋ yourself ＋ relax で「自分をくつろがせる」。in the evening は文の最後に置く。",
+          "prompt_ja": "語を並べ替えて「夕方は、自分をくつろがせてあげよう」という文を作ろう。",
+          "tiles": [
+            "relax",
+            "Let",
+            "in the evening",
+            "yourself"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 2,
+          "explanation_ja": "読解問題。could で可能性、just take a rest で「ただ休めばいい」、still learning で「まだ学んでいる途中」。",
+          "options": [
+            "気分は変わらないので、休む必要はない",
+            "すべてを学び終えるまで、休んではいけない",
+            "気分は一瞬で変わりうる。動揺したら休めばいいし、学びの途中でも十分だ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Your mood could change in a moment. If you feel upset, just take a rest. You are still learning, and that is enough.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 1,
+          "explanation_ja": "slowly は「ゆっくりと」。動詞 move を説明するので -ly の形を使う。",
+          "options": [
+            "quick",
+            "slowly",
+            "early"
+          ],
+          "promptJa": "外惑星はゆっくり動くので、多くの人々について語る。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "The outer planets move ___, so they speak about many people.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson4_3",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "might",
+          "ja": "〜かもしれない（may より控えめ）"
+        },
+        {
+          "en": "could",
+          "ja": "〜する可能性がある／〜できた"
+        },
+        {
+          "en": "let",
+          "ja": "〜させる（Let 〜 ＋ 動詞 で「〜に…させよう」）"
+        },
+        {
+          "en": "know",
+          "ja": "知っている（過去形 knew）"
+        },
+        {
+          "en": "each",
+          "ja": "それぞれの"
+        },
+        {
+          "en": "any",
+          "ja": "どんな〜でも"
+        },
+        {
+          "en": "no",
+          "ja": "一つも〜ない"
+        },
+        {
+          "en": "still",
+          "ja": "まだ"
+        },
+        {
+          "en": "just",
+          "ja": "ただ〜だけ"
+        },
+        {
+          "en": "even",
+          "ja": "〜でさえ"
+        },
+        {
+          "en": "enough",
+          "ja": "十分な"
+        },
+        {
+          "en": "everything",
+          "ja": "すべてのこと"
+        },
+        {
+          "en": "everyone",
+          "ja": "みんな"
+        },
+        {
+          "en": "someone",
+          "ja": "誰か"
+        },
+        {
+          "en": "yourself",
+          "ja": "あなた自身"
+        },
+        {
+          "en": "most",
+          "ja": "ほとんどの"
+        },
+        {
+          "en": "slowly",
+          "ja": "ゆっくりと"
+        },
+        {
+          "en": "quick",
+          "ja": "速い／すばやい"
+        },
+        {
+          "en": "past",
+          "ja": "過去"
+        },
+        {
+          "en": "moment",
+          "ja": "瞬間"
+        },
+        {
+          "en": "inner",
+          "ja": "内面の"
+        },
+        {
+          "en": "outer",
+          "ja": "外側の（outer planets＝外惑星）"
+        },
+        {
+          "en": "personal",
+          "ja": "個人の（personal planets＝個人天体）"
+        },
+        {
+          "en": "circle",
+          "ja": "輪／仲間"
+        },
+        {
+          "en": "center",
+          "ja": "中心"
+        },
+        {
+          "en": "energy",
+          "ja": "エネルギー"
+        },
+        {
+          "en": "focus",
+          "ja": "集中する"
+        },
+        {
+          "en": "balance",
+          "ja": "バランス"
+        },
+        {
+          "en": "nature",
+          "ja": "自然"
+        },
+        {
+          "en": "sense",
+          "ja": "感覚"
+        },
+        {
+          "en": "reason",
+          "ja": "理由"
+        },
+        {
+          "en": "mistake",
+          "ja": "間違い"
+        },
+        {
+          "en": "pressure",
+          "ja": "プレッシャー／重圧"
+        },
+        {
+          "en": "effort",
+          "ja": "努力"
+        },
+        {
+          "en": "message",
+          "ja": "メッセージ"
+        },
+        {
+          "en": "notice",
+          "ja": "気づく"
+        },
+        {
+          "en": "accept",
+          "ja": "受け入れる"
+        },
+        {
+          "en": "allow",
+          "ja": "許す／〜させておく"
+        },
+        {
+          "en": "protect",
+          "ja": "守る"
+        },
+        {
+          "en": "share",
+          "ja": "分かち合う"
+        },
+        {
+          "category": "emotion",
+          "en": "shy",
+          "ja": "恥ずかしがりの／気後れした"
+        },
+        {
+          "category": "emotion",
+          "en": "jealous",
+          "ja": "嫉妬した"
+        },
+        {
+          "category": "emotion",
+          "en": "mood",
+          "ja": "気分"
+        },
+        {
+          "category": "emotion",
+          "en": "emotion",
+          "ja": "感情"
+        },
+        {
+          "category": "emotion",
+          "en": "relax",
+          "ja": "くつろぐ／リラックスする"
+        },
+        {
+          "category": "emotion",
+          "en": "upset",
+          "ja": "動揺した"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "You might feel 〜. / Let 〜 ＋ 動詞. / 〜 could 〜.",
+      "sentences": [
+        {
+          "en": "Each planet in your chart has a message.",
+          "ja": "あなたのチャートのそれぞれの天体は、メッセージを持っている。"
+        },
+        {
+          "en": "The Sun, the Moon, Mercury, Venus, and Mars are personal planets.",
+          "ja": "太陽、月、水星、金星、火星は個人天体だ。"
+        },
+        {
+          "en": "They move fast, and they show your inner life.",
+          "ja": "それらは速く動き、あなたの内面の生活を映す。"
+        },
+        {
+          "en": "Uranus, Neptune, and Pluto are outer planets.",
+          "ja": "天王星、海王星、冥王星は外惑星だ。"
+        },
+        {
+          "en": "The outer planets move slowly, so they speak about many people.",
+          "ja": "外惑星はゆっくり動くので、多くの人々について語る。"
+        },
+        {
+          "en": "The Moon is quick, but Pluto is slow.",
+          "ja": "月は速いが、冥王星は遅い。"
+        },
+        {
+          "en": "Most people your age have the same Pluto sign.",
+          "ja": "あなたと同じ年齢のほとんどの人は、同じ冥王星の星座を持つ。"
+        },
+        {
+          "en": "Any planet can teach you something.",
+          "ja": "どの天体も、あなたに何かを教えてくれる。"
+        },
+        {
+          "en": "You might feel shy today.",
+          "ja": "今日は気後れするかもしれない。"
+        },
+        {
+          "en": "You might feel jealous, and that is not a mistake.",
+          "ja": "嫉妬を感じるかもしれないが、それは間違いではない。"
+        },
+        {
+          "en": "Your mood could change in a moment.",
+          "ja": "あなたの気分は一瞬で変わる可能性がある。"
+        },
+        {
+          "en": "Let your emotions come and go.",
+          "ja": "感情が来ては去るのにまかせよう。"
+        },
+        {
+          "en": "Let yourself relax in the evening.",
+          "ja": "夕方は、自分をくつろがせてあげよう。"
+        },
+        {
+          "en": "If you feel upset, just take a rest.",
+          "ja": "動揺したら、ただ休息をとろう。"
+        },
+        {
+          "en": "You do not need to know everything.",
+          "ja": "あなたはすべてを知る必要はない。"
+        },
+        {
+          "en": "Everyone has a hard day, even you.",
+          "ja": "誰にでもつらい日はある。あなたでさえも。"
+        },
+        {
+          "en": "Someone may need your help today.",
+          "ja": "今日は誰かがあなたの助けを必要とするかもしれない。"
+        },
+        {
+          "en": "Your past is part of you, but it is not all of you.",
+          "ja": "あなたの過去はあなたの一部だが、あなたのすべてではない。"
+        },
+        {
+          "en": "You are still learning, and that is enough.",
+          "ja": "あなたはまだ学んでいる途中で、それで十分だ。"
+        },
+        {
+          "en": "There is no reason to be afraid.",
+          "ja": "恐れる理由は何もない。"
+        },
+        {
+          "en": "Focus on your own circle of friends.",
+          "ja": "自分の友達の輪に集中しよう。"
+        },
+        {
+          "en": "Put your heart at the center of your day.",
+          "ja": "あなたの心を一日の中心に置こう。"
+        },
+        {
+          "en": "Your energy is low, so protect your time.",
+          "ja": "エネルギーが低いので、自分の時間を守ろう。"
+        },
+        {
+          "en": "Find a balance of work and rest.",
+          "ja": "仕事と休息のバランスを見つけよう。"
+        },
+        {
+          "en": "Go outside and feel nature.",
+          "ja": "外に出て、自然を感じよう。"
+        },
+        {
+          "en": "Your Mercury may have a good sense of words.",
+          "ja": "あなたの水星は、言葉に対する良い感覚を持っているかもしれない。"
+        },
+        {
+          "en": "Do not put too much pressure on yourself.",
+          "ja": "自分にプレッシャーをかけすぎないで。"
+        },
+        {
+          "en": "Small effort every day can bring big change.",
+          "ja": "毎日の小さな努力が、大きな変化をもたらすことがある。"
+        },
+        {
+          "en": "Notice the small things around you.",
+          "ja": "あなたのまわりの小さなことに気づこう。"
+        },
+        {
+          "en": "Accept your emotions, and allow your heart to rest.",
+          "ja": "自分の感情を受け入れ、心を休ませてあげよう。"
+        },
+        {
+          "en": "Share your joy with someone you love.",
+          "ja": "あなたの喜びを、愛する誰かと分かち合おう。"
+        }
+      ],
+      "theme_ja": "Unit 4 の総仕上げ。速く動く個人天体（太陽〜火星）と、ゆっくり動く外惑星を読み分ける。might／could／Let 〜 を使った Co-Star 風の短いリーディングを読む。",
+      "title_en": "Fast Planets, Slow Planets",
+      "title_ja": "速い星と遅い星 ― 10天体で読むリーディング",
+      "wordsUsed": [
+        "a",
+        "about",
+        "accept",
+        "afraid",
+        "age",
+        "all",
+        "allow",
+        "and",
+        "any",
+        "are",
+        "around",
+        "at",
+        "balance",
+        "be",
+        "big",
+        "bring",
+        "but",
+        "can",
+        "center",
+        "change",
+        "circle",
+        "come",
+        "could",
+        "day",
+        "do",
+        "each",
+        "early",
+        "effort",
+        "emotion",
+        "energy",
+        "enough",
+        "even",
+        "evening",
+        "every",
+        "everyone",
+        "everything",
+        "fast",
+        "feel",
+        "find",
+        "focus",
+        "friend",
+        "go",
+        "good",
+        "hard",
+        "have",
+        "heart",
+        "help",
+        "if",
+        "in",
+        "inner",
+        "is",
+        "it",
+        "jealous",
+        "joy",
+        "just",
+        "know",
+        "learn",
+        "let",
+        "life",
+        "love",
+        "low",
+        "many",
+        "may",
+        "message",
+        "might",
+        "mind",
+        "mistake",
+        "moment",
+        "mood",
+        "most",
+        "move",
+        "much",
+        "nature",
+        "need",
+        "nervous",
+        "no",
+        "not",
+        "notice",
+        "of",
+        "on",
+        "outer",
+        "outside",
+        "own",
+        "part",
+        "past",
+        "people",
+        "personal",
+        "pressure",
+        "protect",
+        "put",
+        "quick",
+        "reason",
+        "relax",
+        "rest",
+        "safe",
+        "same",
+        "sense",
+        "share",
+        "show",
+        "shy",
+        "slow",
+        "slowly",
+        "small",
+        "so",
+        "someone",
+        "something",
+        "speak",
+        "still",
+        "take",
+        "teach",
+        "that",
+        "the",
+        "there",
+        "they",
+        "thing",
+        "time",
+        "to",
+        "today",
+        "too",
+        "upset",
+        "with",
+        "word",
+        "work",
+        "you",
+        "your",
+        "yourself"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-24",
+    "id": "unit4",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 4 の新規一般語は140語（47・47・46語）で、累計440語に到達する（CURRICULUM §4 の配分どおり）。",
+      "うち感情・心の語は20語（7・7・6語）。CURRICULUM §2.2／§4 の「早く薄く撒く」方針に従い、テーマ語彙とは別枠で織り込んだ。該当する newWords の項目には \"category\": \"emotion\" を付けた。",
+      "専門用語レイヤーの追加は残りの天体5つ（Jupiter, Saturn, Uranus, Neptune, Pluto。CURRICULUM §3）。expand／restrict などの概念語は一般語側で導入した（CURRICULUM §4）。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形は原形と同一語として数える（CURRICULUM 2.1）。規則的な比較級（slower など）も同様に扱う。不規則形は初出の語の ja に併記した（have→has、lose→lost、hide→hidden、fall→fell、know→knew）。",
+      "例文・演習で使う一般語は「Unit 1〜3 導入済み300語＋当該レッスンまでの Unit 4 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には必ず promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "chartLine のプレースホルダは現行アプリが対応する {sunSign} / {moonSign} など5天体分のみを使った。{jupiterSign} などの外惑星のプレースホルダは js/core.js の fillChartLine が未対応のため使っていない。",
+      "Lesson 4.3 の chartLine と例文の一部は Co-Star 風の短いリーディングとして構成し、might／could／may で断定を避けている。"
+    ],
+    "order": 4,
+    "status": "draft",
+    "theme_ja": "木星・土星・天王星・海王星・冥王星の5天体を学び、10天体をそろえる。広げる／制限する／変える／夢見る／深める働きを、should・must・make・might などの文型で読む。",
+    "title_en": "The Slow Planets",
+    "title_ja": "残りの天体 ― 木星から冥王星まで",
+    "version": "0.1",
+    "wordCountSummary": {
+      "emotionWordsBreakdown": {
+        "lesson4_1": 7,
+        "lesson4_2": 7,
+        "lesson4_3": 6
+      },
+      "emotionWordsTotal": 20,
+      "lessonsBreakdown": {
+        "lesson4_1": 47,
+        "lesson4_2": 47,
+        "lesson4_3": 46
+      },
+      "newGeneralWordsTotal": 140,
+      "newTermsTotal": 5
+    }
+  }
+}
