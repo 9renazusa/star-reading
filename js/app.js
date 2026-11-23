@@ -51,7 +51,7 @@
     try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
   }
 
-  var unitsData = [];    // data/unit1.json, unit2.json, unit3.json (unit.order 順)
+  var unitsData = [];    // data/unitN.json for every unit file that exists (unit.order 順)
   var todaysData = null; // data/todays-line.json
   var glossaryData = null; // data/glossary.json
   var readingsCore = null; // data/readings-core.json
@@ -175,7 +175,10 @@
       });
     }
 
+    var loadedOrders = {};
+    unitsData.forEach(function (ud) { loadedOrders[ud.unit.order] = true; });
     FUTURE_UNITS.forEach(function (fu) {
+      if (loadedOrders[fu.no]) return; // a real unit file exists: no COMING SOON placeholder
       html += '<div class="unit locked"><div class="unit-head">' +
         '<div class="unit-no">UNIT ' + fu.no + ' — COMING SOON</div>' +
         '<div class="unit-name">' + esc(fu.name) + ' — ' + esc(fu.ja) + '</div>' +
@@ -778,17 +781,23 @@
   chartCache = computeUserChart();
   showView('home');
 
-  ['unit1', 'unit2', 'unit3'].forEach(function (name) {
-    fetch('data/' + name + '.json')
-      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(function (data) {
-        unitsData.push(data);
-        unitsData.sort(function (a, b) { return a.unit.order - b.unit.order; });
-        renderHome(); renderStatus();
-        if (currentView === 'today') renderToday();
-      })
-      .catch(function () { /* that unit stays unavailable; home shows what loaded */ });
-  });
+  // Units are data-driven: try unit1..unit12 and keep whichever files
+  // exist. Adding a new data/unitN.json is enough to publish that unit —
+  // no code change needed; units without a file stay COMING SOON.
+  var UNIT_FILE_MAX = 12;
+  for (var un = 1; un <= UNIT_FILE_MAX; un++) {
+    (function (name) {
+      fetch('data/' + name + '.json')
+        .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+        .then(function (data) {
+          unitsData.push(data);
+          unitsData.sort(function (a, b) { return a.unit.order - b.unit.order; });
+          renderHome(); renderStatus();
+          if (currentView === 'today') renderToday();
+        })
+        .catch(function () { /* that unit stays unavailable; home shows what loaded */ });
+    })('unit' + un);
+  }
 
   fetch('data/todays-line.json')
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
