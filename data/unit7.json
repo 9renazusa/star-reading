@@ -1,0 +1,1964 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "火と地の元素の性質がわかり、「Fire signs tend to be bold.」のような傾向の文が読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にある。あなたの太陽の元素を見つけよう。火、地、風、水のどれだろう。",
+        "note_ja": "アプリでは学習者の実際の太陽星座を当てはめる。元素のプレースホルダは既存の置換仕様にないため、太陽星座から自分で元素を探す問いかけにして、元素を自分のチャートに結びつける入口にする。",
+        "template_en": "Your Sun is in {sunSign}. Find the element of your Sun: fire, earth, air, or water."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "tend to 〜 で「〜する傾向がある」。占いを言い切らずに読むための大切な形。",
+          "options": [
+            "火の星座は、大胆で活動的な傾向がある",
+            "火の星座は、静かで慎重だ",
+            "火の星座は、何もしない傾向がある"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Fire signs tend to be bold and active.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "element は12星座を火・地・風・水の4つに分けたグループ分け。チャート全体の気質の偏りを読む入口になる。",
+          "options": [
+            "元素（エレメント。12星座を火・地・風・水に分けたグループ）",
+            "アスペクト（天体同士が作る角度）",
+            "ハウス（チャートを12に分けた生活の場面）"
+          ],
+          "prompt_ja": "「element」の意味は？",
+          "question_en": "element",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "steady は「着実な」。practical（現実的な）とあわせて、地の星座の性質を表す。",
+          "options": [
+            "steady",
+            "loud",
+            "eager"
+          ],
+          "promptJa": "地の星座は、現実的で着実な傾向がある。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Earth signs tend to be practical and ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "prefer は「〜のほうを好む」。",
+          "options": [
+            "prefer",
+            "burn",
+            "lead"
+          ],
+          "promptJa": "地の星座は、役に立つものを好む。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Earth signs ___ useful things.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Fire signs enjoy adventure.",
+          "explanation_ja": "Fire signs（火の星座）が主語、enjoy（楽しむ）のあとに adventure（冒険）。",
+          "prompt_ja": "語を並べ替えて「火の星座は冒険を楽しむ」という文を作ろう。",
+          "tiles": [
+            "adventure",
+            "Fire",
+            "enjoy",
+            "signs"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。wait before you speak（話す前に待つ）と be careful with it（扱いに気をつける）。怒りを否定せず、扱い方を読む。",
+          "options": [
+            "激しい怒りを感じたら、話す前に待とう。怒りは火のようなものなので、扱いに気をつけよう",
+            "怒りを感じたら、すぐに全部話そう",
+            "怒りは悪いものなので、感じてはいけない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "When you feel furious, wait before you speak. Anger is like fire, so be careful with it.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "whether は「〜かどうか」。whether A or B で「A か B か」。",
+          "options": [
+            "whether",
+            "above",
+            "unlike"
+          ],
+          "promptJa": "休息と行動のどちらが必要か、自分に尋ねよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Ask yourself ___ you need rest or action.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson7_1",
+      "newTerms": [
+        {
+          "en": "element",
+          "ja": "元素（エレメント）",
+          "note_ja": "12星座を火・地・風・水の4つに分けたグループ分け。チャート全体の気質の偏りを読む入口になる。"
+        },
+        {
+          "en": "fire",
+          "ja": "火（の元素）",
+          "note_ja": "牡羊座・獅子座・射手座のグループ。情熱や直感、動き出す力を象徴すると読まれる。"
+        },
+        {
+          "en": "earth",
+          "ja": "地（の元素）",
+          "note_ja": "牡牛座・乙女座・山羊座のグループ。現実感覚や継続、形にする力を象徴すると読まれる。"
+        },
+        {
+          "en": "air",
+          "ja": "風（の元素）",
+          "note_ja": "双子座・天秤座・水瓶座のグループ。思考や言葉、人とのつながりを象徴すると読まれる。"
+        },
+        {
+          "en": "water",
+          "ja": "水（の元素）",
+          "note_ja": "蟹座・蠍座・魚座のグループ。感情や共感、内面の動きを象徴すると読まれる。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "above",
+          "ja": "〜の上に"
+        },
+        {
+          "en": "below",
+          "ja": "〜の下に"
+        },
+        {
+          "en": "unlike",
+          "ja": "〜とは違って"
+        },
+        {
+          "en": "mostly",
+          "ja": "たいてい／主に"
+        },
+        {
+          "en": "rarely",
+          "ja": "めったに〜ない"
+        },
+        {
+          "en": "ahead",
+          "ja": "前方を／先を"
+        },
+        {
+          "en": "forward",
+          "ja": "前へ"
+        },
+        {
+          "en": "finally",
+          "ja": "最後に／ついに"
+        },
+        {
+          "en": "suddenly",
+          "ja": "突然"
+        },
+        {
+          "en": "quickly",
+          "ja": "すばやく"
+        },
+        {
+          "en": "whether",
+          "ja": "〜かどうか"
+        },
+        {
+          "en": "ago",
+          "ja": "〜前に（a year ago で「1年前に」）"
+        },
+        {
+          "en": "tend",
+          "ja": "（tend to 〜 で）〜する傾向がある"
+        },
+        {
+          "en": "enjoy",
+          "ja": "楽しむ"
+        },
+        {
+          "en": "prefer",
+          "ja": "〜のほうを好む"
+        },
+        {
+          "en": "personality",
+          "ja": "性格／人柄"
+        },
+        {
+          "en": "character",
+          "ja": "性格／気質"
+        },
+        {
+          "en": "type",
+          "ja": "タイプ／型"
+        },
+        {
+          "en": "quality",
+          "ja": "性質／資質"
+        },
+        {
+          "en": "bold",
+          "ja": "大胆な"
+        },
+        {
+          "en": "active",
+          "ja": "活動的な"
+        },
+        {
+          "en": "eager",
+          "ja": "熱心な／〜したくてたまらない"
+        },
+        {
+          "en": "direct",
+          "ja": "まっすぐな／率直な"
+        },
+        {
+          "en": "spark",
+          "ja": "火花"
+        },
+        {
+          "en": "flame",
+          "ja": "炎"
+        },
+        {
+          "en": "burn",
+          "ja": "燃える"
+        },
+        {
+          "en": "heat",
+          "ja": "熱"
+        },
+        {
+          "en": "courage",
+          "ja": "勇気"
+        },
+        {
+          "en": "leader",
+          "ja": "リーダー"
+        },
+        {
+          "en": "lead",
+          "ja": "導く（過去形 led）"
+        },
+        {
+          "en": "adventure",
+          "ja": "冒険"
+        },
+        {
+          "en": "generous",
+          "ja": "気前のいい／寛大な"
+        },
+        {
+          "en": "loud",
+          "ja": "声が大きい／うるさい"
+        },
+        {
+          "en": "independent",
+          "ja": "自立した"
+        },
+        {
+          "en": "creative",
+          "ja": "創造的な"
+        },
+        {
+          "en": "practical",
+          "ja": "現実的な／実用的な"
+        },
+        {
+          "en": "steady",
+          "ja": "着実な"
+        },
+        {
+          "en": "stable",
+          "ja": "安定した"
+        },
+        {
+          "en": "solid",
+          "ja": "かたい／しっかりした"
+        },
+        {
+          "en": "ground",
+          "ja": "地面"
+        },
+        {
+          "en": "useful",
+          "ja": "役に立つ"
+        },
+        {
+          "en": "detail",
+          "ja": "細部"
+        },
+        {
+          "en": "responsible",
+          "ja": "責任感のある"
+        },
+        {
+          "en": "restless",
+          "ja": "じっとしていられない"
+        },
+        {
+          "en": "furious",
+          "ja": "激怒した"
+        },
+        {
+          "en": "anger",
+          "ja": "怒り"
+        },
+        {
+          "en": "carefree",
+          "ja": "のびのびした／気楽な"
+        },
+        {
+          "en": "fearless",
+          "ja": "恐れを知らない"
+        },
+        {
+          "en": "secure",
+          "ja": "安心している"
+        },
+        {
+          "en": "content",
+          "ja": "満ち足りた"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "Fire signs tend to be 〜. / Earth signs tend to 〜.",
+      "sentences": [
+        {
+          "en": "Each sign has an element: fire, earth, air, or water.",
+          "ja": "それぞれの星座には元素がある。火、地、風、水のどれかだ。"
+        },
+        {
+          "en": "Aries, Leo, and Sagittarius are fire signs.",
+          "ja": "牡羊座、獅子座、射手座は火の星座だ。"
+        },
+        {
+          "en": "Fire signs tend to be bold and active.",
+          "ja": "火の星座は、大胆で活動的な傾向がある。"
+        },
+        {
+          "en": "A fire sign is like a spark or a flame.",
+          "ja": "火の星座は、火花や炎のようなものだ。"
+        },
+        {
+          "en": "Fire can burn, but its heat also keeps you warm.",
+          "ja": "火は燃えることもあるが、その熱はあなたを暖めてもくれる。"
+        },
+        {
+          "en": "Fire people are often eager to begin.",
+          "ja": "火の人は、よく始めたくてたまらなくなる。"
+        },
+        {
+          "en": "They speak in a direct way.",
+          "ja": "彼らはまっすぐな言い方で話す。"
+        },
+        {
+          "en": "Courage is a fire quality.",
+          "ja": "勇気は火の資質だ。"
+        },
+        {
+          "en": "A leader can lead with a warm heart.",
+          "ja": "リーダーは、温かい心で導くことができる。"
+        },
+        {
+          "en": "Fire signs enjoy adventure.",
+          "ja": "火の星座は冒険を楽しむ。"
+        },
+        {
+          "en": "A generous heart gives without a reason.",
+          "ja": "寛大な心は、理由なしに与える。"
+        },
+        {
+          "en": "Sometimes fire is too loud.",
+          "ja": "ときどき、火は声が大きすぎる。"
+        },
+        {
+          "en": "Fire people like to be independent.",
+          "ja": "火の人は、自立していたいと思う。"
+        },
+        {
+          "en": "Your creative side may need fire.",
+          "ja": "あなたの創造的な面には、火が必要かもしれない。"
+        },
+        {
+          "en": "Taurus, Virgo, and Capricorn are earth signs.",
+          "ja": "牡牛座、乙女座、山羊座は地の星座だ。"
+        },
+        {
+          "en": "Earth signs tend to be practical and steady.",
+          "ja": "地の星座は、現実的で着実な傾向がある。"
+        },
+        {
+          "en": "Earth is solid ground under you.",
+          "ja": "地は、あなたの下にあるしっかりした地面だ。"
+        },
+        {
+          "en": "Earth people want a stable life.",
+          "ja": "地の人は、安定した暮らしを望む。"
+        },
+        {
+          "en": "They prefer useful things.",
+          "ja": "彼らは役に立つものを好む。"
+        },
+        {
+          "en": "An earth sign may notice every small detail.",
+          "ja": "地の星座は、小さな細部にまで気づくかもしれない。"
+        },
+        {
+          "en": "Earth signs are often responsible at work.",
+          "ja": "地の星座は、仕事でよく責任感を見せる。"
+        },
+        {
+          "en": "Your personality has many sides.",
+          "ja": "あなたの性格には、たくさんの面がある。"
+        },
+        {
+          "en": "Your character grows with time.",
+          "ja": "あなたの気質は、時間とともに育つ。"
+        },
+        {
+          "en": "What type of personality do you have?",
+          "ja": "あなたはどんなタイプの性格？"
+        },
+        {
+          "en": "Unlike fire, earth moves slowly.",
+          "ja": "火とは違って、地はゆっくり動く。"
+        },
+        {
+          "en": "Fire looks ahead; earth looks at the ground.",
+          "ja": "火は先を見て、地は地面を見る。"
+        },
+        {
+          "en": "Above you is the sky, and below you is the ground.",
+          "ja": "あなたの上には空があり、下には地面がある。"
+        },
+        {
+          "en": "Fire signs mostly move forward.",
+          "ja": "火の星座は、たいてい前へ進む。"
+        },
+        {
+          "en": "Earth signs rarely change their plans quickly.",
+          "ja": "地の星座は、めったに計画をすばやく変えない。"
+        },
+        {
+          "en": "Suddenly, you may want to start something new.",
+          "ja": "突然、何か新しいことを始めたくなるかもしれない。"
+        },
+        {
+          "en": "Finally, rest and enjoy the result.",
+          "ja": "最後に、休んで結果を楽しもう。"
+        },
+        {
+          "en": "Ask yourself whether you need rest or action.",
+          "ja": "休息と行動のどちらが必要か、自分に尋ねよう。"
+        },
+        {
+          "en": "Remember a plan from a year ago.",
+          "ja": "1年前の計画を思い出してみよう。"
+        },
+        {
+          "en": "Fire signs may feel restless on a quiet day.",
+          "ja": "火の星座は、静かな日にはじっとしていられなくなるかもしれない。"
+        },
+        {
+          "en": "When you feel furious, wait before you speak.",
+          "ja": "激しい怒りを感じたら、話す前に待とう。"
+        },
+        {
+          "en": "Anger is like fire, so be careful with it.",
+          "ja": "怒りは火のようなものなので、扱いに気をつけよう。"
+        },
+        {
+          "en": "On a free day, you may feel carefree.",
+          "ja": "自由な日には、のびのびした気分になるかもしれない。"
+        },
+        {
+          "en": "Fire can make you fearless.",
+          "ja": "火は、あなたを恐れ知らずにすることがある。"
+        },
+        {
+          "en": "Earth can make you feel secure.",
+          "ja": "地は、あなたに安心感を与えることがある。"
+        },
+        {
+          "en": "I am content with a simple day.",
+          "ja": "私はシンプルな一日に満ち足りている。"
+        }
+      ],
+      "theme_ja": "元素（エレメント）と火・地・風・水の4元素を学び、火の星座と地の星座の性格を読む。tend to 〜（〜する傾向がある）で、性格を言い切らずに傾向として読む。",
+      "title_en": "Fire and Earth",
+      "title_ja": "火と地の星座 ― 〜 tend to 〜",
+      "wordsUsed": [
+        "a",
+        "above",
+        "action",
+        "active",
+        "adventure",
+        "ago",
+        "ahead",
+        "also",
+        "am",
+        "and",
+        "anger",
+        "are",
+        "ask",
+        "at",
+        "be",
+        "before",
+        "begin",
+        "below",
+        "bold",
+        "burn",
+        "but",
+        "can",
+        "carefree",
+        "careful",
+        "change",
+        "character",
+        "content",
+        "courage",
+        "creative",
+        "day",
+        "detail",
+        "direct",
+        "do",
+        "each",
+        "eager",
+        "enjoy",
+        "every",
+        "fearless",
+        "feel",
+        "finally",
+        "find",
+        "flame",
+        "forward",
+        "free",
+        "from",
+        "furious",
+        "generous",
+        "give",
+        "ground",
+        "grow",
+        "have",
+        "heart",
+        "heat",
+        "I",
+        "in",
+        "independent",
+        "is",
+        "it",
+        "its",
+        "keep",
+        "lead",
+        "leader",
+        "life",
+        "like",
+        "look",
+        "loud",
+        "make",
+        "many",
+        "may",
+        "mostly",
+        "move",
+        "need",
+        "new",
+        "notice",
+        "of",
+        "often",
+        "on",
+        "or",
+        "people",
+        "personality",
+        "plan",
+        "practical",
+        "prefer",
+        "quality",
+        "quickly",
+        "quiet",
+        "rarely",
+        "reason",
+        "remember",
+        "responsible",
+        "rest",
+        "restless",
+        "result",
+        "secure",
+        "side",
+        "simple",
+        "sky",
+        "slowly",
+        "small",
+        "so",
+        "solid",
+        "something",
+        "sometimes",
+        "spark",
+        "speak",
+        "stable",
+        "start",
+        "steady",
+        "suddenly",
+        "tend",
+        "the",
+        "their",
+        "they",
+        "thing",
+        "time",
+        "to",
+        "too",
+        "type",
+        "under",
+        "unlike",
+        "useful",
+        "wait",
+        "want",
+        "warm",
+        "way",
+        "what",
+        "when",
+        "whether",
+        "with",
+        "without",
+        "work",
+        "year",
+        "you",
+        "your",
+        "yourself"
+      ]
+    },
+    {
+      "canDo_ja": "風と水の元素の性質がわかり、「Water signs feel things deeply.」のような性格の文が読める。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にある。あなたの月の元素は、あなたが物事をどう感じるかを映すかもしれない。",
+        "note_ja": "アプリでは学習者の実際の月星座を当てはめる。感情の天体である月を、元素（特に水と風の違い）から読む入口にする。may で断定を避ける。",
+        "template_en": "Your Moon is in {moonSign}. The element of your Moon may show how you feel things."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "deeply は「深く」。deep（深い）に -ly がついて、動詞 feel を説明する形。",
+          "options": [
+            "水の星座は、物事を深く感じる",
+            "水の星座は、物事を軽く考える",
+            "水の星座は、何も感じない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Water signs feel things deeply.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "air は風の元素。思考や言葉、人とのつながりを象徴すると読まれる。",
+          "options": [
+            "風（の元素。双子座・天秤座・水瓶座のグループ）",
+            "水（の元素。蟹座・蠍座・魚座のグループ）",
+            "地（の元素。牡牛座・乙女座・山羊座のグループ）"
+          ],
+          "prompt_ja": "「air」の意味は？（占星術の用語）",
+          "question_en": "air",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "easily は「たやすく」。easy（簡単な）に -ly がついた形。",
+          "options": [
+            "easily",
+            "deeply",
+            "carefully"
+          ],
+          "promptJa": "風の星座は、たやすく意思を伝え合う。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Air signs communicate ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "intuition は「直感」。水の星座のテーマの一つ。",
+          "options": [
+            "intuition",
+            "memory",
+            "beauty"
+          ],
+          "promptJa": "あなたの直感を信じよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Trust your ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Sit beside a friend and listen gently.",
+          "explanation_ja": "Sit beside a friend（友達のそばに座る）と listen gently（穏やかに耳を傾ける）を and でつなぐ。",
+          "prompt_ja": "語を並べ替えて「友達のそばに座って、穏やかに耳を傾けよう」という文を作ろう。",
+          "tiles": [
+            "and listen",
+            "Sit",
+            "gently",
+            "beside a friend"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。may で言い切らず、It is okay to cry（泣いてもいい）と Tears can heal（涙は癒やすことがある）で結ぶ。",
+          "options": [
+            "今日は古い記憶がよみがえるかもしれない。泣いてもいい。涙は癒やすことがある",
+            "今日は古い記憶を忘れるべきだ",
+            "泣くのは弱いことなので、我慢しよう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Old memories may come back today. It is okay to cry. Tears can heal.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "otherwise は「そうしないと」。",
+          "options": [
+            "otherwise",
+            "except",
+            "beside"
+          ],
+          "promptJa": "今休もう。そうしないと、あとで疲れを感じるかもしれない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Rest now; ___, you may feel tired later.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson7_2",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "beside",
+          "ja": "〜のそばに"
+        },
+        {
+          "en": "except",
+          "ja": "〜を除いて"
+        },
+        {
+          "en": "otherwise",
+          "ja": "そうしないと"
+        },
+        {
+          "en": "recently",
+          "ja": "最近"
+        },
+        {
+          "en": "lately",
+          "ja": "このところ"
+        },
+        {
+          "en": "somebody",
+          "ja": "誰か"
+        },
+        {
+          "en": "everybody",
+          "ja": "みんな"
+        },
+        {
+          "en": "deeply",
+          "ja": "深く"
+        },
+        {
+          "en": "easily",
+          "ja": "たやすく"
+        },
+        {
+          "en": "gently",
+          "ja": "穏やかに／そっと"
+        },
+        {
+          "en": "carefully",
+          "ja": "注意深く"
+        },
+        {
+          "en": "clever",
+          "ja": "賢い／機転のきく"
+        },
+        {
+          "en": "smart",
+          "ja": "頭のいい"
+        },
+        {
+          "en": "logical",
+          "ja": "論理的な"
+        },
+        {
+          "en": "breath",
+          "ja": "息"
+        },
+        {
+          "en": "breathe",
+          "ja": "呼吸する"
+        },
+        {
+          "en": "communicate",
+          "ja": "意思を伝え合う"
+        },
+        {
+          "en": "information",
+          "ja": "情報"
+        },
+        {
+          "en": "beauty",
+          "ja": "美しさ"
+        },
+        {
+          "en": "polite",
+          "ja": "礼儀正しい"
+        },
+        {
+          "en": "original",
+          "ja": "独自の"
+        },
+        {
+          "en": "unique",
+          "ja": "ほかにない／唯一の"
+        },
+        {
+          "en": "cool",
+          "ja": "冷静な／クールな"
+        },
+        {
+          "en": "describe",
+          "ja": "言い表す"
+        },
+        {
+          "en": "appear",
+          "ja": "〜のように見える／現れる"
+        },
+        {
+          "en": "discuss",
+          "ja": "話し合う"
+        },
+        {
+          "en": "view",
+          "ja": "見方／考え"
+        },
+        {
+          "en": "intuition",
+          "ja": "直感"
+        },
+        {
+          "en": "caring",
+          "ja": "思いやりのある"
+        },
+        {
+          "en": "mystery",
+          "ja": "謎"
+        },
+        {
+          "en": "mysterious",
+          "ja": "謎めいた"
+        },
+        {
+          "en": "memory",
+          "ja": "記憶／思い出"
+        },
+        {
+          "en": "tear",
+          "ja": "涙"
+        },
+        {
+          "en": "depth",
+          "ja": "深さ"
+        },
+        {
+          "en": "dive",
+          "ja": "潜る"
+        },
+        {
+          "en": "instinct",
+          "ja": "本能"
+        },
+        {
+          "en": "absorb",
+          "ja": "吸収する"
+        },
+        {
+          "en": "dreamy",
+          "ja": "夢見がちな"
+        },
+        {
+          "en": "cloud",
+          "ja": "雲"
+        },
+        {
+          "en": "fresh",
+          "ja": "新鮮な／さわやかな"
+        },
+        {
+          "en": "imagination",
+          "ja": "想像力"
+        },
+        {
+          "en": "artist",
+          "ja": "芸術家"
+        },
+        {
+          "en": "poem",
+          "ja": "詩"
+        },
+        {
+          "en": "fond",
+          "ja": "（be fond of 〜 で）〜が好きだ"
+        },
+        {
+          "en": "sentimental",
+          "ja": "感傷的な"
+        },
+        {
+          "en": "sorrow",
+          "ja": "悲しみ"
+        },
+        {
+          "en": "gloomy",
+          "ja": "気分が沈んだ／どんよりした"
+        },
+        {
+          "en": "compassion",
+          "ja": "思いやり／共感"
+        },
+        {
+          "en": "sympathy",
+          "ja": "同情／寄り添う気持ち"
+        },
+        {
+          "en": "ashamed",
+          "ja": "恥じている"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "Air signs are good at 〜. / Water signs feel 〜 deeply.",
+      "sentences": [
+        {
+          "en": "Gemini, Libra, and Aquarius are air signs.",
+          "ja": "双子座、天秤座、水瓶座は風の星座だ。"
+        },
+        {
+          "en": "Air signs are good at ideas and words.",
+          "ja": "風の星座は、考えと言葉が得意だ。"
+        },
+        {
+          "en": "Air is like a breath of fresh wind.",
+          "ja": "風は、さわやかな風のひと吹きのようなものだ。"
+        },
+        {
+          "en": "Breathe slowly, and rest your mind.",
+          "ja": "ゆっくり呼吸して、心を休めよう。"
+        },
+        {
+          "en": "Air people are often clever and smart.",
+          "ja": "風の人は、よく賢くて頭がいい。"
+        },
+        {
+          "en": "They like logical answers.",
+          "ja": "彼らは論理的な答えを好む。"
+        },
+        {
+          "en": "Air signs communicate easily.",
+          "ja": "風の星座は、たやすく意思を伝え合う。"
+        },
+        {
+          "en": "They enjoy new information and new people.",
+          "ja": "彼らは新しい情報と新しい人を楽しむ。"
+        },
+        {
+          "en": "Libra loves beauty and polite words.",
+          "ja": "天秤座は、美しさと礼儀正しい言葉を愛する。"
+        },
+        {
+          "en": "Aquarius may have original and unique ideas.",
+          "ja": "水瓶座は、独自でほかにない考えを持っているかもしれない。"
+        },
+        {
+          "en": "Air signs can look cool, but they care.",
+          "ja": "風の星座はクールに見えることもあるが、心を配っている。"
+        },
+        {
+          "en": "Describe your view in your own words.",
+          "ja": "自分の見方を、自分の言葉で言い表そう。"
+        },
+        {
+          "en": "Let us discuss it later.",
+          "ja": "それはあとで話し合おう。"
+        },
+        {
+          "en": "Things may be different from how they appear.",
+          "ja": "物事は、見えている姿とは違うかもしれない。"
+        },
+        {
+          "en": "Cancer, Scorpio, and Pisces are water signs.",
+          "ja": "蟹座、蠍座、魚座は水の星座だ。"
+        },
+        {
+          "en": "Water signs feel things deeply.",
+          "ja": "水の星座は、物事を深く感じる。"
+        },
+        {
+          "en": "Trust your intuition.",
+          "ja": "あなたの直感を信じよう。"
+        },
+        {
+          "en": "Your instinct may know the way.",
+          "ja": "あなたの本能は、道を知っているかもしれない。"
+        },
+        {
+          "en": "Water signs are caring and kind.",
+          "ja": "水の星座は、思いやりがあって優しい。"
+        },
+        {
+          "en": "Scorpio likes mystery and deep secrets.",
+          "ja": "蠍座は、謎と深い秘密を好む。"
+        },
+        {
+          "en": "Some people find water signs mysterious.",
+          "ja": "水の星座を謎めいていると感じる人もいる。"
+        },
+        {
+          "en": "Old memories may come back today.",
+          "ja": "今日は古い記憶がよみがえるかもしれない。"
+        },
+        {
+          "en": "It is okay to cry. Tears can heal.",
+          "ja": "泣いてもいい。涙は癒やすことがある。"
+        },
+        {
+          "en": "A water sign can dive deep.",
+          "ja": "水の星座は、深く潜ることができる。"
+        },
+        {
+          "en": "Look at the depth of your heart.",
+          "ja": "自分の心の深さを見つめよう。"
+        },
+        {
+          "en": "Water can absorb the mood of a room.",
+          "ja": "水は、部屋の雰囲気を吸収することがある。"
+        },
+        {
+          "en": "Pisces can be dreamy, like a cloud.",
+          "ja": "魚座は、雲のように夢見がちなことがある。"
+        },
+        {
+          "en": "Your imagination can make art.",
+          "ja": "あなたの想像力は、芸術を生むことがある。"
+        },
+        {
+          "en": "An artist may write a poem about the sea.",
+          "ja": "芸術家は、海についての詩を書くかもしれない。"
+        },
+        {
+          "en": "Sit beside a friend, and listen gently.",
+          "ja": "友達のそばに座って、穏やかに耳を傾けよう。"
+        },
+        {
+          "en": "Everybody needs somebody.",
+          "ja": "みんな、誰かを必要としている。"
+        },
+        {
+          "en": "I like all seasons except winter.",
+          "ja": "私は冬を除いて、すべての季節が好きだ。"
+        },
+        {
+          "en": "Rest now; otherwise, you may feel tired later.",
+          "ja": "今休もう。そうしないと、あとで疲れを感じるかもしれない。"
+        },
+        {
+          "en": "Recently, you may feel more sensitive.",
+          "ja": "最近、あなたは前より敏感になっているかもしれない。"
+        },
+        {
+          "en": "Lately, I sleep a lot.",
+          "ja": "このところ、私はよく眠る。"
+        },
+        {
+          "en": "Choose your words carefully.",
+          "ja": "言葉を注意深く選ぼう。"
+        },
+        {
+          "en": "I am fond of my old room.",
+          "ja": "私は自分の古い部屋が好きだ。"
+        },
+        {
+          "en": "Old songs make me sentimental.",
+          "ja": "古い歌は、私を感傷的にする。"
+        },
+        {
+          "en": "Sorrow can be part of love.",
+          "ja": "悲しみは、愛の一部であることもある。"
+        },
+        {
+          "en": "On a gloomy day, stay home and rest.",
+          "ja": "気分が沈んだ日は、家にいて休もう。"
+        },
+        {
+          "en": "Water signs often feel compassion for others.",
+          "ja": "水の星座は、よく人に思いやりを感じる。"
+        },
+        {
+          "en": "Show sympathy to a sad friend.",
+          "ja": "悲しんでいる友達に寄り添おう。"
+        },
+        {
+          "en": "You do not need to feel ashamed of your tears.",
+          "ja": "自分の涙を恥じる必要はない。"
+        }
+      ],
+      "theme_ja": "風の星座と水の星座の性格を読む。be good at 〜（〜が得意だ）と、deeply・easily などの -ly の言葉で、考える力と感じる力を言い表す。",
+      "title_en": "Air and Water",
+      "title_ja": "風と水の星座 ― 〜 are good at 〜",
+      "wordsUsed": [
+        "a",
+        "about",
+        "absorb",
+        "all",
+        "am",
+        "and",
+        "answer",
+        "appear",
+        "are",
+        "art",
+        "artist",
+        "ashamed",
+        "at",
+        "back",
+        "be",
+        "beauty",
+        "beside",
+        "breath",
+        "breathe",
+        "but",
+        "can",
+        "care",
+        "carefully",
+        "caring",
+        "choose",
+        "clever",
+        "cloud",
+        "come",
+        "communicate",
+        "compassion",
+        "cool",
+        "cry",
+        "day",
+        "deep",
+        "deeply",
+        "depth",
+        "describe",
+        "different",
+        "discuss",
+        "dive",
+        "do",
+        "dreamy",
+        "easily",
+        "enjoy",
+        "everybody",
+        "except",
+        "feel",
+        "find",
+        "fond",
+        "for",
+        "fresh",
+        "friend",
+        "from",
+        "gently",
+        "gloomy",
+        "good",
+        "have",
+        "heal",
+        "heart",
+        "home",
+        "how",
+        "I",
+        "idea",
+        "imagination",
+        "in",
+        "information",
+        "instinct",
+        "intuition",
+        "is",
+        "it",
+        "kind",
+        "know",
+        "lately",
+        "later",
+        "let",
+        "like",
+        "listen",
+        "logical",
+        "look",
+        "lot",
+        "love",
+        "make",
+        "may",
+        "me",
+        "memory",
+        "mind",
+        "mood",
+        "more",
+        "my",
+        "mysterious",
+        "mystery",
+        "need",
+        "new",
+        "not",
+        "now",
+        "of",
+        "often",
+        "okay",
+        "old",
+        "on",
+        "original",
+        "other",
+        "otherwise",
+        "own",
+        "part",
+        "people",
+        "poem",
+        "polite",
+        "recently",
+        "rest",
+        "room",
+        "sad",
+        "sea",
+        "season",
+        "secret",
+        "sensitive",
+        "sentimental",
+        "show",
+        "sit",
+        "sleep",
+        "slowly",
+        "smart",
+        "some",
+        "somebody",
+        "song",
+        "sorrow",
+        "stay",
+        "sympathy",
+        "tear",
+        "the",
+        "they",
+        "thing",
+        "tired",
+        "to",
+        "today",
+        "trust",
+        "unique",
+        "us",
+        "view",
+        "way",
+        "wind",
+        "winter",
+        "word",
+        "write",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "3つの区分の意味がわかり、「You might be more flexible than you think.」のような Co-Star 風のリーディング文が辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの水星は{mercurySignJa}にある。あなたは自分で思うより柔軟かもしれない。今日は自分のペースを見つけよう。",
+        "note_ja": "Unit 7 の到達点。アプリでは学習者の実際の水星星座を当てはめ、Co-Star 風の短いリーディングとして提示する。思考の天体である水星を、区分（始める・続ける・変える）の目で読み、might で言い切らず、自分のペースという無理のない活かし方で結ぶ。",
+        "template_en": "Your Mercury is in {mercurySign}. You might be more flexible than you think. Find your own pace today."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "more 〜 than you think で「自分で思うより〜」。might で言い切らずに、自分の別の面を読む。",
+          "options": [
+            "あなたは自分で思うより柔軟かもしれない",
+            "あなたは自分で思うほど柔軟ではない",
+            "あなたはもっと柔軟になるべきだ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You might be more flexible than you think.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "mutable は双子座・乙女座・射手座・魚座のグループ。季節の終わりに来る星座で、変化に合わせる力を象徴すると読まれる。",
+          "options": [
+            "柔軟宮（ミュータブル。変化に合わせる適応力を象徴する区分）",
+            "活動宮（カーディナル。物事を始める動きを象徴する区分）",
+            "固定宮（フィクスト。続けること、維持する力を象徴する区分）"
+          ],
+          "prompt_ja": "「mutable」の意味は？",
+          "question_en": "mutable",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "finish は「終える」。continue（続ける）とあわせて、固定宮の性質を表す。",
+          "options": [
+            "finish",
+            "shift",
+            "wander"
+          ],
+          "promptJa": "固定宮の星座は、始めたことを続け、終わらせる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Fixed signs continue and ___ what they start.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "rush は「急ぐ」。do not need to 〜 で「〜する必要はない」。",
+          "options": [
+            "rush",
+            "adapt",
+            "remain"
+          ],
+          "promptJa": "あなたは急ぐ必要はない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You do not need to ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Find your own rhythm and pace.",
+          "explanation_ja": "Find（見つけよう）のあとに your own rhythm（自分自身のリズム）、and pace（とペース）。",
+          "prompt_ja": "語を並べ替えて「自分自身のリズムとペースを見つけよう」という文を作ろう。",
+          "tiles": [
+            "and pace",
+            "Find",
+            "rhythm",
+            "your own"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。Do not hurry（急がないで）と a delay can be a gift（遅れが贈り物になることもある）。無理をさせない読み方。",
+          "options": [
+            "急がなくていい。遅れが贈り物になることもある。自分のリズムとペースを見つけよう",
+            "遅れは失敗なので、急いで取り戻そう",
+            "人のペースに合わせて、急いで進もう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Do not hurry; a delay can be a gift. Find your own rhythm and pace.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "start は「始める」。活動宮の星座（牡羊座・蟹座・天秤座・山羊座）は、それぞれ季節の始まりにある。",
+          "options": [
+            "start",
+            "finish",
+            "delay"
+          ],
+          "promptJa": "活動宮の星座は、季節を始める。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Cardinal signs ___ the seasons.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson7_3",
+      "newTerms": [
+        {
+          "en": "cardinal",
+          "ja": "活動宮（カーディナル）",
+          "note_ja": "牡羊座・蟹座・天秤座・山羊座のグループ。物事を始める動きを象徴すると読まれる区分。"
+        },
+        {
+          "en": "fixed",
+          "ja": "固定宮（フィクスト）",
+          "note_ja": "牡牛座・獅子座・蠍座・水瓶座のグループ。続けること、維持する力を象徴すると読まれる区分。"
+        },
+        {
+          "en": "mutable",
+          "ja": "柔軟宮（ミュータブル）",
+          "note_ja": "双子座・乙女座・射手座・魚座のグループ。変化に合わせる適応力を象徴すると読まれる区分。"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "least",
+          "ja": "（at least で）少なくとも"
+        },
+        {
+          "en": "mainly",
+          "ja": "主に"
+        },
+        {
+          "en": "fully",
+          "ja": "十分に／すっかり"
+        },
+        {
+          "en": "truly",
+          "ja": "本当に"
+        },
+        {
+          "en": "anymore",
+          "ja": "（否定文で）もう〜ない"
+        },
+        {
+          "en": "forever",
+          "ja": "永遠に"
+        },
+        {
+          "en": "besides",
+          "ja": "それに"
+        },
+        {
+          "en": "therefore",
+          "ja": "だから"
+        },
+        {
+          "en": "neither",
+          "ja": "（neither A nor B で）A でも B でもない"
+        },
+        {
+          "en": "nor",
+          "ja": "（neither A nor B で）〜もない"
+        },
+        {
+          "en": "upon",
+          "ja": "〜の上に（once upon a time で「昔々」）"
+        },
+        {
+          "en": "throughout",
+          "ja": "〜のあいだずっと"
+        },
+        {
+          "en": "firm",
+          "ja": "しっかりした／揺るがない"
+        },
+        {
+          "en": "continue",
+          "ja": "続ける"
+        },
+        {
+          "en": "finish",
+          "ja": "終える"
+        },
+        {
+          "en": "complete",
+          "ja": "やり遂げる"
+        },
+        {
+          "en": "remain",
+          "ja": "〜のままである／残る"
+        },
+        {
+          "en": "determined",
+          "ja": "意志の強い"
+        },
+        {
+          "en": "adapt",
+          "ja": "適応する"
+        },
+        {
+          "en": "flexible",
+          "ja": "柔軟な"
+        },
+        {
+          "en": "adjust",
+          "ja": "調整する"
+        },
+        {
+          "en": "shift",
+          "ja": "移る／切り替える"
+        },
+        {
+          "en": "various",
+          "ja": "さまざまな"
+        },
+        {
+          "en": "variety",
+          "ja": "多様さ"
+        },
+        {
+          "en": "wander",
+          "ja": "さまよう／ぶらぶら歩く"
+        },
+        {
+          "en": "explore",
+          "ja": "探検する／探る"
+        },
+        {
+          "en": "tendency",
+          "ja": "傾向"
+        },
+        {
+          "en": "behavior",
+          "ja": "ふるまい"
+        },
+        {
+          "en": "attitude",
+          "ja": "態度／姿勢"
+        },
+        {
+          "en": "approach",
+          "ja": "やり方／取り組み方"
+        },
+        {
+          "en": "method",
+          "ja": "方法"
+        },
+        {
+          "en": "project",
+          "ja": "プロジェクト／計画"
+        },
+        {
+          "en": "structure",
+          "ja": "構造／枠組み"
+        },
+        {
+          "en": "process",
+          "ja": "過程"
+        },
+        {
+          "en": "stage",
+          "ja": "段階"
+        },
+        {
+          "en": "cycle",
+          "ja": "周期／サイクル"
+        },
+        {
+          "en": "rhythm",
+          "ja": "リズム"
+        },
+        {
+          "en": "pace",
+          "ja": "ペース"
+        },
+        {
+          "en": "speed",
+          "ja": "速さ"
+        },
+        {
+          "en": "rush",
+          "ja": "急ぐ／あわてる"
+        },
+        {
+          "en": "hurry",
+          "ja": "急ぐ"
+        },
+        {
+          "en": "delay",
+          "ja": "遅れ"
+        },
+        {
+          "en": "patience",
+          "ja": "忍耐／辛抱"
+        },
+        {
+          "en": "pause",
+          "ja": "ひと休み／間"
+        },
+        {
+          "en": "stubborn",
+          "ja": "頑固な"
+        },
+        {
+          "en": "helpless",
+          "ja": "無力な／どうしようもない"
+        },
+        {
+          "en": "envy",
+          "ja": "うらやましさ"
+        },
+        {
+          "en": "joyful",
+          "ja": "喜びに満ちた"
+        },
+        {
+          "en": "cozy",
+          "ja": "くつろげる／居心地のいい"
+        },
+        {
+          "en": "kindness",
+          "ja": "優しさ"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "You might be more 〜 than you think. / Cardinal signs start 〜.",
+      "sentences": [
+        {
+          "en": "Each sign is also cardinal, fixed, or mutable.",
+          "ja": "それぞれの星座は、活動宮・固定宮・柔軟宮のどれかでもある。"
+        },
+        {
+          "en": "Cardinal signs start the seasons.",
+          "ja": "活動宮の星座は、季節を始める。"
+        },
+        {
+          "en": "Aries, Cancer, Libra, and Capricorn are cardinal signs.",
+          "ja": "牡羊座、蟹座、天秤座、山羊座は活動宮の星座だ。"
+        },
+        {
+          "en": "Cardinal signs like to begin a new project.",
+          "ja": "活動宮の星座は、新しいプロジェクトを始めるのを好む。"
+        },
+        {
+          "en": "Fixed signs are in the middle of the seasons.",
+          "ja": "固定宮の星座は、季節の真ん中にある。"
+        },
+        {
+          "en": "Taurus, Leo, Scorpio, and Aquarius are fixed signs.",
+          "ja": "牡牛座、獅子座、蠍座、水瓶座は固定宮の星座だ。"
+        },
+        {
+          "en": "Fixed signs continue and finish what they start.",
+          "ja": "固定宮の星座は、始めたことを続け、終わらせる。"
+        },
+        {
+          "en": "They are firm and determined.",
+          "ja": "彼らはしっかりしていて、意志が強い。"
+        },
+        {
+          "en": "They want to complete the whole process.",
+          "ja": "彼らは過程の全体をやり遂げたいと思う。"
+        },
+        {
+          "en": "Some things remain the same for a long time.",
+          "ja": "長いあいだ同じままのものもある。"
+        },
+        {
+          "en": "Mutable signs come at the end of the seasons.",
+          "ja": "柔軟宮の星座は、季節の終わりに来る。"
+        },
+        {
+          "en": "Gemini, Virgo, Sagittarius, and Pisces are mutable signs.",
+          "ja": "双子座、乙女座、射手座、魚座は柔軟宮の星座だ。"
+        },
+        {
+          "en": "Mutable signs adapt to change.",
+          "ja": "柔軟宮の星座は、変化に適応する。"
+        },
+        {
+          "en": "They are flexible, and they can adjust their plans.",
+          "ja": "彼らは柔軟で、計画を調整できる。"
+        },
+        {
+          "en": "They may shift between various ideas.",
+          "ja": "彼らはさまざまな考えのあいだを移るかもしれない。"
+        },
+        {
+          "en": "Mutable signs enjoy variety.",
+          "ja": "柔軟宮の星座は、多様さを楽しむ。"
+        },
+        {
+          "en": "They like to wander and explore.",
+          "ja": "彼らはぶらぶら歩き、探検するのが好きだ。"
+        },
+        {
+          "en": "Every sign has a tendency, not a rule.",
+          "ja": "どの星座にも傾向があるが、それはルールではない。"
+        },
+        {
+          "en": "Your behavior can change with your mood.",
+          "ja": "あなたのふるまいは、気分によって変わることがある。"
+        },
+        {
+          "en": "A good attitude can help you.",
+          "ja": "良い姿勢は、あなたを助けることがある。"
+        },
+        {
+          "en": "Try a new approach or a new method.",
+          "ja": "新しいやり方や新しい方法を試してみよう。"
+        },
+        {
+          "en": "A structure can protect your time.",
+          "ja": "枠組みは、あなたの時間を守ることがある。"
+        },
+        {
+          "en": "Life has stages, like seasons.",
+          "ja": "人生には、季節のように段階がある。"
+        },
+        {
+          "en": "The Moon has a cycle of about a month.",
+          "ja": "月には、約1か月の周期がある。"
+        },
+        {
+          "en": "Find your own rhythm and pace.",
+          "ja": "自分自身のリズムとペースを見つけよう。"
+        },
+        {
+          "en": "Speed is not everything.",
+          "ja": "速さがすべてではない。"
+        },
+        {
+          "en": "You do not need to rush.",
+          "ja": "あなたは急ぐ必要はない。"
+        },
+        {
+          "en": "Do not hurry; a delay can be a gift.",
+          "ja": "急がないで。遅れが贈り物になることもある。"
+        },
+        {
+          "en": "Patience is a fixed quality.",
+          "ja": "忍耐は固定宮の資質だ。"
+        },
+        {
+          "en": "Take a pause, and breathe.",
+          "ja": "ひと休みして、呼吸しよう。"
+        },
+        {
+          "en": "Rest for at least an hour.",
+          "ja": "少なくとも1時間は休もう。"
+        },
+        {
+          "en": "It is mainly about balance.",
+          "ja": "それは主にバランスの問題だ。"
+        },
+        {
+          "en": "Rest fully today.",
+          "ja": "今日は十分に休もう。"
+        },
+        {
+          "en": "You are truly enough.",
+          "ja": "あなたは本当に十分だ。"
+        },
+        {
+          "en": "You do not need to worry anymore.",
+          "ja": "もう心配しなくていい。"
+        },
+        {
+          "en": "Nothing stays the same forever.",
+          "ja": "永遠に同じままのものはない。"
+        },
+        {
+          "en": "Besides, it is okay to change your mind.",
+          "ja": "それに、考えを変えてもいい。"
+        },
+        {
+          "en": "You are tired; therefore, rest.",
+          "ja": "あなたは疲れている。だから、休もう。"
+        },
+        {
+          "en": "You are neither too fast nor too slow.",
+          "ja": "あなたは速すぎも遅すぎもしない。"
+        },
+        {
+          "en": "Once upon a time, people read the stars.",
+          "ja": "昔々、人々は星を読んだ。"
+        },
+        {
+          "en": "Throughout the year, the Sun moves through every sign.",
+          "ja": "1年のあいだずっと、太陽はすべての星座を通っていく。"
+        },
+        {
+          "en": "You might be more flexible than you think.",
+          "ja": "あなたは自分で思うより柔軟かもしれない。"
+        },
+        {
+          "en": "Fixed signs can be stubborn.",
+          "ja": "固定宮の星座は、頑固なことがある。"
+        },
+        {
+          "en": "When you feel helpless, ask for help.",
+          "ja": "どうしようもないと感じたら、助けを求めよう。"
+        },
+        {
+          "en": "Envy can show you what you want.",
+          "ja": "うらやましさは、あなたが欲しいものを教えてくれることがある。"
+        },
+        {
+          "en": "A joyful day may come soon.",
+          "ja": "喜びに満ちた日が、もうすぐ来るかもしれない。"
+        },
+        {
+          "en": "A cozy room can make you calm.",
+          "ja": "居心地のいい部屋は、あなたを落ち着かせることがある。"
+        },
+        {
+          "en": "Small kindness can change a day.",
+          "ja": "小さな優しさが、一日を変えることがある。"
+        }
+      ],
+      "theme_ja": "Unit 7 の総仕上げ。活動宮・固定宮・柔軟宮の区分を、季節の始まり・真ん中・終わりと重ねて学ぶ。more 〜 than you think（自分で思うより〜）を使った Co-Star 風の短いリーディングを読む。",
+      "title_en": "Start, Keep, and Change",
+      "title_ja": "始める・続ける・変える ― You might be more 〜 than you think",
+      "wordsUsed": [
+        "a",
+        "about",
+        "adapt",
+        "adjust",
+        "also",
+        "and",
+        "anymore",
+        "approach",
+        "are",
+        "ask",
+        "at",
+        "attitude",
+        "balance",
+        "be",
+        "begin",
+        "behavior",
+        "besides",
+        "between",
+        "breathe",
+        "calm",
+        "can",
+        "change",
+        "come",
+        "complete",
+        "continue",
+        "cozy",
+        "cycle",
+        "day",
+        "delay",
+        "determined",
+        "do",
+        "each",
+        "end",
+        "enjoy",
+        "enough",
+        "envy",
+        "every",
+        "everything",
+        "explore",
+        "fast",
+        "feel",
+        "find",
+        "finish",
+        "firm",
+        "flexible",
+        "for",
+        "forever",
+        "fully",
+        "gift",
+        "good",
+        "have",
+        "help",
+        "helpless",
+        "hour",
+        "hurry",
+        "idea",
+        "in",
+        "is",
+        "it",
+        "joyful",
+        "kindness",
+        "least",
+        "life",
+        "like",
+        "long",
+        "mainly",
+        "make",
+        "may",
+        "method",
+        "middle",
+        "might",
+        "mind",
+        "month",
+        "mood",
+        "more",
+        "move",
+        "need",
+        "neither",
+        "new",
+        "nor",
+        "not",
+        "nothing",
+        "of",
+        "okay",
+        "once",
+        "or",
+        "own",
+        "pace",
+        "patience",
+        "pause",
+        "people",
+        "plan",
+        "process",
+        "project",
+        "protect",
+        "quality",
+        "read",
+        "remain",
+        "rest",
+        "rhythm",
+        "room",
+        "rule",
+        "rush",
+        "same",
+        "season",
+        "shift",
+        "show",
+        "slow",
+        "small",
+        "some",
+        "soon",
+        "speed",
+        "stage",
+        "star",
+        "start",
+        "stay",
+        "structure",
+        "stubborn",
+        "take",
+        "tendency",
+        "than",
+        "the",
+        "their",
+        "therefore",
+        "they",
+        "thing",
+        "think",
+        "through",
+        "throughout",
+        "time",
+        "tired",
+        "to",
+        "today",
+        "too",
+        "truly",
+        "try",
+        "upon",
+        "variety",
+        "various",
+        "wander",
+        "want",
+        "what",
+        "when",
+        "whole",
+        "with",
+        "worry",
+        "year",
+        "you",
+        "your"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-23",
+    "id": "unit7",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 7 の新規一般語は150語（50語×3レッスン）で、累計890語に到達する（CURRICULUM §4 の配分どおり）。",
+      "うち感情・心の語は20語（7・7・6語）。CURRICULUM §2.2／§4 の「早く薄く撒く」方針に従い、テーマ語彙とは別枠で織り込んだ。7.1：restless, furious, anger, carefree, fearless, secure, content／7.2：fond, sentimental, sorrow, gloomy, compassion, sympathy, ashamed／7.3：stubborn, helpless, envy, joyful, cozy, kindness。",
+      "専門用語レイヤーの追加は、元素4つ（fire, earth, air, water）と区分3つ（cardinal, fixed, mutable）。あわせて、元素の総称 element を導入した（CURRICULUM §3「その他：element（元素の総称）該当ユニットで随時」）。計8語を 5・0・3語に分けた（7.1 で元素の総称と4元素をまとめて導入し、7.2 では新規の専門用語なし）。表記は glossary.json に合わせた。",
+      "fire／earth／air／water は専門用語として扱い、一般語としては数えない。例文でも「火の元素」「地の元素」などの意味でのみ使っている。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形・所有格の 's は原形と同一語として数える（CURRICULUM 2.1）。不規則形は初出の語の ja に併記した（lead→led）。",
+      "例文・演習で使う一般語は「Unit 1〜6 導入済み740語＋当該レッスンまでの Unit 7 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "chartLine は既存の星座プレースホルダの範囲で構成した。元素・区分のプレースホルダは置換仕様にないため、星座から学習者が自分で元素を探す形にしている。",
+      "Lesson 7.3 の chartLine と例文の一部は Co-Star 風の短いリーディングとして構成し、tend to／might／may で性格を言い切らず、傾向として読む形にしている。"
+    ],
+    "order": 7,
+    "status": "draft",
+    "theme_ja": "12星座を火・地・風・水の元素と、活動宮・固定宮・柔軟宮の区分で分けて学ぶ。性格を表す言葉を、tend to 〜 などの「傾向」の言い方で読む。",
+    "title_en": "Elements and Modes",
+    "title_ja": "元素と区分 ― 性格を言い表す",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson7_1": 50,
+        "lesson7_2": 50,
+        "lesson7_3": 50
+      },
+      "newGeneralWordsTotal": 150,
+      "newTermsTotal": 8
+    }
+  }
+}
