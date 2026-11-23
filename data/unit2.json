@@ -1,0 +1,1279 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "牡羊座・牡牛座・双子座・蟹座の性質が英語で読め、自分の太陽星座と月星座の一文が理解できる。",
+      "chartLine": {
+        "ja": "私の太陽は{sunSignJa}にあり、私の月は{moonSignJa}にある。太陽は昼に来て、月は夜に来る。",
+        "note_ja": "アプリでは学習者の実際の太陽星座・月星座を当てはめる。「〜座にある（be in）」の言い方は Unit 3 で文型として正式に学ぶが、自分のチャートの一文では先取りして読む。",
+        "template_en": "My Sun is in {sunSign}, and my Moon is in {moonSign}. The Sun comes in the day, and the Moon comes in the night."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "hear は「聞く」。quiet night は「静かな夜」。",
+          "options": [
+            "私は静かな夜の音を聞く",
+            "私は静かな夜に本を読む",
+            "私は夜に穏やかな気持ちになる"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "I hear the quiet night.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "sweet は「甘い」。牡牛座の食べ物のイメージ。",
+          "options": [
+            "甘い",
+            "硬い",
+            "冷たい"
+          ],
+          "prompt_ja": "「sweet」の意味は？",
+          "question_en": "sweet",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "give 〜 to … で「〜を…に渡す／あげる」。",
+          "options": [
+            "give",
+            "eat",
+            "come"
+          ],
+          "promptJa": "私は友達に心を渡す。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ my heart to my friends.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "small は「小さい」。warm（暖かい）と並ぶ家の描写。",
+          "options": [
+            "small",
+            "hard",
+            "brave"
+          ],
+          "promptJa": "私の家は小さくて暖かい。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "My home is ___ and warm.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "more は「もっと」。want の後ろで量の希望を言う。",
+          "options": [
+            "more",
+            "two",
+            "very"
+          ],
+          "promptJa": "私はもっと音楽がほしい。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I want ___ music.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "We are young and kind.",
+          "explanation_ja": "We の be動詞は are。",
+          "prompt_ja": "語を並べ替えて「私たちは若くて優しい」という文を作ろう。",
+          "tiles": [
+            "young",
+            "We",
+            "are",
+            "and kind"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answer_en": "I see two friends and smile.",
+          "explanation_ja": "see は「見る」、smile は「微笑む」。",
+          "prompt_ja": "語を並べ替えて「私は2人の友達を見て微笑む」という文を作ろう。",
+          "tiles": [
+            "two friends",
+            "I",
+            "and smile",
+            "see"
+          ],
+          "type": "reorder"
+        }
+      ],
+      "id": "lesson2_1",
+      "newTerms": [
+        {
+          "en": "sign",
+          "ja": "星座（サイン）",
+          "note_ja": "天体の位置を表す12の区画。『〜座』のこと"
+        },
+        {
+          "en": "Aries",
+          "ja": "牡羊座",
+          "note_ja": "12星座の最初。始める力と速さの象徴"
+        },
+        {
+          "en": "Taurus",
+          "ja": "牡牛座",
+          "note_ja": "五感と体の象徴。ゆっくりと着実"
+        },
+        {
+          "en": "Gemini",
+          "ja": "双子座",
+          "note_ja": "言葉と好奇心の象徴"
+        },
+        {
+          "en": "Cancer",
+          "ja": "蟹座",
+          "note_ja": "家と家族、心の象徴"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "people",
+          "ja": "人々"
+        },
+        {
+          "en": "home",
+          "ja": "家"
+        },
+        {
+          "en": "family",
+          "ja": "家族"
+        },
+        {
+          "en": "mother",
+          "ja": "母"
+        },
+        {
+          "en": "father",
+          "ja": "父"
+        },
+        {
+          "en": "heart",
+          "ja": "心"
+        },
+        {
+          "en": "kind",
+          "ja": "優しい"
+        },
+        {
+          "en": "brave",
+          "ja": "勇敢な"
+        },
+        {
+          "en": "new",
+          "ja": "新しい"
+        },
+        {
+          "en": "good",
+          "ja": "良い"
+        },
+        {
+          "en": "big",
+          "ja": "大きい"
+        },
+        {
+          "en": "small",
+          "ja": "小さい"
+        },
+        {
+          "en": "hot",
+          "ja": "熱い／暑い"
+        },
+        {
+          "en": "cold",
+          "ja": "冷たい／寒い"
+        },
+        {
+          "en": "hard",
+          "ja": "硬い／難しい"
+        },
+        {
+          "en": "soft",
+          "ja": "柔らかい"
+        },
+        {
+          "en": "sweet",
+          "ja": "甘い"
+        },
+        {
+          "en": "food",
+          "ja": "食べ物"
+        },
+        {
+          "en": "eat",
+          "ja": "食べる"
+        },
+        {
+          "en": "give",
+          "ja": "与える／あげる"
+        },
+        {
+          "en": "two",
+          "ja": "2つ"
+        },
+        {
+          "en": "many",
+          "ja": "たくさんの"
+        },
+        {
+          "en": "also",
+          "ja": "〜も"
+        },
+        {
+          "en": "very",
+          "ja": "とても"
+        },
+        {
+          "en": "but",
+          "ja": "しかし"
+        },
+        {
+          "en": "body",
+          "ja": "体"
+        },
+        {
+          "en": "hand",
+          "ja": "手"
+        },
+        {
+          "en": "eye",
+          "ja": "目"
+        },
+        {
+          "en": "see",
+          "ja": "見る"
+        },
+        {
+          "en": "hear",
+          "ja": "聞く"
+        },
+        {
+          "en": "smile",
+          "ja": "微笑む"
+        },
+        {
+          "en": "open",
+          "ja": "開く／開いている"
+        },
+        {
+          "en": "first",
+          "ja": "最初の"
+        },
+        {
+          "en": "come",
+          "ja": "来る"
+        },
+        {
+          "en": "live",
+          "ja": "住む／生きる"
+        },
+        {
+          "en": "young",
+          "ja": "若い"
+        },
+        {
+          "en": "ask",
+          "ja": "尋ねる／聞く"
+        },
+        {
+          "en": "we",
+          "ja": "私たち"
+        },
+        {
+          "en": "more",
+          "ja": "もっと"
+        },
+        {
+          "en": "it",
+          "ja": "それ"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "X is 〜. / X people like 〜.",
+      "sentences": [
+        {
+          "en": "Aries is brave and fast.",
+          "ja": "牡羊座は勇敢で、速い。"
+        },
+        {
+          "en": "Aries is the first sign, and Aries people begin new work.",
+          "ja": "牡羊座は最初の星座で、牡羊座の人は新しい仕事を始める。"
+        },
+        {
+          "en": "Taurus is slow, soft, and calm, but Aries is fast.",
+          "ja": "牡牛座はゆっくりで、柔らかく、穏やかだが、牡羊座は速い。"
+        },
+        {
+          "en": "Taurus people eat sweet food and like beautiful music.",
+          "ja": "牡牛座の人は甘い食べ物を食べ、美しい音楽が好きだ。"
+        },
+        {
+          "en": "Taurus people work with the hands and the body, and the work is hard.",
+          "ja": "牡牛座の人は手と体を使って働き、その仕事は骨が折れる。"
+        },
+        {
+          "en": "Gemini people ask many questions and learn many words.",
+          "ja": "双子座の人はたくさんの質問をし、たくさんの言葉を学ぶ。"
+        },
+        {
+          "en": "I see the Sun in the day, and I also read with my eyes open.",
+          "ja": "私は昼に太陽を見て、目を開いて本も読む。"
+        },
+        {
+          "en": "Cancer is very kind and quiet.",
+          "ja": "蟹座はとても優しく、静かだ。"
+        },
+        {
+          "en": "Cancer people love home, family, and good food.",
+          "ja": "蟹座の人は家と家族と、おいしい食べ物が大好きだ。"
+        },
+        {
+          "en": "We live with my mother and father in a big home.",
+          "ja": "私たちは母と父と、大きな家に住んでいる。"
+        },
+        {
+          "en": "It is hot in the day and cold in the night.",
+          "ja": "昼は暑く、夜は寒い。"
+        }
+      ],
+      "theme_ja": "最初の4星座。brave（勇敢な）や kind（優しい）など、性質を表す形容詞で星座の性格を言う。",
+      "title_en": "Aries to Cancer",
+      "title_ja": "牡羊座〜蟹座 ― 性質のことば",
+      "wordsUsed": [
+        "the",
+        "a",
+        "i",
+        "my",
+        "is",
+        "are",
+        "and",
+        "in",
+        "day",
+        "night",
+        "warm",
+        "quiet",
+        "calm",
+        "with",
+        "word",
+        "question",
+        "like",
+        "love",
+        "beautiful",
+        "friend",
+        "music",
+        "read",
+        "learn",
+        "want",
+        "to",
+        "fast",
+        "slow",
+        "work",
+        "begin",
+        "people",
+        "home",
+        "family",
+        "mother",
+        "father",
+        "heart",
+        "kind",
+        "brave",
+        "new",
+        "good",
+        "big",
+        "small",
+        "hot",
+        "cold",
+        "hard",
+        "soft",
+        "sweet",
+        "food",
+        "eat",
+        "give",
+        "two",
+        "many",
+        "also",
+        "very",
+        "but",
+        "body",
+        "hand",
+        "eye",
+        "see",
+        "hear",
+        "smile",
+        "open",
+        "first",
+        "come",
+        "live",
+        "young",
+        "ask",
+        "we",
+        "more",
+        "it"
+      ]
+    },
+    {
+      "canDo_ja": "獅子座・乙女座・天秤座・蠍座の性質が読め、輝きや深さなど内面の性質を表す語が使える。",
+      "chartLine": {
+        "ja": "私の太陽は{sunSignJa}にあり、私の月は{moonSignJa}にある。私は深い夜に、月に願いを伝える。",
+        "note_ja": "アプリでは学習者の実際の太陽星座・月星座を当てはめる。願いを月に伝える一文で、自分の月星座と接続する。",
+        "template_en": "My Sun is in {sunSign}, and my Moon is in {moonSign}. I tell my wish to my Moon, deep in the night."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "man＝男性、woman＝女性、child＝子ども、together＝一緒に。",
+          "options": [
+            "男性と女性と子どもが一緒に歌う",
+            "男性と女性が一緒に踊る",
+            "子どもが一人で歌う"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "The man, the woman, and the child sing together.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "same は「同じ」。the same で「同じもの」。",
+          "options": [
+            "同じ",
+            "他の",
+            "毎〜"
+          ],
+          "prompt_ja": "「same」の意味は？",
+          "question_en": "same",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "gold は「金色」。太陽のイメージ。",
+          "options": [
+            "Sun",
+            "Moon",
+            "night"
+          ],
+          "promptJa": "太陽は金色で暖かい。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "The ___ is gold and warm.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "life は「人生／命」、world は「世界」。",
+          "options": [
+            "life",
+            "night",
+            "secret"
+          ],
+          "promptJa": "私は自分の人生と自分の世界が大好きだ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I love my ___ and my world.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "need は「必要とする」。power は「力」。",
+          "options": [
+            "need",
+            "sing",
+            "read"
+          ],
+          "promptJa": "蠍座の人は力を必要とし、心の中に保つ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Scorpio people ___ power and keep it in the heart.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "I see the color of the sea.",
+          "explanation_ja": "the color of 〜 で「〜の色」。",
+          "prompt_ja": "語を並べ替えて「私は海の色を見る」という文を作ろう。",
+          "tiles": [
+            "the sea",
+            "I",
+            "of",
+            "see",
+            "the color"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "only は「だけ」、other は「他の」。",
+          "options": [
+            "私は自分の星座だけを読み、あなたは他の星座を読む",
+            "私はすべての星座を読み、あなたも読む",
+            "私は自分の星座を書き、あなたは読む"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "I read only my sign, and you read the other signs.",
+          "type": "multiple_choice"
+        }
+      ],
+      "id": "lesson2_2",
+      "newTerms": [
+        {
+          "en": "Leo",
+          "ja": "獅子座",
+          "note_ja": "輝きと表現の象徴"
+        },
+        {
+          "en": "Virgo",
+          "ja": "乙女座",
+          "note_ja": "整えることと助けることの象徴"
+        },
+        {
+          "en": "Libra",
+          "ja": "天秤座",
+          "note_ja": "公平さと美しさ、人との関係の象徴"
+        },
+        {
+          "en": "Scorpio",
+          "ja": "蠍座",
+          "note_ja": "深さと秘密、強い結びつきの象徴"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "bright",
+          "ja": "明るい"
+        },
+        {
+          "en": "proud",
+          "ja": "誇り高い"
+        },
+        {
+          "en": "king",
+          "ja": "王"
+        },
+        {
+          "en": "gold",
+          "ja": "金／金色"
+        },
+        {
+          "en": "help",
+          "ja": "助ける"
+        },
+        {
+          "en": "clean",
+          "ja": "きれいな／清潔な"
+        },
+        {
+          "en": "care",
+          "ja": "気にかける"
+        },
+        {
+          "en": "deep",
+          "ja": "深い"
+        },
+        {
+          "en": "secret",
+          "ja": "秘密"
+        },
+        {
+          "en": "together",
+          "ja": "一緒に"
+        },
+        {
+          "en": "fair",
+          "ja": "公平な"
+        },
+        {
+          "en": "dark",
+          "ja": "暗い"
+        },
+        {
+          "en": "full",
+          "ja": "満ちた"
+        },
+        {
+          "en": "true",
+          "ja": "本当の"
+        },
+        {
+          "en": "only",
+          "ja": "だけ"
+        },
+        {
+          "en": "every",
+          "ja": "毎〜"
+        },
+        {
+          "en": "all",
+          "ja": "すべての"
+        },
+        {
+          "en": "some",
+          "ja": "いくつかの"
+        },
+        {
+          "en": "other",
+          "ja": "他の"
+        },
+        {
+          "en": "same",
+          "ja": "同じ"
+        },
+        {
+          "en": "long",
+          "ja": "長い"
+        },
+        {
+          "en": "life",
+          "ja": "人生／命"
+        },
+        {
+          "en": "world",
+          "ja": "世界"
+        },
+        {
+          "en": "man",
+          "ja": "男性"
+        },
+        {
+          "en": "woman",
+          "ja": "女性"
+        },
+        {
+          "en": "child",
+          "ja": "子ども"
+        },
+        {
+          "en": "song",
+          "ja": "歌"
+        },
+        {
+          "en": "sing",
+          "ja": "歌う"
+        },
+        {
+          "en": "dance",
+          "ja": "踊る"
+        },
+        {
+          "en": "art",
+          "ja": "芸術"
+        },
+        {
+          "en": "color",
+          "ja": "色"
+        },
+        {
+          "en": "flower",
+          "ja": "花"
+        },
+        {
+          "en": "sea",
+          "ja": "海"
+        },
+        {
+          "en": "star",
+          "ja": "星"
+        },
+        {
+          "en": "keep",
+          "ja": "保つ"
+        },
+        {
+          "en": "find",
+          "ja": "見つける"
+        },
+        {
+          "en": "tell",
+          "ja": "伝える／話す"
+        },
+        {
+          "en": "wish",
+          "ja": "願い／願う"
+        },
+        {
+          "en": "power",
+          "ja": "力"
+        },
+        {
+          "en": "need",
+          "ja": "必要とする"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "X is 〜. / X people 〜 and 〜.",
+      "sentences": [
+        {
+          "en": "Leo is bright and proud.",
+          "ja": "獅子座は明るく、誇り高い。"
+        },
+        {
+          "en": "Leo is the king of the signs.",
+          "ja": "獅子座は星座の王だ。"
+        },
+        {
+          "en": "Leo people sing songs, dance, and love art.",
+          "ja": "獅子座の人は歌を歌い、踊り、芸術が大好きだ。"
+        },
+        {
+          "en": "Virgo people help friends and keep the home clean.",
+          "ja": "乙女座の人は友達を助け、家をきれいに保つ。"
+        },
+        {
+          "en": "Virgo people care, work every day, and live a long life.",
+          "ja": "乙女座の人は気を配り、毎日働き、長い人生を生きる。"
+        },
+        {
+          "en": "Libra is fair and beautiful.",
+          "ja": "天秤座は公平で、美しい。"
+        },
+        {
+          "en": "Libra people sing together and give flowers.",
+          "ja": "天秤座の人は一緒に歌い、花をあげる。"
+        },
+        {
+          "en": "Scorpio is deep and quiet.",
+          "ja": "蠍座は深く、静かだ。"
+        },
+        {
+          "en": "Scorpio people keep secrets and find true love.",
+          "ja": "蠍座の人は秘密を守り、本当の愛を見つける。"
+        },
+        {
+          "en": "The Moon is full in the dark night.",
+          "ja": "月は暗い夜に満ちる。"
+        },
+        {
+          "en": "I see the stars in the night.",
+          "ja": "私は夜に星を見る。"
+        },
+        {
+          "en": "All signs are in my chart, and some signs are strong.",
+          "ja": "すべての星座は私のチャートの中にあり、いくつかの星座は強い。"
+        }
+      ],
+      "theme_ja": "真ん中の4星座。bright（明るい）や deep（深い）など、外の輝きと内側の深さを表す語を学ぶ。",
+      "title_en": "Leo to Scorpio",
+      "title_ja": "獅子座〜蠍座 ― 輝きと深さ",
+      "wordsUsed": [
+        "the",
+        "a",
+        "i",
+        "you",
+        "my",
+        "is",
+        "are",
+        "and",
+        "in",
+        "day",
+        "night",
+        "warm",
+        "quiet",
+        "of",
+        "love",
+        "beautiful",
+        "friend",
+        "read",
+        "to",
+        "strong",
+        "work",
+        "people",
+        "home",
+        "heart",
+        "give",
+        "see",
+        "live",
+        "it",
+        "people",
+        "home",
+        "heart",
+        "give",
+        "see",
+        "live",
+        "it",
+        "bright",
+        "proud",
+        "king",
+        "gold",
+        "help",
+        "clean",
+        "care",
+        "deep",
+        "secret",
+        "together",
+        "fair",
+        "dark",
+        "full",
+        "true",
+        "only",
+        "every",
+        "all",
+        "some",
+        "other",
+        "same",
+        "long",
+        "life",
+        "world",
+        "man",
+        "woman",
+        "child",
+        "song",
+        "sing",
+        "dance",
+        "art",
+        "color",
+        "flower",
+        "sea",
+        "star",
+        "keep",
+        "find",
+        "tell",
+        "wish",
+        "power",
+        "need"
+      ]
+    },
+    {
+      "canDo_ja": "射手座・山羊座・水瓶座・魚座の性質が読め、12星座すべての文が読める。",
+      "chartLine": {
+        "ja": "私の太陽は{sunSignJa}にあり、私の月は{moonSignJa}にある。私はもう自分の星座が読める。私は望み、待ち、夢を見る。",
+        "note_ja": "Unit 2 の総まとめとして、自分の太陽星座・月星座の一文を読む。アプリでは学習者の実際の星座を当てはめる。",
+        "template_en": "My Sun is in {sunSign}, and my Moon is in {moonSign}. I can read my signs now. I hope, and I wait, and I dream."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "travel は「旅する」、far は「遠く」。",
+          "options": [
+            "射手座の人は遠くへ旅したがる",
+            "射手座の人は遠くで働きたがる",
+            "射手座の人は速く走りたがる"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Sagittarius people want to travel far.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "future は「未来」。水瓶座のキーワード。",
+          "options": [
+            "未来",
+            "夢",
+            "時間"
+          ],
+          "prompt_ja": "「future」の意味は？",
+          "question_en": "future",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "walk は「歩く」。road は「道」、country は「田舎／国」。",
+          "options": [
+            "walk",
+            "swim",
+            "fly"
+          ],
+          "promptJa": "私は田舎の道を歩く。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ the road in the country.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "believe in 〜 で「〜を信じる」。",
+          "options": [
+            "believe",
+            "climb",
+            "build"
+          ],
+          "promptJa": "私は自分の未来を信じる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ in my future.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "follow は「従う／ついていく」、move は「動く」。",
+          "options": [
+            "follow",
+            "teach",
+            "dream"
+          ],
+          "promptJa": "私は心に従って、動く。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "I ___ my heart and move.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Plants sleep and grow in the night.",
+          "explanation_ja": "plant は「植物」、grow は「育つ」。",
+          "prompt_ja": "語を並べ替えて「植物は夜に眠り、育つ」という文を作ろう。",
+          "tiles": [
+            "and grow",
+            "sleep",
+            "Plants",
+            "in the night"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "wind＝風、rain＝雨、snow＝雪、year＝年。",
+          "options": [
+            "風と雨と雪は、一年の中にやって来る",
+            "風と雨は夜に来る",
+            "雪は山にだけ来る"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "The wind, the rain, and the snow come in the year.",
+          "type": "multiple_choice"
+        }
+      ],
+      "id": "lesson2_3",
+      "newTerms": [
+        {
+          "en": "Sagittarius",
+          "ja": "射手座",
+          "note_ja": "旅と学び、遠くを目指す象徴"
+        },
+        {
+          "en": "Capricorn",
+          "ja": "山羊座",
+          "note_ja": "時間と積み重ね、頂上を目指す象徴"
+        },
+        {
+          "en": "Aquarius",
+          "ja": "水瓶座",
+          "note_ja": "未来と集まり、変化の象徴"
+        },
+        {
+          "en": "Pisces",
+          "ja": "魚座",
+          "note_ja": "夢と海、境界の溶ける象徴"
+        }
+      ],
+      "newWords": [
+        {
+          "en": "far",
+          "ja": "遠い／遠く"
+        },
+        {
+          "en": "travel",
+          "ja": "旅する"
+        },
+        {
+          "en": "trip",
+          "ja": "旅"
+        },
+        {
+          "en": "mountain",
+          "ja": "山"
+        },
+        {
+          "en": "climb",
+          "ja": "登る"
+        },
+        {
+          "en": "step",
+          "ja": "一歩／段"
+        },
+        {
+          "en": "time",
+          "ja": "時間"
+        },
+        {
+          "en": "year",
+          "ja": "年"
+        },
+        {
+          "en": "dream",
+          "ja": "夢／夢を見る"
+        },
+        {
+          "en": "idea",
+          "ja": "考え"
+        },
+        {
+          "en": "change",
+          "ja": "変わる／変える"
+        },
+        {
+          "en": "different",
+          "ja": "違う"
+        },
+        {
+          "en": "future",
+          "ja": "未来"
+        },
+        {
+          "en": "group",
+          "ja": "集まり"
+        },
+        {
+          "en": "sky",
+          "ja": "空"
+        },
+        {
+          "en": "free",
+          "ja": "自由な"
+        },
+        {
+          "en": "teach",
+          "ja": "教える"
+        },
+        {
+          "en": "teacher",
+          "ja": "先生"
+        },
+        {
+          "en": "build",
+          "ja": "築く／作る"
+        },
+        {
+          "en": "road",
+          "ja": "道"
+        },
+        {
+          "en": "country",
+          "ja": "国／田舎"
+        },
+        {
+          "en": "wind",
+          "ja": "風"
+        },
+        {
+          "en": "rain",
+          "ja": "雨"
+        },
+        {
+          "en": "snow",
+          "ja": "雪"
+        },
+        {
+          "en": "river",
+          "ja": "川"
+        },
+        {
+          "en": "tree",
+          "ja": "木"
+        },
+        {
+          "en": "bird",
+          "ja": "鳥"
+        },
+        {
+          "en": "fly",
+          "ja": "飛ぶ"
+        },
+        {
+          "en": "swim",
+          "ja": "泳ぐ"
+        },
+        {
+          "en": "walk",
+          "ja": "歩く"
+        },
+        {
+          "en": "wait",
+          "ja": "待つ"
+        },
+        {
+          "en": "hope",
+          "ja": "望む"
+        },
+        {
+          "en": "believe",
+          "ja": "信じる"
+        },
+        {
+          "en": "sleep",
+          "ja": "眠る"
+        },
+        {
+          "en": "grow",
+          "ja": "育つ"
+        },
+        {
+          "en": "plant",
+          "ja": "植物"
+        },
+        {
+          "en": "stone",
+          "ja": "石"
+        },
+        {
+          "en": "top",
+          "ja": "頂上"
+        },
+        {
+          "en": "move",
+          "ja": "動く"
+        },
+        {
+          "en": "follow",
+          "ja": "従う／ついていく"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "X people want to 〜. / X is 〜.",
+      "sentences": [
+        {
+          "en": "Sagittarius people want a long trip and a far road.",
+          "ja": "射手座の人は長い旅と、遠くへの道を望む。"
+        },
+        {
+          "en": "Sagittarius is free and bright.",
+          "ja": "射手座は自由で、明るい。"
+        },
+        {
+          "en": "Sagittarius teachers teach and learn in the group.",
+          "ja": "射手座の先生は、集まりの中で教え、学ぶ。"
+        },
+        {
+          "en": "Capricorn people climb the mountain in small steps to the top.",
+          "ja": "山羊座の人は小さな一歩で、頂上まで山を登る。"
+        },
+        {
+          "en": "Capricorn people build with stone and time.",
+          "ja": "山羊座の人は石と時間で築いていく。"
+        },
+        {
+          "en": "Capricorn is slow but strong.",
+          "ja": "山羊座はゆっくりだが、強い。"
+        },
+        {
+          "en": "Aquarius people make new ideas, and the ideas change the world.",
+          "ja": "水瓶座の人は新しい考えを作り、その考えが世界を変える。"
+        },
+        {
+          "en": "Aquarius is different and free.",
+          "ja": "水瓶座は違っていて、自由だ。"
+        },
+        {
+          "en": "Pisces people dream and swim in the river and the sea.",
+          "ja": "魚座の人は夢を見て、川と海を泳ぐ。"
+        },
+        {
+          "en": "Pisces is kind, soft, and deep.",
+          "ja": "魚座は優しく、柔らかく、深い。"
+        },
+        {
+          "en": "Birds fly in the sky, and birds sing in the trees.",
+          "ja": "鳥は空を飛び、木々の中で歌う。"
+        }
+      ],
+      "theme_ja": "最後の4星座。travel（旅する）、future（未来）、dream（夢）など、広がっていく方向の言葉を学ぶ。",
+      "title_en": "Sagittarius to Pisces",
+      "title_ja": "射手座〜魚座 ― 旅・夢・未来",
+      "wordsUsed": [
+        "the",
+        "a",
+        "i",
+        "my",
+        "is",
+        "and",
+        "in",
+        "night",
+        "with",
+        "read",
+        "learn",
+        "want",
+        "to",
+        "can",
+        "make",
+        "slow",
+        "strong",
+        "now",
+        "people",
+        "heart",
+        "kind",
+        "new",
+        "small",
+        "soft",
+        "but",
+        "come",
+        "bright",
+        "deep",
+        "long",
+        "world",
+        "sing",
+        "sea",
+        "people",
+        "heart",
+        "kind",
+        "new",
+        "small",
+        "soft",
+        "but",
+        "come",
+        "bright",
+        "deep",
+        "long",
+        "world",
+        "sing",
+        "sea",
+        "far",
+        "travel",
+        "trip",
+        "mountain",
+        "climb",
+        "step",
+        "time",
+        "year",
+        "dream",
+        "idea",
+        "change",
+        "different",
+        "future",
+        "group",
+        "sky",
+        "free",
+        "teach",
+        "teacher",
+        "build",
+        "road",
+        "country",
+        "wind",
+        "rain",
+        "snow",
+        "river",
+        "tree",
+        "bird",
+        "fly",
+        "swim",
+        "walk",
+        "wait",
+        "hope",
+        "believe",
+        "sleep",
+        "grow",
+        "plant",
+        "stone",
+        "top",
+        "move",
+        "follow"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-22",
+    "id": "unit2",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "専門用語（terms）は1,500語とは別レイヤーとして分離して数える。Unit 2 では星座12と sign を導入する（CURRICULUM §8 の例外として、1レッスン4星座）。",
+      "Unit 2 の新規一般語は120語（1レッスン40語）。性質を表す形容詞を厚めに配分した（CURRICULUM §4 の配分どおり）。",
+      "複数形（signs, stars, teachers, plants など）は原形と同一語として数える。",
+      "例文・演習で使う一般語は「Unit 1 導入済み54語＋当該レッスンまでの Unit 2 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "chartLine の {sunSign} / {moonSign} は、アプリが学習者の実際の太陽星座・月星座を当てはめるプレースホルダ。"
+    ],
+    "order": 2,
+    "status": "draft",
+    "theme_ja": "12星座を4つずつ学び、性質を表す形容詞で「〜座は〜だ」と言えるようにする。自分の太陽星座・月星座にも接続する。",
+    "title_en": "Signs",
+    "title_ja": "星座 ― 星の性質を読む",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson2_1": 40,
+        "lesson2_2": 40,
+        "lesson2_3": 40
+      },
+      "newGeneralWordsTotal": 120,
+      "newTermsTotal": 13
+    }
+  }
+}
