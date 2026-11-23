@@ -16,8 +16,6 @@
     Jupiter: '木星', Saturn: '土星', Uranus: '天王星', Neptune: '海王星', Pluto: '冥王星'
   };
   var FUTURE_UNITS = [
-    { no: 2, name: 'Signs', ja: '星座', theme: '12星座と、性質を表す言葉' },
-    { no: 3, name: 'My Placements', ja: '自分の配置', theme: '「My Sun is in Cancer」と自分の配置が言える' },
     { no: 4, name: 'More Planets', ja: '残りの惑星', theme: '木星から冥王星まで' },
     { no: 5, name: 'Houses', ja: 'ハウス', theme: '生活の場面と、ASC・MC' },
     { no: 6, name: 'Aspects', ja: 'アスペクト', theme: '星と星、人と人の関係' },
@@ -53,7 +51,9 @@
     try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
   }
 
-  var unitData = null;   // data/unit1.json
+  var unitsData = [];    // data/unit1.json, unit2.json, unit3.json (unit.order 順)
+  var todaysData = null; // data/todays-line.json
+  var glossaryData = null; // data/glossary.json
   var readingsCore = null; // data/readings-core.json
   var profileData = null;  // data/readings-profile.json
   var chartCache = null; // StarChart.computeChart result for state.birth
@@ -84,13 +84,13 @@
     return n.getFullYear() + '-' + (n.getMonth() + 1) + '-' + n.getDate();
   }
   function mastered() {
-    if (!unitData) return { words: [], terms: [] };
-    return Core.masteredSets(unitData, state.completed);
+    if (!unitsData.length) return { words: [], terms: [] };
+    return Core.masteredSets(unitsData, state.completed);
   }
 
   /* ---------------- navigation ---------------- */
 
-  var VIEWS = ['home', 'setup', 'chart', 'profile', 'today', 'lesson'];
+  var VIEWS = ['home', 'setup', 'chart', 'profile', 'today', 'words', 'lesson'];
   function showView(name) {
     currentView = name;
     VIEWS.forEach(function (v) { $('view-' + v).hidden = v !== name; });
@@ -101,6 +101,7 @@
     if (name === 'chart') renderChart();
     if (name === 'profile') renderProfile();
     if (name === 'today') renderToday();
+    if (name === 'words') renderWords();
     renderStatus();
     window.scrollTo(0, 0);
   }
@@ -144,26 +145,34 @@
 
     html += '<h2 class="view-title">Units</h2>';
 
-    if (!unitData) {
-      html += '<div class="error-box">レッスンデータ（data/unit1.json）を読み込めませんでした。' +
+    if (!unitsData.length) {
+      html += '<div class="error-box">レッスンデータ（data/unit1.json など）を読み込めませんでした。' +
         'ファイルを直接開いている場合は、ローカルサーバー経由で開いてください（例：<code>python3 -m http.server</code>）。</div>';
     } else {
-      var u = unitData.unit;
-      html += '<div class="unit"><div class="unit-head">' +
-        '<div class="unit-no">UNIT ' + u.order + '</div>' +
-        '<div class="unit-name">' + esc(u.title_en) + ' — ' + esc(u.title_ja) + '</div>' +
-        '<div class="unit-theme">' + esc(u.theme_ja) + '</div></div>';
-      unitData.lessons.forEach(function (lesson, i) {
-        var done = !!state.completed[lesson.id];
-        var unlocked = i === 0 || !!state.completed[unitData.lessons[i - 1].id];
-        var st = done ? '✓ DONE' : (unlocked ? 'START →' : 'LOCKED');
-        html += '<button class="lesson-row" data-lesson="' + esc(lesson.id) + '"' + (unlocked ? '' : ' disabled') + '>' +
-          '<span class="no">' + u.order + '.' + lesson.order + '</span>' +
-          '<span class="ttl">' + esc(lesson.title_ja) + '<span class="en">' + esc(lesson.title_en) +
-          ' ／ 新しい語 ' + lesson.newWords.length + ' ＋ 用語 ' + lesson.newTerms.length + '</span></span>' +
-          '<span class="st">' + st + '</span></button>';
+      // Lessons unlock in one global sequence across units:
+      // a lesson opens when the previous lesson (in any unit) is done.
+      var isFirst = true;
+      var prevDone = false;
+      unitsData.forEach(function (ud) {
+        var u = ud.unit;
+        html += '<div class="unit"><div class="unit-head">' +
+          '<div class="unit-no">UNIT ' + u.order + '</div>' +
+          '<div class="unit-name">' + esc(u.title_en) + ' — ' + esc(u.title_ja) + '</div>' +
+          '<div class="unit-theme">' + esc(u.theme_ja) + '</div></div>';
+        ud.lessons.forEach(function (lesson) {
+          var done = !!state.completed[lesson.id];
+          var unlocked = isFirst || prevDone;
+          var st = done ? '✓ DONE' : (unlocked ? 'START →' : 'LOCKED');
+          html += '<button class="lesson-row" data-lesson="' + esc(lesson.id) + '"' + (unlocked ? '' : ' disabled') + '>' +
+            '<span class="no">' + u.order + '.' + lesson.order + '</span>' +
+            '<span class="ttl">' + esc(lesson.title_ja) + '<span class="en">' + esc(lesson.title_en) +
+            ' ／ 新しい語 ' + lesson.newWords.length + ' ＋ 用語 ' + lesson.newTerms.length + '</span></span>' +
+            '<span class="st">' + st + '</span></button>';
+          isFirst = false;
+          prevDone = done;
+        });
+        html += '</div>';
       });
-      html += '</div>';
     }
 
     FUTURE_UNITS.forEach(function (fu) {
@@ -179,8 +188,11 @@
     var bp = $('home-profile'); if (bp) bp.addEventListener('click', function () { showView('profile'); });
     el.querySelectorAll('[data-lesson]').forEach(function (btn) {
       btn.addEventListener('click', function () {
-        var lesson = unitData.lessons.filter(function (l) { return l.id === btn.getAttribute('data-lesson'); })[0];
-        if (lesson) startLesson(lesson);
+        var id = btn.getAttribute('data-lesson');
+        for (var ui = 0; ui < unitsData.length; ui++) {
+          var lesson = unitsData[ui].lessons.filter(function (l) { return l.id === id; })[0];
+          if (lesson) { startLesson(lesson, unitsData[ui].unit.order); break; }
+        }
       });
     });
   }
@@ -432,9 +444,33 @@
       return;
     }
     var now = new Date();
-    var moonToday = SC.signOf(SC.planetLongitudes(now).Moon);
+    var longs = SC.planetLongitudes(now);
+    var moonToday = SC.signOf(longs.Moon);
     var natalMoon = chartCache.planets.Moon.sign;
-    var line = Core.buildTodaysLine(SC.SIGNS_EN, SC.SIGNS_JA, moonToday.index, natalMoon.index, now.getDate());
+    // Data-driven line (data/todays-line.json): the template is chosen
+    // from today's Moon / Sun signs against the learner's natal signs,
+    // gated by the level of the highest completed unit. Falls back to
+    // the original built-in line when the data is unavailable.
+    var line = null;
+    if (todaysData) {
+      var ctx = {
+        transitMoonIndex: moonToday.index,
+        seasonSunIndex: SC.signOf(longs.Sun).index,
+        natal: {
+          Sun: chartCache.planets.Sun.sign.index,
+          Moon: natalMoon.index,
+          Mercury: chartCache.planets.Mercury.sign.index,
+          Venus: chartCache.planets.Venus.sign.index,
+          Mars: chartCache.planets.Mars.sign.index
+        },
+        limited: !!state.birth.timeUnknown,
+        level: Core.levelForProgress(unitsData, state.completed)
+      };
+      line = Core.buildTodaysLineFromData(todaysData, ctx, Math.floor(now.getTime() / 86400000));
+    }
+    if (!line) {
+      line = Core.buildTodaysLine(SC.SIGNS_EN, SC.SIGNS_JA, moonToday.index, natalMoon.index, now.getDate());
+    }
     var doneToday = state.lineDate === todayStr();
 
     var html = '<h2 class="view-title">Today\u2019s Line</h2>';
@@ -469,19 +505,55 @@
             esc(line.quiz.explanation_ja) + '</div>';
         } else {
           fb.innerHTML = '<div class="feedback bad"><div class="verdict">NOT YET</div>' +
-            'もう一度、文の中の feel のあとを読んでみてください。</div>';
+            'もう一度、文をゆっくり読んでみてください。</div>';
         }
       });
     });
+  }
+
+  /* ---------------- glossary （用語集 / Words） ---------------- */
+
+  var GLOSSARY_CATS = [
+    { key: 'planet', en: 'PLANETS', ja: '天体' },
+    { key: 'sign', en: 'SIGNS', ja: '星座' },
+    { key: 'point', en: 'POINTS', ja: '感受点' },
+    { key: 'concept', en: 'CONCEPTS', ja: '基本概念' },
+    { key: 'aspect', en: 'ASPECTS', ja: 'アスペクト' },
+    { key: 'element', en: 'ELEMENTS', ja: '元素' },
+    { key: 'mode', en: 'MODES', ja: '三区分' },
+    { key: 'transit', en: 'TRANSITS', ja: 'トランジット' }
+  ];
+
+  function renderWords() {
+    var el = $('view-words');
+    if (!glossaryData) {
+      el.innerHTML = '<h2 class="view-title">Words — 用語集</h2>' +
+        '<div class="error-box">用語集データ（data/glossary.json）を読み込めませんでした。' +
+        'ファイルを直接開いている場合は、ローカルサーバー経由で開いてください（例：<code>python3 -m http.server</code>）。</div>';
+      return;
+    }
+    var html = '<h2 class="view-title">Words — 用語集</h2>' +
+      '<p class="lead">占星術の専門用語は、一般語1,500語とは別のレイヤーとして数えます。' +
+      'レッスンで出てきた用語も、ここでまとめて確認できます。</p>';
+    GLOSSARY_CATS.forEach(function (cat) {
+      var entries = glossaryData.entries.filter(function (e) { return e.category === cat.key; });
+      if (!entries.length) return;
+      html += '<h3 class="block-title">' + cat.en + ' — ' + cat.ja + '</h3><table class="word-table">' +
+        entries.map(function (e) {
+          return '<tr><td>' + esc(e.en) + '</td><td>' + esc(e.ja) + '</td></tr>';
+        }).join('') + '</table>';
+    });
+    el.innerHTML = html;
   }
 
   /* ---------------- lesson player ---------------- */
 
   var session = null;
 
-  function startLesson(lesson) {
+  function startLesson(lesson, unitOrder) {
     session = {
       lesson: lesson,
+      unitOrder: unitOrder || 1,
       phase: 'intro',
       queue: lesson.exercises.map(function (_, i) { return i; }),
       attempts: {},
@@ -503,7 +575,7 @@
     var el = $('view-lesson');
     var lesson = session.lesson;
     if (session.phase === 'intro') {
-      var html = '<p class="small">UNIT 1 — LESSON ' + lesson.order + '</p>' +
+      var html = '<p class="small">UNIT ' + session.unitOrder + ' — LESSON ' + lesson.order + '</p>' +
         '<h2 class="view-title" style="font-size:20px; letter-spacing:0.08em; text-transform:none">' + esc(lesson.title_ja) + '</h2>' +
         '<p class="lead">' + esc(lesson.theme_ja) + '</p>' +
         '<p class="small">文型：' + esc(lesson.pattern) + ' ／ 目標：' + esc(lesson.canDo_ja) + '</p>';
@@ -673,15 +745,20 @@
   function renderLessonComplete(el) {
     var lesson = session.lesson;
     var cl = lesson.chartLine || {};
-    var html = '<p class="small">UNIT 1 — LESSON ' + lesson.order + '</p>' +
+    // Unit 2+ chartLines carry {sunSign} style placeholders: fill them
+    // with the learner's own placements. If they cannot be filled (no
+    // birth data yet), the card is skipped rather than showing braces.
+    var clEn = Core.fillChartLine(cl.template_en, chartCache);
+    var clJa = Core.fillChartLine(cl.ja, chartCache);
+    var html = '<p class="small">UNIT ' + session.unitOrder + ' — LESSON ' + lesson.order + '</p>' +
       '<h2 class="view-title" style="font-size:20px; letter-spacing:0.08em; text-transform:none">LESSON COMPLETE</h2>' +
       '<div class="big-number">+' + session.xp + ' <small>XP</small></div>' +
       '<p class="lead">' + esc(lesson.canDo_ja) + '</p>' +
       '<p>新しい語 ' + lesson.newWords.length + ' 語と、専門用語 ' + lesson.newTerms.length + ' 語をマスターしました。</p>';
-    if (cl.template_en) {
+    if (cl.template_en && clEn.indexOf('{') === -1) {
       html += '<h3 class="block-title">あなたのチャートに接続する一文</h3>' +
-        '<div class="card"><div class="today-en"><p>' + esc(cl.template_en) + '</p></div>' +
-        '<div class="today-ja">' + esc(cl.ja || '') + '</div>' +
+        '<div class="card"><div class="today-en"><p>' + esc(clEn) + '</p></div>' +
+        '<div class="today-ja">' + esc(clJa || '') + '</div>' +
         (cl.note_ja ? '<p class="small">' + esc(cl.note_ja) + '</p>' : '') + '</div>';
     }
     html += '<div class="btn-row"><button class="btn" id="done-home">HOME へ</button>' +
@@ -701,10 +778,27 @@
   chartCache = computeUserChart();
   showView('home');
 
-  fetch('data/unit1.json')
+  ['unit1', 'unit2', 'unit3'].forEach(function (name) {
+    fetch('data/' + name + '.json')
+      .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function (data) {
+        unitsData.push(data);
+        unitsData.sort(function (a, b) { return a.unit.order - b.unit.order; });
+        renderHome(); renderStatus();
+        if (currentView === 'today') renderToday();
+      })
+      .catch(function () { /* that unit stays unavailable; home shows what loaded */ });
+  });
+
+  fetch('data/todays-line.json')
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-    .then(function (data) { unitData = data; renderHome(); renderStatus(); })
-    .catch(function () { unitData = null; renderHome(); renderStatus(); });
+    .then(function (data) { todaysData = data; if (currentView === 'today') renderToday(); })
+    .catch(function () { todaysData = null; if (currentView === 'today') renderToday(); });
+
+  fetch('data/glossary.json')
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (data) { glossaryData = data; if (currentView === 'words') renderWords(); })
+    .catch(function () { glossaryData = null; if (currentView === 'words') renderWords(); });
 
   fetch('data/readings-core.json')
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
