@@ -426,21 +426,196 @@
 
   /**
    * Words/terms mastered = union of newWords/newTerms of completed lessons.
-   * @param {Object} unitData  parsed unit1.json shape ({ lessons: [...] })
+   * @param {Object|Object[]} unitsData  one parsed unit JSON ({ lessons: [...] })
+   *                                      or an array of them (Units 1, 2, 3, ...)
    * @param {Object} completed  map lessonId -> true
    */
-  function masteredSets(unitData, completed) {
+  function masteredSets(unitsData, completed) {
+    var units = Array.isArray(unitsData) ? unitsData : (unitsData ? [unitsData] : []);
     var words = {};
     var terms = {};
-    (unitData.lessons || []).forEach(function (lesson) {
-      if (!completed[lesson.id]) return;
-      (lesson.newWords || []).forEach(function (w) { words[w.en] = true; });
-      (lesson.newTerms || []).forEach(function (t) { terms[t.en] = true; });
+    units.forEach(function (unitData) {
+      (unitData.lessons || []).forEach(function (lesson) {
+        if (!completed[lesson.id]) return;
+        (lesson.newWords || []).forEach(function (w) { words[w.en] = true; });
+        (lesson.newTerms || []).forEach(function (t) { terms[t.en] = true; });
+      });
     });
     return {
       words: Object.keys(words).sort(),
       terms: Object.keys(terms).sort()
     };
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Today's Line from data (data/todays-line.json)                    */
+  /* Templates carry a required_level (unit1 / unit2 / unit3 / unit6), */
+  /* a condition (axis, natal body, relation, sign distances) and     */
+  /* {placeholder} lines. Selection follows the data's own rule: a     */
+  /* template whose relation actually holds today (same sign,         */
+  /* opposite, harmonious, tense, a named aspect) wins over the       */
+  /* relation='any' base forms; within the winning pool the day seed  */
+  /* rotates the choice so the line changes from day to day.           */
+  /* Aspect-named templates are unit6, so they stay locked until      */
+  /* the learner's level reaches Unit 6 (CURRICULUM: aspect names     */
+  /* are introduced in Unit 6).                                       */
+  /* ---------------------------------------------------------------- */
+  var TODAYS_LEVELS = ['unit1', 'unit2', 'unit3', 'unit6'];
+  var NATAL_REQ_BODY = {
+    natalSunSign: 'Sun', natalMoonSign: 'Moon', natalMercurySign: 'Mercury',
+    natalVenusSign: 'Venus', natalMarsSign: 'Mars'
+  };
+
+  /**
+   * The learner's Today's Line level: the highest fully completed unit,
+   * mapped onto the template levels. Nothing completed yet still gets
+   * the unit1 base line (as the first implementation did).
+   * @param {Object|Object[]} unitsData  loaded unit JSON(s)
+   * @param {Object} completed  map lessonId -> true
+   * @returns {string} 'unit1' | 'unit2' | 'unit3' | 'unit6'
+   */
+  function levelForProgress(unitsData, completed) {
+    var units = Array.isArray(unitsData) ? unitsData : (unitsData ? [unitsData] : []);
+    var best = 0;
+    units.forEach(function (u) {
+      if (u.lessons && u.lessons.length &&
+          u.lessons.every(function (l) { return !!completed[l.id]; })) {
+        var n = (u.unit && u.unit.order) || 0;
+        if (n > best) best = n;
+      }
+    });
+    if (best >= 6) return 'unit6';
+    if (best >= 3) return 'unit3';
+    if (best === 2) return 'unit2';
+    return 'unit1';
+  }
+
+  function signDistance(fromIdx, toIdx) {
+    return ((toIdx - fromIdx) % 12 + 12) % 12;
+  }
+
+  /**
+   * Build Today's Line from the template data.
+   * @param {Object} data  parsed data/todays-line.json
+   * @param {Object} ctx   { transitMoonIndex, seasonSunIndex,
+   *                         natal: { Sun, Moon, Mercury, Venus, Mars } (sign indices),
+   *                         limited: bool (birth time unknown),
+   *                         level: 'unit1'|'unit2'|'unit3'|'unit6' }
+   * @param {number} daySeed  day number (rotates template + quiz order daily)
+   * @returns {Object|null} same shape as buildTodaysLine, plus template_id;
+   *                        null when no template is eligible
+   */
+  function buildTodaysLineFromData(data, ctx, daySeed) {
+    if (!data || !Array.isArray(data.templates) || !Array.isArray(data.signData)) return null;
+    var learnerLvl = TODAYS_LEVELS.indexOf(ctx.level || 'unit1');
+    if (learnerLvl === -1) learnerLvl = 0;
+
+    var eligible = data.templates.filter(function (t) {
+      var cond = t.condition || {};
+      var lvl = TODAYS_LEVELS.indexOf(t.required_level || 'unit1');
+      if (lvl === -1 || lvl > learnerLvl) return false;
+      var reqs = cond.requires || [];
+      for (var i = 0; i < reqs.length; i++) {
+        var body = NATAL_REQ_BODY[reqs[i]];
+        if (!body || ctx.natal[body] === null || ctx.natal[body] === undefined) return false;
+        // With an unknown birth time the natal Moon sign can shift, so
+        // templates that need it are not used (the data's selection note).
+        if (ctx.limited && body === 'Moon') return false;
+      }
+      var natalBody = cond.natal_body;
+      if (!natalBody || ctx.natal[natalBody] === null || ctx.natal[natalBody] === undefined) return false;
+      var transitIdx = t.axis === 'seasonSun_x_natalSunMoon' ? ctx.seasonSunIndex : ctx.transitMoonIndex;
+      if (cond.relation && cond.relation !== 'any') {
+        var dist = signDistance(ctx.natal[natalBody], transitIdx);
+        if (!Array.isArray(cond.sign_distance) || cond.sign_distance.indexOf(dist) === -1) return false;
+      }
+      if (cond.needs_sign_extra) {
+        var sd = data.signData[ctx.transitMoonIndex];
+        if (!sd || !sd.extra_en) return false;
+      }
+      return true;
+    });
+    if (!eligible.length) return null;
+
+    var specific = eligible.filter(function (t) {
+      return t.condition && t.condition.relation && t.condition.relation !== 'any';
+    });
+    var pool = specific.length ? specific : eligible;
+    var seed = Math.abs(Math.floor(Number(daySeed) || 0));
+    var t = pool[seed % pool.length];
+    var cond2 = t.condition || {};
+
+    function entry(idx) { return data.signData[idx] || {}; }
+    var tm = entry(ctx.transitMoonIndex);
+    var ss = entry(ctx.seasonSunIndex);
+    var nm = entry(ctx.natal.Moon);
+    var ns = entry(ctx.natal.Sun);
+    var dFeel = entry((ctx.transitMoonIndex + 5) % 12);
+    var dTheme = entry(((ctx.natal.Sun || 0) + 5) % 12);
+    var dSeason = entry((ctx.seasonSunIndex + 5) % 12);
+    var aspect = null;
+    (data.aspectData || []).forEach(function (a) { if (a.id === cond2.relation) aspect = a; });
+
+    var values = {
+      transitMoonSignEn: tm.sign_en, transitMoonSignJa: tm.sign_ja,
+      natalMoonSignEn: nm.sign_en, natalMoonSignJa: nm.sign_ja,
+      natalSunSignEn: ns.sign_en, natalSunSignJa: ns.sign_ja,
+      seasonSunSignEn: ss.sign_en, seasonSunSignJa: ss.sign_ja,
+      feelEn: tm.feel_en, feelJa: tm.feel_ja,
+      extraEn: tm.extra_en || '', extraJa: tm.extra_ja || '',
+      natalSunThemeEn: ns.theme_en, natalSunThemeJa: ns.theme_ja,
+      seasonThemeEn: ss.theme_en, seasonThemeJa: ss.theme_ja,
+      seasonActEn: ss.season_act_en, seasonActJa: ss.season_act_ja,
+      seasonFeelEn: ss.feel_en, seasonFeelJa: ss.feel_ja,
+      natalMoonFeelEn: nm.feel_en, natalMoonFeelJa: nm.feel_ja,
+      aspectEn: aspect ? aspect.en : '', aspectJa: aspect ? aspect.ja : '',
+      distractorFeelJa: dFeel.feel_ja,
+      distractorExtraJa: dFeel.extra_ja || '',
+      distractorThemeJa: dTheme.theme_ja,
+      distractorSeasonActJa: dSeason.season_act_ja
+    };
+    function fill(s) {
+      return String(s).replace(/\{(\w+)\}/g, function (m, k) {
+        return values[k] !== undefined && values[k] !== null ? values[k] : m;
+      });
+    }
+
+    var correct = fill(t.quiz.correct_ja);
+    var wrong = fill(t.quiz.distractor_ja);
+    var options = (seed % 2 === 0) ? [correct, wrong] : [wrong, correct];
+    return {
+      template_id: t.id,
+      lines_en: t.lines_en.map(fill),
+      lines_ja: t.lines_ja.map(fill),
+      ja_summary: t.lines_ja.map(fill).join(''),
+      quiz: {
+        prompt_ja: fill(t.quiz.prompt_ja),
+        options: options,
+        answerIndex: options.indexOf(correct),
+        explanation_ja: fill(t.quiz.explanation_ja)
+      }
+    };
+  }
+
+  /* ---------------------------------------------------------------- */
+  /* Lesson chartLine                                                  */
+  /* Unit 2+ chartLines carry {sunSign} / {sunSignJa} / {moonSign} /   */
+  /* {mercurySign} / {venusSign} / {marsSign} placeholders that are    */
+  /* filled with the learner's own placements. Without a chart the     */
+  /* template is returned unchanged (callers can detect the braces).   */
+  /* ---------------------------------------------------------------- */
+  function fillChartLine(template, chart) {
+    if (template === null || template === undefined) return template;
+    if (!chart || !chart.planets) return String(template);
+    var map = {};
+    ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars'].forEach(function (p) {
+      var key = p.toLowerCase();
+      map[key + 'Sign'] = chart.planets[p].sign.en;
+      map[key + 'SignJa'] = chart.planets[p].sign.ja;
+    });
+    return String(template).replace(/\{(\w+)\}/g, function (m, k) {
+      return map[k] !== undefined ? map[k] : m;
+    });
   }
 
   /** A reorder answer matches when tiles joined equal the target sentence. */
@@ -458,6 +633,9 @@
     validateLatLon: validateLatLon,
     birthToUtcDate: birthToUtcDate,
     buildTodaysLine: buildTodaysLine,
+    buildTodaysLineFromData: buildTodaysLineFromData,
+    levelForProgress: levelForProgress,
+    fillChartLine: fillChartLine,
     buildProfileReading: buildProfileReading,
     toFirstPerson: toFirstPerson,
     masteredSets: masteredSets,
