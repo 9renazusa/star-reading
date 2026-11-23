@@ -608,10 +608,13 @@
     if (template === null || template === undefined) return template;
     if (!chart || !chart.planets) return String(template);
     var map = {};
-    ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars'].forEach(function (p) {
+    ['Sun', 'Moon', 'Mercury', 'Venus', 'Mars',
+     'Jupiter', 'Saturn', 'Uranus', 'Neptune', 'Pluto'].forEach(function (p) {
+      var planet = chart.planets[p];
+      if (!planet || !planet.sign) return;
       var key = p.toLowerCase();
-      map[key + 'Sign'] = chart.planets[p].sign.en;
-      map[key + 'SignJa'] = chart.planets[p].sign.ja;
+      map[key + 'Sign'] = planet.sign.en;
+      map[key + 'SignJa'] = planet.sign.ja;
     });
     return String(template).replace(/\{(\w+)\}/g, function (m, k) {
       return map[k] !== undefined ? map[k] : m;
