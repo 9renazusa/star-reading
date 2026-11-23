@@ -205,6 +205,121 @@
   }
 
   /* ---------------------------------------------------------------- */
+  /* Profile reading （基本鑑定）                                       */
+  /* A first-person summary built from the learner's own chart:        */
+  /*   Sun / Moon  -> full Japanese text + English key line            */
+  /*                  (data/readings-core.json)                        */
+  /*   ASC         -> short text written for this feature              */
+  /*                  (data/readings-profile.json)                     */
+  /*   Mercury / Venus / Mars -> one line each (Japanese short line    */
+  /*                  from readings-profile.json, English key line     */
+  /*                  from readings-core.json)                         */
+  /* plus a one-line profile ("I am a Cancer Sun, ...") and a full     */
+  /* English summary paragraph in first person, so the learner can     */
+  /* practise reading it fluently. In limited mode (birth time         */
+  /* unknown) nothing that depends on the ASC is included.             */
+  /* ---------------------------------------------------------------- */
+
+  function findReading(readings, planet, signEn) {
+    var list = (readings && readings.readings) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].planet === planet && list[i].sign === signEn) return list[i];
+    }
+    return null;
+  }
+
+  function findAscText(profileData, signEn) {
+    var list = (profileData && profileData.asc) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].sign === signEn) return list[i];
+    }
+    return null;
+  }
+
+  function findShortJa(profileData, planet, signEn) {
+    var list = (profileData && profileData.short) || [];
+    for (var i = 0; i < list.length; i++) {
+      if (list[i].planet === planet && list[i].sign === signEn) return list[i].ja;
+    }
+    return null;
+  }
+
+  /** "Your Sun in Cancer may ..." -> "My Sun in Cancer may ..." (also you->I, your->my). */
+  function toFirstPerson(en) {
+    return String(en)
+      .replace(/\bYour\b/g, 'My')
+      .replace(/\byour\b/g, 'my')
+      .replace(/\bYou\b/g, 'I')
+      .replace(/\byou\b/g, 'I');
+  }
+
+  /**
+   * @param {Object} chart        StarChart.computeChart result
+   * @param {Object} readingsCore parsed data/readings-core.json
+   * @param {Object} profileData  parsed data/readings-profile.json
+   * @param {boolean} limited     true when the birth time is unknown
+   * @returns {Object|null} null when a needed reading text is missing
+   */
+  function buildProfileReading(chart, readingsCore, profileData, limited) {
+    if (!chart || !chart.planets) return null;
+    var sun = chart.planets.Sun.sign;
+    var moon = chart.planets.Moon.sign;
+    var asc = limited ? null : chart.asc.sign;
+
+    var sunR = findReading(readingsCore, 'Sun', sun.en);
+    var moonR = findReading(readingsCore, 'Moon', moon.en);
+    if (!sunR || !moonR) return null;
+
+    var sections = [];
+    sections.push({ key: 'sun', planet: 'Sun', signEn: sun.en, signJa: sun.ja, ja: sunR.ja, en: sunR.en });
+    sections.push({ key: 'moon', planet: 'Moon', signEn: moon.en, signJa: moon.ja, ja: moonR.ja, en: moonR.en });
+
+    var ascT = null;
+    if (asc) {
+      ascT = findAscText(profileData, asc.en);
+      if (!ascT) return null;
+      sections.push({ key: 'asc', planet: 'Ascendant', signEn: asc.en, signJa: asc.ja, ja: ascT.ja, en: ascT.en });
+    }
+
+    var trio = ['Mercury', 'Venus', 'Mars'];
+    for (var i = 0; i < trio.length; i++) {
+      var planet = trio[i];
+      var sign = chart.planets[planet].sign;
+      var r = findReading(readingsCore, planet, sign.en);
+      var shortJa = findShortJa(profileData, planet, sign.en);
+      if (!r || !shortJa) return null;
+      sections.push({ key: planet.toLowerCase(), planet: planet, signEn: sign.en, signJa: sign.ja, ja: shortJa, en: r.en });
+    }
+
+    var profileLine = {
+      en: 'I am a ' + sun.en + ' Sun, ' + moon.en + ' Moon' + (asc ? ', ' + asc.en + ' rising.' : '.'),
+      ja: '太陽は' + sun.ja + '、月は' + moon.ja + (asc ? '、アセンダントは' + asc.ja + 'です。' : 'です。')
+    };
+
+    var summaryEnParts = [profileLine.en];
+    sections.forEach(function (s) { summaryEnParts.push(toFirstPerson(s.en)); });
+
+    var summaryJaParts = [profileLine.ja];
+    summaryJaParts.push(findShortJa(profileData, 'Sun', sun.en));
+    summaryJaParts.push(findShortJa(profileData, 'Moon', moon.en));
+    if (ascT) summaryJaParts.push(ascT.ja);
+    trio.forEach(function (planet) {
+      summaryJaParts.push(findShortJa(profileData, planet, chart.planets[planet].sign.en));
+    });
+    if (summaryJaParts.some(function (p) { return !p; })) return null;
+
+    return {
+      limited: !!limited,
+      profileLine: profileLine,
+      sections: sections,
+      summary: {
+        en: summaryEnParts.join(' '),
+        ja: summaryJaParts.join('')
+      }
+    };
+  }
+
+  /* ---------------------------------------------------------------- */
   /* Progress                                                          */
   /* ---------------------------------------------------------------- */
   var TOTAL_GENERAL_WORDS = 1500; // Globish target (CURRICULUM.md)
@@ -243,6 +358,8 @@
     validateLatLon: validateLatLon,
     birthToUtcDate: birthToUtcDate,
     buildTodaysLine: buildTodaysLine,
+    buildProfileReading: buildProfileReading,
+    toFirstPerson: toFirstPerson,
     masteredSets: masteredSets,
     checkReorder: checkReorder,
     normalizeSentence: normalizeSentence,
