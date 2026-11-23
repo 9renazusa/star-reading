@@ -726,8 +726,8 @@
           "ja": "子どもが物語を読むように、心で読もう。"
         },
         {
-          "en": "English is not my native language, but I can read it.",
-          "ja": "英語は私の母語ではないが、私は英語を読める。"
+          "en": "Your native language may be different, but you can read this.",
+          "ja": "あなたの母語は違うかもしれないが、あなたはこれを読める。"
         },
         {
           "en": "The tone of a sentence can be soft or sharp.",
@@ -866,7 +866,6 @@
         "mean",
         "meaning",
         "more",
-        "my",
         "name",
         "native",
         "need",
