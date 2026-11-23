@@ -32,7 +32,7 @@
   /* ---------------- state ---------------- */
 
   function defaultState() {
-    return { birth: null, xp: 0, completed: {}, lineDate: null };
+    return { birth: null, xp: 0, completed: {}, lineDate: null, profileLang: 'ja' };
   }
   function loadState() {
     try {
@@ -54,7 +54,10 @@
   }
 
   var unitData = null;   // data/unit1.json
+  var readingsCore = null; // data/readings-core.json
+  var profileData = null;  // data/readings-profile.json
   var chartCache = null; // StarChart.computeChart result for state.birth
+  var currentView = 'home';
 
   function computeUserChart() {
     if (!state.birth) return null;
@@ -87,14 +90,16 @@
 
   /* ---------------- navigation ---------------- */
 
-  var VIEWS = ['home', 'setup', 'chart', 'today', 'lesson'];
+  var VIEWS = ['home', 'setup', 'chart', 'profile', 'today', 'lesson'];
   function showView(name) {
+    currentView = name;
     VIEWS.forEach(function (v) { $('view-' + v).hidden = v !== name; });
     var nav = $('main-nav').querySelectorAll('button');
     nav.forEach(function (b) { b.classList.toggle('active', b.getAttribute('data-view') === name); });
     if (name === 'home') renderHome();
     if (name === 'setup') renderSetup();
     if (name === 'chart') renderChart();
+    if (name === 'profile') renderProfile();
     if (name === 'today') renderToday();
     renderStatus();
     window.scrollTo(0, 0);
@@ -130,6 +135,11 @@
         '<p class="lead">今日の月は ' + esc(moonToday.en) + '（' + esc(moonToday.ja) + '）。' +
         'あなたのチャートと重ねて読む、今日の一文です。</p>' +
         '<div class="btn-row"><button class="btn" id="home-today">今日の一文を読む</button></div></div>';
+
+      html += '<div class="card"><p class="card-label">MY PROFILE READING</p>' +
+        '<p class="lead">あなたの出生チャートから作る基本鑑定です。日本語と英語で読めて、' +
+        '自己紹介にも使えるサマリーが付いています。英語版をスラスラ読めるようになるのが、ひとつのゴールです。</p>' +
+        '<div class="btn-row"><button class="btn" id="home-profile">わたしの基本鑑定を読む</button></div></div>';
     }
 
     html += '<h2 class="view-title">Units</h2>';
@@ -166,6 +176,7 @@
     el.innerHTML = html;
     var bs = $('home-setup'); if (bs) bs.addEventListener('click', function () { showView('setup'); });
     var bt = $('home-today'); if (bt) bt.addEventListener('click', function () { showView('today'); });
+    var bp = $('home-profile'); if (bp) bp.addEventListener('click', function () { showView('profile'); });
     el.querySelectorAll('[data-lesson]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         var lesson = unitData.lessons.filter(function (l) { return l.id === btn.getAttribute('data-lesson'); })[0];
@@ -321,7 +332,85 @@
       });
       html += '</table>';
     }
+
+    html += '<div class="btn-row"><button class="btn" id="chart-profile">わたしの基本鑑定を読む →</button></div>';
     el.innerHTML = html;
+    $('chart-profile').addEventListener('click', function () { showView('profile'); });
+  }
+
+  /* ---------------- profile reading （基本鑑定） ---------------- */
+
+  var PROFILE_LABELS = {
+    sun: { en: 'CORE SELF', ja: '核となる自分' },
+    moon: { en: 'INNER SELF', ja: '素の自分・安心の仕方' },
+    asc: { en: 'FIRST IMPRESSION', ja: '第一印象・見せ方' },
+    mercury: { en: 'MIND & WORDS', ja: '考え方・伝え方' },
+    venus: { en: 'LOVE & LIKES', ja: '好きの傾向' },
+    mars: { en: 'ACTION', ja: '行動の仕方' }
+  };
+
+  function renderProfile() {
+    var el = $('view-profile');
+    if (!state.birth || !chartCache) {
+      el.innerHTML = '<h2 class="view-title">My Profile Reading</h2>' +
+        '<div class="notice">出生情報を入力すると、あなたの基本鑑定が作られます。<div class="btn-row">' +
+        '<button class="btn" id="profile-setup">出生情報を入力する</button></div></div>';
+      $('profile-setup').addEventListener('click', function () { showView('setup'); });
+      return;
+    }
+    if (!readingsCore || !profileData) {
+      el.innerHTML = '<h2 class="view-title">My Profile Reading</h2>' +
+        '<div class="error-box">鑑定文データ（data/readings-core.json / data/readings-profile.json）を読み込めませんでした。' +
+        'ファイルを直接開いている場合は、ローカルサーバー経由で開いてください（例：<code>python3 -m http.server</code>）。</div>';
+      return;
+    }
+    var limited = !!state.birth.timeUnknown;
+    var profile = Core.buildProfileReading(chartCache, readingsCore, profileData, limited);
+    if (!profile) {
+      el.innerHTML = '<h2 class="view-title">My Profile Reading</h2>' +
+        '<div class="error-box">鑑定文を組み立てられませんでした。データファイルの内容を確認してください。</div>';
+      return;
+    }
+    var lang = state.profileLang === 'en' ? 'en' : 'ja';
+
+    var html = '<h2 class="view-title">My Profile Reading — わたしの基本鑑定</h2>';
+    html += '<div class="lang-toggle" role="group" aria-label="Language">' +
+      '<button type="button" id="lang-ja" class="' + (lang === 'ja' ? 'active' : '') + '">日本語</button>' +
+      '<button type="button" id="lang-en" class="' + (lang === 'en' ? 'active' : '') + '">ENGLISH</button></div>';
+
+    if (limited) {
+      html += '<div class="notice limited"><b>制限モード</b>：出生時刻が不明なため、ASC（アセンダント）とハウスに依存する文は表示していません。' +
+        '太陽・月・水星・金星・火星の文は、時刻がなくても読めます。</div>';
+    }
+
+    html += '<div class="card"><p class="card-label">PROFILE — プロフィール一文</p>' +
+      '<div class="profile-line">' + esc(lang === 'en' ? profile.profileLine.en : profile.profileLine.ja) + '</div>' +
+      '<p class="small">' + esc(lang === 'en' ? profile.profileLine.ja : profile.profileLine.en) + '</p></div>';
+
+    profile.sections.forEach(function (s) {
+      var label = PROFILE_LABELS[s.key] || { en: '', ja: '' };
+      var main = lang === 'en' ? s.en : s.ja;
+      var sub = lang === 'en' ? s.ja : s.en;
+      html += '<div class="profile-block"><p class="p-label">' +
+        esc(s.planet.toUpperCase()) + ' IN ' + esc(s.signEn.toUpperCase()) + ' — ' + esc(label.en) + '／' + esc(label.ja) + '</p>' +
+        '<div class="p-main">' + esc(main) + '</div>' +
+        '<div class="p-sub">' + esc(sub) + '</div></div>';
+    });
+
+    html += '<h3 class="block-title">自己紹介サマリー — PROFILE SUMMARY</h3>' +
+      '<div class="card"><div class="' + (lang === 'en' ? 'today-en' : 'profile-summary-ja') + '">' +
+      esc(lang === 'en' ? profile.summary.en : profile.summary.ja) + '</div>' +
+      '<div class="today-ja">' + esc(lang === 'en' ? profile.summary.ja : profile.summary.en) + '</div></div>';
+
+    html += '<p class="small">※ 傾向を読むための文章です。未来や性格を断定するものではありません。英語版は、学習の進度に合わせてスラスラ読めるようになることを目指す文章です。</p>';
+
+    el.innerHTML = html;
+    $('lang-ja').addEventListener('click', function () {
+      if (state.profileLang !== 'ja') { state.profileLang = 'ja'; saveState(); renderProfile(); }
+    });
+    $('lang-en').addEventListener('click', function () {
+      if (state.profileLang !== 'en') { state.profileLang = 'en'; saveState(); renderProfile(); }
+    });
   }
 
   /* ---------------- today's line ---------------- */
@@ -609,4 +698,14 @@
     .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
     .then(function (data) { unitData = data; renderHome(); renderStatus(); })
     .catch(function () { unitData = null; renderHome(); renderStatus(); });
+
+  fetch('data/readings-core.json')
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (data) { readingsCore = data; if (currentView === 'profile') renderProfile(); })
+    .catch(function () { readingsCore = null; if (currentView === 'profile') renderProfile(); });
+
+  fetch('data/readings-profile.json')
+    .then(function (r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(function (data) { profileData = data; if (currentView === 'profile') renderProfile(); })
+    .catch(function () { profileData = null; if (currentView === 'profile') renderProfile(); });
 })();
