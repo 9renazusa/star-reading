@@ -1,0 +1,1263 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "天体・星座・ハウス・アスペクト・トランジットを含む Co-Star 風の文が、辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}に、月は{moonSignJa}に、水星は{mercurySignJa}にある。あなたは今、これを辞書なしで読める。",
+        "note_ja": "アプリでは学習者の実際の太陽・月・水星星座を当てはめる。Unit 1〜3 で一つずつ読んだ配置を一文にまとめ、到達点（辞書なしで読める）を確認する。",
+        "template_en": "Your Sun is in {sunSign}, your Moon is in {moonSign}, and your Mercury is in {mercurySign}. You can read this without a dictionary now."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "without a dictionary（辞書なしで）。STAR READING の到達点そのものの文。",
+          "options": [
+            "あなたは辞書なしで、英語の占星術が読める",
+            "あなたは辞書がないと、占星術が読めない",
+            "あなたは英語の辞書を書ける"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You can read astrology in English without a dictionary.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "horoscope（星占い）を、未来を決めるものではなく自分を映す mirror（鏡）として読む。",
+          "options": [
+            "星占いは運勢の決まりではなく、鏡だ",
+            "星占いは運勢を決める",
+            "鏡を見ると運勢がわかる"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "A horoscope is not a fortune; it is a mirror.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "be able to 〜 で「〜できる」。",
+          "options": [
+            "able",
+            "basic",
+            "total"
+          ],
+          "promptJa": "今、あなたは星占いをなめらかに読むことができる。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Now you are ___ to read a horoscope smoothly.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "error は「誤り」。mistake（Unit 4）とほぼ同じ意味。",
+          "options": [
+            "error",
+            "accent",
+            "expert"
+          ],
+          "promptJa": "誤りは一歩であって、転ぶことではない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "An ___ is a step, not a fall.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Basic words can read advanced ideas.",
+          "explanation_ja": "Basic words（基本の語）が主語、can read（読める）のあとに advanced ideas（上級の考え）。",
+          "prompt_ja": "語を並べ替えて「基本の語で、上級の考えも読める」という文を作ろう。",
+          "tiles": [
+            "advanced ideas",
+            "Basic words",
+            "can read"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "総復習の読解。トランジット（move into）、元素の性質（dreamy, sensitive）、逆行（retrograde）を一度に読む。",
+          "options": [
+            "今日、月は魚座に入る。夢見がちで敏感になるかもしれない。水星逆行なので、メッセージを確かめよう",
+            "今日、月は魚座を出ていく。水星逆行なので、メッセージは送ってはいけない",
+            "今日、水星は魚座に入り、夢がかなう"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Today, the Moon moves into Pisces. You may feel dreamy and sensitive. Mercury is retrograde, so check your messages.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "without は「〜なしで」（Unit 4）。without errors で「誤りがない」。",
+          "options": [
+            "without",
+            "within",
+            "toward"
+          ],
+          "promptJa": "すらすら読めることは、誤りがないという意味ではない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Fluent does not mean ___ errors.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson12_1",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "dictionary",
+          "ja": "辞書"
+        },
+        {
+          "en": "fluent",
+          "ja": "すらすら話せる／読める"
+        },
+        {
+          "en": "smoothly",
+          "ja": "なめらかに"
+        },
+        {
+          "en": "vocabulary",
+          "ja": "語彙"
+        },
+        {
+          "en": "grammar",
+          "ja": "文法"
+        },
+        {
+          "en": "spell",
+          "ja": "つづる"
+        },
+        {
+          "en": "pronounce",
+          "ja": "発音する"
+        },
+        {
+          "en": "accent",
+          "ja": "なまり／アクセント"
+        },
+        {
+          "en": "astrology",
+          "ja": "占星術"
+        },
+        {
+          "en": "horoscope",
+          "ja": "星占い／ホロスコープ"
+        },
+        {
+          "en": "zodiac",
+          "ja": "黄道十二宮（the zodiac＝12星座）"
+        },
+        {
+          "en": "fortune",
+          "ja": "運勢／幸運"
+        },
+        {
+          "en": "basic",
+          "ja": "基本の"
+        },
+        {
+          "en": "advanced",
+          "ja": "上級の"
+        },
+        {
+          "en": "beginner",
+          "ja": "初心者"
+        },
+        {
+          "en": "expert",
+          "ja": "専門家／達人"
+        },
+        {
+          "en": "English",
+          "ja": "英語"
+        },
+        {
+          "en": "number",
+          "ja": "数"
+        },
+        {
+          "en": "count",
+          "ja": "数える"
+        },
+        {
+          "en": "total",
+          "ja": "合計"
+        },
+        {
+          "en": "course",
+          "ja": "講座／コース"
+        },
+        {
+          "en": "ability",
+          "ja": "能力"
+        },
+        {
+          "en": "able",
+          "ja": "（be able to 〜で）〜できる"
+        },
+        {
+          "en": "correct",
+          "ja": "正しい"
+        },
+        {
+          "en": "error",
+          "ja": "誤り"
+        },
+        {
+          "en": "quiz",
+          "ja": "小テスト"
+        },
+        {
+          "en": "score",
+          "ja": "点数"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "You can read 〜 without a dictionary. / You are able to 〜.",
+      "sentences": [
+        {
+          "en": "You can read astrology in English without a dictionary.",
+          "ja": "あなたは辞書なしで、英語の占星術が読める。"
+        },
+        {
+          "en": "Your vocabulary has grown, step by step.",
+          "ja": "あなたの語彙は、一歩ずつ育ってきた。"
+        },
+        {
+          "en": "Count the words you know: the total is 1,500.",
+          "ja": "知っている語を数えよう。合計は1,500だ。"
+        },
+        {
+          "en": "The number is not everything, but it is a sign of your effort.",
+          "ja": "数がすべてではないが、それはあなたの努力のしるしだ。"
+        },
+        {
+          "en": "At the beginning, you were a beginner.",
+          "ja": "はじめ、あなたは初心者だった。"
+        },
+        {
+          "en": "Now you are able to read a horoscope smoothly.",
+          "ja": "今、あなたは星占いをなめらかに読むことができる。"
+        },
+        {
+          "en": "You do not need to be an expert.",
+          "ja": "専門家になる必要はない。"
+        },
+        {
+          "en": "Basic words can read advanced ideas.",
+          "ja": "基本の語で、上級の考えも読める。"
+        },
+        {
+          "en": "The zodiac has 12 signs, and you know them all.",
+          "ja": "黄道十二宮には12の星座があり、あなたはそのすべてを知っている。"
+        },
+        {
+          "en": "A horoscope is not a fortune; it is a mirror.",
+          "ja": "星占いは運勢の決まりではなく、鏡だ。"
+        },
+        {
+          "en": "Your real chart is more than a single line.",
+          "ja": "あなたの本当のチャートは、一文以上のものだ。"
+        },
+        {
+          "en": "Your Sun is in Aries. Your Moon is in your 4th house. Mars square Venus may bring tension in love.",
+          "ja": "あなたの太陽は牡羊座にある。月は第4ハウスにある。火星と金星のスクエアは、恋愛に緊張をもたらすかもしれない。"
+        },
+        {
+          "en": "Today, the Moon moves into Pisces. You may feel dreamy and sensitive. Mercury is retrograde, so check your messages.",
+          "ja": "今日、月は魚座に入る。夢見がちで敏感になるかもしれない。水星が逆行しているので、メッセージを確かめよう。"
+        },
+        {
+          "en": "Grammar helps you read long sentences.",
+          "ja": "文法は、長い文を読む助けになる。"
+        },
+        {
+          "en": "You can spell the names of the planets.",
+          "ja": "あなたは天体の名前をつづれる。"
+        },
+        {
+          "en": "You do not need to pronounce every word right.",
+          "ja": "すべての語を正しく発音する必要はない。"
+        },
+        {
+          "en": "An accent is part of your voice.",
+          "ja": "なまりは、あなたの声の一部だ。"
+        },
+        {
+          "en": "Fluent does not mean without errors.",
+          "ja": "すらすら読めることは、誤りがないという意味ではない。"
+        },
+        {
+          "en": "An error is a step, not a fall.",
+          "ja": "誤りは一歩であって、転ぶことではない。"
+        },
+        {
+          "en": "There is more than a single correct reading.",
+          "ja": "正しい読み方は一つだけではない。"
+        },
+        {
+          "en": "This course gave you a new ability.",
+          "ja": "この講座は、あなたに新しい能力をくれた。"
+        },
+        {
+          "en": "Take the final quiz, and do not worry about your score.",
+          "ja": "最後の小テストを受けよう。点数は気にしなくていい。"
+        }
+      ],
+      "theme_ja": "これまでの総復習。天体・星座・ハウス・アスペクト・トランジットを一度に含む Co-Star 風の文を読み、語彙・文法・発音など「学び」を表す言葉を学ぶ。",
+      "title_en": "Reading Without a Dictionary",
+      "title_ja": "辞書なしで読む ― You can read 〜 without a dictionary",
+      "wordsUsed": [
+        "a",
+        "ability",
+        "able",
+        "about",
+        "accent",
+        "advanced",
+        "all",
+        "and",
+        "are",
+        "astrology",
+        "at",
+        "basic",
+        "be",
+        "begin",
+        "beginner",
+        "bring",
+        "but",
+        "by",
+        "can",
+        "check",
+        "correct",
+        "count",
+        "course",
+        "dictionary",
+        "do",
+        "dreamy",
+        "effort",
+        "English",
+        "error",
+        "every",
+        "everything",
+        "expert",
+        "fall",
+        "feel",
+        "final",
+        "fluent",
+        "fortune",
+        "give",
+        "grammar",
+        "grow",
+        "have",
+        "help",
+        "horoscope",
+        "idea",
+        "in",
+        "into",
+        "is",
+        "it",
+        "know",
+        "line",
+        "long",
+        "love",
+        "may",
+        "mean",
+        "message",
+        "mirror",
+        "more",
+        "move",
+        "name",
+        "need",
+        "new",
+        "not",
+        "now",
+        "number",
+        "of",
+        "part",
+        "pronounce",
+        "quiz",
+        "read",
+        "real",
+        "right",
+        "score",
+        "sensitive",
+        "sentence",
+        "single",
+        "smoothly",
+        "so",
+        "spell",
+        "step",
+        "take",
+        "tension",
+        "than",
+        "the",
+        "them",
+        "there",
+        "this",
+        "to",
+        "today",
+        "total",
+        "toward",
+        "vocabulary",
+        "voice",
+        "within",
+        "without",
+        "word",
+        "worry",
+        "you",
+        "your",
+        "zodiac"
+      ]
+    },
+    {
+      "canDo_ja": "「配置 → 傾向（may）→ 活かし方」の順で、自分の配置について短い英文が書ける。",
+      "chartLine": {
+        "ja": "私の金星は{venusSignJa}にあり、火星は{marsSignJa}にある。私はゆっくり愛するのかもしれないが、勇気をもって行動する。",
+        "note_ja": "アプリでは学習者の実際の金星・火星星座を当てはめる。Unit 1 と同じ一人称（My 〜）の一文に戻り、学習者が自分の言葉で書く一文の見本にする。",
+        "template_en": "My Venus is in {venusSign}, and my Mars is in {marsSign}. I may love slowly, but I act with courage."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "wrong は「間違った」。no wrong way で「間違ったやり方はない」。",
+          "options": [
+            "間違った感じ方はない",
+            "間違った感じ方ばかりだ",
+            "感じることは間違いだ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "There is no wrong way to feel.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "possibility（可能性）と rule（ルール）の対比。自分で書くときも、言い切らないのが STAR READING の書き方。",
+          "options": [
+            "ルールではなく、可能性を示そう",
+            "可能性ではなく、ルールを示そう",
+            "可能性もルールも示さない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Show a possibility, not a rule.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "perfect は「完璧な」。",
+          "options": [
+            "perfect",
+            "favorite",
+            "funny"
+          ],
+          "promptJa": "完璧でなくていい。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "It does not need to be ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "fault は「せい／落ち度」。",
+          "options": [
+            "fault",
+            "profile",
+            "outline"
+          ],
+          "promptJa": "何かがうまくいかなくても、それはあなたのせいではない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "If something goes wrong, it is not your ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Set a small goal and act on it.",
+          "explanation_ja": "Set a small goal（小さな目標を決める）と act on it（それに沿って行動する）を and でつなぐ。",
+          "prompt_ja": "語を並べ替えて「小さな目標を決めて、それに沿って行動しよう」という文を作ろう。",
+          "tiles": [
+            "and act on it",
+            "Set",
+            "a small goal"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "学習者が自分で書く一文の見本。配置（be in）→ 傾向（may）→ 活かし方（I set / I act）の順。",
+          "options": [
+            "私の金星は天秤座にある。美しさとバランスを愛するのかもしれない。境界線を決め、優雅に行動する",
+            "私の金星は天秤座にあるので、美しさを嫌う",
+            "私は境界線を決めないで、力ずくで行動する"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "My Venus is in Libra. I may love beauty and balance. I set a boundary, and I act with grace.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "pick は「選ぶ」。choose（Unit 3）とほぼ同じ意味。",
+          "options": [
+            "pick",
+            "post",
+            "scare"
+          ],
+          "promptJa": "天体を一つ選び、星座を一つ選ぼう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Pick a planet, and ___ a sign.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson12_2",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "draft",
+          "ja": "下書き"
+        },
+        {
+          "en": "rewrite",
+          "ja": "書き直す（過去形 rewrote）"
+        },
+        {
+          "en": "brief",
+          "ja": "短い／簡潔な"
+        },
+        {
+          "en": "pick",
+          "ja": "選ぶ"
+        },
+        {
+          "en": "summarize",
+          "ja": "要約する"
+        },
+        {
+          "en": "outline",
+          "ja": "あらすじ／骨組み"
+        },
+        {
+          "en": "post",
+          "ja": "投稿（する）"
+        },
+        {
+          "en": "comment",
+          "ja": "コメント"
+        },
+        {
+          "en": "profile",
+          "ja": "プロフィール"
+        },
+        {
+          "en": "perfect",
+          "ja": "完璧な"
+        },
+        {
+          "en": "nice",
+          "ja": "すてきな／いい"
+        },
+        {
+          "en": "wrong",
+          "ja": "間違った（go wrong＝うまくいかない）"
+        },
+        {
+          "en": "act",
+          "ja": "行動する"
+        },
+        {
+          "en": "set",
+          "ja": "決める／整える（過去形も set）"
+        },
+        {
+          "en": "fault",
+          "ja": "せい／落ち度"
+        },
+        {
+          "en": "scare",
+          "ja": "怖がらせる"
+        },
+        {
+          "en": "weakness",
+          "ja": "弱さ"
+        },
+        {
+          "en": "possibility",
+          "ja": "可能性"
+        },
+        {
+          "en": "fine",
+          "ja": "大丈夫な／元気な"
+        },
+        {
+          "en": "great",
+          "ja": "すばらしい"
+        },
+        {
+          "en": "wonderful",
+          "ja": "すてきな"
+        },
+        {
+          "en": "amazing",
+          "ja": "驚くほどすばらしい"
+        },
+        {
+          "en": "terrible",
+          "ja": "ひどい"
+        },
+        {
+          "en": "favorite",
+          "ja": "お気に入りの"
+        },
+        {
+          "en": "funny",
+          "ja": "おもしろい／おかしい"
+        },
+        {
+          "en": "unusual",
+          "ja": "いつもと違う／珍しい"
+        },
+        {
+          "en": "interest",
+          "ja": "興味（を持たせる）"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "My 〜 is in 〜. I may 〜. / I 〜 with 〜.",
+      "sentences": [
+        {
+          "en": "Now, write your own line.",
+          "ja": "さあ、自分の一文を書こう。"
+        },
+        {
+          "en": "Start with a draft.",
+          "ja": "下書きから始めよう。"
+        },
+        {
+          "en": "Pick a planet, and pick a sign.",
+          "ja": "天体を一つ選び、星座を一つ選ぼう。"
+        },
+        {
+          "en": "Write a brief outline: the planet, the sign, and a feeling.",
+          "ja": "簡潔な骨組みを書こう。天体、星座、そして気持ち。"
+        },
+        {
+          "en": "My Moon is in Cancer, so I may feel deeply at home.",
+          "ja": "私の月は蟹座にあるので、家で深く感じるのかもしれない。"
+        },
+        {
+          "en": "Rewrite it until it feels like you.",
+          "ja": "自分らしく感じられるまで書き直そう。"
+        },
+        {
+          "en": "Summarize your chart in a few short lines.",
+          "ja": "あなたのチャートを、数行の短い文で要約しよう。"
+        },
+        {
+          "en": "It does not need to be perfect.",
+          "ja": "完璧でなくていい。"
+        },
+        {
+          "en": "A nice line is short and honest.",
+          "ja": "すてきな一文は、短くて正直だ。"
+        },
+        {
+          "en": "There is no wrong way to feel.",
+          "ja": "間違った感じ方はない。"
+        },
+        {
+          "en": "If something goes wrong, it is not your fault.",
+          "ja": "何かがうまくいかなくても、それはあなたのせいではない。"
+        },
+        {
+          "en": "A good line does not scare the reader.",
+          "ja": "良い一文は、読み手を怖がらせない。"
+        },
+        {
+          "en": "Write about a weakness with kindness.",
+          "ja": "弱さについて、優しさをもって書こう。"
+        },
+        {
+          "en": "Show a possibility, not a rule.",
+          "ja": "ルールではなく、可能性を示そう。"
+        },
+        {
+          "en": "Set a small goal, and act on it.",
+          "ja": "小さな目標を決めて、それに沿って行動しよう。"
+        },
+        {
+          "en": "You may post your line on your profile.",
+          "ja": "自分の一文をプロフィールに投稿してもいい。"
+        },
+        {
+          "en": "A friend may leave a kind comment.",
+          "ja": "友達が優しいコメントを残してくれるかもしれない。"
+        },
+        {
+          "en": "I am fine, and today is a great day to rest.",
+          "ja": "私は大丈夫。今日は休むのにすばらしい日だ。"
+        },
+        {
+          "en": "You did a wonderful job.",
+          "ja": "あなたはすてきな仕事をした。"
+        },
+        {
+          "en": "Your progress is amazing.",
+          "ja": "あなたの進歩は驚くほどすばらしい。"
+        },
+        {
+          "en": "A terrible day can still end with a warm meal.",
+          "ja": "ひどい日でも、温かい食事で終わることがある。"
+        },
+        {
+          "en": "What is your favorite planet?",
+          "ja": "お気に入りの天体は何？"
+        },
+        {
+          "en": "A funny line can make a friend laugh.",
+          "ja": "おもしろい一文は、友達を笑わせることがある。"
+        },
+        {
+          "en": "This is an unusual week, so be gentle with yourself.",
+          "ja": "今週はいつもと違う週なので、自分に優しくしよう。"
+        },
+        {
+          "en": "What interests you most in your chart?",
+          "ja": "あなたのチャートでいちばん興味があるのは何？"
+        },
+        {
+          "en": "My Venus is in Libra. I may love beauty and balance. I set a boundary, and I act with grace.",
+          "ja": "私の金星は天秤座にある。私は美しさとバランスを愛するのかもしれない。私は境界線を決め、優雅に行動する。"
+        }
+      ],
+      "theme_ja": "自分のチャートを、自分の言葉で短く書く。下書き・書き直し・要約の言葉と、良い一文の条件（短く、正直に、言い切らずに）を学ぶ。",
+      "title_en": "Writing Your Own Line",
+      "title_ja": "自分の一文を書く ― My 〜 is in 〜. I may 〜.",
+      "wordsUsed": [
+        "a",
+        "about",
+        "act",
+        "am",
+        "amazing",
+        "and",
+        "at",
+        "balance",
+        "be",
+        "beauty",
+        "boundary",
+        "brief",
+        "but",
+        "can",
+        "comment",
+        "courage",
+        "day",
+        "deeply",
+        "do",
+        "draft",
+        "end",
+        "fault",
+        "favorite",
+        "feel",
+        "few",
+        "fine",
+        "friend",
+        "funny",
+        "gentle",
+        "go",
+        "goal",
+        "good",
+        "grace",
+        "great",
+        "home",
+        "honest",
+        "I",
+        "if",
+        "in",
+        "interest",
+        "is",
+        "it",
+        "job",
+        "kind",
+        "kindness",
+        "laugh",
+        "leave",
+        "like",
+        "line",
+        "love",
+        "make",
+        "may",
+        "meal",
+        "most",
+        "my",
+        "need",
+        "nice",
+        "no",
+        "not",
+        "now",
+        "on",
+        "outline",
+        "own",
+        "perfect",
+        "pick",
+        "possibility",
+        "post",
+        "profile",
+        "progress",
+        "reader",
+        "rest",
+        "rewrite",
+        "rule",
+        "scare",
+        "set",
+        "short",
+        "show",
+        "slowly",
+        "small",
+        "so",
+        "something",
+        "start",
+        "still",
+        "summarize",
+        "terrible",
+        "the",
+        "there",
+        "this",
+        "to",
+        "today",
+        "until",
+        "unusual",
+        "warm",
+        "way",
+        "weakness",
+        "week",
+        "what",
+        "with",
+        "wonderful",
+        "write",
+        "wrong",
+        "you",
+        "your",
+        "yourself"
+      ]
+    },
+    {
+      "canDo_ja": "卒業の文が読め、自分の読みを自分で判断しながら、これからも英語でリーディングを読み続けられる。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にある。おめでとう！ あなたは今、英語で星を読める。ゆっくり、喜びとともに読み続けよう。",
+        "note_ja": "STAR READING 全体の到達点。アプリでは学習者の実際の太陽星座を当てはめる。Unit 1 で最初に読んだ太陽に戻り、卒業の一文として提示する。",
+        "template_en": "Your Sun is in {sunSign}. Congratulations! You can read the stars in English now. Keep reading, slowly and with joy."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "graduation（卒業）を end（終わり）と start（始まり）で対比する。",
+          "options": [
+            "卒業は終わりではなく、新しい始まりだ",
+            "卒業は終わりであって、始まりではない",
+            "卒業のあとは、何も始まらない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Graduation is not an end; it is a new start.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "disagree は「同意しない」。占いは参考であり、自分で判断していいという鑑定スタンス。",
+          "options": [
+            "リーディングに同意しなくても、それでいい",
+            "リーディングにはいつも同意しなければならない",
+            "リーディングに同意しないのは間違いだ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You may disagree with a reading, and that is okay.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "necessary は「必要な」。",
+          "options": [
+            "necessary",
+            "ordinary",
+            "extra"
+          ],
+          "promptJa": "今はもう、辞書は必要ない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "A dictionary is not ___ now.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "creator は「作り手」。create（Unit 5）からできた語。",
+          "options": [
+            "creator",
+            "audience",
+            "prize"
+          ],
+          "promptJa": "あなたは、自分の物語の作り手だ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You are the ___ of your own story.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Feel confidence in your own voice.",
+          "explanation_ja": "Feel confidence（自信を持つ）のあとに in your own voice（自分の声に）。",
+          "prompt_ja": "語を並べ替えて「自分の声に自信を持とう」という文を作ろう。",
+          "tiles": [
+            "in your own voice",
+            "Feel",
+            "confidence"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "総まとめの読解。everyday（ふだんの）と lifelong（一生続く）で、これからも読み続けることを読む。",
+          "options": [
+            "占星術はふだんの暮らしの一部になりうる。学ぶことは一生続く旅路になりうる",
+            "占星術は特別な日にしか読めない",
+            "学ぶことは卒業で終わる"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Astrology can be part of your everyday life. Learning can be a lifelong journey.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "respond は「応える」。response（Unit 11）の動詞。",
+          "options": [
+            "respond",
+            "publish",
+            "graduate"
+          ],
+          "promptJa": "友達にお願いがあったら、優しさで応えよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "If a friend has a request, ___ with kindness.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson12_3",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "hello",
+          "ja": "こんにちは"
+        },
+        {
+          "en": "goodbye",
+          "ja": "さようなら"
+        },
+        {
+          "en": "hi",
+          "ja": "やあ"
+        },
+        {
+          "en": "bye",
+          "ja": "じゃあね"
+        },
+        {
+          "en": "congratulations",
+          "ja": "おめでとう"
+        },
+        {
+          "en": "graduate",
+          "ja": "卒業する"
+        },
+        {
+          "en": "graduation",
+          "ja": "卒業"
+        },
+        {
+          "en": "achievement",
+          "ja": "達成"
+        },
+        {
+          "en": "confidence",
+          "ja": "自信"
+        },
+        {
+          "en": "necessary",
+          "ja": "必要な"
+        },
+        {
+          "en": "somehow",
+          "ja": "どういうわけか／なんとかして"
+        },
+        {
+          "en": "everyday",
+          "ja": "毎日の／ふだんの"
+        },
+        {
+          "en": "ordinary",
+          "ja": "ふつうの"
+        },
+        {
+          "en": "extra",
+          "ja": "余分の／特別の"
+        },
+        {
+          "en": "prize",
+          "ja": "賞"
+        },
+        {
+          "en": "speech",
+          "ja": "スピーチ"
+        },
+        {
+          "en": "audience",
+          "ja": "聞き手／観客"
+        },
+        {
+          "en": "farewell",
+          "ja": "別れ（のあいさつ）"
+        },
+        {
+          "en": "disagree",
+          "ja": "同意しない"
+        },
+        {
+          "en": "debate",
+          "ja": "議論"
+        },
+        {
+          "en": "request",
+          "ja": "お願い（する）"
+        },
+        {
+          "en": "respond",
+          "ja": "応える"
+        },
+        {
+          "en": "deliver",
+          "ja": "届ける"
+        },
+        {
+          "en": "publish",
+          "ja": "公開する"
+        },
+        {
+          "en": "creator",
+          "ja": "作り手"
+        },
+        {
+          "en": "lifelong",
+          "ja": "一生続く"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "Congratulations! You can 〜. / You are the 〜 of your own 〜.",
+      "sentences": [
+        {
+          "en": "Hello, and congratulations!",
+          "ja": "こんにちは、そしておめでとう！"
+        },
+        {
+          "en": "You graduate from STAR READING today.",
+          "ja": "今日、あなたは STAR READING を卒業する。"
+        },
+        {
+          "en": "Graduation is not an end; it is a new start.",
+          "ja": "卒業は終わりではなく、新しい始まりだ。"
+        },
+        {
+          "en": "Your achievement is real.",
+          "ja": "あなたの達成は本物だ。"
+        },
+        {
+          "en": "Feel confidence in your own voice.",
+          "ja": "自分の声に自信を持とう。"
+        },
+        {
+          "en": "A dictionary is not necessary now.",
+          "ja": "今はもう、辞書は必要ない。"
+        },
+        {
+          "en": "Somehow, the words became your friends.",
+          "ja": "どういうわけか、言葉はあなたの友達になった。"
+        },
+        {
+          "en": "Astrology can be part of your everyday life.",
+          "ja": "占星術は、あなたのふだんの暮らしの一部になりうる。"
+        },
+        {
+          "en": "An ordinary day can hold a special line.",
+          "ja": "ふつうの日にも、特別な一文があることがある。"
+        },
+        {
+          "en": "Give yourself an extra rest today.",
+          "ja": "今日は自分に特別な休息をあげよう。"
+        },
+        {
+          "en": "There is no prize, but there is joy.",
+          "ja": "賞はないが、喜びがある。"
+        },
+        {
+          "en": "Write a short speech for yourself.",
+          "ja": "自分のための短いスピーチを書こう。"
+        },
+        {
+          "en": "Your audience is your future self.",
+          "ja": "あなたの聞き手は、未来の自分だ。"
+        },
+        {
+          "en": "You may disagree with a reading, and that is okay.",
+          "ja": "リーディングに同意しなくても、それでいい。"
+        },
+        {
+          "en": "A friendly debate can help you think.",
+          "ja": "和やかな議論は、考える助けになることがある。"
+        },
+        {
+          "en": "If a friend has a request, respond with kindness.",
+          "ja": "友達にお願いがあったら、優しさで応えよう。"
+        },
+        {
+          "en": "Deliver your words softly.",
+          "ja": "言葉をやわらかく届けよう。"
+        },
+        {
+          "en": "You may publish your own lines someday.",
+          "ja": "いつか自分の一文を公開するかもしれない。"
+        },
+        {
+          "en": "You are the creator of your own story.",
+          "ja": "あなたは、自分の物語の作り手だ。"
+        },
+        {
+          "en": "Learning can be a lifelong journey.",
+          "ja": "学ぶことは、一生続く旅路になりうる。"
+        },
+        {
+          "en": "Hi, Moon. Hi, Sun. Thank you for the lessons.",
+          "ja": "やあ、月。やあ、太陽。たくさんの学びをありがとう。"
+        },
+        {
+          "en": "This is not goodbye, only a farewell for today. Bye for now.",
+          "ja": "これはさようならではなく、今日のお別れのあいさつだけ。またね。"
+        }
+      ],
+      "theme_ja": "STAR READING の卒業。あいさつと卒業の言葉を学び、これからも占星術を「参考」として読み続けるための一文を読む。",
+      "title_en": "Graduation",
+      "title_ja": "卒業 ― Congratulations! You can 〜.",
+      "wordsUsed": [
+        "a",
+        "achievement",
+        "and",
+        "are",
+        "astrology",
+        "audience",
+        "be",
+        "become",
+        "but",
+        "bye",
+        "can",
+        "confidence",
+        "congratulations",
+        "creator",
+        "day",
+        "debate",
+        "deliver",
+        "dictionary",
+        "disagree",
+        "end",
+        "English",
+        "everyday",
+        "extra",
+        "farewell",
+        "feel",
+        "for",
+        "friend",
+        "friendly",
+        "from",
+        "future",
+        "give",
+        "goodbye",
+        "graduate",
+        "graduation",
+        "have",
+        "hello",
+        "help",
+        "hi",
+        "hold",
+        "if",
+        "in",
+        "is",
+        "it",
+        "journey",
+        "joy",
+        "keep",
+        "kindness",
+        "learn",
+        "lesson",
+        "life",
+        "lifelong",
+        "line",
+        "may",
+        "necessary",
+        "new",
+        "no",
+        "not",
+        "now",
+        "of",
+        "okay",
+        "only",
+        "ordinary",
+        "own",
+        "part",
+        "prize",
+        "publish",
+        "read",
+        "real",
+        "request",
+        "respond",
+        "rest",
+        "self",
+        "short",
+        "slowly",
+        "softly",
+        "someday",
+        "somehow",
+        "special",
+        "speech",
+        "star",
+        "start",
+        "story",
+        "thank",
+        "that",
+        "the",
+        "there",
+        "think",
+        "this",
+        "today",
+        "voice",
+        "with",
+        "word",
+        "write",
+        "you",
+        "your",
+        "yourself"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-23",
+    "id": "unit12",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 12 の新規一般語は80語（27・27・26語）で、累計1,500語に到達する（CURRICULUM §4 の配分どおり。最終調整弁として端数はなし）。",
+      "Unit 11 の作成時に範囲外として残った基本語（perfect, nice, wrong, act, set, fault, scare, weakness, possibility）と、到達点の文「英語で読める」に必要な English を、Unit 12 で導入した。",
+      "専門用語の新規導入はなし（CURRICULUM §3「総復習」）。用語集のうち degree と cusp は、CURRICULUM §3 の導入タイミングが「該当ユニットで随時」で配分表に含まれていないため、どのユニットでも導入していない。",
+      "縮約形は元の形の語として数える（Unit 10 と同じ扱い）。数字（1,500、12、4th など）は語数に数えない（CURRICULUM 2.1）。STAR READING は固有名詞として扱う。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形・所有格の 's は原形と同一語として数える（CURRICULUM 2.1）。不規則形は初出の語の ja に併記した（rewrite→rewrote、set→set）。既出語の不規則な過去形 grown（grow）・gave（give）・became（become）は本ユニットで初出のため、ここに併記する。",
+      "例文・演習で使う一般語は「Unit 1〜11 導入済み1,420語＋当該レッスンまでの Unit 12 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "Lesson 12.2 は「自分の言葉で短く書く」レッスン。データ形式は既存の3種の演習のみのため、書く練習は並べ替えと、配置 → 傾向（may）→ 活かし方の見本文を読む形で構成した。"
+    ],
+    "order": 12,
+    "status": "draft",
+    "theme_ja": "これまでの天体・星座・ハウス・アスペクト・トランジットを総復習し、Co-Star 風の文を辞書なしで読む。自分の配置を自分の言葉で短く書き、STAR READING を卒業する。",
+    "title_en": "Graduation",
+    "title_ja": "卒業 ― 自分の言葉で読む・短く書く",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson12_1": 27,
+        "lesson12_2": 27,
+        "lesson12_3": 26
+      },
+      "newGeneralWordsTotal": 80,
+      "newTermsTotal": 0
+    }
+  }
+}
