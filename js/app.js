@@ -28,20 +28,25 @@
   ];
 
   /* ---------------- state ---------------- */
+  /*
+   * State shape (localStorage key 'star-reading-v1'):
+   *   { profiles: [{ id, name, relation, birth|null }], viewProfileId,
+   *     xp, completed, lineDate, profileLang }
+   * Exactly one profile has relation 'self' (id 'self'): lessons, XP
+   * and Today's Line are anchored to it. Core.normalizeState migrates
+   * the legacy single-birth format ({ birth: {...} }) on load, so an
+   * existing user's data carries over untouched.
+   */
 
   function defaultState() {
-    return { birth: null, xp: 0, completed: {}, lineDate: null, profileLang: 'ja' };
+    return Core.normalizeState(null);
   }
   function loadState() {
     try {
       var raw = localStorage.getItem(LS_KEY);
       if (raw) {
         var s = JSON.parse(raw);
-        if (s && typeof s === 'object') {
-          var d = defaultState();
-          Object.keys(d).forEach(function (k) { if (s[k] !== undefined) d[k] = s[k]; });
-          return d;
-        }
+        if (s && typeof s === 'object') return Core.normalizeState(s);
       }
     } catch (e) { /* fall through */ }
     return defaultState();
@@ -51,18 +56,42 @@
     try { localStorage.setItem(LS_KEY, JSON.stringify(state)); } catch (e) { /* ignore */ }
   }
 
+  function selfProfile() {
+    return state.profiles.filter(function (p) { return p.relation === 'self'; })[0] || state.profiles[0];
+  }
+  function selfBirth() {
+    var p = selfProfile();
+    return p ? p.birth : null;
+  }
+  function profileById(id) {
+    return state.profiles.filter(function (p) { return p.id === id; })[0] || null;
+  }
+  function viewProfile() {
+    return profileById(state.viewProfileId) || selfProfile();
+  }
+  function profileDisplayName(p) {
+    return (p.name && p.name.trim()) || Core.relationLabel(p.relation);
+  }
+
   var unitsData = [];    // data/unitN.json for every unit file that exists (unit.order 順)
   var todaysData = null; // data/todays-line.json
   var glossaryData = null; // data/glossary.json
   var readingsCore = null; // data/readings-core.json
   var profileData = null;  // data/readings-profile.json
-  var chartCache = null; // StarChart.computeChart result for state.birth
+  var chartById = {};    // profile id -> StarChart.computeChart result
   var currentView = 'home';
+  var setupTargetId = 'self'; // profile the setup form edits ('new' = a fresh profile)
 
-  function computeUserChart() {
-    if (!state.birth) return null;
-    var d = Core.birthToUtcDate(state.birth);
-    return SC.computeChart(d, Number(state.birth.lat), Number(state.birth.lon));
+  function chartForProfile(p) {
+    if (!p || !p.birth) return null;
+    if (!chartById[p.id]) {
+      var d = Core.birthToUtcDate(p.birth);
+      chartById[p.id] = SC.computeChart(d, Number(p.birth.lat), Number(p.birth.lon));
+    }
+    return chartById[p.id];
+  }
+  function selfChart() {
+    return chartForProfile(selfProfile());
   }
 
   /* ---------------- helpers ---------------- */
@@ -112,6 +141,32 @@
       '<span>WORDS <b>' + ms.words.length + '</b> / ' + Core.TOTAL_GENERAL_WORDS + '</span>';
   }
 
+  /* ---------------- profile switcher (chart / profile views) ---------------- */
+
+  function profileSwitcherHtml(activeId) {
+    if (state.profiles.length <= 1) return '';
+    return '<div class="profile-switch" role="group" aria-label="表示するプロフィール">' +
+      state.profiles.map(function (p) {
+        return '<button type="button" data-profile="' + esc(p.id) + '"' +
+          (p.id === activeId ? ' class="active"' : '') + '>' +
+          esc(profileDisplayName(p)) + '（' + esc(Core.relationLabel(p.relation)) + '）</button>';
+      }).join('') + '</div>';
+  }
+  function bindProfileSwitcher(el) {
+    el.querySelectorAll('[data-profile]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        state.viewProfileId = btn.getAttribute('data-profile');
+        saveState();
+        if (currentView === 'chart') renderChart();
+        else if (currentView === 'profile') renderProfile();
+      });
+    });
+  }
+  function profileHeadlineHtml(p) {
+    return '<p class="small profile-who"><b>' + esc(profileDisplayName(p)) + '</b>（' +
+      esc(Core.relationLabel(p.relation)) + '）</p>';
+  }
+
   /* ---------------- home ---------------- */
 
   function renderHome() {
@@ -119,7 +174,7 @@
     var ms = mastered();
     var html = '';
 
-    if (!state.birth) {
+    if (!selfBirth()) {
       html += '<div class="notice"><b>はじめに出生情報を入力してください。</b><br>' +
         'あなたの出生チャートが、そのまま英語学習の教材になります。データはこのブラウザの中にだけ保存されます。' +
         '<div class="btn-row"><button class="btn" id="home-setup">出生情報を入力する</button></div></div>';
@@ -130,7 +185,7 @@
       '<div class="progress-line"><div style="width:' + (ms.words.length / Core.TOTAL_GENERAL_WORDS * 100).toFixed(1) + '%"></div></div>' +
       '<p class="small">専門用語 ' + ms.terms.length + ' 語 ／ XP ' + state.xp + '</p></div>';
 
-    if (state.birth && chartCache) {
+    if (selfBirth() && selfChart()) {
       var moonToday = SC.signOf(SC.planetLongitudes(new Date()).Moon);
       html += '<div class="card"><p class="card-label">TODAY\u2019S LINE</p>' +
         '<p class="lead">今日の月は ' + esc(moonToday.en) + '（' + esc(moonToday.ja) + '）。' +
@@ -141,6 +196,11 @@
         '<p class="lead">あなたの出生チャートから作る基本鑑定です。日本語と英語で読めて、' +
         '自己紹介にも使えるサマリーが付いています。英語版をスラスラ読めるようになるのが、ひとつのゴールです。</p>' +
         '<div class="btn-row"><button class="btn" id="home-profile">わたしの基本鑑定を読む</button></div></div>';
+
+      html += '<div class="card"><p class="card-label">PEOPLE</p>' +
+        '<p class="lead">家族や友人、恋人の出生データも登録できます。その人のチャートと基本鑑定も、' +
+        'CHART と PROFILE で切り替えて読めます（学習の進捗は、あなたのチャートが土台のままです）。</p>' +
+        '<div class="btn-row"><button class="btn" id="home-people">プロフィールを追加・切り替え</button></div></div>';
     }
 
     html += '<h2 class="view-title">Units</h2>';
@@ -186,9 +246,10 @@
     });
 
     el.innerHTML = html;
-    var bs = $('home-setup'); if (bs) bs.addEventListener('click', function () { showView('setup'); });
+    var bs = $('home-setup'); if (bs) bs.addEventListener('click', function () { setupTargetId = 'self'; showView('setup'); });
     var bt = $('home-today'); if (bt) bt.addEventListener('click', function () { showView('today'); });
     var bp = $('home-profile'); if (bp) bp.addEventListener('click', function () { showView('profile'); });
+    var bpp = $('home-people'); if (bpp) bpp.addEventListener('click', function () { showView('setup'); });
     el.querySelectorAll('[data-lesson]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         var id = btn.getAttribute('data-lesson');
@@ -200,18 +261,76 @@
     });
   }
 
-  /* ---------------- setup ---------------- */
+  /* ---------------- setup: profile management ---------------- */
+
+  function newProfileId() {
+    var base = 'p' + Date.now().toString(36);
+    var id = base;
+    var n = 1;
+    while (profileById(id)) { id = base + (n++); }
+    return id;
+  }
+
+  function birthSummary(b) {
+    if (!b) return '出生データ未入力';
+    return esc(b.date) + (b.timeUnknown ? '（時刻不明）' : ' ' + esc(b.time)) +
+      (b.placeName ? ' ／ ' + esc(b.placeName) : '');
+  }
 
   function renderSetup() {
     var el = $('view-setup');
-    var b = state.birth || { date: '', time: '', timeUnknown: false, placeName: '', lat: 35.61, lon: 140.11, utcOffset: 9 };
+    // The form edits setupTargetId ('new' = a fresh profile). Fall back
+    // to the self profile if the target no longer exists.
+    var target = setupTargetId === 'new' ? null : profileById(setupTargetId);
+    if (setupTargetId !== 'new' && !target) {
+      target = selfProfile();
+      setupTargetId = target.id;
+    }
+    var isNew = setupTargetId === 'new';
+    var isSelf = !isNew && target.relation === 'self';
+    var b = (target && target.birth) ||
+      { date: '', time: '', timeUnknown: false, placeName: '', lat: 35.61, lon: 140.11, utcOffset: 9 };
     var cityOptions = Core.CITIES.map(function (c) {
       return '<option value="' + esc(Core.cityLabel(c)) + '"></option>';
     }).join('');
-    el.innerHTML =
-      '<h2 class="view-title">Birth Data</h2>' +
-      '<p class="lead">生まれた日・時刻・場所から、あなたの出生チャートを計算します。</p>' +
-      '<form id="birth-form">' +
+
+    var html = '<h2 class="view-title">Birth Data — プロフィール</h2>' +
+      '<p class="lead">生まれた日・時刻・場所から出生チャートを計算します。家族や友人、恋人のデータも登録できて、' +
+      'その人のチャートと基本鑑定も読めます。データはこのブラウザの中にだけ保存されます。</p>';
+
+    html += '<h3 class="block-title">PROFILES — 登録済みプロフィール</h3><div class="profile-list">';
+    state.profiles.forEach(function (p) {
+      html += '<div class="profile-row">' +
+        '<div class="p-info"><b>' + esc(profileDisplayName(p)) + '</b>' +
+        '<span class="small">関係：' + esc(Core.relationLabel(p.relation)) + ' ／ ' + birthSummary(p.birth) + '</span></div>' +
+        '<div class="p-actions">' +
+        '<button type="button" class="mini-btn" data-edit-profile="' + esc(p.id) + '">編集</button>' +
+        (p.birth ? '<button type="button" class="mini-btn" data-view-profile="' + esc(p.id) + '">チャート</button>' : '') +
+        (p.relation !== 'self'
+          ? '<button type="button" class="mini-btn danger" data-del-profile="' + esc(p.id) + '">削除</button>'
+          : '<span class="small">削除できません</span>') +
+        '</div></div>';
+    });
+    html += '</div>' +
+      '<div class="btn-row"><button type="button" class="btn ghost" id="add-profile">＋ 新しい人を追加</button></div>';
+
+    html += '<h3 class="block-title">' + (isNew ? 'NEW PROFILE — 新しい人' :
+      'EDIT — ' + esc(profileDisplayName(target)) + '（' + esc(Core.relationLabel(target.relation)) + '）') + '</h3>';
+
+    var relationOptions = Core.RELATIONS.filter(function (r) { return r.key !== 'self'; })
+      .map(function (r) {
+        return '<option value="' + r.key + '"' +
+          (!isNew && target.relation === r.key ? ' selected' : '') + '>' + r.ja + '</option>';
+      }).join('');
+    html += '<form id="birth-form">' +
+      '<div class="field"><label for="f-name">表示名</label>' +
+      '<input type="text" id="f-name" value="' + esc(isNew ? '' : target.name) + '" placeholder="例：わたし、母、Aさん"></div>' +
+      '<div class="field"><label for="f-relation">関係</label>' +
+      (isSelf
+        ? '<select id="f-relation" disabled><option value="self" selected>自分</option></select>' +
+          '<p class="small">「自分」のプロフィールは常に1つだけです。学習の進捗・XP・Today\u2019s Line はこのチャートが土台になります。</p>'
+        : '<select id="f-relation">' + relationOptions + '</select>') +
+      '</div>' +
       '<div class="field"><label for="f-date">生年月日</label>' +
       '<input type="date" id="f-date" required value="' + esc(b.date) + '"></div>' +
       '<div class="field"><label for="f-time">出生時刻</label>' +
@@ -230,11 +349,48 @@
       '<div class="field"><label for="f-tz">UTC時差（日本は9）</label><input type="number" id="f-tz" step="0.5" min="-14" max="14" value="' + esc(b.utcOffset) + '"></div>' +
       '</div>' +
       '<div class="btn-row"><button type="submit" class="btn">保存してチャートを見る</button></div>' +
-      '</form>' +
-      (state.birth ?
-        '<h3 class="block-title">データの削除</h3>' +
-        '<div class="btn-row"><button class="btn ghost" id="del-birth">出生データだけ削除</button>' +
-        '<button class="btn ghost" id="del-all">学習記録も含めて全部削除</button></div>' : '');
+      '</form>';
+
+    if (selfBirth()) {
+      html += '<h3 class="block-title">データの削除</h3>' +
+        '<div class="btn-row"><button type="button" class="btn ghost" id="del-birth">自分の出生データだけ削除</button>' +
+        '<button type="button" class="btn ghost" id="del-all">全プロフィールと学習記録をすべて削除</button></div>';
+    }
+
+    el.innerHTML = html;
+
+    el.querySelectorAll('[data-edit-profile]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        setupTargetId = btn.getAttribute('data-edit-profile');
+        renderSetup();
+        window.scrollTo(0, 0);
+      });
+    });
+    el.querySelectorAll('[data-view-profile]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        state.viewProfileId = btn.getAttribute('data-view-profile');
+        saveState();
+        showView('chart');
+      });
+    });
+    el.querySelectorAll('[data-del-profile]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var p = profileById(btn.getAttribute('data-del-profile'));
+        if (!p || p.relation === 'self') return; // the self profile can never be deleted
+        if (!confirm('「' + profileDisplayName(p) + '」のプロフィールを削除しますか？')) return;
+        state.profiles = state.profiles.filter(function (x) { return x.id !== p.id; });
+        delete chartById[p.id];
+        if (state.viewProfileId === p.id) state.viewProfileId = 'self';
+        if (setupTargetId === p.id) setupTargetId = 'self';
+        saveState();
+        renderSetup();
+      });
+    });
+    $('add-profile').addEventListener('click', function () {
+      setupTargetId = 'new';
+      renderSetup();
+      window.scrollTo(0, 0);
+    });
 
     function applyCity() {
       var c = Core.findCity($('f-city').value);
@@ -270,20 +426,41 @@
         alert('出生時刻を入力するか、「出生時刻がわからない」にチェックしてください。');
         return;
       }
-      state.birth = birth;
-      chartCache = computeUserChart();
+      var name = $('f-name').value.trim();
+      var profile;
+      if (setupTargetId === 'new') {
+        profile = {
+          id: newProfileId(),
+          name: name,
+          relation: $('f-relation').value,
+          birth: birth
+        };
+        state.profiles.push(profile);
+      } else {
+        profile = profileById(setupTargetId) || selfProfile();
+        profile.name = name;
+        if (profile.relation !== 'self') profile.relation = $('f-relation').value;
+        profile.birth = birth;
+      }
+      delete chartById[profile.id];
+      state.viewProfileId = profile.id;
+      setupTargetId = profile.id;
       saveState();
       showView('chart');
     });
     var db = $('del-birth');
     if (db) db.addEventListener('click', function () {
-      if (!confirm('出生データを削除しますか？（学習記録は残ります）')) return;
-      state.birth = null; chartCache = null; saveState(); showView('home');
+      if (!confirm('自分の出生データを削除しますか？（他のプロフィールと学習記録は残ります）')) return;
+      var sp = selfProfile();
+      sp.birth = null;
+      delete chartById[sp.id];
+      if (state.viewProfileId === sp.id) state.viewProfileId = 'self';
+      saveState(); showView('home');
     });
     var da = $('del-all');
     if (da) da.addEventListener('click', function () {
-      if (!confirm('出生データと学習記録をすべて削除しますか？')) return;
-      state = defaultState(); chartCache = null; saveState(); showView('home');
+      if (!confirm('全プロフィールの出生データと学習記録をすべて削除しますか？')) return;
+      state = defaultState(); chartById = {}; setupTargetId = 'self'; saveState(); showView('home');
     });
   }
 
@@ -291,17 +468,24 @@
 
   function renderChart() {
     var el = $('view-chart');
-    if (!state.birth || !chartCache) {
+    var p = viewProfile();
+    var ch = chartForProfile(p);
+    if (!p || !p.birth || !ch) {
       el.innerHTML = '<h2 class="view-title">Your Chart</h2>' +
+        profileSwitcherHtml(p ? p.id : 'self') +
         '<div class="notice">まだ出生情報がありません。<div class="btn-row">' +
         '<button class="btn" id="chart-setup">出生情報を入力する</button></div></div>';
-      $('chart-setup').addEventListener('click', function () { showView('setup'); });
+      bindProfileSwitcher(el);
+      $('chart-setup').addEventListener('click', function () {
+        setupTargetId = p ? p.id : 'self';
+        showView('setup');
+      });
       return;
     }
-    var b = state.birth;
-    var ch = chartCache;
+    var b = p.birth;
     var limited = !!b.timeUnknown;
-    var html = '<h2 class="view-title">Your Chart</h2>';
+    var html = '<h2 class="view-title">Your Chart</h2>' +
+      profileSwitcherHtml(p.id) + profileHeadlineHtml(p);
     html += '<p class="small">' + esc(b.date) + (limited ? '（時刻不明）' : ' ' + esc(b.time)) +
       (b.placeName ? ' ／ ' + esc(b.placeName) : '') + ' ／ 緯度 ' + b.lat + ' 経度 ' + b.lon + '</p>';
     if (limited) {
@@ -348,8 +532,9 @@
       html += '</table>';
     }
 
-    html += '<div class="btn-row"><button class="btn" id="chart-profile">わたしの基本鑑定を読む →</button></div>';
+    html += '<div class="btn-row"><button class="btn" id="chart-profile">基本鑑定を読む →</button></div>';
     el.innerHTML = html;
+    bindProfileSwitcher(el);
     $('chart-profile').addEventListener('click', function () { showView('profile'); });
   }
 
@@ -366,11 +551,18 @@
 
   function renderProfile() {
     var el = $('view-profile');
-    if (!state.birth || !chartCache) {
+    var p = viewProfile();
+    var pChart = chartForProfile(p);
+    if (!p || !p.birth || !pChart) {
       el.innerHTML = '<h2 class="view-title">My Profile Reading</h2>' +
-        '<div class="notice">出生情報を入力すると、あなたの基本鑑定が作られます。<div class="btn-row">' +
+        profileSwitcherHtml(p ? p.id : 'self') +
+        '<div class="notice">出生情報を入力すると、基本鑑定が作られます。<div class="btn-row">' +
         '<button class="btn" id="profile-setup">出生情報を入力する</button></div></div>';
-      $('profile-setup').addEventListener('click', function () { showView('setup'); });
+      bindProfileSwitcher(el);
+      $('profile-setup').addEventListener('click', function () {
+        setupTargetId = p ? p.id : 'self';
+        showView('setup');
+      });
       return;
     }
     if (!readingsCore || !profileData) {
@@ -379,8 +571,8 @@
         'ファイルを直接開いている場合は、ローカルサーバー経由で開いてください（例：<code>python3 -m http.server</code>）。</div>';
       return;
     }
-    var limited = !!state.birth.timeUnknown;
-    var profile = Core.buildProfileReading(chartCache, readingsCore, profileData, limited);
+    var limited = !!p.birth.timeUnknown;
+    var profile = Core.buildProfileReading(pChart, readingsCore, profileData, limited);
     if (!profile) {
       el.innerHTML = '<h2 class="view-title">My Profile Reading</h2>' +
         '<div class="error-box">鑑定文を組み立てられませんでした。データファイルの内容を確認してください。</div>';
@@ -388,7 +580,8 @@
     }
     var lang = state.profileLang === 'en' ? 'en' : 'ja';
 
-    var html = '<h2 class="view-title">My Profile Reading — わたしの基本鑑定</h2>';
+    var html = '<h2 class="view-title">My Profile Reading — わたしの基本鑑定</h2>' +
+      profileSwitcherHtml(p.id) + profileHeadlineHtml(p);
     html += '<div class="lang-toggle" role="group" aria-label="Language">' +
       '<button type="button" id="lang-ja" class="' + (lang === 'ja' ? 'active' : '') + '">日本語</button>' +
       '<button type="button" id="lang-en" class="' + (lang === 'en' ? 'active' : '') + '">ENGLISH</button></div>';
@@ -427,6 +620,7 @@
     html += '<p class="small">※ 傾向を読むための文章です。未来や性格を断定するものではありません。英語版は、学習の進度に合わせてスラスラ読めるようになることを目指す文章です。</p>';
 
     el.innerHTML = html;
+    bindProfileSwitcher(el);
     $('lang-ja').addEventListener('click', function () {
       if (state.profileLang !== 'ja') { state.profileLang = 'ja'; saveState(); renderProfile(); }
     });
@@ -439,17 +633,18 @@
 
   function renderToday() {
     var el = $('view-today');
-    if (!state.birth || !chartCache) {
+    var myChart = selfChart();
+    if (!selfBirth() || !myChart) {
       el.innerHTML = '<h2 class="view-title">Today\u2019s Line</h2>' +
         '<div class="notice">出生情報を入力すると、今日の月とあなたのチャートから一文が作られます。<div class="btn-row">' +
         '<button class="btn" id="today-setup">出生情報を入力する</button></div></div>';
-      $('today-setup').addEventListener('click', function () { showView('setup'); });
+      $('today-setup').addEventListener('click', function () { setupTargetId = 'self'; showView('setup'); });
       return;
     }
     var now = new Date();
     var longs = SC.planetLongitudes(now);
     var moonToday = SC.signOf(longs.Moon);
-    var natalMoon = chartCache.planets.Moon.sign;
+    var natalMoon = myChart.planets.Moon.sign;
     // Data-driven line (data/todays-line.json): the template is chosen
     // from today's Moon / Sun signs against the learner's natal signs,
     // gated by the level of the highest completed unit. Falls back to
@@ -460,13 +655,13 @@
         transitMoonIndex: moonToday.index,
         seasonSunIndex: SC.signOf(longs.Sun).index,
         natal: {
-          Sun: chartCache.planets.Sun.sign.index,
+          Sun: myChart.planets.Sun.sign.index,
           Moon: natalMoon.index,
-          Mercury: chartCache.planets.Mercury.sign.index,
-          Venus: chartCache.planets.Venus.sign.index,
-          Mars: chartCache.planets.Mars.sign.index
+          Mercury: myChart.planets.Mercury.sign.index,
+          Venus: myChart.planets.Venus.sign.index,
+          Mars: myChart.planets.Mars.sign.index
         },
-        limited: !!state.birth.timeUnknown,
+        limited: !!selfBirth().timeUnknown,
         level: Core.levelForProgress(unitsData, state.completed)
       };
       line = Core.buildTodaysLineFromData(todaysData, ctx, Math.floor(now.getTime() / 86400000));
@@ -751,8 +946,8 @@
     // Unit 2+ chartLines carry {sunSign} style placeholders: fill them
     // with the learner's own placements. If they cannot be filled (no
     // birth data yet), the card is skipped rather than showing braces.
-    var clEn = Core.fillChartLine(cl.template_en, chartCache);
-    var clJa = Core.fillChartLine(cl.ja, chartCache);
+    var clEn = Core.fillChartLine(cl.template_en, selfChart());
+    var clJa = Core.fillChartLine(cl.ja, selfChart());
     var html = '<p class="small">UNIT ' + session.unitOrder + ' — LESSON ' + lesson.order + '</p>' +
       '<h2 class="view-title" style="font-size:20px; letter-spacing:0.08em; text-transform:none">LESSON COMPLETE</h2>' +
       '<div class="big-number">+' + session.xp + ' <small>XP</small></div>' +
@@ -765,11 +960,16 @@
         (cl.note_ja ? '<p class="small">' + esc(cl.note_ja) + '</p>' : '') + '</div>';
     }
     html += '<div class="btn-row"><button class="btn" id="done-home">HOME へ</button>' +
-      (state.birth ? '<button class="btn ghost" id="done-chart">チャートを見る</button>' : '') + '</div>';
+      (selfBirth() ? '<button class="btn ghost" id="done-chart">チャートを見る</button>' : '') + '</div>';
     el.innerHTML = html;
     $('done-home').addEventListener('click', function () { session = null; showView('home'); });
     var dc = $('done-chart');
-    if (dc) dc.addEventListener('click', function () { session = null; showView('chart'); });
+    if (dc) dc.addEventListener('click', function () {
+      session = null;
+      state.viewProfileId = 'self'; // lessons are anchored to the learner's own chart
+      saveState();
+      showView('chart');
+    });
   }
 
   /* ---------------- init ---------------- */
@@ -778,7 +978,6 @@
     btn.addEventListener('click', function () { showView(btn.getAttribute('data-view')); });
   });
 
-  chartCache = computeUserChart();
   showView('home');
 
   // Units are data-driven: try unit1..unit12 and keep whichever files
