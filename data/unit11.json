@@ -1,0 +1,1782 @@
+{
+  "lessons": [
+    {
+      "canDo_ja": "接続の言葉がわかり、「Although you feel tired, you can still 〜.」のような複文が読める。",
+      "chartLine": {
+        "ja": "あなたの水星は{mercurySignJa}にある。頭は忙しくても、何を言うかは選べる。その間に、心を休ませよう。",
+        "note_ja": "アプリでは学習者の実際の水星星座を当てはめる。思考の天体である水星の一文を、although と meanwhile でつないだ複文として読む。",
+        "template_en": "Your Mercury is in {mercurySign}. Although your mind is busy, you can choose what to say. Meanwhile, let your heart rest."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "although は「〜だけれども」。前半と後半が反対の内容になる。",
+          "options": [
+            "疲れていても、静かな夜を楽しむことはできる",
+            "疲れているので、夜を楽しむことはできない",
+            "静かな夜のあとは、疲れを感じる"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Although you feel tired, you can still enjoy a quiet evening.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "whereas は「〜である一方で」。2つの気持ちを並べて対比する。",
+          "options": [
+            "変化を望む一方で、あなたの一部は安全なままでいたい",
+            "変化を望んでいるので、安全はいらない",
+            "あなたは変化をまったく望んでいない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You want change, whereas a part of you wants to stay safe.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "despite ＋ 名詞 で「〜にもかかわらず」。although のあとは文が続くが、despite のあとは名詞が続く。",
+          "options": [
+            "Despite",
+            "Whereas",
+            "Hence"
+          ],
+          "promptJa": "ストレスがあるにもかかわらず、あなたはよくやっている。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___ the stress, you are doing a good job.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "eventually は「やがて」。",
+          "options": [
+            "Eventually",
+            "Beforehand",
+            "Meanwhile"
+          ],
+          "promptJa": "やがて、嵐は過ぎていく。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___, the storm passes.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "It does not matter what other people think.",
+          "explanation_ja": "It does not matter 〜 で「〜は重要ではない」。it は後ろの what 〜 を指す。",
+          "prompt_ja": "語を並べ替えて「ほかの人がどう思うかは重要ではない」という文を作ろう。",
+          "tiles": [
+            "what other people think",
+            "It",
+            "does not matter"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。nevertheless（それでも）で前の文と反対の内容を続け、eventually（やがて）で時間の流れを読む。",
+          "options": [
+            "難しい週だが、それでもあなたは一人ではない。やがて嵐は過ぎていく",
+            "難しい週なので、あなたは一人で耐えなければならない",
+            "嵐はずっと続くので、何もできない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "It is a difficult week; nevertheless, you are not alone. Eventually, the storm passes.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "likewise は「同じように」。",
+          "options": [
+            "likewise",
+            "hence",
+            "whereas"
+          ],
+          "promptJa": "あなたは人に優しい。同じように、自分にも優しくしよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You are kind to others; ___, be kind to yourself.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson11_1",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "whereas",
+          "ja": "〜である一方で"
+        },
+        {
+          "en": "despite",
+          "ja": "〜にもかかわらず"
+        },
+        {
+          "en": "meanwhile",
+          "ja": "その間に／一方で"
+        },
+        {
+          "en": "moreover",
+          "ja": "そのうえ"
+        },
+        {
+          "en": "furthermore",
+          "ja": "さらに"
+        },
+        {
+          "en": "nevertheless",
+          "ja": "それでも"
+        },
+        {
+          "en": "thus",
+          "ja": "このように／だから"
+        },
+        {
+          "en": "hence",
+          "ja": "それゆえ"
+        },
+        {
+          "en": "wherever",
+          "ja": "どこで〜しても"
+        },
+        {
+          "en": "whoever",
+          "ja": "誰が〜しても"
+        },
+        {
+          "en": "whichever",
+          "ja": "どちらを〜しても"
+        },
+        {
+          "en": "likewise",
+          "ja": "同じように"
+        },
+        {
+          "en": "similarly",
+          "ja": "同様に"
+        },
+        {
+          "en": "indeed",
+          "ja": "実際に／本当に"
+        },
+        {
+          "en": "regardless",
+          "ja": "（regardless of 〜で）〜に関係なく"
+        },
+        {
+          "en": "consequently",
+          "ja": "その結果"
+        },
+        {
+          "en": "eventually",
+          "ja": "やがて"
+        },
+        {
+          "en": "gradually",
+          "ja": "だんだんと"
+        },
+        {
+          "en": "afterward",
+          "ja": "そのあとで"
+        },
+        {
+          "en": "beforehand",
+          "ja": "前もって"
+        },
+        {
+          "en": "cause",
+          "ja": "原因"
+        },
+        {
+          "en": "condition",
+          "ja": "状態／条件"
+        },
+        {
+          "en": "situation",
+          "ja": "状況"
+        },
+        {
+          "en": "circumstance",
+          "ja": "事情（ふつう circumstances）"
+        },
+        {
+          "en": "context",
+          "ja": "文脈／背景"
+        },
+        {
+          "en": "case",
+          "ja": "場合（in that case＝その場合は）"
+        },
+        {
+          "en": "fact",
+          "ja": "事実（in fact＝実は）"
+        },
+        {
+          "en": "aim",
+          "ja": "ねらい"
+        },
+        {
+          "en": "manner",
+          "ja": "やり方／態度"
+        },
+        {
+          "en": "extent",
+          "ja": "程度（to some extent＝ある程度）"
+        },
+        {
+          "en": "matter",
+          "ja": "重要である（It does not matter.）"
+        },
+        {
+          "en": "issue",
+          "ja": "問題"
+        },
+        {
+          "en": "factor",
+          "ja": "要因"
+        },
+        {
+          "en": "feature",
+          "ja": "特徴"
+        },
+        {
+          "en": "difficult",
+          "ja": "難しい"
+        },
+        {
+          "en": "complex",
+          "ja": "複雑な"
+        },
+        {
+          "en": "complicated",
+          "ja": "込み入った"
+        },
+        {
+          "en": "rare",
+          "ja": "まれな"
+        },
+        {
+          "en": "frequent",
+          "ja": "よくある"
+        },
+        {
+          "en": "constant",
+          "ja": "絶え間ない"
+        }
+      ],
+      "order": 1,
+      "outOfScope": [],
+      "pattern": "Although 〜, 〜. / Despite 〜, 〜. / 〜; nevertheless, 〜.",
+      "sentences": [
+        {
+          "en": "Long readings use words that connect ideas.",
+          "ja": "長いリーディングでは、考えをつなぐ言葉を使う。"
+        },
+        {
+          "en": "Although you feel tired, you can still enjoy a quiet evening.",
+          "ja": "疲れていても、静かな夜を楽しむことはできる。"
+        },
+        {
+          "en": "You want change, whereas a part of you wants to stay safe.",
+          "ja": "あなたは変化を望む一方で、あなたの一部は安全なままでいたいと思っている。"
+        },
+        {
+          "en": "Despite the stress, you are doing a good job.",
+          "ja": "ストレスがあるにもかかわらず、あなたはよくやっている。"
+        },
+        {
+          "en": "Rest today; meanwhile, let your ideas grow.",
+          "ja": "今日は休もう。その間に、考えを育てよう。"
+        },
+        {
+          "en": "This week may be busy. Moreover, the Moon may make you sensitive.",
+          "ja": "今週は忙しいかもしれない。そのうえ、月があなたを敏感にするかもしれない。"
+        },
+        {
+          "en": "Furthermore, an old memory may come back.",
+          "ja": "さらに、古い記憶がよみがえるかもしれない。"
+        },
+        {
+          "en": "It is a difficult week; nevertheless, you are not alone.",
+          "ja": "難しい週だ。それでも、あなたは一人ではない。"
+        },
+        {
+          "en": "You took a rest, and thus you have more energy now.",
+          "ja": "休んだので、今はより多くのエネルギーがある。"
+        },
+        {
+          "en": "Your Mars is strong; hence, you may want action.",
+          "ja": "あなたの火星は強い。それゆえ、行動したくなるかもしれない。"
+        },
+        {
+          "en": "Wherever you go, take your kindness with you.",
+          "ja": "どこへ行っても、優しさを連れていこう。"
+        },
+        {
+          "en": "Whoever you meet today may teach you something.",
+          "ja": "今日誰に会っても、その人が何かを教えてくれるかもしれない。"
+        },
+        {
+          "en": "Whichever way you choose, it is okay.",
+          "ja": "どちらの道を選んでも、それでいい。"
+        },
+        {
+          "en": "You are kind to others; likewise, be kind to yourself.",
+          "ja": "あなたは人に優しい。同じように、自分にも優しくしよう。"
+        },
+        {
+          "en": "Similarly, your Moon needs rest like your body.",
+          "ja": "同様に、あなたの月も体と同じように休息が必要だ。"
+        },
+        {
+          "en": "Indeed, small steps can lead to big change.",
+          "ja": "実際に、小さな一歩が大きな変化につながることがある。"
+        },
+        {
+          "en": "Regardless of your sign, you can choose your way.",
+          "ja": "星座に関係なく、あなたは自分の道を選べる。"
+        },
+        {
+          "en": "You slept well; consequently, your mind feels clear.",
+          "ja": "よく眠った。その結果、頭がすっきりしている。"
+        },
+        {
+          "en": "Eventually, the storm passes.",
+          "ja": "やがて、嵐は過ぎていく。"
+        },
+        {
+          "en": "Gradually, you may feel lighter.",
+          "ja": "だんだんと、心が軽くなるかもしれない。"
+        },
+        {
+          "en": "Have a hard talk, and rest afterward.",
+          "ja": "つらい話をして、そのあとで休もう。"
+        },
+        {
+          "en": "Plan your words beforehand.",
+          "ja": "言葉を前もって考えておこう。"
+        },
+        {
+          "en": "Find the cause, not only the result.",
+          "ja": "結果だけでなく、原因を見つけよう。"
+        },
+        {
+          "en": "Your condition today may be weak, and that is okay.",
+          "ja": "今日のあなたの状態は弱いかもしれないが、それでいい。"
+        },
+        {
+          "en": "Every situation has more than a single side.",
+          "ja": "どの状況にも、一つより多くの面がある。"
+        },
+        {
+          "en": "Your circumstances may change this year.",
+          "ja": "今年、あなたの事情は変わるかもしれない。"
+        },
+        {
+          "en": "Read a sentence in its context.",
+          "ja": "文はその文脈の中で読もう。"
+        },
+        {
+          "en": "In that case, wait a little.",
+          "ja": "その場合は、少し待とう。"
+        },
+        {
+          "en": "In fact, you are stronger than you think.",
+          "ja": "実は、あなたは思っているより強い。"
+        },
+        {
+          "en": "The aim of a reading is not to make you afraid.",
+          "ja": "リーディングのねらいは、あなたを怖がらせることではない。"
+        },
+        {
+          "en": "Speak in a gentle manner.",
+          "ja": "穏やかな態度で話そう。"
+        },
+        {
+          "en": "To some extent, you can control your day.",
+          "ja": "ある程度は、一日をコントロールできる。"
+        },
+        {
+          "en": "It does not matter what other people think.",
+          "ja": "ほかの人がどう思うかは重要ではない。"
+        },
+        {
+          "en": "This issue is not your mistake, and you do not need to fix it alone.",
+          "ja": "この問題はあなたの間違いではなく、一人で直す必要もない。"
+        },
+        {
+          "en": "Sleep is a big factor in your mood.",
+          "ja": "睡眠は、気分の大きな要因だ。"
+        },
+        {
+          "en": "A main feature of your chart may be water.",
+          "ja": "あなたのチャートの主な特徴は、水かもしれない。"
+        },
+        {
+          "en": "Love can be complex and complicated.",
+          "ja": "恋愛は複雑で、込み入っていることがある。"
+        },
+        {
+          "en": "A day like this is rare.",
+          "ja": "こんな日はまれだ。"
+        },
+        {
+          "en": "Frequent breaks can help you focus.",
+          "ja": "よくひと休みすると、集中しやすくなることがある。"
+        },
+        {
+          "en": "Constant pressure is not good for you.",
+          "ja": "絶え間ないプレッシャーは、あなたに良くない。"
+        }
+      ],
+      "theme_ja": "Co-Star の長い文を読むための、考えをつなぐ言葉（whereas, despite, meanwhile, moreover, nevertheless, hence など）を学ぶ。原因・状況・程度を表す抽象語もあわせて学ぶ。",
+      "title_en": "Connecting Ideas",
+      "title_ja": "考えをつなぐ ― Although 〜, 〜 / Despite 〜, 〜",
+      "wordsUsed": [
+        "a",
+        "action",
+        "afraid",
+        "afterward",
+        "aim",
+        "alone",
+        "although",
+        "and",
+        "are",
+        "back",
+        "be",
+        "beforehand",
+        "big",
+        "body",
+        "break",
+        "busy",
+        "can",
+        "case",
+        "cause",
+        "change",
+        "choose",
+        "circumstance",
+        "clear",
+        "come",
+        "complex",
+        "complicated",
+        "condition",
+        "connect",
+        "consequently",
+        "constant",
+        "context",
+        "control",
+        "day",
+        "despite",
+        "difficult",
+        "do",
+        "energy",
+        "enjoy",
+        "evening",
+        "eventually",
+        "every",
+        "extent",
+        "fact",
+        "factor",
+        "feature",
+        "feel",
+        "find",
+        "fix",
+        "focus",
+        "for",
+        "frequent",
+        "furthermore",
+        "gentle",
+        "go",
+        "good",
+        "gradually",
+        "grow",
+        "hard",
+        "have",
+        "heart",
+        "help",
+        "hence",
+        "idea",
+        "in",
+        "indeed",
+        "is",
+        "issue",
+        "it",
+        "its",
+        "job",
+        "kind",
+        "kindness",
+        "lead",
+        "let",
+        "light",
+        "like",
+        "likewise",
+        "little",
+        "long",
+        "love",
+        "main",
+        "make",
+        "manner",
+        "matter",
+        "may",
+        "meanwhile",
+        "meet",
+        "memory",
+        "mind",
+        "mistake",
+        "mood",
+        "more",
+        "moreover",
+        "need",
+        "nevertheless",
+        "not",
+        "now",
+        "of",
+        "okay",
+        "old",
+        "only",
+        "other",
+        "part",
+        "pass",
+        "people",
+        "plan",
+        "pressure",
+        "quiet",
+        "rare",
+        "read",
+        "regardless",
+        "rest",
+        "result",
+        "safe",
+        "say",
+        "sensitive",
+        "sentence",
+        "side",
+        "similarly",
+        "single",
+        "situation",
+        "sleep",
+        "small",
+        "some",
+        "something",
+        "speak",
+        "stay",
+        "step",
+        "still",
+        "storm",
+        "stress",
+        "strong",
+        "take",
+        "talk",
+        "teach",
+        "than",
+        "that",
+        "the",
+        "think",
+        "this",
+        "thus",
+        "tired",
+        "to",
+        "today",
+        "use",
+        "wait",
+        "want",
+        "way",
+        "weak",
+        "week",
+        "well",
+        "what",
+        "whereas",
+        "wherever",
+        "whichever",
+        "whoever",
+        "with",
+        "word",
+        "year",
+        "you",
+        "your",
+        "yourself"
+      ]
+    },
+    {
+      "canDo_ja": "内面を表す抽象語がわかり、「You are not only your Sun sign but also a whole chart.」のような文が読める。",
+      "chartLine": {
+        "ja": "あなたの太陽は{sunSignJa}にある。あなたは太陽星座だけでなくチャート全体でもあり、そしてチャート以上の存在だ。",
+        "note_ja": "アプリでは学習者の実際の太陽星座を当てはめる。not only 〜 but also 〜 の形で、星座やチャートが「その人を決めるものではない」という鑑定スタンス（指示書 7.3）を読む。",
+        "template_en": "Your Sun is in {sunSign}. You are not only your Sun sign but also a whole chart, and you are more than your chart."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "not only A but also B で「A だけでなく B も」。",
+          "options": [
+            "あなたは太陽星座だけでなく、チャート全体でもある",
+            "あなたは太陽星座だけでできている",
+            "あなたのチャートには太陽がない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You are not only your Sun sign but also a whole chart.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "temporary（一時的な）と permanent（永続的な）は反対の意味。",
+          "options": [
+            "この気持ちは一時的なもので、永続的なものではない",
+            "この気持ちはずっと続く",
+            "この気持ちはもう終わった"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "This feeling is temporary, not permanent.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "permission は「許可」。",
+          "options": [
+            "permission",
+            "intensity",
+            "chaos"
+          ],
+          "promptJa": "休むのに許可はいらない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "You do not need ___ to rest.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "courage は「勇気」（Unit 7）。vulnerability は vulnerable（Unit 6）の名詞。",
+          "options": [
+            "courage",
+            "anxiety",
+            "drama"
+          ],
+          "promptJa": "弱さを見せることは間違いではなく、勇気だ。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Vulnerability is not a mistake; it is ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Your worth does not depend on your work.",
+          "explanation_ja": "depend on 〜 で「〜しだいだ」。does not depend on 〜 で「〜で決まるものではない」。",
+          "prompt_ja": "語を並べ替えて「あなたの価値は、仕事で決まるものではない」という文を作ろう。",
+          "tiles": [
+            "does not depend",
+            "Your worth",
+            "on your work"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。overthink（考えすぎる）への活かし方（書き出して眠る）と、不安がどこから来るかという見方を読む。",
+          "options": [
+            "今夜は考えすぎるかもしれない。書き出して眠ろう。不安は今ではなく未来から来ることが多い",
+            "今夜は眠らずに、すべてを考え抜かなければならない",
+            "不安は現在からしか来ない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "You may overthink tonight. Write it down, and sleep. Anxiety often comes from the future, not the present.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "authentic は「ありのままの／本物の」。",
+          "options": [
+            "authentic",
+            "permanent",
+            "unconscious"
+          ],
+          "promptJa": "ほかの誰かのようではなく、ありのままでいよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Be ___, not like someone else.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson11_2",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "identity",
+          "ja": "自分らしさ／アイデンティティ"
+        },
+        {
+          "en": "ego",
+          "ja": "自我／エゴ"
+        },
+        {
+          "en": "awareness",
+          "ja": "気づき"
+        },
+        {
+          "en": "aware",
+          "ja": "気づいている（be aware of 〜）"
+        },
+        {
+          "en": "conscious",
+          "ja": "意識している"
+        },
+        {
+          "en": "unconscious",
+          "ja": "無意識の"
+        },
+        {
+          "en": "reality",
+          "ja": "現実"
+        },
+        {
+          "en": "universe",
+          "ja": "宇宙"
+        },
+        {
+          "en": "existence",
+          "ja": "存在"
+        },
+        {
+          "en": "exist",
+          "ja": "存在する"
+        },
+        {
+          "en": "chaos",
+          "ja": "混乱"
+        },
+        {
+          "en": "drama",
+          "ja": "ごたごた／ドラマ"
+        },
+        {
+          "en": "darkness",
+          "ja": "暗さ／闇"
+        },
+        {
+          "en": "authentic",
+          "ja": "ありのままの／本物の"
+        },
+        {
+          "en": "genuine",
+          "ja": "本物の／心からの"
+        },
+        {
+          "en": "vulnerability",
+          "ja": "弱さを見せること／もろさ"
+        },
+        {
+          "en": "uncertainty",
+          "ja": "不確かさ"
+        },
+        {
+          "en": "expectation",
+          "ja": "期待"
+        },
+        {
+          "en": "expect",
+          "ja": "期待する／予想する"
+        },
+        {
+          "en": "assume",
+          "ja": "思い込む"
+        },
+        {
+          "en": "perspective",
+          "ja": "見方"
+        },
+        {
+          "en": "environment",
+          "ja": "環境"
+        },
+        {
+          "en": "reaction",
+          "ja": "反応"
+        },
+        {
+          "en": "response",
+          "ja": "応答／反応"
+        },
+        {
+          "en": "sensitivity",
+          "ja": "敏感さ"
+        },
+        {
+          "en": "intensity",
+          "ja": "激しさ"
+        },
+        {
+          "en": "anxiety",
+          "ja": "不安"
+        },
+        {
+          "en": "transform",
+          "ja": "変える／変わる"
+        },
+        {
+          "en": "transformation",
+          "ja": "変容"
+        },
+        {
+          "en": "worth",
+          "ja": "価値（self-worth＝自分の価値）"
+        },
+        {
+          "en": "deserve",
+          "ja": "〜に値する"
+        },
+        {
+          "en": "permission",
+          "ja": "許可"
+        },
+        {
+          "en": "validation",
+          "ja": "認められること"
+        },
+        {
+          "en": "approval",
+          "ja": "承認"
+        },
+        {
+          "en": "obsess",
+          "ja": "とらわれる（obsess over 〜）"
+        },
+        {
+          "en": "overthink",
+          "ja": "考えすぎる（過去形 overthought）"
+        },
+        {
+          "en": "intention",
+          "ja": "意図"
+        },
+        {
+          "en": "temporary",
+          "ja": "一時的な"
+        },
+        {
+          "en": "permanent",
+          "ja": "永続的な"
+        },
+        {
+          "en": "individual",
+          "ja": "一人ひとりの／個人"
+        }
+      ],
+      "order": 2,
+      "outOfScope": [],
+      "pattern": "You are not only 〜 but also 〜. / You do not need 〜 to 〜.",
+      "sentences": [
+        {
+          "en": "Your chart shows tendencies, not rules.",
+          "ja": "あなたのチャートが示すのは傾向であって、ルールではない。"
+        },
+        {
+          "en": "You are not only your Sun sign but also a whole chart.",
+          "ja": "あなたは太陽星座だけでなく、チャート全体でもある。"
+        },
+        {
+          "en": "Your identity is more than a label.",
+          "ja": "あなたらしさは、ラベル以上のものだ。"
+        },
+        {
+          "en": "Your ego wants to be right; your heart wants to be close.",
+          "ja": "エゴは正しくありたいと思い、心は近くにいたいと思う。"
+        },
+        {
+          "en": "Awareness is the first step.",
+          "ja": "気づきが最初の一歩だ。"
+        },
+        {
+          "en": "Be aware of your patterns.",
+          "ja": "自分のパターンに気づいていよう。"
+        },
+        {
+          "en": "Some choices are conscious, and some are unconscious.",
+          "ja": "意識的な選択もあれば、無意識の選択もある。"
+        },
+        {
+          "en": "Dreams and reality can live together.",
+          "ja": "夢と現実は、一緒にいられる。"
+        },
+        {
+          "en": "The universe is big, and your feelings are real.",
+          "ja": "宇宙は大きく、あなたの気持ちは本物だ。"
+        },
+        {
+          "en": "Your existence is enough.",
+          "ja": "あなたの存在は、それだけで十分だ。"
+        },
+        {
+          "en": "Your feelings exist for a reason.",
+          "ja": "あなたの気持ちには、存在する理由がある。"
+        },
+        {
+          "en": "There may be some chaos at work this week.",
+          "ja": "今週は職場に少し混乱があるかもしれない。"
+        },
+        {
+          "en": "Do not let other people's drama become your drama.",
+          "ja": "人のごたごたを、自分のごたごたにしないで。"
+        },
+        {
+          "en": "There is darkness in every life, and there is light, too.",
+          "ja": "どの人生にも闇があり、光もある。"
+        },
+        {
+          "en": "Be authentic, not like someone else.",
+          "ja": "ほかの誰かのようではなく、ありのままでいよう。"
+        },
+        {
+          "en": "A genuine smile can heal a room.",
+          "ja": "心からの笑顔は、部屋の空気を癒やすことがある。"
+        },
+        {
+          "en": "Vulnerability is not a mistake; it is courage.",
+          "ja": "弱さを見せることは間違いではなく、勇気だ。"
+        },
+        {
+          "en": "Uncertainty can feel heavy, but it also means freedom.",
+          "ja": "不確かさは重く感じられることもあるが、自由という意味でもある。"
+        },
+        {
+          "en": "Let go of other people's expectations.",
+          "ja": "人の期待を手放そう。"
+        },
+        {
+          "en": "Do not expect too much from a single day.",
+          "ja": "一日に期待しすぎないで。"
+        },
+        {
+          "en": "Do not assume what others think.",
+          "ja": "人がどう思っているかを思い込まないで。"
+        },
+        {
+          "en": "Try to see it from a new perspective.",
+          "ja": "新しい見方で見てみよう。"
+        },
+        {
+          "en": "A calm environment can help you rest.",
+          "ja": "落ち着いた環境は、休む助けになることがある。"
+        },
+        {
+          "en": "Your first reaction may be fear.",
+          "ja": "あなたの最初の反応は、恐れかもしれない。"
+        },
+        {
+          "en": "You can choose a slower response.",
+          "ja": "もっとゆっくりした応答を選ぶことができる。"
+        },
+        {
+          "en": "Your sensitivity is a gift.",
+          "ja": "あなたの敏感さは、贈り物だ。"
+        },
+        {
+          "en": "The intensity of this week may be high.",
+          "ja": "今週の激しさは高いかもしれない。"
+        },
+        {
+          "en": "Anxiety often comes from the future, not the present.",
+          "ja": "不安は、現在ではなく未来から来ることが多い。"
+        },
+        {
+          "en": "Pain can transform you slowly.",
+          "ja": "痛みは、あなたをゆっくり変えることがある。"
+        },
+        {
+          "en": "Pluto is the planet of transformation.",
+          "ja": "冥王星は変容の天体だ。"
+        },
+        {
+          "en": "Your worth does not depend on your work.",
+          "ja": "あなたの価値は、仕事で決まるものではない。"
+        },
+        {
+          "en": "You deserve rest.",
+          "ja": "あなたには休息がふさわしい。"
+        },
+        {
+          "en": "You do not need permission to rest.",
+          "ja": "休むのに許可はいらない。"
+        },
+        {
+          "en": "You do not need validation from everyone.",
+          "ja": "みんなに認められる必要はない。"
+        },
+        {
+          "en": "Approval from others is sweet, but it is not everything.",
+          "ja": "人からの承認はうれしいが、それがすべてではない。"
+        },
+        {
+          "en": "Do not obsess over a single message.",
+          "ja": "一つのメッセージにとらわれないで。"
+        },
+        {
+          "en": "You may overthink tonight. Write it down, and sleep.",
+          "ja": "今夜は考えすぎるかもしれない。書き出して、眠ろう。"
+        },
+        {
+          "en": "Choose a small intention for the day.",
+          "ja": "その日のための小さな意図を決めよう。"
+        },
+        {
+          "en": "This feeling is temporary, not permanent.",
+          "ja": "この気持ちは一時的なもので、永続的なものではない。"
+        },
+        {
+          "en": "Every individual chart is different.",
+          "ja": "一人ひとりのチャートは、それぞれ違う。"
+        }
+      ],
+      "theme_ja": "自分らしさ・気づき・不安・価値など、Co-Star の長文によく出る抽象的な言葉を学ぶ。not only A but also B（A だけでなく B も）などの形で、内面を表す文を読む。",
+      "title_en": "Words for the Inner Self",
+      "title_ja": "内面を表す抽象語 ― not only 〜 but also 〜",
+      "wordsUsed": [
+        "a",
+        "also",
+        "and",
+        "anxiety",
+        "approval",
+        "are",
+        "assume",
+        "at",
+        "authentic",
+        "aware",
+        "awareness",
+        "be",
+        "become",
+        "big",
+        "but",
+        "calm",
+        "can",
+        "chaos",
+        "choice",
+        "choose",
+        "close",
+        "come",
+        "conscious",
+        "courage",
+        "darkness",
+        "day",
+        "depend",
+        "deserve",
+        "different",
+        "do",
+        "down",
+        "drama",
+        "dream",
+        "ego",
+        "else",
+        "enough",
+        "environment",
+        "every",
+        "everyone",
+        "everything",
+        "exist",
+        "existence",
+        "expect",
+        "expectation",
+        "fear",
+        "feel",
+        "first",
+        "for",
+        "freedom",
+        "from",
+        "future",
+        "genuine",
+        "gift",
+        "go",
+        "heal",
+        "heart",
+        "heavy",
+        "help",
+        "high",
+        "identity",
+        "in",
+        "individual",
+        "intensity",
+        "intention",
+        "is",
+        "it",
+        "label",
+        "let",
+        "life",
+        "light",
+        "like",
+        "live",
+        "may",
+        "mean",
+        "message",
+        "mistake",
+        "more",
+        "much",
+        "need",
+        "new",
+        "not",
+        "obsess",
+        "of",
+        "often",
+        "on",
+        "only",
+        "other",
+        "over",
+        "overthink",
+        "pain",
+        "pattern",
+        "people",
+        "permanent",
+        "permission",
+        "perspective",
+        "present",
+        "reaction",
+        "real",
+        "reality",
+        "reason",
+        "response",
+        "rest",
+        "right",
+        "room",
+        "rule",
+        "see",
+        "sensitivity",
+        "show",
+        "single",
+        "sleep",
+        "slow",
+        "slowly",
+        "small",
+        "smile",
+        "some",
+        "someone",
+        "step",
+        "sweet",
+        "temporary",
+        "tendency",
+        "than",
+        "the",
+        "there",
+        "think",
+        "this",
+        "to",
+        "together",
+        "tonight",
+        "too",
+        "transform",
+        "transformation",
+        "try",
+        "uncertainty",
+        "unconscious",
+        "universe",
+        "validation",
+        "vulnerability",
+        "want",
+        "week",
+        "what",
+        "whole",
+        "work",
+        "worth",
+        "write",
+        "you",
+        "your"
+      ]
+    },
+    {
+      "canDo_ja": "接続の言葉で組み立てられた複数文の Co-Star 風リーディングを、辞書なしで読める。",
+      "chartLine": {
+        "ja": "あなたの月は{moonSignJa}にあり、金星は{venusSignJa}にある。今週は、恋愛の見慣れたパターンが明らかになるかもしれない。古い恐れがあっても、新しい応答を選ぶことができる。自分の気持ちを大切にしよう。",
+        "note_ja": "Unit 11 の到達点。アプリでは学習者の実際の月・金星星座を当てはめ、Co-Star 風の長いリーディングとして提示する。傾向（パターンが表れる）→ 偏りやすい点（古い恐れ）→ 活かし方（新しい応答を選ぶ）の流れで読む。",
+        "template_en": "Your Moon is in {moonSign}, and your Venus is in {venusSign}. This week may reveal a familiar pattern in love. Despite the old fear, you can choose a new response. Honor what you feel."
+      },
+      "exercises": [
+        {
+          "answerIndex": 0,
+          "explanation_ja": "interpretation（解釈）を view（見方）と fact（事実）で対比する。占いを「参考」として読む姿勢。",
+          "options": [
+            "解釈は一つの見方であって、事実ではない",
+            "解釈はすべて事実だ",
+            "解釈には見方がない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "An interpretation is a view, not a fact.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "nevertheless（それでも）と unlikely（〜しそうにない）。悪い面だけで終わらない長文の流れを読む。",
+          "options": [
+            "土星が仕事に障害をもたらすかもしれないが、それがずっと続くことはまずない",
+            "土星が仕事に障害をもたらし、それはずっと続く",
+            "土星は仕事に何の影響もない"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "Saturn may bring an obstacle at work. Nevertheless, it is unlikely to last forever.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "confusion は「混乱」。confused（Unit 5）の名詞。",
+          "options": [
+            "confusion",
+            "grace",
+            "ritual"
+          ],
+          "promptJa": "混乱のあとに、物事がはっきりするかもしれない。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Clarity may come after ___.",
+          "type": "fill_blank"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "seek は「探し求める」。seek help で「助けを求める」。",
+          "options": [
+            "Seek",
+            "Reveal",
+            "Release"
+          ],
+          "promptJa": "必要なときは助けを求めよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "___ help when you need it.",
+          "type": "fill_blank"
+        },
+        {
+          "answer_en": "Honor your feelings.",
+          "explanation_ja": "Honor（大切にしよう）のあとに your feelings（自分の気持ち）。",
+          "prompt_ja": "語を並べ替えて「自分の気持ちを大切にしよう」という文を作ろう。",
+          "tiles": [
+            "your feelings",
+            "Honor"
+          ],
+          "type": "reorder"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "読解問題。whereas（一方で）で2つの天体を対比し、hence（それゆえ）で結果を、meanwhile（その間に）で活かし方を読む。",
+          "options": [
+            "月は水、火星は火の星座にあるので、やわらかさと落ち着かなさの両方を感じるかもしれない。まず休み、あとで動こう",
+            "月と火星が同じ元素なので、まったく迷わない",
+            "火星が火の星座にあるので、すぐに全部を始めるべきだ"
+          ],
+          "prompt_ja": "次の文の意味は？",
+          "question_en": "The Moon is in a water sign, whereas your Mars is in a fire sign. Hence, you may feel both soft and restless. Meanwhile, the solution is simple: rest first, and move afterward.",
+          "type": "multiple_choice"
+        },
+        {
+          "answerIndex": 0,
+          "explanation_ja": "surrender to 〜 で「〜にゆだねる」。",
+          "options": [
+            "surrender",
+            "pursue",
+            "indicate"
+          ],
+          "promptJa": "変えられないものを手放し、その日の流れにゆだねよう。",
+          "prompt_ja": "空欄に入る語は？",
+          "sentence_en": "Release what you cannot change, and ___ to the flow of the day.",
+          "type": "fill_blank"
+        }
+      ],
+      "id": "lesson11_3",
+      "newTerms": [],
+      "newWords": [
+        {
+          "en": "release",
+          "ja": "手放す／解き放つ"
+        },
+        {
+          "en": "surrender",
+          "ja": "ゆだねる"
+        },
+        {
+          "en": "interpret",
+          "ja": "解釈する"
+        },
+        {
+          "en": "interpretation",
+          "ja": "解釈"
+        },
+        {
+          "en": "symbol",
+          "ja": "象徴"
+        },
+        {
+          "en": "indicate",
+          "ja": "示す"
+        },
+        {
+          "en": "represent",
+          "ja": "表す"
+        },
+        {
+          "en": "unlikely",
+          "ja": "〜しそうにない"
+        },
+        {
+          "en": "possibly",
+          "ja": "もしかすると"
+        },
+        {
+          "en": "apparently",
+          "ja": "どうやら"
+        },
+        {
+          "en": "naturally",
+          "ja": "自然に"
+        },
+        {
+          "en": "honestly",
+          "ja": "正直に"
+        },
+        {
+          "en": "raw",
+          "ja": "むき出しの"
+        },
+        {
+          "en": "blunt",
+          "ja": "ぶっきらぼうな／率直すぎる"
+        },
+        {
+          "en": "harsh",
+          "ja": "きびしい"
+        },
+        {
+          "en": "illusion",
+          "ja": "思い込み／幻想"
+        },
+        {
+          "en": "familiar",
+          "ja": "見慣れた／なじみのある"
+        },
+        {
+          "en": "zone",
+          "ja": "領域（comfort zone＝居心地のいい場所）"
+        },
+        {
+          "en": "leap",
+          "ja": "跳ぶ／飛躍"
+        },
+        {
+          "en": "grace",
+          "ja": "優雅さ／思いやり"
+        },
+        {
+          "en": "faith",
+          "ja": "信じる心"
+        },
+        {
+          "en": "clarity",
+          "ja": "はっきりすること"
+        },
+        {
+          "en": "confusion",
+          "ja": "混乱"
+        },
+        {
+          "en": "solution",
+          "ja": "解決策"
+        },
+        {
+          "en": "sacrifice",
+          "ja": "犠牲（にする）"
+        },
+        {
+          "en": "honor",
+          "ja": "大切にする／尊重する"
+        },
+        {
+          "en": "ritual",
+          "ja": "（自分なりの）儀式／習慣"
+        },
+        {
+          "en": "intuitive",
+          "ja": "直感的な"
+        },
+        {
+          "en": "insight",
+          "ja": "洞察"
+        },
+        {
+          "en": "wise",
+          "ja": "賢明な"
+        },
+        {
+          "en": "foolish",
+          "ja": "愚かな"
+        },
+        {
+          "en": "ongoing",
+          "ja": "続いている"
+        },
+        {
+          "en": "beneath",
+          "ja": "〜の下に"
+        },
+        {
+          "en": "upward",
+          "ja": "上向きに"
+        },
+        {
+          "en": "outcome",
+          "ja": "結果／成り行き"
+        },
+        {
+          "en": "obstacle",
+          "ja": "障害"
+        },
+        {
+          "en": "pursue",
+          "ja": "追い求める"
+        },
+        {
+          "en": "seek",
+          "ja": "探し求める（過去形 sought）"
+        },
+        {
+          "en": "reveal",
+          "ja": "明らかにする"
+        },
+        {
+          "en": "difficulty",
+          "ja": "困難"
+        }
+      ],
+      "order": 3,
+      "outOfScope": [],
+      "pattern": "〜, whereas 〜. Hence, 〜. Meanwhile, 〜. / 〜 may reveal 〜.",
+      "sentences": [
+        {
+          "en": "A symbol can mean many things.",
+          "ja": "象徴は、多くのことを意味しうる。"
+        },
+        {
+          "en": "Interpret your chart with your own heart.",
+          "ja": "自分の心でチャートを解釈しよう。"
+        },
+        {
+          "en": "An interpretation is a view, not a fact.",
+          "ja": "解釈は一つの見方であって、事実ではない。"
+        },
+        {
+          "en": "The Moon represents your feelings.",
+          "ja": "月は、あなたの気持ちを表す。"
+        },
+        {
+          "en": "This transit may indicate a time of change.",
+          "ja": "このトランジットは、変化の時期を示しているのかもしれない。"
+        },
+        {
+          "en": "It is unlikely that every plan fails.",
+          "ja": "すべての計画が失敗するということは、まずない。"
+        },
+        {
+          "en": "Possibly, a friend may contact you.",
+          "ja": "もしかすると、友達から連絡があるかもしれない。"
+        },
+        {
+          "en": "Apparently, you need more rest than you think.",
+          "ja": "どうやら、思っているより休息が必要なようだ。"
+        },
+        {
+          "en": "Let things happen naturally.",
+          "ja": "物事を自然に起こるままにしよう。"
+        },
+        {
+          "en": "Honestly, it is okay to say no.",
+          "ja": "正直に言って、断ってもいい。"
+        },
+        {
+          "en": "Your feelings may be raw today.",
+          "ja": "今日は気持ちがむき出しかもしれない。"
+        },
+        {
+          "en": "Do not be blunt or harsh with yourself.",
+          "ja": "自分にぶっきらぼうに、きびしくしないで。"
+        },
+        {
+          "en": "Some fears are an illusion.",
+          "ja": "恐れの中には、思い込みもある。"
+        },
+        {
+          "en": "A familiar pattern may come back.",
+          "ja": "見慣れたパターンが戻ってくるかもしれない。"
+        },
+        {
+          "en": "Step out of your comfort zone, slowly.",
+          "ja": "居心地のいい場所から、ゆっくり一歩出てみよう。"
+        },
+        {
+          "en": "A leap of faith can be small.",
+          "ja": "信じて跳ぶ一歩は、小さくてもいい。"
+        },
+        {
+          "en": "Move with grace, not with force.",
+          "ja": "力ずくではなく、優雅に動こう。"
+        },
+        {
+          "en": "Clarity may come after confusion.",
+          "ja": "混乱のあとに、物事がはっきりするかもしれない。"
+        },
+        {
+          "en": "The solution may be simpler than you think.",
+          "ja": "解決策は、思っているより簡単かもしれない。"
+        },
+        {
+          "en": "You do not need to sacrifice your health.",
+          "ja": "健康を犠牲にする必要はない。"
+        },
+        {
+          "en": "Honor your feelings.",
+          "ja": "自分の気持ちを大切にしよう。"
+        },
+        {
+          "en": "Make a small ritual for the evening.",
+          "ja": "夜のための小さな儀式を作ろう。"
+        },
+        {
+          "en": "Water signs are often intuitive.",
+          "ja": "水の星座は、直感的なことが多い。"
+        },
+        {
+          "en": "A quiet walk may bring insight.",
+          "ja": "静かな散歩が、洞察をもたらすかもしれない。"
+        },
+        {
+          "en": "It is wise to wait.",
+          "ja": "待つのが賢明だ。"
+        },
+        {
+          "en": "Nobody is foolish for having feelings.",
+          "ja": "気持ちを持つことで愚かになる人はいない。"
+        },
+        {
+          "en": "This is an ongoing process.",
+          "ja": "これは続いている過程だ。"
+        },
+        {
+          "en": "Beneath the anger, there may be fear.",
+          "ja": "怒りの下には、恐れがあるかもしれない。"
+        },
+        {
+          "en": "Your energy may move upward this week.",
+          "ja": "今週、あなたのエネルギーは上向きになるかもしれない。"
+        },
+        {
+          "en": "You cannot control every outcome.",
+          "ja": "すべての結果をコントロールすることはできない。"
+        },
+        {
+          "en": "An obstacle can show you a new road.",
+          "ja": "障害は、新しい道を見せてくれることがある。"
+        },
+        {
+          "en": "Pursue what you love, at your own pace.",
+          "ja": "自分のペースで、好きなことを追い求めよう。"
+        },
+        {
+          "en": "Seek help when you need it.",
+          "ja": "必要なときは助けを求めよう。"
+        },
+        {
+          "en": "Time may reveal what you need.",
+          "ja": "時間が、あなたに必要なものを明らかにするかもしれない。"
+        },
+        {
+          "en": "Difficulty is part of growth.",
+          "ja": "困難は、成長の一部だ。"
+        },
+        {
+          "en": "Release what you cannot change, and surrender to the flow of the day.",
+          "ja": "変えられないものを手放し、その日の流れにゆだねよう。"
+        },
+        {
+          "en": "This week, Venus may reveal a familiar pattern in love. Although you may want to run, you can choose a new response. Despite the old fear, honor what you feel, and speak honestly.",
+          "ja": "今週、金星が恋愛の見慣れたパターンを明らかにするかもしれない。逃げたくなるかもしれないが、新しい応答を選ぶことができる。古い恐れがあっても、自分の気持ちを大切にして、正直に話そう。"
+        },
+        {
+          "en": "The Moon is in a water sign, whereas your Mars is in a fire sign. Hence, you may feel both soft and restless. Meanwhile, the solution is simple: rest first, and move afterward.",
+          "ja": "月は水の星座にある一方で、あなたの火星は火の星座にある。それゆえ、やわらかさと落ち着かなさの両方を感じるかもしれない。その間の解決策は簡単だ。まず休み、そのあとで動こう。"
+        },
+        {
+          "en": "Saturn may bring an obstacle at work. Nevertheless, it is unlikely to last forever. Eventually, you may find a wiser way, and you may feel proud of your patience.",
+          "ja": "土星が仕事に障害をもたらすかもしれない。それでも、それがずっと続くことはまずない。やがて、もっと賢明なやり方が見つかり、自分の忍耐を誇りに思えるかもしれない。"
+        }
+      ],
+      "theme_ja": "Unit 11 の総仕上げ。解釈・象徴・洞察などの読解の言葉を学び、接続の言葉で組み立てられた Co-Star 風の長いリーディングを読む。",
+      "title_en": "Reading Co-Star Paragraphs",
+      "title_ja": "Co-Star の長文を読む ― 〜; hence, 〜 / 〜 may reveal 〜",
+      "wordsUsed": [
+        "a",
+        "after",
+        "afterward",
+        "although",
+        "and",
+        "anger",
+        "apparently",
+        "are",
+        "at",
+        "back",
+        "be",
+        "beneath",
+        "blunt",
+        "both",
+        "bring",
+        "can",
+        "change",
+        "choose",
+        "clarity",
+        "come",
+        "comfort",
+        "confusion",
+        "contact",
+        "control",
+        "day",
+        "despite",
+        "difficulty",
+        "do",
+        "energy",
+        "evening",
+        "eventually",
+        "every",
+        "fact",
+        "fail",
+        "faith",
+        "familiar",
+        "fear",
+        "feel",
+        "find",
+        "first",
+        "flow",
+        "foolish",
+        "for",
+        "force",
+        "forever",
+        "friend",
+        "grace",
+        "growth",
+        "happen",
+        "harsh",
+        "have",
+        "health",
+        "heart",
+        "help",
+        "hence",
+        "honestly",
+        "honor",
+        "illusion",
+        "in",
+        "indicate",
+        "insight",
+        "interpret",
+        "interpretation",
+        "intuitive",
+        "is",
+        "it",
+        "last",
+        "leap",
+        "let",
+        "love",
+        "make",
+        "many",
+        "may",
+        "mean",
+        "meanwhile",
+        "more",
+        "move",
+        "naturally",
+        "need",
+        "nevertheless",
+        "new",
+        "no",
+        "nobody",
+        "not",
+        "obstacle",
+        "of",
+        "often",
+        "okay",
+        "old",
+        "ongoing",
+        "or",
+        "out",
+        "outcome",
+        "own",
+        "pace",
+        "part",
+        "patience",
+        "pattern",
+        "plan",
+        "possibly",
+        "process",
+        "proud",
+        "pursue",
+        "quiet",
+        "raw",
+        "release",
+        "represent",
+        "response",
+        "rest",
+        "restless",
+        "reveal",
+        "ritual",
+        "road",
+        "run",
+        "sacrifice",
+        "say",
+        "seek",
+        "show",
+        "simple",
+        "slowly",
+        "small",
+        "soft",
+        "solution",
+        "some",
+        "speak",
+        "step",
+        "surrender",
+        "symbol",
+        "than",
+        "that",
+        "the",
+        "there",
+        "thing",
+        "think",
+        "this",
+        "time",
+        "to",
+        "today",
+        "unlikely",
+        "upward",
+        "view",
+        "wait",
+        "walk",
+        "want",
+        "way",
+        "week",
+        "what",
+        "when",
+        "whereas",
+        "wise",
+        "with",
+        "work",
+        "you",
+        "your",
+        "yourself",
+        "zone"
+      ]
+    }
+  ],
+  "unit": {
+    "created": "2026-11-23",
+    "id": "unit11",
+    "notes_ja": [
+      "一般語（words）はグロービッシュ1,500語の範囲を原則とし、レッスンごとに newWords（新規導入）／wordsUsed（そのレッスンで実際に使った一般語）を明示する。",
+      "Unit 11 の新規一般語は120語（40語×3レッスン）で、累計1,420語に到達する（CURRICULUM §4 の配分どおり）。",
+      "専門用語の新規導入はなし（CURRICULUM §3）。テーマは Co-Star 長文読解（複文・接続表現）と、終盤ユニットでまとめて扱う抽象語（CURRICULUM §2.2）。",
+      "縮約形（don't, it's など）は元の形の語として数える（Unit 10 と同じ扱い）。",
+      "複数形・三単現の -s・規則的な過去形・-ed／-ing 形・所有格の 's は原形と同一語として数える（CURRICULUM 2.1）。不規則形は初出の語の ja に併記した（overthink→overthought、seek→sought）。既出語の不規則な過去形 took（take）・slept（sleep）は Lesson 11.1 で、cannot（can not）は Lesson 11.3 で初出のため、ここに併記する（いずれも原形と同一語として数える）。",
+      "例文・演習で使う一般語は「Unit 1〜10 導入済み1,300語＋当該レッスンまでの Unit 11 導入語」の範囲内のみ。本ユニットでは全レッスン outOfScope は空（0語）。",
+      "穴埋め形式には全問に promptJa（問題表示時点で見える日本語文）を付け、日本語文から答えが一意に特定できるようにした。",
+      "Lesson 11.3 の長いリーディングは readings-core.json に倣い「傾向 → 偏りやすい点 → 活かし方」の流れで構成し、チャートは「傾向であってルールではない」「解釈は見方であって事実ではない」と例文で明示している。"
+    ],
+    "order": 11,
+    "status": "draft",
+    "theme_ja": "考えをつなぐ接続の言葉と、内面を表す抽象語を学び、複数の文で組み立てられた Co-Star 風の長いリーディングを読む。",
+    "title_en": "Long Readings",
+    "title_ja": "Co-Star 長文読解 ― 複文と接続表現",
+    "version": "0.1",
+    "wordCountSummary": {
+      "lessonsBreakdown": {
+        "lesson11_1": 40,
+        "lesson11_2": 40,
+        "lesson11_3": 40
+      },
+      "newGeneralWordsTotal": 120,
+      "newTermsTotal": 0
+    }
+  }
+}
