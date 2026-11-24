@@ -179,3 +179,29 @@ table.data td.deg { text-align: right; font-variant-numeric: tabular-nums; white
 .profile-block .p-main { font-size: 16px; }
 .profile-block .p-sub { color: var(--grey); font-size: 13px; margin-top: 6px; }
 .profile-summary-ja { font-size: 16px; line-height: 1.9; }
+
+/* multiple profiles （複数プロフィール） */
+.profile-switch { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 18px; }
+.profile-switch button {
+  background: var(--paper); color: var(--grey);
+  border: 1px solid var(--line);
+  padding: 8px 14px; font: inherit; font-size: 13px; letter-spacing: 0.08em; cursor: pointer;
+}
+.profile-switch button.active { background: var(--ink); color: var(--paper); font-weight: 700; }
+.profile-who { margin: 0 0 10px; }
+.profile-who b { color: var(--ink); font-size: 14px; }
+.profile-list { border: 1px solid var(--line); margin: 0 0 4px; }
+.profile-row {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 16px; border-bottom: 1px solid var(--hair);
+}
+.profile-row:last-child { border-bottom: none; }
+.profile-row .p-info { flex: 1; font-size: 15px; }
+.profile-row .p-info .small { display: block; margin-top: 2px; }
+.profile-row .p-actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+.mini-btn {
+  background: var(--paper); color: var(--ink);
+  border: 1px solid var(--line);
+  padding: 7px 12px; font: inherit; font-size: 12px; letter-spacing: 0.1em; cursor: pointer;
+}
+.mini-btn.danger { color: var(--grey); }
