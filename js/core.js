@@ -621,6 +621,128 @@
     });
   }
 
+  /* ---------------------------------------------------------------- */
+  /* Profiles （複数プロフィール）                                       */
+  /* The app state holds a list of people: exactly one "self" profile */
+  /* (the learner; lessons, XP and Today's Line are anchored to it)   */
+  /* plus any number of other people (family / friend / partner /     */
+  /* other) whose charts and profile readings can be viewed.          */
+  /* normalizeState() converts any saved state — including the        */
+  /* pre-profiles format { birth: {...} } — into the current shape,   */
+  /* so an existing user's birth data and progress survive the        */
+  /* upgrade untouched. It is pure and defensive: unknown or broken   */
+  /* input yields a valid state with one empty self profile.          */
+  /* ---------------------------------------------------------------- */
+  var RELATIONS = [
+    { key: 'self', ja: '自分' },
+    { key: 'family', ja: '家族' },
+    { key: 'friend', ja: '友人' },
+    { key: 'partner', ja: '恋人' },
+    { key: 'other', ja: 'その他' }
+  ];
+  var RELATION_KEYS = RELATIONS.map(function (r) { return r.key; });
+
+  function relationLabel(key) {
+    for (var i = 0; i < RELATIONS.length; i++) {
+      if (RELATIONS[i].key === key) return RELATIONS[i].ja;
+    }
+    return 'その他';
+  }
+
+  function sanitizeBirth(b) {
+    if (!b || typeof b !== 'object' || typeof b.date !== 'string' || !b.date) return null;
+    var lat = Number(b.lat), lon = Number(b.lon), off = Number(b.utcOffset);
+    return {
+      date: b.date,
+      time: typeof b.time === 'string' ? b.time : '',
+      timeUnknown: !!b.timeUnknown,
+      placeName: typeof b.placeName === 'string' ? b.placeName : '',
+      lat: isNaN(lat) ? 0 : lat,
+      lon: isNaN(lon) ? 0 : lon,
+      utcOffset: isNaN(off) ? 9 : off
+    };
+  }
+
+  function normalizeProfile(p, fallbackId) {
+    if (!p || typeof p !== 'object') return null;
+    return {
+      id: (typeof p.id === 'string' && p.id) ? p.id : fallbackId,
+      name: typeof p.name === 'string' ? p.name : '',
+      relation: RELATION_KEYS.indexOf(p.relation) !== -1 ? p.relation : 'other',
+      birth: sanitizeBirth(p.birth)
+    };
+  }
+
+  function emptySelfProfile() {
+    return { id: 'self', name: 'わたし', relation: 'self', birth: null };
+  }
+
+  /**
+   * Normalize any saved state into the current shape:
+   *   { profiles: [...], viewProfileId, xp, completed, lineDate, profileLang }
+   * Guarantees: profiles is a non-empty array with unique ids and
+   * exactly one profile whose relation is 'self' (always id 'self');
+   * a legacy top-level `birth` becomes that self profile's birth.
+   */
+  function normalizeState(raw) {
+    var out = {
+      profiles: [], viewProfileId: 'self',
+      xp: 0, completed: {}, lineDate: null, profileLang: 'ja'
+    };
+    if (!raw || typeof raw !== 'object') {
+      out.profiles = [emptySelfProfile()];
+      return out;
+    }
+    if (typeof raw.xp === 'number' && !isNaN(raw.xp)) out.xp = raw.xp;
+    if (raw.completed && typeof raw.completed === 'object') out.completed = raw.completed;
+    if (raw.lineDate !== undefined) out.lineDate = raw.lineDate;
+    if (raw.profileLang === 'en' || raw.profileLang === 'ja') out.profileLang = raw.profileLang;
+
+    var profiles = [];
+    if (Array.isArray(raw.profiles)) {
+      raw.profiles.forEach(function (p, i) {
+        var np = normalizeProfile(p, 'p' + (i + 1));
+        if (np) profiles.push(np);
+      });
+    }
+    // Unique ids (first occurrence wins).
+    var seen = {};
+    profiles = profiles.filter(function (p) {
+      if (seen[p.id]) return false;
+      seen[p.id] = true;
+      return true;
+    });
+    // Exactly one self profile; extras are demoted to 'other'.
+    var selfIdx = -1;
+    profiles.forEach(function (p, i) {
+      if (p.relation === 'self') {
+        if (selfIdx === -1) selfIdx = i;
+        else p.relation = 'other';
+      }
+    });
+    if (selfIdx === -1) {
+      var self = emptySelfProfile();
+      self.birth = sanitizeBirth(raw.birth); // legacy single-profile data
+      profiles.unshift(self);
+    } else {
+      if (profiles[selfIdx].id !== 'self') {
+        // Keep the canonical id for the self profile; if another
+        // profile already owns 'self' as an id, rename that one.
+        profiles.forEach(function (p, i) {
+          if (i !== selfIdx && p.id === 'self') p.id = 'p' + (i + 1) + 'x';
+        });
+        profiles[selfIdx].id = 'self';
+      }
+      if (!profiles[selfIdx].name) profiles[selfIdx].name = 'わたし';
+    }
+    out.profiles = profiles;
+    if (typeof raw.viewProfileId === 'string' &&
+        profiles.some(function (p) { return p.id === raw.viewProfileId; })) {
+      out.viewProfileId = raw.viewProfileId;
+    }
+    return out;
+  }
+
   /** A reorder answer matches when tiles joined equal the target sentence. */
   function normalizeSentence(s) {
     return String(s).toLowerCase().replace(/[.\s]+$/g, '').replace(/\s+/g, ' ').trim();
@@ -642,6 +764,9 @@
     buildProfileReading: buildProfileReading,
     toFirstPerson: toFirstPerson,
     masteredSets: masteredSets,
+    RELATIONS: RELATIONS,
+    relationLabel: relationLabel,
+    normalizeState: normalizeState,
     checkReorder: checkReorder,
     normalizeSentence: normalizeSentence,
     TOTAL_GENERAL_WORDS: TOTAL_GENERAL_WORDS
